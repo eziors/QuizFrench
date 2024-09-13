@@ -10,28 +10,20 @@ import UIKit
 class HomeVC: UIViewController {
 
     let headerView = UIView()
-    let quoteLabel = QFTitleLabel(textAlignment: .center, fontSize: 15)
     let anotherLabel = QFTitleLabel(textAlignment: .center, fontSize: 15)
-    let progressView = UIView()
+    let itemInfoViewOne = UIView()
+    let itemInfoViewTwo = UIView()
+    let itemInfoViewThree = UIView()
+    let itemInfoViewFour = UIView()
     
-    let itemInfoViewOne = QFItemInfoView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         configureNavItem()
-        configureHeaderView()
         configureUIElements()
-        configureQuoteLabel()
-        configureAnotherLabel()
-        
     }
-    
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-    }
-    
     
     @objc func workingButton() {
         print("Working ")
@@ -50,76 +42,59 @@ class HomeVC: UIViewController {
         navigationItem.leftBarButtonItem = flagItem
     }
     
-    func configureHeaderView() {
+    
+    
+    func configureUIElements() {
+        let alphabetItemVC = QFAlphabetItemVC()
+        let wordItemVC = QFWordsItemVC()
+        let phrasesItemVC = QFPhrasesItemVC()
+        let tipsItemVC = QFTipsItemVC()
+        
+        self.addChildVC(childVC: QFHomeHeaderVC(), in: headerView)
+        self.addChildVC(childVC: alphabetItemVC, in: itemInfoViewOne)
+        self.addChildVC(childVC: wordItemVC, in: itemInfoViewTwo)
+        self.addChildVC(childVC: phrasesItemVC, in: itemInfoViewThree)
+        self.addChildVC(childVC: tipsItemVC, in: itemInfoViewFour)
+        
         view.addSubview(headerView)
+        view.addSubview(itemInfoViewOne)
+        view.addSubview(itemInfoViewTwo)
+        view.addSubview(itemInfoViewThree)
+        view.addSubview(itemInfoViewFour)
+        
+        let padding: CGFloat = 20
         
         headerView.translatesAutoresizingMaskIntoConstraints = false
-        headerView.backgroundColor = UIColor(red: 0.23, green: 0.23, blue: 0.24, alpha: 1.00)
-        
-        let screenWidth = view.frame.width
+        itemInfoViewOne.translatesAutoresizingMaskIntoConstraints = false
+        itemInfoViewTwo.translatesAutoresizingMaskIntoConstraints = false
+        itemInfoViewThree.translatesAutoresizingMaskIntoConstraints = false
+        itemInfoViewFour.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
             headerView.topAnchor.constraint(equalTo: view.topAnchor),
             headerView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             headerView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            headerView.heightAnchor.constraint(equalToConstant: 330),
-            headerView.widthAnchor.constraint(equalToConstant: screenWidth),
-        ])
-    }
-    
-    
-    
-    func configureQuoteLabel() {
-        quoteLabel.text = "\"Le plus grand risque est de ne prendre aucun risque\" \n- Quelque'un"
-        quoteLabel.font = UIFont.preferredFont(forTextStyle: .title2)
-        quoteLabel.numberOfLines = 3
-        quoteLabel.textColor = .white
-        
-        
-        headerView.addSubview(quoteLabel)
-        
-        NSLayoutConstraint.activate([
-            quoteLabel.centerYAnchor.constraint(equalTo: headerView.centerYAnchor),
-            quoteLabel.leadingAnchor.constraint(equalTo: headerView.leadingAnchor, constant: 30),
-            quoteLabel.trailingAnchor.constraint(equalTo: headerView.trailingAnchor, constant: -30),
-        ])
-    }
-    
-    func configureUIElements() {
-        self.addChildVC(childVC: QFStreakProgressVC(), in: progressView)
-        
-        view.addSubview(progressView)
-        progressView.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activate([
-            progressView.bottomAnchor.constraint(equalTo: headerView.bottomAnchor, constant: -20),
-            progressView.leadingAnchor.constraint(equalTo: headerView.leadingAnchor, constant: 15),
-            progressView.trailingAnchor.constraint(equalTo: headerView.trailingAnchor, constant: -15),
-            progressView.heightAnchor.constraint(equalToConstant: 40),
+            headerView.heightAnchor.constraint(equalToConstant: 300),
             
-        ])
-        
-    }
-    
-    func configureItemInfoView() {
-        view.addSubview(itemInfoViewOne)
-        
-        NSLayoutConstraint.activate([
-            itemInfoViewOne.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50),
-            itemInfoViewOne.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
-            itemInfoViewOne.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40),
-        ])
-    }
-    
-    func configureAnotherLabel() {
-        view.addSubview(anotherLabel)
-        anotherLabel.text = "Testig something here !!"
-        anotherLabel.textColor = .green
-        
-        NSLayoutConstraint.activate([
-            anotherLabel.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: 40),
-            anotherLabel.leadingAnchor.constraint(equalTo: headerView.leadingAnchor, constant: 40),
-            anotherLabel.trailingAnchor.constraint(equalTo: headerView.trailingAnchor, constant: -40),
+            itemInfoViewOne.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: padding),
+            itemInfoViewOne.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
+            itemInfoViewOne.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
+            itemInfoViewOne.heightAnchor.constraint(equalToConstant: 100),
+            
+            itemInfoViewTwo.topAnchor.constraint(equalTo: itemInfoViewOne.bottomAnchor, constant: padding),
+            itemInfoViewTwo.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
+            itemInfoViewTwo.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
+            itemInfoViewTwo.heightAnchor.constraint(equalToConstant: 100),
+            
+            itemInfoViewThree.topAnchor.constraint(equalTo: itemInfoViewTwo.bottomAnchor, constant: padding),
+            itemInfoViewThree.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
+            itemInfoViewThree.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
+            itemInfoViewThree.heightAnchor.constraint(equalToConstant: 100),
+            
+            itemInfoViewFour.topAnchor.constraint(equalTo: itemInfoViewThree.bottomAnchor, constant: padding),
+            itemInfoViewFour.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
+            itemInfoViewFour.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
+            itemInfoViewFour.heightAnchor.constraint(equalToConstant: 100),
         ])
     }
     

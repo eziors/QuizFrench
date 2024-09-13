@@ -7,14 +7,17 @@
 
 import UIKit
 
+enum ItemInfoType {
+    case alphabets, phrases, words, tips
+}
+
 class QFItemInfoView: UIView {
-    
-    let iconContainer = UIView()
-    let messageContainer = UIView()
-    let iconImage = UIImageView()
+    let symbolImageView = UIImageView()
+    let titleLabel = QFTitleLabel(textAlignment: .left, fontSize: 27)
+    let bodyLabel = QFSecondaryTitleLabel(fontSize: 18)
     
     override init(frame: CGRect) {
-        super.init(frame: frame)
+        super.init(frame: .zero)
         configure()
     }
     
@@ -22,27 +25,56 @@ class QFItemInfoView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func configure() {
-        addSubview(iconContainer)
-        addSubview(messageContainer)
+    private func configure() {
+        addSubview(symbolImageView)
+        addSubview(titleLabel)
+        addSubview(bodyLabel)
         
-        iconContainer.backgroundColor = .systemGreen
-        messageContainer.backgroundColor = .systemBlue
+        symbolImageView.translatesAutoresizingMaskIntoConstraints = false
+        symbolImageView.contentMode = .scaleAspectFill
+        symbolImageView.tintColor = .black
         
-        iconContainer.translatesAutoresizingMaskIntoConstraints = false
-        messageContainer.translatesAutoresizingMaskIntoConstraints = false
+        titleLabel.textColor = .white
+        bodyLabel.textColor = .white
+        bodyLabel.numberOfLines = 3
         
         NSLayoutConstraint.activate([
-            iconContainer.topAnchor.constraint(equalTo: self.topAnchor),
-            iconContainer.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            iconContainer.heightAnchor.constraint(equalToConstant: 90),
-            iconContainer.widthAnchor.constraint(equalToConstant: 90),
+            symbolImageView.topAnchor.constraint(equalTo: self.topAnchor),
+            symbolImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            symbolImageView.widthAnchor.constraint(equalToConstant: 70),
+            symbolImageView.heightAnchor.constraint(equalToConstant: 70),
             
-            messageContainer.centerYAnchor.constraint(equalTo: iconContainer.centerYAnchor),
-            messageContainer.leadingAnchor.constraint(equalTo: iconContainer.trailingAnchor),
-            messageContainer.heightAnchor.constraint(equalToConstant: 90),
-            messageContainer.widthAnchor.constraint(equalToConstant: 180),
+            titleLabel.topAnchor.constraint(equalTo: symbolImageView.topAnchor),
+            titleLabel.leadingAnchor.constraint(equalTo: symbolImageView.trailingAnchor, constant: 12),
+            titleLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            titleLabel.heightAnchor.constraint(equalToConstant: 20),
+            
+            bodyLabel.bottomAnchor.constraint(equalTo: symbolImageView.bottomAnchor),
+            bodyLabel.leadingAnchor.constraint(equalTo: symbolImageView.trailingAnchor, constant: 12),
+            bodyLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            bodyLabel.heightAnchor.constraint(equalToConstant: 40),
+            
         ])
-        
+    }
+    
+    func set(type: ItemInfoType) {
+        switch type {
+        case .alphabets:
+            symbolImageView.image = UIImage(systemName: SFSymbols.alphabet)
+            titleLabel.text = "Alphabet"
+            bodyLabel.text = "Start learning the basics"
+        case .phrases:
+            symbolImageView.image = UIImage(systemName: SFSymbols.phrases)
+            titleLabel.text = "Phrases"
+            bodyLabel.text = "Practice essential phrases"
+        case .words:
+            symbolImageView.image = UIImage(systemName: SFSymbols.words)
+            titleLabel.text = "Words"
+            bodyLabel.text = "Expand your vocabulary"
+        case .tips:
+            symbolImageView.image = UIImage(systemName: SFSymbols.tips)
+            titleLabel.text = "Tips"
+            bodyLabel.text = "Quick tips to boost you."
+        }
     }
 }
