@@ -28,10 +28,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         return UINavigationController(rootViewController: homeVC)
     }
     
+    func createFavoritesNC() -> UINavigationController {
+        let favoritesVC = QFFavoritesVC()
+        favoritesVC.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
+        
+        return UINavigationController(rootViewController: favoritesVC)
+    }
+    
+    
     func createTabBar() -> UITabBarController {
         let tabBar = UITabBarController()
-        tabBar.viewControllers = [createHomeNC()]
-        UITabBar.appearance().tintColor = .systemRed
+        tabBar.viewControllers = [createHomeNC(), createFavoritesNC()]
+        
+        UITabBar.appearance().backgroundColor = .systemGray5
         
         return tabBar
     }

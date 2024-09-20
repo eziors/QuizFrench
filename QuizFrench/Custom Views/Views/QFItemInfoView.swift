@@ -47,7 +47,7 @@ class QFItemInfoView: UIView {
             titleLabel.topAnchor.constraint(equalTo: symbolImageView.topAnchor),
             titleLabel.leadingAnchor.constraint(equalTo: symbolImageView.trailingAnchor, constant: 12),
             titleLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-            titleLabel.heightAnchor.constraint(equalToConstant: 20),
+            titleLabel.heightAnchor.constraint(equalToConstant: 25),
             
             bodyLabel.bottomAnchor.constraint(equalTo: symbolImageView.bottomAnchor),
             bodyLabel.leadingAnchor.constraint(equalTo: symbolImageView.trailingAnchor, constant: 12),

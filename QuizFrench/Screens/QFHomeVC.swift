@@ -79,22 +79,22 @@ class HomeVC: UIViewController {
             itemInfoViewOne.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: padding),
             itemInfoViewOne.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
             itemInfoViewOne.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
-            itemInfoViewOne.heightAnchor.constraint(equalToConstant: 100),
+            itemInfoViewOne.heightAnchor.constraint(equalToConstant: 95),
             
             itemInfoViewTwo.topAnchor.constraint(equalTo: itemInfoViewOne.bottomAnchor, constant: padding),
             itemInfoViewTwo.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
             itemInfoViewTwo.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
-            itemInfoViewTwo.heightAnchor.constraint(equalToConstant: 100),
+            itemInfoViewTwo.heightAnchor.constraint(equalToConstant: 95),
             
             itemInfoViewThree.topAnchor.constraint(equalTo: itemInfoViewTwo.bottomAnchor, constant: padding),
             itemInfoViewThree.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
             itemInfoViewThree.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
-            itemInfoViewThree.heightAnchor.constraint(equalToConstant: 100),
+            itemInfoViewThree.heightAnchor.constraint(equalToConstant: 95),
             
             itemInfoViewFour.topAnchor.constraint(equalTo: itemInfoViewThree.bottomAnchor, constant: padding),
             itemInfoViewFour.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
             itemInfoViewFour.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
-            itemInfoViewFour.heightAnchor.constraint(equalToConstant: 100),
+            itemInfoViewFour.heightAnchor.constraint(equalToConstant: 95),
         ])
     }
     
