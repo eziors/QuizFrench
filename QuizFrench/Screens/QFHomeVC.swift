@@ -29,9 +29,14 @@ class HomeVC: UIViewController {
         print("Working ")
     }
     
+    @objc func pushAlphabetVC() {
+        let alphabetVC = AlphabetListVC()
+        navigationController?.pushViewController(alphabetVC, animated: true)
+    }
+    
     
     func configureNavItem() {
-        let configButton = UIBarButtonItem(image: UIImage(systemName: "gearshape"), style: .plain, target: self, action: #selector(workingButton))
+        let configButton = UIBarButtonItem(image: UIImage(systemName: "gearshape"), style: .plain, target: self, action: #selector(pushAlphabetVC))
         let languageButton = UIBarButtonItem(image: UIImage(systemName: "globe"), style: .plain, target: self, action: #selector(workingButton))
         let flagItem = UIBarButtonItem(customView: QFFrenchFlagView())
         
