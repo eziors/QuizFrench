@@ -21,8 +21,9 @@ class AlphabetCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         configureMainContainerView()
-        configureButtons()
         configureFooterContainerView()
+        configureButtons()
+        configureStackView()
         configure()
     }
     
@@ -35,7 +36,7 @@ class AlphabetCell: UICollectionViewCell {
     }
     
     func configureMainContainerView() {
-        mainContainerView.backgroundColor = .systemRed
+        mainContainerView.backgroundColor = .systemBackground
         mainContainerView.translatesAutoresizingMaskIntoConstraints = false
         mainContainerView.layer.cornerRadius = 12
         mainContainerView.layer.borderWidth = 3
@@ -44,29 +45,30 @@ class AlphabetCell: UICollectionViewCell {
     }
     
     func configureFooterContainerView() {
-        footerContainerView.backgroundColor = .systemBlue
+        footerContainerView.backgroundColor = .systemGray5
         footerContainerView.translatesAutoresizingMaskIntoConstraints = false
     }
     
     private func configureButtons() {
         
-        playButton.setImage(UIImage(systemName: "play.circle"), for: .normal)
+        let buttonSizeConfig = UIImage.SymbolConfiguration(pointSize: 25, weight: .light, scale: .default)
+        let playButtonIcon = UIImage(systemName: "play.circle", withConfiguration: buttonSizeConfig)
+        let copyButtonIcon = UIImage(systemName: "square.on.square", withConfiguration: buttonSizeConfig)
+        
         playButton.contentMode = .scaleToFill
-        playButton.translatesAutoresizingMaskIntoConstraints = false
-        playButton.tintColor = .white
-        
-        
-        copyButton.setImage(UIImage(systemName: "doc.on.doc"), for: .normal)
-        copyButton.translatesAutoresizingMaskIntoConstraints = false
+        playButton.setImage(playButtonIcon, for: .normal)
+    
         copyButton.contentMode = .scaleToFill
-        copyButton.tintColor = .white
+        copyButton.setImage(copyButtonIcon, for: .normal)
         
+    }
+    
+    func configureStackView() {
         stackView.axis = .horizontal
         stackView.distribution = .equalSpacing
         
         stackView.addArrangedSubview(playButton)
         stackView.addArrangedSubview(copyButton)
-        
     }
     
     private func configure() {
@@ -78,7 +80,6 @@ class AlphabetCell: UICollectionViewCell {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         
         let padding: CGFloat = 8
-        let buttonSize: CGFloat = 60
         
         NSLayoutConstraint.activate([
             mainContainerView.topAnchor.constraint(equalTo: topAnchor, constant: padding),
@@ -95,18 +96,10 @@ class AlphabetCell: UICollectionViewCell {
             alphabetLabel.centerXAnchor.constraint(equalTo: mainContainerView.centerXAnchor),
             alphabetLabel.centerYAnchor.constraint(equalTo: mainContainerView.centerYAnchor, constant: -20),
             
-            stackView.topAnchor.constraint(equalTo: footerContainerView.topAnchor, constant: 5),
-            stackView.leadingAnchor.constraint(equalTo: footerContainerView.leadingAnchor, constant: 10),
-            stackView.trailingAnchor.constraint(equalTo: footerContainerView.trailingAnchor, constant: -10),
-            stackView.bottomAnchor.constraint(equalTo: footerContainerView.bottomAnchor, constant: -5),
-            
-            
-            playButton.widthAnchor.constraint(equalToConstant: buttonSize),
-            playButton.heightAnchor.constraint(equalToConstant: buttonSize),
-                    
-            copyButton.widthAnchor.constraint(equalToConstant: buttonSize),
-            copyButton.heightAnchor.constraint(equalToConstant: buttonSize),
-            
+            stackView.topAnchor.constraint(equalTo: footerContainerView.topAnchor, constant: 8),
+            stackView.leadingAnchor.constraint(equalTo: footerContainerView.leadingAnchor, constant: 15),
+            stackView.trailingAnchor.constraint(equalTo: footerContainerView.trailingAnchor, constant: -15),
+            stackView.bottomAnchor.constraint(equalTo: footerContainerView.bottomAnchor, constant: -8),
         ])
     }
 }

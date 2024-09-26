@@ -31,6 +31,8 @@ class HomeVC: UIViewController {
     
     @objc func pushAlphabetVC() {
         let alphabetVC = AlphabetListVC()
+        alphabetVC.title = "Alphabet"
+        
         navigationController?.pushViewController(alphabetVC, animated: true)
     }
     

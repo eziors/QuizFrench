@@ -30,7 +30,7 @@ class AlphabetListVC: UIViewController {
         updateData()
         print(alphabets)
         
-        navigationItem.hidesSearchBarWhenScrolling = false
+        
     }
     
     private func configureAlphabet() {
@@ -43,7 +43,7 @@ class AlphabetListVC: UIViewController {
     func configureCollectionView() {
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createTwoColumnFlowLayout())
         view.addSubview(collectionView)
-        collectionView.backgroundColor = .green
+        collectionView.backgroundColor = .systemBackground
         collectionView.register(AlphabetCell.self, forCellWithReuseIdentifier: AlphabetCell.reuseID)
     }
     
