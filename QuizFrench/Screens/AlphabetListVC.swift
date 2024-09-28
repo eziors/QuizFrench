@@ -35,7 +35,7 @@ class AlphabetListVC: UIViewController {
     
     private func configureAlphabet() {
         for letter in frenchAlphabet {
-            let alphabet = Alphabet(letter: letter, audio: "alphabet_\(letter).mp3")
+            let alphabet = Alphabet(letter: letter, audio: "alphabet_\(letter)_male.mp3") // alphabet_Aa.mp3, alphabet_Bb.mp3
             alphabets.append(alphabet)
         }
     }
@@ -56,7 +56,7 @@ class AlphabetListVC: UIViewController {
         
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.sectionInset = UIEdgeInsets(top: padding, left: padding, bottom: padding, right: padding)
-        flowLayout.itemSize = CGSize(width: itemWidth, height: itemWidth + 40)
+        flowLayout.itemSize = CGSize(width: itemWidth, height: itemWidth + 20)
         
         return flowLayout
     }

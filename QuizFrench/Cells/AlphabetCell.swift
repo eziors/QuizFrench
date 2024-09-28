@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class AlphabetCell: UICollectionViewCell {
     
@@ -17,6 +18,11 @@ class AlphabetCell: UICollectionViewCell {
     let stackView = UIStackView()
     let playButton = UIButton()
     let copyButton = UIButton()
+    
+    
+    var player = AVAudioPlayer()
+    
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -55,12 +61,27 @@ class AlphabetCell: UICollectionViewCell {
         let playButtonIcon = UIImage(systemName: "play.circle", withConfiguration: buttonSizeConfig)
         let copyButtonIcon = UIImage(systemName: "square.on.square", withConfiguration: buttonSizeConfig)
         
+        
+        
         playButton.contentMode = .scaleToFill
         playButton.setImage(playButtonIcon, for: .normal)
+        playButton.addTarget(self, action: #selector(playButtonAction), for: .touchUpInside)
     
         copyButton.contentMode = .scaleToFill
         copyButton.setImage(copyButtonIcon, for: .normal)
         
+    }
+    
+    @objc func playButtonAction() {
+        print("From here is working")
+        
+        guard let audioTrack = alphabetLabel.text else { return }
+        guard let url = Bundle.main.url(forResource: "alphabet_\(audioTrack)_male", withExtension: "mp3") else { return }
+        
+        player = try! AVAudioPlayer(contentsOf: url)
+        player.play()
+        
+        print("Button working")
     }
     
     func configureStackView() {
