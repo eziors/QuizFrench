@@ -22,6 +22,7 @@ class AlphabetCell: UICollectionViewCell {
     
     var player = AVAudioPlayer()
     var playedAudio: Bool = false
+    var alphabetTrack: String?
     
     
     
@@ -38,8 +39,10 @@ class AlphabetCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func set(alphabetLetter: String) {
-        alphabetLabel.text = alphabetLetter
+    func set(alphabet: Alphabet) {
+        alphabetLabel.text = alphabet.letter
+        alphabetTrack = alphabet.audio
+        
         
     }
     
@@ -77,8 +80,8 @@ class AlphabetCell: UICollectionViewCell {
     
     @objc func playButtonAction() {
         
-        guard let audioTrack = alphabetLabel.text else { return }
-        guard let url = Bundle.main.url(forResource: "alphabet_\(audioTrack)_male", withExtension: "mp3") else { return }
+        guard let audioTrack = alphabetTrack else { return }
+        guard let url = Bundle.main.url(forResource: audioTrack, withExtension: "mp3") else { return }
         
         do {
             player = try AVAudioPlayer(contentsOf: url)

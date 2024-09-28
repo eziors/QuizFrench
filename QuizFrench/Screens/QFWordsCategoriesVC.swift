@@ -1,25 +1,21 @@
 //
-//  AlphabetListVC.swift
+//  QFWordsCategoryVC.swift
 //  QuizFrench
 //
-//  Created by Marcos Barbosa on 20/09/24.
+//  Created by Marcos Barbosa on 28/09/24.
 //
 
 import UIKit
 
-enum Section {
-    case main
-}
-
-class AlphabetListVC: UIViewController {
+class QFWordsCategoriesVC: UIViewController {
     
     enum Section { case main }
     
-    let frenchAlphabet = ["Aa", "Bb", "Cc", "Dd", "Ee", "Ff", "Gg", "Hh", "Ii", "Jj", "Kk", "Ll", "Mm", "Nn", "Oo", "Pp", "Qq", "Rr", "Ss", "Tt", "Uu", "Vv", "Ww", "Xx", "Yy", "Zz"]
-    var alphabets = [Alphabet]()
+    let categoriesNames = ["Numbers", "Weekends", "Pronouns", "Family", "Food", "Clothing", "Verbs", "Body Parts"]
+    var categories = [Category]()
 
     var collectionView: UICollectionView!
-    var dataSource: UICollectionViewDiffableDataSource<Section, Alphabet>!
+    var dataSource: UICollectionViewDiffableDataSource<Section, Category>!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,15 +24,15 @@ class AlphabetListVC: UIViewController {
         configureCollectionView()
         configureDataSource()
         updateData()
-        print(alphabets)
+        print(categories)
         
         
     }
     
     private func configureAlphabet() {
-        for letter in frenchAlphabet {
-            let alphabet = Alphabet(letter: letter, audio: "alphabet_\(letter)_male") // alphabet_Aa.mp3, alphabet_Bb.mp3
-            alphabets.append(alphabet)
+        for name in categoriesNames {
+            let category = Category(name: name, image: "\(name) Testing") // alphabet_Aa.mp3, alphabet_Bb.mp3
+            categories.append(category)
         }
     }
 
@@ -44,7 +40,7 @@ class AlphabetListVC: UIViewController {
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createTwoColumnFlowLayout())
         view.addSubview(collectionView)
         collectionView.backgroundColor = .systemBackground
-        collectionView.register(AlphabetCell.self, forCellWithReuseIdentifier: AlphabetCell.reuseID)
+        collectionView.register(WordCategoryCell.self, forCellWithReuseIdentifier: WordCategoryCell.reuseID)
     }
     
     func createTwoColumnFlowLayout() -> UICollectionViewFlowLayout {
@@ -62,21 +58,22 @@ class AlphabetListVC: UIViewController {
     }
     
     func configureDataSource() {
-        dataSource = UICollectionViewDiffableDataSource(collectionView: collectionView, cellProvider: { collectionView, indexPath, alphabet in
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AlphabetCell.reuseID, for: indexPath) as! AlphabetCell
-            cell.set(alphabet: alphabet)
+        dataSource = UICollectionViewDiffableDataSource(collectionView: collectionView, cellProvider: { collectionView, indexPath, category in
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: WordCategoryCell.reuseID, for: indexPath) as! WordCategoryCell
+            cell.set(category: category)
             
             return cell
         })
     }
     
     func updateData() {
-        var snapshot = NSDiffableDataSourceSnapshot<Section, Alphabet>()
+        var snapshot = NSDiffableDataSourceSnapshot<Section, Category>()
         snapshot.appendSections([.main])
-        snapshot.appendItems(alphabets)
+        snapshot.appendItems(categories)
         
         DispatchQueue.main.async {
             self.dataSource.apply(snapshot, animatingDifferences: false)
         }
     }
+    
 }

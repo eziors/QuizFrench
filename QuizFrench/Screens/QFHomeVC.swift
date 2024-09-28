@@ -62,16 +62,16 @@ class HomeVC: UIViewController {
         }.resume()
     }
     
-    @objc func pushAlphabetVC() {
-        let alphabetVC = AlphabetListVC()
-        alphabetVC.title = "Alphabet"
+    @objc func pushWordCategoryVC() {
+        let wordCategoryVC = QFWordsCategoriesVC()
+        wordCategoryVC.title = "Categories"
         
-        navigationController?.pushViewController(alphabetVC, animated: true)
+        navigationController?.pushViewController(wordCategoryVC, animated: true)
     }
     
     
     func configureNavItem() {
-        let configButton = UIBarButtonItem(image: UIImage(systemName: "gearshape"), style: .plain, target: self, action: #selector(pushAlphabetVC))
+        let configButton = UIBarButtonItem(image: UIImage(systemName: "gearshape"), style: .plain, target: self, action: #selector(pushWordCategoryVC))
         let languageButton = UIBarButtonItem(image: UIImage(systemName: "globe"), style: .plain, target: self, action: #selector(playRemoteAudio))
         let flagItem = UIBarButtonItem(customView: QFFrenchFlagView())
         
