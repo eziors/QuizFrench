@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     func createHomeNC() -> UINavigationController {
-        let homeVC = HomeVC()
+        let homeVC = QFHomeVC()
         homeVC.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 0)
         
         return UINavigationController(rootViewController: homeVC)

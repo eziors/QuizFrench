@@ -8,7 +8,14 @@
 import UIKit
 import AVFoundation
 
-class HomeVC: UIViewController {
+protocol QFHomeVCDelegate: class {
+    func didTapAlphabet()
+    func didTapWords()
+    func didTapPhrases()
+    func didTapTips()
+}
+
+class QFHomeVC: UIViewController {
 
     let headerView = UIView()
     let anotherLabel = QFTitleLabel(textAlignment: .center, fontSize: 15)
@@ -86,9 +93,16 @@ class HomeVC: UIViewController {
     
     func configureUIElements() {
         let alphabetItemVC = QFAlphabetItemVC()
+        alphabetItemVC.delegate = self
+        
         let wordItemVC = QFWordsItemVC()
+        wordItemVC.delegate = self
+        
         let phrasesItemVC = QFPhrasesItemVC()
+        phrasesItemVC.delegate = self
+        
         let tipsItemVC = QFTipsItemVC()
+        tipsItemVC.delegate = self
         
         self.addChildVC(childVC: QFHomeHeaderVC(), in: headerView)
         self.addChildVC(childVC: alphabetItemVC, in: itemInfoViewOne)
@@ -142,4 +156,28 @@ class HomeVC: UIViewController {
         childVC.view.frame = containerView.bounds
         childVC.didMove(toParent: self)
     }
+}
+
+extension QFHomeVC: QFHomeVCDelegate {
+    func didTapAlphabet() {
+        let alphabetVC = AlphabetListVC()
+        alphabetVC.title = "Alphabet"
+        navigationController?.pushViewController(alphabetVC, animated: true)
+    }
+    
+    func didTapWords() {
+        let wordsCategoryVC = QFWordsCategoriesVC()
+        wordsCategoryVC.title = "Words"
+        navigationController?.pushViewController(wordsCategoryVC, animated: true)
+    }
+    
+    func didTapPhrases() {
+        print("Phrases working !")
+    }
+    
+    func didTapTips() {
+        print("Tips working !")
+    }
+    
+    
 }

@@ -20,4 +20,7 @@ class QFAlphabetItemVC: QFItemInfoVC {
         self.set(backgroundColor: UIColor(red: 0.27, green: 0.75, blue: 0.43, alpha: 1.00))
     }
     
+    override func actionButtonTapped() {
+        delegate.didTapAlphabet()
+    }
 }

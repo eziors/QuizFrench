@@ -14,6 +14,7 @@ class QFItemInfoVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         layoutUI()
+        createPushVCTapGesture()
     }
         
     
@@ -21,6 +22,15 @@ class QFItemInfoVC: UIViewController {
         view.layer.cornerRadius = 18
         view.backgroundColor = backgroundColor
     }
+    
+    weak var delegate: QFHomeVCDelegate!
+    
+    func createPushVCTapGesture() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(actionButtonTapped))
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func actionButtonTapped() { }
     
     
     private func layoutUI() {
