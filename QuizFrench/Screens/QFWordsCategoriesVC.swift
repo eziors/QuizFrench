@@ -11,7 +11,7 @@ class QFWordsCategoriesVC: UIViewController {
     
     enum Section { case main }
     
-    let categoriesNames = ["Numbers", "Weekends", "Pronouns", "Family", "Food", "Clothing", "Verbs", "Body Parts"]
+    let categoriesNames = ["Numbers", "Weekends", "Pronouns", "Family", "Food", "Clothing", "Verbs", "Body"]
     var categories = [Category]()
 
     var collectionView: UICollectionView!
@@ -24,38 +24,22 @@ class QFWordsCategoriesVC: UIViewController {
         configureCollectionView()
         configureDataSource()
         updateData()
-        print(categories)
-        
-        
     }
     
     private func configureAlphabet() {
         for name in categoriesNames {
-            let category = Category(name: name, image: "\(name) Testing") // alphabet_Aa.mp3, alphabet_Bb.mp3
+            let category = Category(name: name, image: "category_\(name.lowercased())") // testing
             categories.append(category)
         }
     }
 
     func configureCollectionView() {
-        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createTwoColumnFlowLayout())
+        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UIHelper.createTwoColumnFlowLayout(in: view))
         view.addSubview(collectionView)
         collectionView.backgroundColor = .systemBackground
         collectionView.register(WordCategoryCell.self, forCellWithReuseIdentifier: WordCategoryCell.reuseID)
     }
     
-    func createTwoColumnFlowLayout() -> UICollectionViewFlowLayout {
-        let width = view.bounds.width
-        let padding: CGFloat = 12
-        let itemSpacing: CGFloat = 10
-        let availableWidth = width - (padding * 2) - (itemSpacing * 2)
-        let itemWidth = availableWidth / 2
-        
-        let flowLayout = UICollectionViewFlowLayout()
-        flowLayout.sectionInset = UIEdgeInsets(top: padding, left: padding, bottom: padding, right: padding)
-        flowLayout.itemSize = CGSize(width: itemWidth, height: itemWidth + 20)
-        
-        return flowLayout
-    }
     
     func configureDataSource() {
         dataSource = UICollectionViewDiffableDataSource(collectionView: collectionView, cellProvider: { collectionView, indexPath, category in
@@ -75,5 +59,4 @@ class QFWordsCategoriesVC: UIViewController {
             self.dataSource.apply(snapshot, animatingDifferences: false)
         }
     }
-    
 }

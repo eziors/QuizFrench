@@ -13,6 +13,8 @@ class WordCategoryCell: UICollectionViewCell {
     static let reuseID = "WordCategoryCell"
     let mainContainerView = UIView()
     let footerContainerView = UIView()
+    
+    let categoryImage = QFCategoryImageView(frame: .zero)
     let categoryLabel = QFTitleLabel(textAlignment: .center, fontSize: 20)
     
     
@@ -30,6 +32,7 @@ class WordCategoryCell: UICollectionViewCell {
     
     func set(category: Category) {
         categoryLabel.text = category.name
+        categoryImage.setImage(imageURL: category.image)
         
     }
     
@@ -52,6 +55,7 @@ class WordCategoryCell: UICollectionViewCell {
         addSubview(mainContainerView)
         footerContainerView.addSubview(categoryLabel)
         mainContainerView.addSubview(footerContainerView)
+        mainContainerView.addSubview(categoryImage)
         
         
         
@@ -68,6 +72,12 @@ class WordCategoryCell: UICollectionViewCell {
             footerContainerView.leadingAnchor.constraint(equalTo: mainContainerView.leadingAnchor),
             footerContainerView.trailingAnchor.constraint(equalTo: mainContainerView.trailingAnchor),
             footerContainerView.heightAnchor.constraint(equalToConstant: 60),
+            
+            categoryImage.centerYAnchor.constraint(equalTo: mainContainerView.centerYAnchor, constant: -20),
+            categoryImage.leadingAnchor.constraint(equalTo: mainContainerView.leadingAnchor, constant: padding),
+            categoryImage.trailingAnchor.constraint(equalTo: mainContainerView.trailingAnchor, constant: -padding),
+            categoryImage.heightAnchor.constraint(equalToConstant: 70),
+            categoryImage.widthAnchor.constraint(equalToConstant: 70),
             
             categoryLabel.topAnchor.constraint(equalTo: footerContainerView.topAnchor, constant: padding),
             categoryLabel.leadingAnchor.constraint(equalTo: footerContainerView.leadingAnchor, constant: padding),

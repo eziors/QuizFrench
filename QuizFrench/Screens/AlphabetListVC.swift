@@ -28,9 +28,6 @@ class AlphabetListVC: UIViewController {
         configureCollectionView()
         configureDataSource()
         updateData()
-        print(alphabets)
-        
-        
     }
     
     private func configureAlphabet() {
@@ -41,25 +38,12 @@ class AlphabetListVC: UIViewController {
     }
 
     func configureCollectionView() {
-        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createTwoColumnFlowLayout())
+        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UIHelper.createTwoColumnFlowLayout(in: view))
         view.addSubview(collectionView)
         collectionView.backgroundColor = .systemBackground
         collectionView.register(AlphabetCell.self, forCellWithReuseIdentifier: AlphabetCell.reuseID)
     }
     
-    func createTwoColumnFlowLayout() -> UICollectionViewFlowLayout {
-        let width = view.bounds.width
-        let padding: CGFloat = 12
-        let itemSpacing: CGFloat = 10
-        let availableWidth = width - (padding * 2) - (itemSpacing * 2)
-        let itemWidth = availableWidth / 2
-        
-        let flowLayout = UICollectionViewFlowLayout()
-        flowLayout.sectionInset = UIEdgeInsets(top: padding, left: padding, bottom: padding, right: padding)
-        flowLayout.itemSize = CGSize(width: itemWidth, height: itemWidth + 20)
-        
-        return flowLayout
-    }
     
     func configureDataSource() {
         dataSource = UICollectionViewDiffableDataSource(collectionView: collectionView, cellProvider: { collectionView, indexPath, alphabet in

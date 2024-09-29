@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D745B7C2CA8E6AC00225FF1 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D745B7B2CA8E6AC00225FF1 /* UIHelper.swift */; };
 		8D7D56442CA879E90096DEFC /* QFWordsCategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D56432CA879E90096DEFC /* QFWordsCategoriesVC.swift */; };
 		8D7D56472CA87D560096DEFC /* AlphabetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D56462CA87D560096DEFC /* AlphabetCell.swift */; };
 		8D7D56492CA87EF20096DEFC /* WordCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D56482CA87EF20096DEFC /* WordCategoryCell.swift */; };
@@ -64,6 +65,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D745B7B2CA8E6AC00225FF1 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		8D7D56432CA879E90096DEFC /* QFWordsCategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFWordsCategoriesVC.swift; sourceTree = "<group>"; };
 		8D7D56462CA87D560096DEFC /* AlphabetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphabetCell.swift; sourceTree = "<group>"; };
 		8D7D56482CA87EF20096DEFC /* WordCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCategoryCell.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				8D818E2D2CA7C5EB002BD77F /* UIView+Ext.swift */,
+				8D745B7B2CA8E6AC00225FF1 /* UIHelper.swift */,
 			);
 			name = Utilities;
 			path = ../Utilities;
@@ -417,6 +420,7 @@
 				8D848BF82C924DB2001C1910 /* QFFrenchFlagView.swift in Sources */,
 				8D848C002C926D0D001C1910 /* QFStreakProgressVC.swift in Sources */,
 				8D806F262C941BCF004D698A /* QFWordsItemVC.swift in Sources */,
+				8D745B7C2CA8E6AC00225FF1 /* UIHelper.swift in Sources */,
 				8D848BDD2C923303001C1910 /* AppDelegate.swift in Sources */,
 				8D806F282C941BDD004D698A /* QFPhrasesItemVC.swift in Sources */,
 				8D848BF12C9233FB001C1910 /* QFTitleLabel.swift in Sources */,

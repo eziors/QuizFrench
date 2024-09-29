@@ -13,6 +13,7 @@ class QFCategoryImageView: UIImageView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        configure()
     }
     
     required init?(coder: NSCoder) {
@@ -21,10 +22,13 @@ class QFCategoryImageView: UIImageView {
     
     private func configure() {
         translatesAutoresizingMaskIntoConstraints = false
+        contentMode = .scaleAspectFit
         image = placeholderImage
+        
+        print("Image is working ! ")
     }
     
-    func setImage(imageCategory: String) {
-        
+    func setImage(imageURL: String) {
+        image = UIImage(named: imageURL)
     }
 }
