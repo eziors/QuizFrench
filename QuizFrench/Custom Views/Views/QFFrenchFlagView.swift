@@ -25,7 +25,7 @@ class QFFrenchFlagView: UIView {
         addSubview(flagImageView)
         addSubview(flagImageLabel)
         
-        flagImageView.image = UIImage(named: "france-flag")
+        flagImageView.image = UIImage(named: "france_flag")
         flagImageView.contentMode = .scaleAspectFit
         flagImageView.translatesAutoresizingMaskIntoConstraints = false
         

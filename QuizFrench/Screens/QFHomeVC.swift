@@ -7,6 +7,7 @@
 
 import UIKit
 import AVFoundation
+import Firebase
 
 protocol QFHomeVCDelegate: class {
     func didTapAlphabet()
@@ -35,6 +36,8 @@ class QFHomeVC: UIViewController {
         configureNavItem()
         configureUIElements()
         layoutUI()
+        
+        NetworkManager.shared.getData()
     }
 
     

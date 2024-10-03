@@ -6,10 +6,12 @@
       "scale" : "1x"
     },
     {
+      "filename" : "category_verbs@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "category_verbs@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
