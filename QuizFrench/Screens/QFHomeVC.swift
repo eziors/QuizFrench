@@ -37,7 +37,10 @@ class QFHomeVC: UIViewController {
         configureUIElements()
         layoutUI()
         
-        NetworkManager.shared.fetchAllItems()
+        NetworkManager.shared.fetchAllItems { items in
+            print("\(items)\n")
+            
+        }
     }
 
     

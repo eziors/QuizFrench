@@ -15,22 +15,27 @@ class NetworkManager {
     private init() { }
     
     
-    
-        func fetchAllItems() {
-            DB_REF.child("words").observe(.childAdded) { snapshot in
-                self.fetchSingleItem(id: snapshot.key)
-                
-            }
-        }
+    func fetchAllItems(completion: @escaping([Word]) -> Void) {
         
-        func fetchSingleItem(id: String) {
-            DB_REF.child("words").child(id).observeSingleEvent(of: .value) { snapshot in
-                guard let dictionary = snapshot.value as? [String: Any] else { return }
+        var allItems = [Word]()
+        
+        DB_REF.child("words").observe(.childAdded) { snapshot in
+            self.fetchSingleItem(id: snapshot.key) { item in
+                allItems.append(item)
+                completion(allItems)
                 
-                let wordCategory = WordCategory(keyID: id, dictionary: dictionary)
                 
-                print(wordCategory)
             }
+            
         }
+    }
+        
+    func fetchSingleItem(id: String, completion: @escaping(Word) -> Void ) {
+        DB_REF.child("words").child(id).observeSingleEvent(of: .value) { snapshot in
+            guard let dictionary = snapshot.value as? [String: Any] else { return }
+            let wordCategory = Word(keyID: id, dictionary: dictionary)
+            completion(wordCategory)
+        }
+    }
     
 }
