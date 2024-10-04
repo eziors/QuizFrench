@@ -14,9 +14,21 @@ class NetworkManager {
     
     private init() { }
     
-    func getData() {
-        DB_REF.child("words").observe(.childAdded) { data in
-            print(data)
+    func fetchAllItems() {
+        DB_REF.child("words").observe(.childAdded) { snapshot in
+            self.fetchSingleItem(id: snapshot.key)
         }
     }
+    
+    func fetchSingleItem(id: String) {
+        DB_REF.child("words").child(id).observeSingleEvent(of: .value) { snapshot in
+            guard let dictionary = snapshot.value as? [String: Any] else { return }
+            
+            let wordItem = WordItem(keyID: id, dictionary: dictionary)
+            
+            print(wordItem.questions.count)
+        }
+    }
+    
+    
 }

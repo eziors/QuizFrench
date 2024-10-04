@@ -7,7 +7,7 @@
 
 import UIKit
 
-enum Section {
+enum AlphabetSection {
     case main
 }
 
