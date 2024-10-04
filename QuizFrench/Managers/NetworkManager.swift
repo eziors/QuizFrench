@@ -14,21 +14,23 @@ class NetworkManager {
     
     private init() { }
     
-    func fetchAllItems() {
-        DB_REF.child("words").observe(.childAdded) { snapshot in
-            self.fetchSingleItem(id: snapshot.key)
-        }
-    }
     
-    func fetchSingleItem(id: String) {
-        DB_REF.child("words").child(id).observeSingleEvent(of: .value) { snapshot in
-            guard let dictionary = snapshot.value as? [String: Any] else { return }
-            
-            let wordItem = WordItem(keyID: id, dictionary: dictionary)
-            
-            print(wordItem.questions.count)
-        }
-    }
     
+        func fetchAllItems() {
+            DB_REF.child("words").observe(.childAdded) { snapshot in
+                self.fetchSingleItem(id: snapshot.key)
+                
+            }
+        }
+        
+        func fetchSingleItem(id: String) {
+            DB_REF.child("words").child(id).observeSingleEvent(of: .value) { snapshot in
+                guard let dictionary = snapshot.value as? [String: Any] else { return }
+                
+                let wordCategory = WordCategory(keyID: id, dictionary: dictionary)
+                
+                print(wordCategory)
+            }
+        }
     
 }

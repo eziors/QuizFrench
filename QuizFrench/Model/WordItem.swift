@@ -6,57 +6,64 @@
 //
 
 import Foundation
+import Firebase
 
 struct Option {
-    let english: String
-    let portuguese: String
+    var optionA: String
+    var optionB: String
+    var optionC: String
+    var optionD: String
     
-    static let optionExample = Option(english: "English", portuguese: "Portuguese")
+    static let optionExample = Option(optionA: "A", optionB: "B", optionC: "C", optionD: "D")
+    
+}
+
+extension Option {
+    init(dictionary: [String: Any]) {
+            self.optionA = dictionary["a"] as? String ?? ""
+            self.optionB = dictionary["b"] as? String ?? ""
+            self.optionC = dictionary["c"] as? String ?? ""
+            self.optionD = dictionary["d"] as? String ?? ""
+        }
 }
 
 
 struct Question {
-    let question: String
-    let options: [String: Option]
-    let correct: String
+    var questionText: String
+    var options: Option
+    var correctAnswer: String
     
-    static let example = Question(question: "Testing", options: ["Test": Option.optionExample], correct: "c")
-    
+    static let questionExample = Question(questionText: "How old are you ?", options: Option.optionExample, correctAnswer: "D")
     
 }
 
+extension Question {
+    init(dictionary: [String: Any]) {
+            self.questionText = dictionary["question"] as? String ?? ""
+            let optionsDict = dictionary["options"] as? [String: Any] ?? [:]
+            self.options = Option(dictionary: optionsDict)
+            self.correctAnswer = dictionary["correct"] as? String ?? ""
+        }
+}
 
-struct WordItem {
-    let categoryName: String
-    let questions: [Question]
+
+struct WordCategory {
+    var name: String
+    var questions: [Question]
     
+    // Inicializador para converter o dicionário para o struct WordCategory
     init(keyID: String, dictionary: [String: Any]) {
-        self.categoryName = dictionary["categoryName"] as? String ?? ""
+        self.name = dictionary["name"] as? String ?? ""
         
-        // Verificando se a chave "questions" é um array de dicionários
-        if let questionDicts = dictionary["questions"] as? [[String: Any]] {
-            // Convertendo os dicionários em instâncias de Question
-            self.questions = questionDicts.compactMap { dict in
-                if let questionText = dict["question"] as? String,
-                   let optionsDict = dict["options"] as? [String: [String: String]], // Modifique conforme a estrutura dos dados
-                   let correct = dict["correct"] as? String {
-                    
-                    let options = optionsDict.reduce(into: [String: Option]()) { result, pair in
-                        if let english = pair.value["english"],
-                           let portuguese = pair.value["portuguese"] {
-                            result[pair.key] = Option(english: english, portuguese: portuguese)
-                        }
-                    }
-                    
-                    return Question(question: questionText, options: options, correct: correct)
-                }
-                return nil
-            }
+        // Converter array de dicionários de perguntas para array de structs Question
+        if let questionsArray = dictionary["questions"] as? [[String: Any]] {
+            self.questions = questionsArray.map { Question(dictionary: $0) }
         } else {
-            // Caso não haja perguntas no dicionário, usa o valor padrão
-            self.questions = [Question.example]
+            self.questions = [Question.questionExample]
         }
     }
 }
+
+
 
 
