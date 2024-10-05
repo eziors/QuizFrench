@@ -11,19 +11,20 @@ import UIKit
 class WordListVC: UIViewController {
     
     let tableView = UITableView()
-    var words: [Word.Question] = Word.Question.questionsExamples // Getting example datas
+    var category: String!
+    var words: [Word.Question] = []
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViewController()
         configureTableView()
+        loadData()
     }
     
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
     }
     
     
@@ -42,6 +43,21 @@ class WordListVC: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .none
+    }
+    
+    func loadData() {
+        NetworkManager.shared.fetchAllItems() { items in
+            let targetCategory = self.category
+            
+            for item in items {
+                if item.category == targetCategory {    
+                    for question in item.questions {
+                        self.words.append(question)
+                        self.tableView.reloadData()
+                    }
+                }
+            }
+        }
     }
     
     

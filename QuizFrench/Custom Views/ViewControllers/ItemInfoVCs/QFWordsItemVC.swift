@@ -11,7 +11,6 @@ class QFWordsItemVC: QFItemInfoVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         configureItems()
     }
     

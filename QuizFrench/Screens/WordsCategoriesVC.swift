@@ -64,8 +64,14 @@ class WordsCategoriesVC: UIViewController {
 
 extension WordsCategoriesVC: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let itemSelected = categories[indexPath.item]
-    
-        print(itemSelected)
+        let selectedItem = categories[indexPath.item]
+        
+        let wordListVC = WordListVC()
+        wordListVC.title = selectedItem.name
+        wordListVC.category = selectedItem.name
+        
+        navigationController?.pushViewController(wordListVC, animated: true)
+        
+        print(selectedItem)
     }
 }

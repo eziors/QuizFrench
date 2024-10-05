@@ -15,6 +15,7 @@ class NetworkManager {
     private init() { }
     
     
+    
     func fetchAllItems(completion: @escaping([Word]) -> Void) {
         
         var allItems = [Word]()

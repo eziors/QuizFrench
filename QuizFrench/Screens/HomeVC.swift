@@ -36,11 +36,6 @@ class HomeVC: UIViewController {
         configureNavItem()
         configureUIElements()
         layoutUI()
-        
-        NetworkManager.shared.fetchAllItems { items in
-            print(items[0])
-            
-        }
     }
 
     
