@@ -23,10 +23,7 @@ class NetworkManager {
             self.fetchSingleItem(id: snapshot.key) { item in
                 allItems.append(item)
                 completion(allItems)
-                
-                
             }
-            
         }
     }
         
@@ -37,5 +34,4 @@ class NetworkManager {
             completion(wordCategory)
         }
     }
-    
 }

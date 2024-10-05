@@ -19,7 +19,7 @@ class QFHomeHeaderVC: UIViewController {
         configureQuoteLabel()
         configureUIElements()
         
-        view.backgroundColor = UIColor(red: 0.23, green: 0.23, blue: 0.24, alpha: 1.00)
+        view.backgroundColor = UIColor.customPrimary
     }
     
     
@@ -27,7 +27,7 @@ class QFHomeHeaderVC: UIViewController {
         view.addSubview(headerView)
         
         headerView.translatesAutoresizingMaskIntoConstraints = false
-        headerView.backgroundColor = UIColor(red: 0.23, green: 0.23, blue: 0.24, alpha: 1.00)
+        headerView.backgroundColor = UIColor.customPrimary
         
         let screenWidth = view.frame.width
         

@@ -1,5 +1,5 @@
 //
-//  QFHomeVC.swift
+//  HomeVC.swift
 //  QuizFrench
 //
 //  Created by Marcos Barbosa on 11/09/24.
@@ -16,7 +16,7 @@ protocol QFHomeVCDelegate: class {
     func didTapTips()
 }
 
-class QFHomeVC: UIViewController {
+class HomeVC: UIViewController {
 
     let headerView = UIView()
     let anotherLabel = QFTitleLabel(textAlignment: .center, fontSize: 15)
@@ -38,7 +38,7 @@ class QFHomeVC: UIViewController {
         layoutUI()
         
         NetworkManager.shared.fetchAllItems { items in
-            print("\(items)\n")
+            print(items[0])
             
         }
     }
@@ -75,16 +75,16 @@ class QFHomeVC: UIViewController {
         }.resume()
     }
     
-    @objc func pushWordCategoryVC() {
-        let wordCategoryVC = QFWordsCategoriesVC()
-        wordCategoryVC.title = "Categories"
+    @objc func pushWordListVC() {
+        let wordListVC = WordListVC()
+        wordListVC.title = "Numbers"
         
-        navigationController?.pushViewController(wordCategoryVC, animated: true)
+        navigationController?.pushViewController(wordListVC, animated: true)
     }
     
     
     func configureNavItem() {
-        let configButton = UIBarButtonItem(image: UIImage(systemName: "gearshape"), style: .plain, target: self, action: #selector(pushWordCategoryVC))
+        let configButton = UIBarButtonItem(image: UIImage(systemName: "gearshape"), style: .plain, target: self, action: #selector(pushWordListVC))
         let languageButton = UIBarButtonItem(image: UIImage(systemName: "globe"), style: .plain, target: self, action: #selector(playRemoteAudio))
         let flagItem = UIBarButtonItem(customView: QFFrenchFlagView())
         
@@ -164,7 +164,7 @@ class QFHomeVC: UIViewController {
     }
 }
 
-extension QFHomeVC: QFHomeVCDelegate {
+extension HomeVC: QFHomeVCDelegate {
     func didTapAlphabet() {
         let alphabetVC = AlphabetListVC()
         alphabetVC.title = "Alphabet"
@@ -172,7 +172,7 @@ extension QFHomeVC: QFHomeVCDelegate {
     }
     
     func didTapWords() {
-        let wordsCategoryVC = QFWordsCategoriesVC()
+        let wordsCategoryVC = WordsCategoriesVC()
         wordsCategoryVC.title = "Words"
         navigationController?.pushViewController(wordsCategoryVC, animated: true)
     }

@@ -7,14 +7,13 @@
 
 import UIKit
 
-import UIKit
 
-class FavoritesListVC: UIViewController {
+class WordListVC: UIViewController {
     
     let tableView = UITableView()
-    var favorites: [Word]   = []
-
+    var words: [Word.Question] = Word.Question.questionsExamples // Getting example datas
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViewController()
@@ -31,18 +30,38 @@ class FavoritesListVC: UIViewController {
     func configureViewController() {
         view.backgroundColor    = .systemBackground
         title                   = "Words"
-        navigationController?.navigationBar.prefersLargeTitles = true
     }
     
     
     func configureTableView() {
         view.addSubview(tableView)
         
-        tableView.frame         = view.bounds
-        tableView.rowHeight     = 80
+        tableView.frame = view.bounds
+        tableView.rowHeight = 80
         tableView.register(WordCell.self, forCellReuseIdentifier: WordCell.reuseID)
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.separatorStyle = .none
     }
     
     
 }
 
+extension WordListVC: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return words.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: WordCell.reuseID, for: indexPath) as! WordCell
+        let word = words[indexPath.row]
+        
+        cell.set(word: word)
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+}

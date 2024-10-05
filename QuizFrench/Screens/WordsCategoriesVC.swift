@@ -7,7 +7,7 @@
 
 import UIKit
 
-class QFWordsCategoriesVC: UIViewController {
+class WordsCategoriesVC: UIViewController {
     
     enum Section { case main }
     
@@ -37,6 +37,7 @@ class QFWordsCategoriesVC: UIViewController {
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UIHelper.createTwoColumnFlowLayout(in: view))
         view.addSubview(collectionView)
         collectionView.backgroundColor = .systemBackground
+        collectionView.delegate = self
         collectionView.register(WordCategoryCell.self, forCellWithReuseIdentifier: WordCategoryCell.reuseID)
     }
     
@@ -58,5 +59,13 @@ class QFWordsCategoriesVC: UIViewController {
         DispatchQueue.main.async {
             self.dataSource.apply(snapshot, animatingDifferences: false)
         }
+    }
+}
+
+extension WordsCategoriesVC: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let itemSelected = categories[indexPath.item]
+    
+        print(itemSelected)
     }
 }
