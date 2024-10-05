@@ -7,12 +7,18 @@ class WordCell: UITableViewCell {
     let wordLabel = QFTitleLabel(textAlignment: .left, fontSize: 22)
     let translatedWordLabel = QFSecondaryTitleLabel(fontSize: 18)
     
-    let iconsStackView = UIStackView()
+    let stackView = UIStackView()
+    
+    let playButton = QFPlayButton()
+    let copyButton = QFCopyButton()
+    let favoriteButton = QFFavoriteButton()
     
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        configure()
+        configureUIElements()
+        configureMainContainerView()
+        configureStackView()
     }
     
     required init?(coder: NSCoder) {
@@ -40,13 +46,36 @@ class WordCell: UITableViewCell {
     }
     
     
-    private func configure() {
-        configureMainContainerView()
+    private func configureStackView() {
+        stackView.translatesAutoresizingMaskIntoConstraints = false
         
+        stackView.axis = .horizontal
+        stackView.distribution = .equalSpacing
         
+        stackView.addArrangedSubview(playButton)
+        stackView.addArrangedSubview(copyButton)
+        stackView.addArrangedSubview(favoriteButton)
+        stackView.setCustomSpacing(15, after: playButton)
+        
+        let buttonSize: CGFloat = 25
+        
+        NSLayoutConstraint.activate([
+            playButton.heightAnchor.constraint(equalToConstant: buttonSize),
+            playButton.widthAnchor.constraint(equalToConstant: buttonSize),
+            
+            copyButton.heightAnchor.constraint(equalToConstant: buttonSize),
+            copyButton.widthAnchor.constraint(equalToConstant: buttonSize),
+            
+            favoriteButton.heightAnchor.constraint(equalToConstant: buttonSize),
+            favoriteButton.widthAnchor.constraint(equalToConstant: buttonSize)
+        ])
+    }
+    
+    private func configureUIElements() {
         contentView.addSubview(mainContainerView)
         mainContainerView.addSubview(wordLabel)
         mainContainerView.addSubview(translatedWordLabel)
+        mainContainerView.addSubview(stackView)
         
         self.selectionStyle = .none
         
@@ -69,6 +98,9 @@ class WordCell: UITableViewCell {
             translatedWordLabel.trailingAnchor.constraint(equalTo: mainContainerView.trailingAnchor, constant: -contentPadding),
             translatedWordLabel.bottomAnchor.constraint(equalTo: mainContainerView.bottomAnchor, constant: -contentPadding),
             
+            stackView.centerYAnchor.constraint(equalTo: mainContainerView.centerYAnchor),
+            stackView.trailingAnchor.constraint(equalTo: mainContainerView.trailingAnchor, constant: -10),
+
             
         ])
     }

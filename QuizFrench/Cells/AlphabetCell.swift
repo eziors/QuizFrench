@@ -16,14 +16,13 @@ class AlphabetCell: UICollectionViewCell {
     let alphabetLabel = QFTitleLabel(textAlignment: .center, fontSize: 40)
     
     let stackView = UIStackView()
-    let playButton = UIButton()
-    let copyButton = UIButton()
+    let playButton = QFPlayButton()
+    let copyButton = QFCopyButton()
     
     
     var player = AVAudioPlayer()
     var playedAudio: Bool = false
     var alphabetTrack: String?
-    
     
     
     override init(frame: CGRect) {
@@ -39,12 +38,12 @@ class AlphabetCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    
     func set(alphabet: Alphabet) {
         alphabetLabel.text = alphabet.letter
         alphabetTrack = alphabet.audio
-        
-        
     }
+    
     
     func configureMainContainerView() {
         mainContainerView.backgroundColor = .systemBackground
@@ -61,21 +60,8 @@ class AlphabetCell: UICollectionViewCell {
     }
     
     private func configureButtons() {
-        
-        let buttonSizeConfig = UIImage.SymbolConfiguration(pointSize: 25, weight: .light, scale: .default)
-        let playButtonIcon = UIImage(systemName: "play.circle", withConfiguration: buttonSizeConfig)
-        let copyButtonIcon = UIImage(systemName: "square.on.square", withConfiguration: buttonSizeConfig)
-        
-        
-        
-        playButton.contentMode = .scaleToFill
-        playButton.setImage(playButtonIcon, for: .normal)
         playButton.addTarget(self, action: #selector(playButtonAction), for: .touchUpInside)
-    
-        copyButton.contentMode = .scaleToFill
-        copyButton.setImage(copyButtonIcon, for: .normal)
         copyButton.addTarget(self, action: #selector(copyButtonAction), for: .touchUpInside)
-        
     }
     
     @objc func playButtonAction() {
@@ -95,7 +81,6 @@ class AlphabetCell: UICollectionViewCell {
     }
     
     @objc func copyButtonAction() {
-        print("Button tapped")
         UIPasteboard.general.string = alphabetLabel.text
     }
 

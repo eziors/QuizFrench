@@ -8,13 +8,24 @@
 import UIKit
 
 class QFFavoriteButton: UIButton {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        configure()
     }
-    */
-
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func configure() {
+        
+        let buttonSizeConfig = UIImage.SymbolConfiguration(pointSize: 25, weight: .light, scale: .default)
+        let playButtonIcon = UIImage(systemName: "star", withConfiguration: buttonSizeConfig)
+        playButtonIcon?.withTintColor(.yellow)
+        
+        self.contentMode = .scaleToFill
+        self.tintColor = .systemYellow
+        self.setImage(playButtonIcon, for: .normal)
+    }
 }

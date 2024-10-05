@@ -19,6 +19,7 @@ class QFCopyButton: UIButton {
         fatalError("init(coder:) has not been implemented")
     }
     
+    
     private func configure() {
         
         let buttonSizeConfig = UIImage.SymbolConfiguration(pointSize: 25, weight: .light, scale: .default)
@@ -27,8 +28,5 @@ class QFCopyButton: UIButton {
         
         self.contentMode = .scaleToFill
         self.setImage(copyButtonIcon, for: .normal)
-        self.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
     }
-    
-    @objc func buttonAction() { }
 }
