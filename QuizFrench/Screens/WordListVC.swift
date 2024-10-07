@@ -20,6 +20,7 @@ class WordListVC: UIViewController {
         configureViewController()
         configureTableView()
         loadData()
+        
     }
     
     
@@ -30,6 +31,13 @@ class WordListVC: UIViewController {
     
     func configureViewController() {
         view.backgroundColor    = .systemBackground
+    }
+    
+    func checkCategoryType(for category: String) {
+        if category == "Pronouns" {
+            self.words = words.sortedPronouns()
+            tableView.reloadData()
+        }
     }
     
     
@@ -47,7 +55,7 @@ class WordListVC: UIViewController {
     func loadData() {
         NetworkManager.shared.fetchAllItems { items in
             let targetCategory = self.category
-            
+                
             for item in items {
                 if item.category == targetCategory {
                     for question in item.questions {
@@ -59,6 +67,7 @@ class WordListVC: UIViewController {
                     }
                 }
             }
+            self.checkCategoryType(for: self.category)
             self.tableView.reloadData()
         }
     }
