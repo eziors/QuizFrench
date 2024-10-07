@@ -26,9 +26,9 @@ class WordCell: UITableViewCell {
     }
     
     
-    func set(word: Word.Question) {
-        wordLabel.text = word.correctAnswer
-        translatedWordLabel.text = word.correctAnswer
+    func set(word: String) {
+        wordLabel.text = word
+        translatedWordLabel.text = word
 
     }
     

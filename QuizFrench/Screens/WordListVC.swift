@@ -12,7 +12,7 @@ class WordListVC: UIViewController {
     
     let tableView = UITableView()
     var category: String!
-    var words: [Word.Question] = []
+    var words: [String] = []
     
 
     override func viewDidLoad() {
@@ -30,7 +30,6 @@ class WordListVC: UIViewController {
     
     func configureViewController() {
         view.backgroundColor    = .systemBackground
-        title                   = "Words"
     }
     
     
@@ -46,17 +45,21 @@ class WordListVC: UIViewController {
     }
     
     func loadData() {
-        NetworkManager.shared.fetchAllItems() { items in
+        NetworkManager.shared.fetchAllItems { items in
             let targetCategory = self.category
             
             for item in items {
-                if item.category == targetCategory {    
+                if item.category == targetCategory {
                     for question in item.questions {
-                        self.words.append(question)
-                        self.tableView.reloadData()
+                        let word = question.correctAnswer
+                        
+                        if !self.words.contains(word) {
+                            self.words.append(word)
+                        }
                     }
                 }
             }
+            self.tableView.reloadData()
         }
     }
     

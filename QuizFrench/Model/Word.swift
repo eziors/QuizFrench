@@ -22,15 +22,16 @@ struct Word {
         var questionText: String
         var options: Option
         var correctAnswer: String
+        var id: Int
         
-        static let questionExample = Question(questionText: "How old are you ?", options: Option.optionExample, correctAnswer: "D")
+        static let questionExample = Question(questionText: "How old are you ?", options: Option.optionExample, correctAnswer: "D", id: 1)
         
         static let questionsExamples = [
-            Question(questionText: "How old are you ?", options: Option.optionExample, correctAnswer: "Salut"),
-            Question(questionText: "I'm here just working for free", options: Option.optionExample, correctAnswer: "Deux"),
-            Question(questionText: "Help me !!", options: Option.optionExample, correctAnswer: "Ensemble"),
-            Question(questionText: "Can i help you with something ?", options: Option.optionExample, correctAnswer: "Voiture"),
-            Question(questionText: "Bla bla bla bla !", options: Option.optionExample, correctAnswer: "Eux"),
+            Question(questionText: "How old are you ?", options: Option.optionExample, correctAnswer: "Salut", id: 1),
+            Question(questionText: "I'm here just working for free", options: Option.optionExample, correctAnswer: "Deux", id: 1),
+            Question(questionText: "Help me !!", options: Option.optionExample, correctAnswer: "Ensemble", id: 1),
+            Question(questionText: "Can i help you with something ?", options: Option.optionExample, correctAnswer: "Voiture", id: 1),
+            Question(questionText: "Bla bla bla bla !", options: Option.optionExample, correctAnswer: "Eux", id: 1),
         ]
         
         // --- Option Struct ---
@@ -75,6 +76,7 @@ extension Word.Question {
             self.questionText = dictionary["question"] as? String ?? ""
             self.options = Option(dictionary: dictionary)
             self.correctAnswer = dictionary["correct"] as? String ?? ""
+            self.id = dictionary["id"] as? Int ?? 0
         }
 }
 
