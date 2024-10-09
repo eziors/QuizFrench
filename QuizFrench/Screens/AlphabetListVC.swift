@@ -32,7 +32,7 @@ class AlphabetListVC: UIViewController {
     
     private func configureAlphabet() {
         for letter in frenchAlphabet {
-            let alphabet = Alphabet(letter: letter, audio: "alphabet_\(letter)_male") // alphabet_Aa.mp3, alphabet_Bb.mp3
+            let alphabet = Alphabet(letter: letter) // alphabet_Aa.mp3, alphabet_Bb.mp3
             alphabets.append(alphabet)
         }
     }

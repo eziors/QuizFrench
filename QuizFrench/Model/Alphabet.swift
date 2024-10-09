@@ -9,5 +9,4 @@ import Foundation
 
 struct Alphabet: Hashable {
     let letter: String
-    let audio: String
 }

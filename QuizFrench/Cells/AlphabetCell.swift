@@ -41,7 +41,7 @@ class AlphabetCell: UICollectionViewCell {
     
     func set(alphabet: Alphabet) {
         alphabetLabel.text = alphabet.letter
-        alphabetTrack = alphabet.audio
+        alphabetTrack = "alphabet_\(alphabet.letter)_male"
     }
     
     
@@ -65,6 +65,7 @@ class AlphabetCell: UICollectionViewCell {
     }
     
     @objc func playButtonAction() {
+        
         
         guard let audioTrack = alphabetTrack else { return }
         guard let url = Bundle.main.url(forResource: audioTrack, withExtension: "mp3") else { return }

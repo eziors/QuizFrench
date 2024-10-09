@@ -30,7 +30,7 @@ class WordListVC: UIViewController {
     
     
     func configureViewController() {
-        view.backgroundColor    = .systemBackground
+        view.backgroundColor = .systemBackground
     }
     
     func checkCategoryType(for category: String) {
