@@ -1,6 +1,7 @@
 import UIKit
 import AVFoundation
 
+
 class WordCell: UITableViewCell {
     
     static let reuseID = "WordCell"
@@ -31,10 +32,10 @@ class WordCell: UITableViewCell {
     }
     
     
-    func set(word: String) {
-        wordLabel.text = word
-        translatedWordLabel.text = word
-        wordTrack = "word_\(word)_f"
+    func set(wordString: Word.Question) {
+        wordLabel.text = wordString.correctAnswer
+        translatedWordLabel.text = wordString.translation.english
+        wordTrack = "word_\(wordString.correctAnswer)_f"
 
     }
     
@@ -141,6 +142,6 @@ class WordCell: UITableViewCell {
 
 extension WordCell: AVAudioPlayerDelegate {
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
-        mainContainerView.stopBorderAnimation() // Parar a animação de borda
+        mainContainerView.stopBorderAnimation()
     }
 }

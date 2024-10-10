@@ -129,6 +129,6 @@ class AlphabetCell: UICollectionViewCell {
 
 extension AlphabetCell: AVAudioPlayerDelegate {
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
-        mainContainerView.stopBorderAnimation() // Parar a animação de borda
+        mainContainerView.stopBorderAnimation()
     }
 }

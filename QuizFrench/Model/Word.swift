@@ -22,16 +22,17 @@ struct Word {
         var questionText: String
         var options: Option
         var correctAnswer: String
+        var translation: Translation
         var id: Int
         
-        static let questionExample = Question(questionText: "How old are you ?", options: Option.optionExample, correctAnswer: "D", id: 1)
+        static let questionExample = Question(questionText: "How old are you ?", options: Option.optionExample, correctAnswer: "D", translation: Word.Question.Translation.translationExample, id: 1)
         
         static let questionsExamples = [
-            Question(questionText: "How old are you ?", options: Option.optionExample, correctAnswer: "Salut", id: 1),
-            Question(questionText: "I'm here just working for free", options: Option.optionExample, correctAnswer: "Deux", id: 1),
-            Question(questionText: "Help me !!", options: Option.optionExample, correctAnswer: "Ensemble", id: 1),
-            Question(questionText: "Can i help you with something ?", options: Option.optionExample, correctAnswer: "Voiture", id: 1),
-            Question(questionText: "Bla bla bla bla !", options: Option.optionExample, correctAnswer: "Eux", id: 1),
+            Question(questionText: "How old are you ?", options: Option.optionExample, correctAnswer: "Salut", translation: Word.Question.Translation.translationExample, id: 1),
+            Question(questionText: "I'm here just working for free", options: Option.optionExample, correctAnswer: "Deux", translation: Word.Question.Translation.translationExample, id: 1),
+            Question(questionText: "Help me !!", options: Option.optionExample, correctAnswer: "Ensemble", translation: Word.Question.Translation.translationExample, id: 1),
+            Question(questionText: "Can i help you with something ?", options: Option.optionExample, correctAnswer: "Voiture", translation: Word.Question.Translation.translationExample, id: 1),
+            Question(questionText: "Bla bla bla bla !", options: Option.optionExample, correctAnswer: "Eux", translation: Word.Question.Translation.translationExample, id: 1),
         ]
         
         // --- Option Struct ---
@@ -42,6 +43,13 @@ struct Word {
             var d: String
             
             static let optionExample = Option(a: "A", b: "B", c: "C", d: "D")
+        }
+        
+        struct Translation {
+            var english: String
+            var portuguese: String
+            
+            static let translationExample = Translation(english: "Hello", portuguese: "Olá")
         }
     }
    
@@ -77,6 +85,20 @@ extension Word.Question {
             self.options = Option(dictionary: dictionary)
             self.correctAnswer = dictionary["correct"] as? String ?? ""
             self.id = dictionary["id"] as? Int ?? 0
+        
+        if let translationDict = dictionary["translation"] as? [String: Any] {
+                        self.translation = Translation(dictionary: translationDict)
+                    } else {
+                        self.translation = Translation(english: "", portuguese: "")
+                    }
+        }
+}
+
+extension Word.Question.Translation {
+    init(dictionary: [String: Any]) {
+            self.english = dictionary["english"] as? String ?? ""
+            self.portuguese = dictionary["portuguese"] as? String ?? ""
+            
         }
 }
 

@@ -12,7 +12,7 @@ class WordListVC: UIViewController {
     
     let tableView = UITableView()
     var category: String!
-    var words: [String] = []
+    var words: [Word.Question] = []
     
 
     override func viewDidLoad() {
@@ -32,13 +32,6 @@ class WordListVC: UIViewController {
         view.backgroundColor = .systemBackground
     }
     
-    func checkCategoryType(for category: String) {
-        if category == "Pronouns" {
-            self.words = words.sortedPronouns()
-            tableView.reloadData()
-        }
-    }
-    
     
     func configureTableView() {
         view.addSubview(tableView)
@@ -53,28 +46,28 @@ class WordListVC: UIViewController {
     
     func loadData() {
         NetworkManager.shared.fetchAllItems { items in
-            let targetCategory = self.category
-                
+            let selectedCategory = self.category
+                    
             for item in items {
-                if item.category == targetCategory {
+                if item.category == selectedCategory {
                     for question in item.questions {
-                        let word = question.correctAnswer
                         
-                        if !self.words.contains(word) {
-                            self.words.append(word)
+                        if !self.words.contains(where: { $0.correctAnswer == question.correctAnswer }) {
+                            self.words.append(question)
                         }
                     }
                 }
             }
-            self.checkCategoryType(for: self.category)
+            
+            
             for word in self.words {
-                print(word)
+                print(word.correctAnswer)
             }
-            self.tableView.reloadData()
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
         }
     }
-    
-    
 }
 
 extension WordListVC: UITableViewDataSource, UITableViewDelegate {
@@ -86,7 +79,7 @@ extension WordListVC: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: WordCell.reuseID, for: indexPath) as! WordCell
         let word = words[indexPath.row]
         
-        cell.set(word: word)
+        cell.set(wordString: word)
         
         return cell
     }
@@ -95,3 +88,32 @@ extension WordListVC: UITableViewDataSource, UITableViewDelegate {
         return 100
     }
 }
+
+/*
+ 
+ func loadData() {
+     NetworkManager.shared.fetchAllItems { items in
+         print(items)
+         let selectedCategory = self.category
+             
+         for item in items {
+             if item.category == selectedCategory {
+                 for question in item.questions {
+                     for i in 0..<self.words.count {
+                         if !self.words[i].correctAnswer.contains(question.correctAnswer) {
+                             self.words.append(question)
+                         }
+                                                     }
+                    
+                 }
+             }
+         }
+         self.checkCategoryType(for: self.category)
+         for word in self.words {
+             print(word)
+         }
+         self.tableView.reloadData()
+     }
+ }
+ 
+ */
