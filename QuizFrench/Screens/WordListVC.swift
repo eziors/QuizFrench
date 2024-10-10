@@ -20,7 +20,6 @@ class WordListVC: UIViewController {
         configureViewController()
         configureTableView()
         loadData()
-        
     }
     
     
@@ -68,6 +67,9 @@ class WordListVC: UIViewController {
                 }
             }
             self.checkCategoryType(for: self.category)
+            for word in self.words {
+                print(word)
+            }
             self.tableView.reloadData()
         }
     }

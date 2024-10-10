@@ -58,8 +58,8 @@ class WordCategoryCell: UICollectionViewCell {
         mainContainerView.addSubview(categoryImage)
         
         
-        
         let padding: CGFloat = 8
+        
         
         NSLayoutConstraint.activate([
             mainContainerView.topAnchor.constraint(equalTo: topAnchor, constant: padding),
@@ -83,7 +83,6 @@ class WordCategoryCell: UICollectionViewCell {
             categoryLabel.leadingAnchor.constraint(equalTo: footerContainerView.leadingAnchor, constant: padding),
             categoryLabel.trailingAnchor.constraint(equalTo: footerContainerView.trailingAnchor, constant: -padding),
             categoryLabel.bottomAnchor.constraint(equalTo: footerContainerView.bottomAnchor, constant: -padding),
-            
         ])
     }
 }

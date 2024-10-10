@@ -1,4 +1,5 @@
 import UIKit
+import AVFoundation
 
 class WordCell: UITableViewCell {
     
@@ -9,9 +10,12 @@ class WordCell: UITableViewCell {
     
     let stackView = UIStackView()
     
+    var player = AVAudioPlayer()
     let playButton = QFPlayButton()
     let copyButton = QFCopyButton()
     let favoriteButton = QFFavoriteButton()
+    
+    var wordTrack: String?
     
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -19,6 +23,7 @@ class WordCell: UITableViewCell {
         configureUIElements()
         configureMainContainerView()
         configureStackView()
+        configureButtons()
     }
     
     required init?(coder: NSCoder) {
@@ -29,7 +34,35 @@ class WordCell: UITableViewCell {
     func set(word: String) {
         wordLabel.text = word
         translatedWordLabel.text = word
+        wordTrack = "word_\(word)_f"
 
+    }
+    
+    private func configureButtons() {
+        playButton.addTarget(self, action: #selector(playButtonAction), for: .touchUpInside)
+        copyButton.addTarget(self, action: #selector(copyButtonAction), for: .touchUpInside)
+    }
+    
+    @objc func playButtonAction() {
+        
+        
+        guard let audioTrack = wordTrack else { return }
+        
+        guard let url = Bundle.main.url(forResource: audioTrack, withExtension: "mp3") else { return }
+        
+        do {
+            player = try AVAudioPlayer(contentsOf: url)
+
+            mainContainerView.startBorderAnimation()
+            player.play()
+            player.delegate = self
+        } catch {
+            print("Error trying to reproduce audio: \(error.localizedDescription)")
+        }
+    }
+    
+    @objc func copyButtonAction() {
+        UIPasteboard.general.string = wordLabel.text
     }
     
     
@@ -103,5 +136,11 @@ class WordCell: UITableViewCell {
 
             
         ])
+    }
+}
+
+extension WordCell: AVAudioPlayerDelegate {
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        mainContainerView.stopBorderAnimation() // Parar a animação de borda
     }
 }
