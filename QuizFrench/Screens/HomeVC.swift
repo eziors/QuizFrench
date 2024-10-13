@@ -173,7 +173,12 @@ extension HomeVC: QFHomeVCDelegate {
     }
     
     func didTapPhrases() {
-        print("Phrases working !")
+        print("Button working")
+        let phrasesCategoriesVC = PhrasesCategoriesVC()
+        phrasesCategoriesVC.title = "Phrases"
+        navigationController?.pushViewController(phrasesCategoriesVC, animated: true)
+        
+        
     }
     
     func didTapTips() {

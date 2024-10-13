@@ -11,7 +11,6 @@ class QFPhrasesItemVC: QFItemInfoVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         configureItems()
     }
     
@@ -21,4 +20,7 @@ class QFPhrasesItemVC: QFItemInfoVC {
         self.set(backgroundColor: UIColor(red: 0.71, green: 0.28, blue: 0.75, alpha: 1.00))
     }
 
+    override func actionButtonTapped() {
+        delegate.didTapPhrases()
+    }
 }
