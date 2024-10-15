@@ -125,16 +125,17 @@ class WordCell: UITableViewCell {
             
             wordLabel.topAnchor.constraint(equalTo: mainContainerView.topAnchor, constant: contentPadding),
             wordLabel.leadingAnchor.constraint(equalTo: mainContainerView.leadingAnchor, constant: contentPadding),
-            wordLabel.trailingAnchor.constraint(equalTo: mainContainerView.trailingAnchor, constant: -contentPadding),
+            wordLabel.widthAnchor.constraint(equalToConstant: 220),
             
             
             translatedWordLabel.leadingAnchor.constraint(equalTo: mainContainerView.leadingAnchor, constant: contentPadding),
-            translatedWordLabel.trailingAnchor.constraint(equalTo: mainContainerView.trailingAnchor, constant: -contentPadding),
+            translatedWordLabel.widthAnchor.constraint(equalToConstant: 220),
             translatedWordLabel.bottomAnchor.constraint(equalTo: mainContainerView.bottomAnchor, constant: -contentPadding),
+            
             
             stackView.centerYAnchor.constraint(equalTo: mainContainerView.centerYAnchor),
             stackView.trailingAnchor.constraint(equalTo: mainContainerView.trailingAnchor, constant: -10),
-
+            
             
         ])
     }
