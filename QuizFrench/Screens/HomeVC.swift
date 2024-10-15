@@ -71,7 +71,7 @@ class HomeVC: UIViewController {
     }
     
     @objc func pushWordListVC() {
-        let wordListVC = WordListVC()
+        let wordListVC = ItemListVC()
         wordListVC.title = "Numbers"
         
         navigationController?.pushViewController(wordListVC, animated: true)

@@ -8,11 +8,12 @@
 import UIKit
 
 
-class WordListVC: UIViewController {
+class ItemListVC: UIViewController {
     
     let tableView = UITableView()
     var category: String!
-    var words: [Word.Question] = []
+    var listType: String!
+    var words: [Item.Question] = []
     
 
     override func viewDidLoad() {
@@ -20,11 +21,6 @@ class WordListVC: UIViewController {
         configureViewController()
         configureTableView()
         loadData()
-    }
-    
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
     }
     
     
@@ -45,7 +41,7 @@ class WordListVC: UIViewController {
     }
     
     func loadData() {
-        NetworkManager.shared.fetchAllItems { items in
+        NetworkManager.shared.fetchAllItems(itemType: listType) { items in
             let selectedCategory = self.category
                     
             for item in items {
@@ -59,7 +55,6 @@ class WordListVC: UIViewController {
                 }
             }
             
-            
             for word in self.words {
                 print(word.correctAnswer)
             }
@@ -70,7 +65,7 @@ class WordListVC: UIViewController {
     }
 }
 
-extension WordListVC: UITableViewDataSource, UITableViewDelegate {
+extension ItemListVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return words.count
     }
@@ -89,31 +84,3 @@ extension WordListVC: UITableViewDataSource, UITableViewDelegate {
     }
 }
 
-/*
- 
- func loadData() {
-     NetworkManager.shared.fetchAllItems { items in
-         print(items)
-         let selectedCategory = self.category
-             
-         for item in items {
-             if item.category == selectedCategory {
-                 for question in item.questions {
-                     for i in 0..<self.words.count {
-                         if !self.words[i].correctAnswer.contains(question.correctAnswer) {
-                             self.words.append(question)
-                         }
-                                                     }
-                    
-                 }
-             }
-         }
-         self.checkCategoryType(for: self.category)
-         for word in self.words {
-             print(word)
-         }
-         self.tableView.reloadData()
-     }
- }
- 
- */

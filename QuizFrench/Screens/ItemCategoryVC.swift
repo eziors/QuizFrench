@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CategoryVC: UIViewController {
+class ItemCategoryVC: UIViewController {
     
     enum Section { case main }
     
@@ -19,7 +19,6 @@ class CategoryVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         configureCategories()
         configureCollectionView()
         configureDataSource()
@@ -64,7 +63,7 @@ class CategoryVC: UIViewController {
     }
 }
 
-extension CategoryVC: UICollectionViewDelegate {
+extension ItemCategoryVC: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) { }
 }
 

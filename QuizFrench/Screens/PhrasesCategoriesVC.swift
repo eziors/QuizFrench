@@ -7,10 +7,17 @@
 
 import UIKit
 
-class PhrasesCategoriesVC: CategoryVC {
+class PhrasesCategoriesVC: ItemCategoryVC {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let selectedItem = categories[indexPath.item]
         
-        print("Phrases Working")
+        let phrasesListVC = ItemListVC()
+        phrasesListVC.title = selectedItem.name
+        phrasesListVC.category = selectedItem.name
+        phrasesListVC.listType = "phrases"
+        
+        navigationController?.pushViewController(phrasesListVC, animated: true)
+        
+        print(selectedItem)
     }
 }

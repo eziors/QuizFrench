@@ -9,12 +9,12 @@ import Foundation
 import Firebase
 
 // --- Word Struct ---
-struct Word {
+struct Item {
     var category: String
     var questions: [Question]
     
-    static let wordExamples = [
-        Word(category: "Numbers", questions: Question.questionsExamples)
+    static let itemExample = [
+        Item(category: "Numbers", questions: Question.questionsExamples)
     ]
     
     // --- Question Struct ---
@@ -25,14 +25,14 @@ struct Word {
         var translation: Translation
         var id: Int
         
-        static let questionExample = Question(questionText: "How old are you ?", options: Option.optionExample, correctAnswer: "D", translation: Word.Question.Translation.translationExample, id: 1)
+        static let questionExample = Question(questionText: "How old are you ?", options: Option.optionExample, correctAnswer: "D", translation: Item.Question.Translation.translationExample, id: 1)
         
         static let questionsExamples = [
-            Question(questionText: "How old are you ?", options: Option.optionExample, correctAnswer: "Salut", translation: Word.Question.Translation.translationExample, id: 1),
-            Question(questionText: "I'm here just working for free", options: Option.optionExample, correctAnswer: "Deux", translation: Word.Question.Translation.translationExample, id: 1),
-            Question(questionText: "Help me !!", options: Option.optionExample, correctAnswer: "Ensemble", translation: Word.Question.Translation.translationExample, id: 1),
-            Question(questionText: "Can i help you with something ?", options: Option.optionExample, correctAnswer: "Voiture", translation: Word.Question.Translation.translationExample, id: 1),
-            Question(questionText: "Bla bla bla bla !", options: Option.optionExample, correctAnswer: "Eux", translation: Word.Question.Translation.translationExample, id: 1),
+            Question(questionText: "How old are you ?", options: Option.optionExample, correctAnswer: "Salut", translation: Item.Question.Translation.translationExample, id: 1),
+            Question(questionText: "I'm here just working for free", options: Option.optionExample, correctAnswer: "Deux", translation: Item.Question.Translation.translationExample, id: 1),
+            Question(questionText: "Help me !!", options: Option.optionExample, correctAnswer: "Ensemble", translation: Item.Question.Translation.translationExample, id: 1),
+            Question(questionText: "Can i help you with something ?", options: Option.optionExample, correctAnswer: "Voiture", translation: Item.Question.Translation.translationExample, id: 1),
+            Question(questionText: "Bla bla bla bla !", options: Option.optionExample, correctAnswer: "Eux", translation: Item.Question.Translation.translationExample, id: 1),
         ]
         
         // --- Option Struct ---
@@ -55,7 +55,7 @@ struct Word {
    
 }
 
-extension Word {
+extension Item {
     // Inicializador para converter o dicionário para o struct WordCategory
     init(keyID: String, dictionary: [String: Any]) {
         self.category = dictionary["category"] as? String ?? ""
@@ -69,7 +69,7 @@ extension Word {
     }
 }
 
-extension Word.Question.Option {
+extension Item.Question.Option {
     init(dictionary: [String: Any]) {
             self.a = dictionary["a"] as? String ?? ""
             self.b = dictionary["b"] as? String ?? ""
@@ -79,7 +79,7 @@ extension Word.Question.Option {
 }
 
 
-extension Word.Question {
+extension Item.Question {
     init(dictionary: [String: Any]) {
             self.questionText = dictionary["question"] as? String ?? ""
             self.options = Option(dictionary: dictionary)
@@ -94,7 +94,7 @@ extension Word.Question {
         }
 }
 
-extension Word.Question.Translation {
+extension Item.Question.Translation {
     init(dictionary: [String: Any]) {
             self.english = dictionary["english"] as? String ?? ""
             self.portuguese = dictionary["portuguese"] as? String ?? ""

@@ -32,7 +32,7 @@ class WordCell: UITableViewCell {
     }
     
     
-    func set(wordString: Word.Question) {
+    func set(wordString: Item.Question) {
         wordLabel.text = wordString.correctAnswer
         translatedWordLabel.text = wordString.translation.english
         wordTrack = "word_\(wordString.correctAnswer)_f"

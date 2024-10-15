@@ -7,13 +7,14 @@
 
 import UIKit
 
-class WordsCategoriesVC: CategoryVC {
+class WordsCategoriesVC: ItemCategoryVC {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let selectedItem = categories[indexPath.item]
         
-        let wordListVC = WordListVC()
+        let wordListVC = ItemListVC()
         wordListVC.title = selectedItem.name
         wordListVC.category = selectedItem.name
+        wordListVC.listType = "words"
         
         navigationController?.pushViewController(wordListVC, animated: true)
         
