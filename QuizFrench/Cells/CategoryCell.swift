@@ -8,7 +8,7 @@
 import UIKit
 
 
-class WordCategoryCell: UICollectionViewCell {
+class CategoryCell: UICollectionViewCell {
     
     static let reuseID = "WordCategoryCell"
     let mainContainerView = UIView()

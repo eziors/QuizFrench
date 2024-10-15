@@ -2,9 +2,9 @@ import UIKit
 import AVFoundation
 
 
-class WordCell: UITableViewCell {
+class ItemCell: UITableViewCell {
     
-    static let reuseID = "WordCell"
+    static let reuseID = "ItemCell"
     let mainContainerView = UIView()
     let wordLabel = QFTitleLabel(textAlignment: .left, fontSize: 22)
     let translatedWordLabel = QFSecondaryTitleLabel(fontSize: 18)
@@ -17,6 +17,7 @@ class WordCell: UITableViewCell {
     let favoriteButton = QFFavoriteButton()
     
     var wordTrack: String?
+    
     
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -32,10 +33,10 @@ class WordCell: UITableViewCell {
     }
     
     
-    func set(wordString: Item.Question) {
+    func set(wordString: Item.Question, for cellType: String) {
         wordLabel.text = wordString.correctAnswer
         translatedWordLabel.text = wordString.translation.english
-        wordTrack = "word_\(wordString.correctAnswer)_f"
+        wordTrack = "\(cellType)_\(wordString.correctAnswer)_f"
 
     }
     
@@ -113,8 +114,11 @@ class WordCell: UITableViewCell {
         
         self.selectionStyle = .none
         
+        wordLabel.numberOfLines = 0
+        translatedWordLabel.numberOfLines = 0
+        
         let padding: CGFloat = 12
-        let contentPadding: CGFloat = 10
+        let labelPadding: CGFloat = 10
         
         NSLayoutConstraint.activate([
             mainContainerView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: padding),
@@ -123,15 +127,15 @@ class WordCell: UITableViewCell {
             mainContainerView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -padding),
             
             
-            wordLabel.topAnchor.constraint(equalTo: mainContainerView.topAnchor, constant: contentPadding),
-            wordLabel.leadingAnchor.constraint(equalTo: mainContainerView.leadingAnchor, constant: contentPadding),
+            wordLabel.topAnchor.constraint(equalTo: mainContainerView.topAnchor, constant: labelPadding),
+            wordLabel.leadingAnchor.constraint(equalTo: mainContainerView.leadingAnchor, constant: labelPadding + 2),
             wordLabel.widthAnchor.constraint(equalToConstant: 220),
             
             
-            translatedWordLabel.leadingAnchor.constraint(equalTo: mainContainerView.leadingAnchor, constant: contentPadding),
+            translatedWordLabel.leadingAnchor.constraint(equalTo: wordLabel.leadingAnchor),
+            translatedWordLabel.topAnchor.constraint(equalTo: wordLabel.bottomAnchor, constant: labelPadding - 4),
+            translatedWordLabel.bottomAnchor.constraint(equalTo: mainContainerView.bottomAnchor, constant: -labelPadding),
             translatedWordLabel.widthAnchor.constraint(equalToConstant: 220),
-            translatedWordLabel.bottomAnchor.constraint(equalTo: mainContainerView.bottomAnchor, constant: -contentPadding),
-            
             
             stackView.centerYAnchor.constraint(equalTo: mainContainerView.centerYAnchor),
             stackView.trailingAnchor.constraint(equalTo: mainContainerView.trailingAnchor, constant: -10),
@@ -141,7 +145,7 @@ class WordCell: UITableViewCell {
     }
 }
 
-extension WordCell: AVAudioPlayerDelegate {
+extension ItemCell: AVAudioPlayerDelegate {
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         mainContainerView.stopBorderAnimation()
     }

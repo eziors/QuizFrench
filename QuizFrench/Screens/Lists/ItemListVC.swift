@@ -33,12 +33,14 @@ class ItemListVC: UIViewController {
         view.addSubview(tableView)
         
         tableView.frame = view.bounds
-        tableView.rowHeight = 80
-        tableView.register(WordCell.self, forCellReuseIdentifier: WordCell.reuseID)
+        tableView.estimatedRowHeight = 100
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.register(ItemCell.self, forCellReuseIdentifier: ItemCell.reuseID)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .none
     }
+
     
     func loadData() {
         NetworkManager.shared.fetchAllItems(itemType: listType) { items in
@@ -71,16 +73,12 @@ extension ItemListVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: WordCell.reuseID, for: indexPath) as! WordCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: ItemCell.reuseID, for: indexPath) as! ItemCell
         let word = words[indexPath.row]
         
-        cell.set(wordString: word)
+        cell.set(wordString: word, for: "word")
         
         return cell
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
     }
 }
 

@@ -38,13 +38,13 @@ class ItemCategoryVC: UIViewController {
         view.addSubview(collectionView)
         collectionView.backgroundColor = .systemBackground
         collectionView.delegate = self
-        collectionView.register(WordCategoryCell.self, forCellWithReuseIdentifier: WordCategoryCell.reuseID)
+        collectionView.register(CategoryCell.self, forCellWithReuseIdentifier: CategoryCell.reuseID)
     }
     
     
     func configureDataSource() {
         dataSource = UICollectionViewDiffableDataSource(collectionView: collectionView, cellProvider: { collectionView, indexPath, category in
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: WordCategoryCell.reuseID, for: indexPath) as! WordCategoryCell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoryCell.reuseID, for: indexPath) as! CategoryCell
             cell.set(category: category)
             
             return cell
