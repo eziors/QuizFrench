@@ -70,16 +70,13 @@ class HomeVC: UIViewController {
         }.resume()
     }
     
-    @objc func pushWordListVC() {
-        let wordListVC = ItemListVC()
-        wordListVC.title = "Numbers"
-        
-        navigationController?.pushViewController(wordListVC, animated: true)
+    @objc func pushSelectionVC() {
+        self.presentSelectionVC()
     }
     
     
     func configureNavItem() {
-        let configButton = UIBarButtonItem(image: UIImage(systemName: "gearshape"), style: .plain, target: self, action: #selector(pushWordListVC))
+        let configButton = UIBarButtonItem(image: UIImage(systemName: "gearshape"), style: .plain, target: self, action: #selector(pushSelectionVC))
         let languageButton = UIBarButtonItem(image: UIImage(systemName: "globe"), style: .plain, target: self, action: #selector(playRemoteAudio))
         let flagItem = UIBarButtonItem(customView: QFFrenchFlagView())
         

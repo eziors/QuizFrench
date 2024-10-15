@@ -137,10 +137,9 @@ class ItemCell: UITableViewCell {
             translatedWordLabel.bottomAnchor.constraint(equalTo: mainContainerView.bottomAnchor, constant: -labelPadding),
             translatedWordLabel.widthAnchor.constraint(equalToConstant: 220),
             
+            
             stackView.centerYAnchor.constraint(equalTo: mainContainerView.centerYAnchor),
             stackView.trailingAnchor.constraint(equalTo: mainContainerView.trailingAnchor, constant: -10),
-            
-            
         ])
     }
 }
