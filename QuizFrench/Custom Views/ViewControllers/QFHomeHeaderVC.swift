@@ -10,7 +10,7 @@ import UIKit
 class QFHomeHeaderVC: UIViewController {
     
     let headerView = UIView()
-    let quoteLabel = QFTitleLabel(textAlignment: .center, fontSize: 15)
+    let quoteLabel = QFTitleLabel(textAlignment: .center, fontSize: 20)
     let progressView = UIView()
     
     override func viewDidLoad() {
@@ -43,10 +43,11 @@ class QFHomeHeaderVC: UIViewController {
     func configureQuoteLabel() {
         view.addSubview(quoteLabel)
 
-        quoteLabel.text = "\"Le plus grand risque est de ne prendre aucun risque\" \n- Quelque'un"
+        quoteLabel.text = loadQuote()
         quoteLabel.font = UIFont.preferredFont(forTextStyle: .title2)
         quoteLabel.numberOfLines = 3
         quoteLabel.textColor = .white
+        
         
         
         NSLayoutConstraint.activate([

@@ -30,7 +30,5 @@ class QFButton: UIButton {
         setTitleColor(.white, for: .normal)
         translatesAutoresizingMaskIntoConstraints = false
         titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
-        
-        
     }
 }

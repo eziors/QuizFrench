@@ -18,8 +18,23 @@ extension UIViewController {
             self.present(navController, animated: true)
         }
     }
-
     
+    func loadQuote() -> String {
+        
+        guard let startWordsURL = Bundle.main.url(forResource: "quotes", withExtension: "txt") else {
+            return "Nothing found yet"
+        }
+        
+        do {
+            let startWords = try String(contentsOf: startWordsURL)
+            let allWords = startWords.components(separatedBy: "\n")
+            
+            return allWords.randomElement()!
+        } catch {
+            
+            return "N/A"
+        }
+    }
 }
 
 
