@@ -15,12 +15,25 @@ class QFSelectionVC: UIViewController {
     let quizButton = QFButton(backgroundColor: .systemPurple, title: "Start Quiz")
     let closeButton = QFCloseButton()
     
+    
+    var selectedVC: UIViewController!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.75)
         configureContainerView()
         configureUIElements()
         configureButtonActions()
+    }
+    
+    init(title: String, for viewController: UIViewController) {
+        super.init(nibName: nil, bundle: nil)
+        titleLabel.text = title
+        selectedVC = viewController
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     func configureContainerView() {
@@ -33,7 +46,13 @@ class QFSelectionVC: UIViewController {
     
     func configureButtonActions() {
         closeButton.addTarget(self, action: #selector(dismissSelectionVC), for: .touchUpInside)
+        practiceButton.addTarget(self, action: #selector(pushSelectedVC), for: .touchUpInside)
     }
+    
+    @objc func pushSelectedVC() {
+        navigationController?.pushViewController(selectedVC, animated: true)
+    }
+
     
     func configureUIElements() {
         view.addSubview(containerView)
@@ -47,7 +66,6 @@ class QFSelectionVC: UIViewController {
         containerView.translatesAutoresizingMaskIntoConstraints = false
         
         
-        titleLabel.text = "Phrases"
         titleLabel.textColor = UIColor.black
         
         let padding: CGFloat = 14

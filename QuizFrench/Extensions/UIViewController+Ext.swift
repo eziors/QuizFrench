@@ -8,12 +8,21 @@
 import UIKit
 
 extension UIViewController {
-    func presentSelectionVC() {
+    
+    func presentSelectionVC(title: String, for viewController: UIViewController) {
         DispatchQueue.main.async {
-            let selectionVC = QFSelectionVC()
-            selectionVC.modalTransitionStyle = .crossDissolve
-            selectionVC.modalPresentationStyle = .overFullScreen
-            self.present(selectionVC, animated: true)
+            let selectionVC = QFSelectionVC(title: title, for: viewController)
+            let navController = UINavigationController(rootViewController: selectionVC)
+            navController.modalTransitionStyle = .crossDissolve
+            navController.modalPresentationStyle = .overFullScreen
+            self.present(navController, animated: true)
         }
     }
+
+    
 }
+
+
+ 
+
+ 

@@ -16,8 +16,6 @@ class PhrasesCategoriesVC: ItemCategoryVC {
         phrasesListVC.category = selectedItem.name
         phrasesListVC.listType = "phrases"
         
-        navigationController?.pushViewController(phrasesListVC, animated: true)
-        
-        print(selectedItem)
+        self.presentSelectionVC(title: selectedItem.name, for: phrasesListVC)
     }
 }

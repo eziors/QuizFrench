@@ -6,8 +6,8 @@ class ItemCell: UITableViewCell {
     
     static let reuseID = "ItemCell"
     let mainContainerView = UIView()
-    let wordLabel = QFTitleLabel(textAlignment: .left, fontSize: 22)
-    let translatedWordLabel = QFSecondaryTitleLabel(fontSize: 18)
+    let wordLabel = QFTitleLabel(textAlignment: .left, fontSize: 20)
+    let translatedWordLabel = QFSecondaryTitleLabel(fontSize: 17)
     
     let stackView = UIStackView()
     
@@ -114,8 +114,8 @@ class ItemCell: UITableViewCell {
         
         self.selectionStyle = .none
         
-        wordLabel.numberOfLines = 0
-        translatedWordLabel.numberOfLines = 0
+        wordLabel.numberOfLines = 2
+        translatedWordLabel.numberOfLines = 2
         
         let padding: CGFloat = 12
         let labelPadding: CGFloat = 10

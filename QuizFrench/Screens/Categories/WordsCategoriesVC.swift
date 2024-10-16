@@ -16,8 +16,6 @@ class WordsCategoriesVC: ItemCategoryVC {
         wordListVC.category = selectedItem.name
         wordListVC.listType = "words"
         
-        navigationController?.pushViewController(wordListVC, animated: true)
-        
-        print(selectedItem)
+        self.presentSelectionVC(title: selectedItem.name, for: wordListVC)
     }
 }

@@ -71,7 +71,7 @@ class HomeVC: UIViewController {
     }
     
     @objc func pushSelectionVC() {
-        self.presentSelectionVC()
+        
     }
     
     
@@ -181,6 +181,4 @@ extension HomeVC: QFHomeVCDelegate {
     func didTapTips() {
         print("Tips working !")
     }
-    
-    
 }
