@@ -38,7 +38,7 @@ class AlphabetListVC: UIViewController {
     }
 
     func configureCollectionView() {
-        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UIHelper.createTwoColumnFlowLayout(in: view))
+        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UIHelper.createTwoColumnFlowLayout(in: view, for: .alphabet))
         view.addSubview(collectionView)
         collectionView.backgroundColor = .systemBackground
         collectionView.register(AlphabetCell.self, forCellWithReuseIdentifier: AlphabetCell.reuseID)

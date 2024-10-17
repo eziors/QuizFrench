@@ -35,7 +35,7 @@ class ItemCategoryVC: UIViewController {
 
     
     func configureCollectionView() {
-        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UIHelper.createTwoColumnFlowLayout(in: view))
+        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UIHelper.createTwoColumnFlowLayout(in: view, for: .category))
         view.addSubview(collectionView)
         collectionView.backgroundColor = .systemBackground
         collectionView.delegate = self
