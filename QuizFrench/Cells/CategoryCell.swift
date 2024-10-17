@@ -40,7 +40,7 @@ class CategoryCell: UICollectionViewCell {
         mainContainerView.backgroundColor = .systemBackground
         mainContainerView.translatesAutoresizingMaskIntoConstraints = false
         mainContainerView.layer.cornerRadius = 12
-        mainContainerView.layer.borderWidth = 3
+        mainContainerView.layer.borderWidth = 4
         mainContainerView.layer.borderColor = UIColor.systemGray4.cgColor
         mainContainerView.clipsToBounds = true
     }
@@ -57,27 +57,25 @@ class CategoryCell: UICollectionViewCell {
         mainContainerView.addSubview(footerContainerView)
         mainContainerView.addSubview(categoryImage)
         
-        
         let padding: CGFloat = 8
-        
         
         NSLayoutConstraint.activate([
             mainContainerView.topAnchor.constraint(equalTo: topAnchor, constant: padding),
             mainContainerView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: padding),
             mainContainerView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -padding),
-            mainContainerView.heightAnchor.constraint(equalToConstant: 180),
-            mainContainerView.widthAnchor.constraint(equalToConstant: 100),
+            mainContainerView.heightAnchor.constraint(equalToConstant: 190),
+            mainContainerView.widthAnchor.constraint(equalToConstant: 90),
             
             footerContainerView.bottomAnchor.constraint(equalTo: mainContainerView.bottomAnchor),
             footerContainerView.leadingAnchor.constraint(equalTo: mainContainerView.leadingAnchor),
             footerContainerView.trailingAnchor.constraint(equalTo: mainContainerView.trailingAnchor),
             footerContainerView.heightAnchor.constraint(equalToConstant: 60),
             
-            categoryImage.centerYAnchor.constraint(equalTo: mainContainerView.centerYAnchor, constant: -20),
-            categoryImage.leadingAnchor.constraint(equalTo: mainContainerView.leadingAnchor, constant: padding),
-            categoryImage.trailingAnchor.constraint(equalTo: mainContainerView.trailingAnchor, constant: -padding),
-            categoryImage.heightAnchor.constraint(equalToConstant: 70),
-            categoryImage.widthAnchor.constraint(equalToConstant: 70),
+            
+            categoryImage.topAnchor.constraint(equalTo: mainContainerView.topAnchor),
+            categoryImage.leadingAnchor.constraint(equalTo: mainContainerView.leadingAnchor),
+            categoryImage.trailingAnchor.constraint(equalTo: mainContainerView.trailingAnchor),
+            categoryImage.bottomAnchor.constraint(equalTo: footerContainerView.topAnchor),
             
             categoryLabel.topAnchor.constraint(equalTo: footerContainerView.topAnchor, constant: padding),
             categoryLabel.leadingAnchor.constraint(equalTo: footerContainerView.leadingAnchor, constant: padding),

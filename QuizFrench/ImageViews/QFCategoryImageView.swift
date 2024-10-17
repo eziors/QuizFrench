@@ -9,7 +9,7 @@ import UIKit
 
 class QFCategoryImageView: UIImageView {
 
-    let placeholderImage = UIImage(systemName: "photo")
+    let placeholderImage = UIImage(systemName: "photo.fill")
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -22,10 +22,10 @@ class QFCategoryImageView: UIImageView {
     
     private func configure() {
         translatesAutoresizingMaskIntoConstraints = false
-        contentMode = .scaleAspectFit
-        image = placeholderImage
+        layer.cornerRadius = 12
         
-        print("Image is working ! ")
+        contentMode = .scaleToFill
+        image = placeholderImage
     }
     
     func setImage(imageURL: String) {

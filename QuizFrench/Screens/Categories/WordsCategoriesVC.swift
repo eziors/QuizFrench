@@ -17,5 +17,7 @@ class WordsCategoriesVC: ItemCategoryVC {
         wordListVC.listType = "words"
         
         self.presentSelectionVC(title: selectedItem.name, for: wordListVC)
+        
+        
     }
 }

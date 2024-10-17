@@ -22,6 +22,7 @@ class ItemCategoryVC: UIViewController {
         configureCategories()
         configureCollectionView()
         configureDataSource()
+        
         updateData()
     }
     

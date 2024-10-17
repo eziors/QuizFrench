@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "category_clothing.png",
+      "filename" : "category_clothes.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "category_clothing@2x.png",
+      "filename" : "category_clothes@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "category_clothing@3x.png",
+      "filename" : "category_clothes@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
