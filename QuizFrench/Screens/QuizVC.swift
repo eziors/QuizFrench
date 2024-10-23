@@ -10,19 +10,24 @@ class QuizVC: UIViewController {
     var questionsLevel2: [Item.Question] = []
     
     var currentQuestion: Item.Question?
-    
     let questionLabel = QFTitleLabel(textAlignment: .center, fontSize: 22)
-    var answerButtons: [UIButton] = []
     
-    let stackView = UIStackView()
+    var answerButtons: [UIButton] = []
+    let buttonsStackView = UIStackView()
+    
+    let answerView = QFAnswerView()
+    let continueButton = QFQuizButton(backgroundColor: .systemGray4, title: "Continue")
+    let answerStackView = UIStackView()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViewController()
         loadData()
         
+        configureAnswerStackView()
         configureQuestionLabel()
-        configureStackView()
+        configureButtonsStackView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -52,29 +57,50 @@ class QuizVC: UIViewController {
         ])
     }
     
-    func configureStackView() {
-        view.addSubview(stackView)
+    func configureButtonsStackView() {
+        view.addSubview(buttonsStackView)
         
-        stackView.axis = .vertical
-        stackView.distribution = .equalCentering
-        stackView.translatesAutoresizingMaskIntoConstraints = false
+        buttonsStackView.axis = .vertical
+        buttonsStackView.distribution = .equalCentering
+        buttonsStackView.translatesAutoresizingMaskIntoConstraints = false
         
         for _ in 0..<4 {
             let button = QFQuizButton(backgroundColor: .systemGray4, title: "Loading")
             button.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
             answerButtons.append(button)
-            stackView.addArrangedSubview(button)
+            buttonsStackView.addArrangedSubview(button)
         }
         
         
         NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalTo: questionLabel.bottomAnchor, constant: 40),
-            stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
-            stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40),
-            stackView.heightAnchor.constraint(equalToConstant: 280),
+            buttonsStackView.topAnchor.constraint(equalTo: questionLabel.bottomAnchor, constant: 40),
+            buttonsStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
+            buttonsStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40),
+            buttonsStackView.heightAnchor.constraint(equalToConstant: 280),
         ])
+    }
+    
+    
+    func configureAnswerStackView() {
+        view.addSubview(answerStackView)
+        answerStackView.axis = .horizontal
+        answerStackView.distribution = .equalSpacing
+        answerStackView.translatesAutoresizingMaskIntoConstraints = false
         
+        answerStackView.addArrangedSubview(answerView)
+        answerStackView.addArrangedSubview(continueButton)
         
+        continueButton.addTarget(self, action: #selector(askQuestion), for: .touchUpInside)
+        
+        NSLayoutConstraint.activate([
+            answerStackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
+            answerStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            answerStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            
+            continueButton.heightAnchor.constraint(equalToConstant: 44),
+            continueButton.widthAnchor.constraint(equalToConstant: 120),
+            
+        ])
     }
     
     func loadData() {
@@ -97,7 +123,7 @@ class QuizVC: UIViewController {
         }
     }
     
-    func askQuestion() {
+    @objc func askQuestion() {
         guard let question = allQuestions.randomElement() else {
             print("Nenhuma pergunta disponível.")
             return
@@ -121,13 +147,20 @@ class QuizVC: UIViewController {
     
     
     func checkAnswer(_ selectedOption: String) {
+        answerView.correctAnswer.text = self.currentQuestion!.correctAnswer
         
         if selectedOption == self.currentQuestion?.correctAnswer {
+            changeAnswerViewColor(.systemGreen)
             print("Correct")
         } else {
+            changeAnswerViewColor(.systemRed)
             print("Wrong")
         }
-        
-        askQuestion()
+    }
+    
+    func changeAnswerViewColor(_ selectedColor: UIColor) {
+        self.answerView.titleLabel.textColor = selectedColor
+        self.answerView.correctAnswer.textColor = selectedColor
+        self.continueButton.titleLabel?.textColor = selectedColor
     }
 }
