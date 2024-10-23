@@ -25,6 +25,10 @@ class QFQuizButton: UIButton {
         configure()
     }
     
+    func setLabelColor(color: UIColor) {
+        self.setTitleColor(color, for: .normal)
+    }
+    
     func configure() {
         layer.cornerRadius = 25
         setTitleColor(.label, for: .normal)

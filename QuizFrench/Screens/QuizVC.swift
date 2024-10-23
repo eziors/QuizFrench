@@ -1,4 +1,12 @@
+//
+//  QuizVC.swift
+//  QuizFrench
+//
+//  Created by Marcos Barbosa on 11/10/24.
+//
+
 import UIKit
+
 
 class QuizVC: UIViewController {
     
@@ -16,7 +24,7 @@ class QuizVC: UIViewController {
     let buttonsStackView = UIStackView()
     
     let answerView = QFAnswerView()
-    let continueButton = QFQuizButton(backgroundColor: .systemGray4, title: "Continue")
+    let continueButton = QFQuizButton(backgroundColor: .systemGray5, title: "Continue")
     let answerStackView = UIStackView()
     
     
@@ -24,7 +32,6 @@ class QuizVC: UIViewController {
         super.viewDidLoad()
         configureViewController()
         loadData()
-        
         configureAnswerStackView()
         configureQuestionLabel()
         configureButtonsStackView()
@@ -46,7 +53,6 @@ class QuizVC: UIViewController {
     
     func configureQuestionLabel() {
         view.addSubview(questionLabel)
-        questionLabel.text = "Testing"
         questionLabel.numberOfLines = 2
         
         NSLayoutConstraint.activate([
@@ -65,7 +71,7 @@ class QuizVC: UIViewController {
         buttonsStackView.translatesAutoresizingMaskIntoConstraints = false
         
         for _ in 0..<4 {
-            let button = QFQuizButton(backgroundColor: .systemGray4, title: "Loading")
+            let button = QFQuizButton(backgroundColor: .systemGray5, title: "Loading")
             button.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
             answerButtons.append(button)
             buttonsStackView.addArrangedSubview(button)
@@ -83,10 +89,10 @@ class QuizVC: UIViewController {
     
     func configureAnswerStackView() {
         view.addSubview(answerStackView)
+        answerStackView.isHidden = true
         answerStackView.axis = .horizontal
         answerStackView.distribution = .equalSpacing
         answerStackView.translatesAutoresizingMaskIntoConstraints = false
-        
         answerStackView.addArrangedSubview(answerView)
         answerStackView.addArrangedSubview(continueButton)
         
@@ -129,6 +135,7 @@ class QuizVC: UIViewController {
             return
         }
         
+        answerStackView.isHidden = true
         self.currentQuestion = question
         self.questionLabel.text = question.questionText
         
@@ -136,31 +143,41 @@ class QuizVC: UIViewController {
         
         for (index, button) in answerButtons.enumerated() {
             button.setTitle(options[index], for: .normal)
+            button.setTitleColor(.label, for: .normal)
         }
     }
     
     @objc func buttonPressed(_ sender: UIButton) {
+        var buttonIndex = 0
+        
         guard let selectedOption = sender.title(for: .normal) else { return }
         
-        checkAnswer(selectedOption)
+        for (index, button) in answerButtons.enumerated() {
+            if button.currentTitle == selectedOption {
+                buttonIndex = index
+            }
+        }
+        checkAnswer(selectedOption, buttonIndex: buttonIndex)
     }
     
     
-    func checkAnswer(_ selectedOption: String) {
-        answerView.correctAnswer.text = self.currentQuestion!.correctAnswer
+    func checkAnswer(_ selectedOption: String, buttonIndex: Int) {
+        answerView.correctAnswer.text = self.currentQuestion?.correctAnswer
         
         if selectedOption == self.currentQuestion?.correctAnswer {
-            changeAnswerViewColor(.systemGreen)
+            changeAnswerColor(color: UIColor.correctColor, buttonIndex: buttonIndex)
             print("Correct")
         } else {
-            changeAnswerViewColor(.systemRed)
+            changeAnswerColor(color: UIColor.incorrectColor, buttonIndex: buttonIndex)
             print("Wrong")
         }
+        answerStackView.isHidden = false
     }
     
-    func changeAnswerViewColor(_ selectedColor: UIColor) {
-        self.answerView.titleLabel.textColor = selectedColor
-        self.answerView.correctAnswer.textColor = selectedColor
-        self.continueButton.titleLabel?.textColor = selectedColor
+    func changeAnswerColor(color: UIColor, buttonIndex: Int) {
+        self.answerView.titleLabel.textColor = color
+        self.answerView.correctAnswer.textColor = color
+        self.continueButton.titleLabel?.textColor = color
+        self.answerButtons[buttonIndex].setTitleColor(color, for: .normal)
     }
 }

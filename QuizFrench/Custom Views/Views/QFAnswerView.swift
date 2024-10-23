@@ -27,9 +27,12 @@ class QFAnswerView: UIView {
         addSubview(titleLabel)
         addSubview(correctAnswer)
         
-        titleLabel.text = "Correct answer: "
+        titleLabel.text = "Correct answer:"
         titleLabel.textColor = currentColor
+        titleLabel.font = UIFont.preferredFont(forTextStyle: .headline)
+        
         correctAnswer.textColor = currentColor
+        correctAnswer.font = UIFont.preferredFont(forTextStyle: .headline)
         
         NSLayoutConstraint.activate([
             titleLabel.topAnchor.constraint(equalTo: self.topAnchor),

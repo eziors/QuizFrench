@@ -174,8 +174,6 @@ extension HomeVC: QFHomeVCDelegate {
         let phrasesCategoriesVC = PhrasesCategoriesVC()
         phrasesCategoriesVC.title = "Phrases"
         navigationController?.pushViewController(phrasesCategoriesVC, animated: true)
-        
-        
     }
     
     func didTapTips() {
