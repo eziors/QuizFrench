@@ -70,9 +70,8 @@ class HomeVC: UIViewController {
         }.resume()
     }
     
-    @objc func pushSelectionVC() {
-        
-    }
+    
+    @objc func pushSelectionVC() { }
     
     
     func configureNavItem() {
@@ -86,7 +85,6 @@ class HomeVC: UIViewController {
         navigationItem.rightBarButtonItems = [configButton, languageButton]
         navigationItem.leftBarButtonItem = flagItem
     }
-    
     
     
     func configureUIElements() {
@@ -107,7 +105,6 @@ class HomeVC: UIViewController {
         self.addChildVC(childVC: wordItemVC, in: itemInfoViewTwo)
         self.addChildVC(childVC: phrasesItemVC, in: itemInfoViewThree)
         self.addChildVC(childVC: tipsItemVC, in: itemInfoViewFour)
-        
     }
     
     func layoutUI() {

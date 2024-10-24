@@ -13,42 +13,81 @@ class QuizVC: UIViewController {
     var quizType: String!
     var category: String!
     
+    var questionsCount = 0
+    var correctCount = 0
+    
     var allQuestions: [Item.Question] = []
     var questionLevel1: [Item.Question] = []
     var questionsLevel2: [Item.Question] = []
-    
     var currentQuestion: Item.Question?
+    
+    
     let questionLabel = QFTitleLabel(textAlignment: .center, fontSize: 22)
+    let questionCountLabel = QFTitleLabel(textAlignment: .left, fontSize: 20)
+    let progressBar = QFProgressBarView()
     
     var answerButtons: [UIButton] = []
     let buttonsStackView = UIStackView()
     
     let answerView = QFAnswerView()
-    let continueButton = QFQuizButton(backgroundColor: .systemGray5, title: "Continue")
+    let continueButton = QFQuizButton(backgroundColor: .systemGray6, title: "Continue")
     let answerStackView = UIStackView()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureViewController()
+        view.backgroundColor = .systemGray5
+        configureNavigationBar()
         loadData()
+        configureQuestionCountLabel()
         configureAnswerStackView()
         configureQuestionLabel()
         configureButtonsStackView()
+        configureProgressBar()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         askQuestion()
+        progressBar.progress = 0
     }
     
-    func configureViewController() {
-        view.backgroundColor = .systemBackground
+    func configureNavigationBar() {
         let appearance = UINavigationBarAppearance()
-        appearance.titleTextAttributes = [.foregroundColor: UIColor.red]
-        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.red]
-
-        navigationItem.standardAppearance = appearance
+        appearance.backgroundColor = .customPrimary
+        appearance.titleTextAttributes = [
+            .foregroundColor: UIColor.white,
+            .font: UIFont.systemFont(ofSize: 20, weight: .bold)
+        ]
+        
         navigationItem.scrollEdgeAppearance = appearance
+        navigationController?.navigationBar.tintColor = .white
+    }
+    
+    
+    func configureQuestionCountLabel() {
+        view.addSubview(questionCountLabel)
+        questionCountLabel.numberOfLines = 1
+        
+        NSLayoutConstraint.activate([
+            questionCountLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
+            questionCountLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
+        ])
+    }
+    
+    func configureProgressBar() {
+        view.addSubview(progressBar)
+        progressBar.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            progressBar.centerYAnchor.constraint(equalTo: questionCountLabel.centerYAnchor),
+            progressBar.leadingAnchor.constraint(equalTo: questionCountLabel.trailingAnchor, constant: 10),
+            progressBar.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
+            progressBar.heightAnchor.constraint(equalToConstant: 15),
+        ])
+    }
+    
+    func updateQuestionCountLabel() {
+        self.questionCountLabel.text = "\(self.correctCount) / \(self.questionsCount)"
     }
     
     func configureQuestionLabel() {
@@ -56,12 +95,13 @@ class QuizVC: UIViewController {
         questionLabel.numberOfLines = 2
         
         NSLayoutConstraint.activate([
-            questionLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 40),
+            questionLabel.topAnchor.constraint(equalTo: questionCountLabel.bottomAnchor, constant: 30),
             questionLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
             questionLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40),
             questionLabel.heightAnchor.constraint(equalToConstant: 80),
         ])
     }
+    
     
     func configureButtonsStackView() {
         view.addSubview(buttonsStackView)
@@ -71,12 +111,11 @@ class QuizVC: UIViewController {
         buttonsStackView.translatesAutoresizingMaskIntoConstraints = false
         
         for _ in 0..<4 {
-            let button = QFQuizButton(backgroundColor: .systemGray5, title: "Loading")
+            let button = QFQuizButton(backgroundColor: .systemGray6, title: "Loading")
             button.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
             answerButtons.append(button)
             buttonsStackView.addArrangedSubview(button)
         }
-        
         
         NSLayoutConstraint.activate([
             buttonsStackView.topAnchor.constraint(equalTo: questionLabel.bottomAnchor, constant: 40),
@@ -122,6 +161,8 @@ class QuizVC: UIViewController {
             }
             
             if !self.allQuestions.isEmpty {
+                self.questionsCount = self.allQuestions.count
+                self.updateQuestionCountLabel()
                 self.askQuestion()
             } else {
                 print("Nenhuma pergunta disponível para a categoria \(self.category!)")
@@ -129,11 +170,19 @@ class QuizVC: UIViewController {
         }
     }
     
+    func updateProgressBar() {
+        let progress = Float(correctCount) / Float(questionsCount)
+        progressBar.setProgress(progress, animated: true)
+    }
+    
+    
     @objc func askQuestion() {
         guard let question = allQuestions.randomElement() else {
             print("Nenhuma pergunta disponível.")
             return
         }
+        
+        enableAnswerButtons()
         
         answerStackView.isHidden = true
         self.currentQuestion = question
@@ -157,6 +206,8 @@ class QuizVC: UIViewController {
                 buttonIndex = index
             }
         }
+        
+        disableAnswerButtons()
         checkAnswer(selectedOption, buttonIndex: buttonIndex)
     }
     
@@ -166,12 +217,15 @@ class QuizVC: UIViewController {
         
         if selectedOption == self.currentQuestion?.correctAnswer {
             changeAnswerColor(color: UIColor.correctColor, buttonIndex: buttonIndex)
+            correctCount += 1
             print("Correct")
         } else {
             changeAnswerColor(color: UIColor.incorrectColor, buttonIndex: buttonIndex)
             print("Wrong")
         }
         answerStackView.isHidden = false
+        updateQuestionCountLabel()
+        updateProgressBar()
     }
     
     func changeAnswerColor(color: UIColor, buttonIndex: Int) {
@@ -179,5 +233,17 @@ class QuizVC: UIViewController {
         self.answerView.correctAnswer.textColor = color
         self.continueButton.titleLabel?.textColor = color
         self.answerButtons[buttonIndex].setTitleColor(color, for: .normal)
+    }
+    
+    func disableAnswerButtons() {
+        for button in answerButtons {
+            button.removeTarget(self, action: nil, for: .allEvents)
+        }
+    }
+    
+    func enableAnswerButtons() {
+        for button in answerButtons {
+            button.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
+        }
     }
 }

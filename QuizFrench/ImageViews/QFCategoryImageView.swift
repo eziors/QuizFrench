@@ -23,7 +23,6 @@ class QFCategoryImageView: UIImageView {
     private func configure() {
         translatesAutoresizingMaskIntoConstraints = false
         layer.cornerRadius = 12
-        
         contentMode = .scaleToFill
         image = placeholderImage
     }
