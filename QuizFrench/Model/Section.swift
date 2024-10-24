@@ -10,4 +10,5 @@ import Foundation
 struct Category: Hashable {
     let name: String
     let image: String
+    var completedLevels: Int
 }

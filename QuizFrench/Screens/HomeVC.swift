@@ -36,6 +36,7 @@ class HomeVC: UIViewController {
         configureNavItem()
         configureUIElements()
         layoutUI()
+        
     }
 
     
@@ -163,6 +164,7 @@ extension HomeVC: QFHomeVCDelegate {
     func didTapWords() {
         let wordsCategoryVC = WordsCategoriesVC()
         wordsCategoryVC.title = "Words"
+        wordsCategoryVC.categoryType = .words
         navigationController?.pushViewController(wordsCategoryVC, animated: true)
     }
     
@@ -170,6 +172,7 @@ extension HomeVC: QFHomeVCDelegate {
         print("Button working")
         let phrasesCategoriesVC = PhrasesCategoriesVC()
         phrasesCategoriesVC.title = "Phrases"
+        phrasesCategoriesVC.categoryType = .phrases
         navigationController?.pushViewController(phrasesCategoriesVC, animated: true)
     }
     

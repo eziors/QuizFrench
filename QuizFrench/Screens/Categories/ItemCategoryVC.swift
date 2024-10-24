@@ -13,6 +13,7 @@ class ItemCategoryVC: UIViewController {
     
     let categoriesNames = ["Numbers", "Weekends", "Pronouns", "Family", "Food", "Clothing", "Verbs", "Body"]
     var categories = [Category]()
+    var categoryType: CategoryType!
 
     var collectionView: UICollectionView!
     var dataSource: UICollectionViewDiffableDataSource<Section, Category>!
@@ -28,8 +29,17 @@ class ItemCategoryVC: UIViewController {
     
     private func configureCategories() {
         for name in categoriesNames {
-            let category = Category(name: name, image: "category_\(name.lowercased())") // testing
+            let category = Category(name: name, image: "category_\(name.lowercased())", completedLevels: getCategoryLevel(for: categoryType, category: name)) // testing
             categories.append(category)
+        }
+    }
+    
+    func getCategoryLevel(for categoryType: CategoryType, category: String) -> Int {
+        switch categoryType {
+        case .words:
+            return ProgressManager.shared.wordsCategoryProgress[category] ?? 0
+        case .phrases:
+            return ProgressManager.shared.phrasesCategoryProgress[category] ?? 0
         }
     }
 
