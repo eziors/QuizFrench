@@ -19,7 +19,7 @@ class CategoryCell: UICollectionViewCell {
     
     let stackView = UIStackView()
     var starsImageViews = [UIImageView]()
-    var completedCount = 1
+    var completedCount = 0
     
     
     
@@ -30,7 +30,6 @@ class CategoryCell: UICollectionViewCell {
         configure()
         configureStarView()
         configureStackView()
-        changeStarColor(count: completedCount)
     }
     
     required init?(coder: NSCoder) {
@@ -40,7 +39,9 @@ class CategoryCell: UICollectionViewCell {
     func set(category: Category) {
         categoryLabel.text = category.name
         categoryImage.setImage(imageURL: category.image)
+        completedCount = category.completedLevels
         
+        changeStarColor(count: completedCount)
     }
     
     func configureMainContainerView() {
@@ -48,7 +49,7 @@ class CategoryCell: UICollectionViewCell {
         mainContainerView.translatesAutoresizingMaskIntoConstraints = false
         mainContainerView.layer.cornerRadius = 12
         mainContainerView.layer.borderWidth = 4
-        mainContainerView.layer.borderColor = completedCount >= 3 ? UIColor.systemYellow.cgColor : UIColor.systemGray4.cgColor
+        mainContainerView.layer.borderColor = UIColor.containerColor.cgColor
         mainContainerView.clipsToBounds = true
     }
     
@@ -80,6 +81,8 @@ class CategoryCell: UICollectionViewCell {
     func changeStarColor(count: Int) {
         for i in 0..<count {
             self.starsImageViews[i].tintColor = .systemYellow
+            
+            if count >= 3 { self.mainContainerView.layer.borderColor = UIColor.systemYellow.cgColor }
         }
     }
     
