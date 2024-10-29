@@ -1,0 +1,5 @@
+ extern const unsigned char Pods_QuizFrenchVersionString[];
+ extern const double Pods_QuizFrenchVersionNumber;
+
+ const unsigned char Pods_QuizFrenchVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:Pods_QuizFrench  PROJECT:Pods-1" "\n";
+ const double Pods_QuizFrenchVersionNumber __attribute__ ((used)) = (double)1.;

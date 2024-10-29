@@ -1,0 +1,4 @@
+module GoogleUtilities_Logger {
+umbrella "/Users/marcos/Library/Developer/Xcode/DerivedData/QuizFrench-bduyjlpoubfcnmautmoghnnvjppu/SourcePackages/checkouts/GoogleUtilities/GoogleUtilities/Logger/Public"
+export *
+}

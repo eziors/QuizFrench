@@ -1,0 +1,4 @@
+module GoogleUtilities_UserDefaults {
+umbrella "/Users/marcos/Library/Developer/Xcode/DerivedData/QuizFrench-bduyjlpoubfcnmautmoghnnvjppu/SourcePackages/checkouts/GoogleUtilities/GoogleUtilities/UserDefaults/Public"
+export *
+}

@@ -1,0 +1,4 @@
+module nanopb {
+umbrella "/Users/marcos/Library/Developer/Xcode/DerivedData/QuizFrench-bduyjlpoubfcnmautmoghnnvjppu/SourcePackages/checkouts/nanopb/spm_headers"
+export *
+}

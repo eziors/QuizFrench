@@ -1,0 +1,4 @@
+module leveldb {
+umbrella "/Users/marcos/Library/Developer/Xcode/DerivedData/QuizFrench-bduyjlpoubfcnmautmoghnnvjppu/SourcePackages/checkouts/leveldb/include"
+export *
+}

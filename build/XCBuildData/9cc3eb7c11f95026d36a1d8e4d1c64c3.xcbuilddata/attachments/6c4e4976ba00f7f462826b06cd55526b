@@ -1,0 +1,4 @@
+module FirebaseSessionsObjC {
+umbrella "/Users/marcos/Library/Developer/Xcode/DerivedData/QuizFrench-bduyjlpoubfcnmautmoghnnvjppu/SourcePackages/checkouts/firebase-ios-sdk/FirebaseSessions/SourcesObjC"
+export *
+}

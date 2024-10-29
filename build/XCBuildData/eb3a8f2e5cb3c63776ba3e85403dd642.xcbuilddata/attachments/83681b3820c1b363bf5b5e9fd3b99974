@@ -1,0 +1,508 @@
+{
+  "" : {
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QuizFrench-master.dia",
+    "emit-module-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QuizFrench-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QuizFrench-master-emit-module.dia",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QuizFrench-master.swiftdeps"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/AppDelegate.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/AppDelegate.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/AppDelegate.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/AppDelegate.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/AppDelegate.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/AppDelegate.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/AppDelegate.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/AppDelegate.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/AppDelegate~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Buttons/IconButtons/QFCloseButton.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFCloseButton.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFCloseButton.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFCloseButton.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFCloseButton.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFCloseButton.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFCloseButton.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFCloseButton.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFCloseButton~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Buttons/IconButtons/QFCopyButton.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFCopyButton.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFCopyButton.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFCopyButton.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFCopyButton.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFCopyButton.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFCopyButton.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFCopyButton.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFCopyButton~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Buttons/IconButtons/QFFavoriteButton.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFFavoriteButton.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFFavoriteButton.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFFavoriteButton.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFFavoriteButton.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFFavoriteButton.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFFavoriteButton.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFFavoriteButton.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFFavoriteButton~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Buttons/IconButtons/QFPlayButton.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFPlayButton.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFPlayButton.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFPlayButton.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFPlayButton.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFPlayButton.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFPlayButton.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFPlayButton.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFPlayButton~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Buttons/QFButton.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFButton.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFButton.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFButton.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFButton.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFButton.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFButton.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFButton.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFButton~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Buttons/QFQuizButton.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFQuizButton.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFQuizButton.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFQuizButton.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFQuizButton.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFQuizButton.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFQuizButton.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFQuizButton.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFQuizButton~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Cells/AlphabetCell.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/AlphabetCell.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/AlphabetCell.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/AlphabetCell.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/AlphabetCell.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/AlphabetCell.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/AlphabetCell.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/AlphabetCell.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/AlphabetCell~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Cells/CategoryCell.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/CategoryCell.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/CategoryCell.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/CategoryCell.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/CategoryCell.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/CategoryCell.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/CategoryCell.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/CategoryCell.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/CategoryCell~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Cells/ItemCell.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/ItemCell.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/ItemCell.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/ItemCell.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/ItemCell.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/ItemCell.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/ItemCell.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/ItemCell.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/ItemCell~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Custom Views/Labels/QFBodyLabel.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFBodyLabel.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFBodyLabel.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFBodyLabel.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFBodyLabel.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFBodyLabel.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFBodyLabel.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFBodyLabel.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFBodyLabel~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Custom Views/Labels/QFSecondaryTitleLabel.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFSecondaryTitleLabel.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFSecondaryTitleLabel.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFSecondaryTitleLabel.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFSecondaryTitleLabel.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFSecondaryTitleLabel.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFSecondaryTitleLabel.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFSecondaryTitleLabel.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFSecondaryTitleLabel~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Custom Views/Labels/QFTitleLabel.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFTitleLabel.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFTitleLabel.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFTitleLabel.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFTitleLabel.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFTitleLabel.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFTitleLabel.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFTitleLabel.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFTitleLabel~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Custom Views/ViewControllers/ItemInfoVCs/QFAlphabetItemVC.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFAlphabetItemVC.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFAlphabetItemVC.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFAlphabetItemVC.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFAlphabetItemVC.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFAlphabetItemVC.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFAlphabetItemVC.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFAlphabetItemVC.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFAlphabetItemVC~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Custom Views/ViewControllers/ItemInfoVCs/QFItemInfoVC.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFItemInfoVC.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFItemInfoVC.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFItemInfoVC.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFItemInfoVC.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFItemInfoVC.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFItemInfoVC.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFItemInfoVC.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFItemInfoVC~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Custom Views/ViewControllers/ItemInfoVCs/QFPhrasesItemVC.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFPhrasesItemVC.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFPhrasesItemVC.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFPhrasesItemVC.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFPhrasesItemVC.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFPhrasesItemVC.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFPhrasesItemVC.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFPhrasesItemVC.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFPhrasesItemVC~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Custom Views/ViewControllers/ItemInfoVCs/QFTipsItemVC.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFTipsItemVC.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFTipsItemVC.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFTipsItemVC.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFTipsItemVC.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFTipsItemVC.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFTipsItemVC.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFTipsItemVC.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFTipsItemVC~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Custom Views/ViewControllers/ItemInfoVCs/QFWordsItemVC.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFWordsItemVC.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFWordsItemVC.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFWordsItemVC.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFWordsItemVC.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFWordsItemVC.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFWordsItemVC.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFWordsItemVC.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFWordsItemVC~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Custom Views/ViewControllers/QFHomeHeaderVC.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFHomeHeaderVC.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFHomeHeaderVC.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFHomeHeaderVC.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFHomeHeaderVC.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFHomeHeaderVC.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFHomeHeaderVC.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFHomeHeaderVC.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFHomeHeaderVC~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Custom Views/ViewControllers/QFProgressVC.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFProgressVC.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFProgressVC.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFProgressVC.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFProgressVC.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFProgressVC.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFProgressVC.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFProgressVC.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFProgressVC~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Custom Views/ViewControllers/QFSelectionVC.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFSelectionVC.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFSelectionVC.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFSelectionVC.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFSelectionVC.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFSelectionVC.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFSelectionVC.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFSelectionVC.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFSelectionVC~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Custom Views/ViewControllers/QFStreakProgressVC.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFStreakProgressVC.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFStreakProgressVC.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFStreakProgressVC.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFStreakProgressVC.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFStreakProgressVC.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFStreakProgressVC.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFStreakProgressVC.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFStreakProgressVC~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Custom Views/Views/ProgressViews/QFProgressInfoView.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFProgressInfoView.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFProgressInfoView.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFProgressInfoView.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFProgressInfoView.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFProgressInfoView.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFProgressInfoView.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFProgressInfoView.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFProgressInfoView~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Custom Views/Views/QFAnswerView.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFAnswerView.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFAnswerView.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFAnswerView.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFAnswerView.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFAnswerView.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFAnswerView.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFAnswerView.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFAnswerView~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Custom Views/Views/QFFrenchFlagView.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFFrenchFlagView.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFFrenchFlagView.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFFrenchFlagView.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFFrenchFlagView.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFFrenchFlagView.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFFrenchFlagView.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFFrenchFlagView.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFFrenchFlagView~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Custom Views/Views/QFItemInfoView.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFItemInfoView.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFItemInfoView.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFItemInfoView.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFItemInfoView.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFItemInfoView.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFItemInfoView.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFItemInfoView.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFItemInfoView~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Extensions/Collection+Ext.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Collection+Ext.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Collection+Ext.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Collection+Ext.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Collection+Ext.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Collection+Ext.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Collection+Ext.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Collection+Ext.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Collection+Ext~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Extensions/UIColor+Ext.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/UIColor+Ext.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/UIColor+Ext.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/UIColor+Ext.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/UIColor+Ext.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/UIColor+Ext.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/UIColor+Ext.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/UIColor+Ext.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/UIColor+Ext~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Extensions/UIView+Ext.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/UIView+Ext.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/UIView+Ext.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/UIView+Ext.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/UIView+Ext.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/UIView+Ext.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/UIView+Ext.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/UIView+Ext.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/UIView+Ext~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Extensions/UIViewController+Ext.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/UIViewController+Ext.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/UIViewController+Ext.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/UIViewController+Ext.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/UIViewController+Ext.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/UIViewController+Ext.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/UIViewController+Ext.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/UIViewController+Ext.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/UIViewController+Ext~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/ImageViews/QFCategoryImageView.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFCategoryImageView.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFCategoryImageView.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFCategoryImageView.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFCategoryImageView.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFCategoryImageView.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFCategoryImageView.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFCategoryImageView.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFCategoryImageView~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Managers/NetworkManager.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/NetworkManager.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/NetworkManager.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/NetworkManager.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/NetworkManager.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/NetworkManager.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/NetworkManager.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/NetworkManager.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/NetworkManager~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Managers/ProgressManager.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/ProgressManager.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/ProgressManager.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/ProgressManager.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/ProgressManager.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/ProgressManager.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/ProgressManager.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/ProgressManager.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/ProgressManager~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Model/Alphabet.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Alphabet.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Alphabet.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Alphabet.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Alphabet.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Alphabet.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Alphabet.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Alphabet.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Alphabet~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Model/Item.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Item.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Item.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Item.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Item.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Item.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Item.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Item.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Item~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Model/Section.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Section.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Section.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Section.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Section.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Section.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Section.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Section.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Section~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/SceneDelegate.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/SceneDelegate.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/SceneDelegate.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/SceneDelegate.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/SceneDelegate.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/SceneDelegate.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/SceneDelegate.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/SceneDelegate.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/SceneDelegate~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Screens/Categories/ItemCategoryVC.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/ItemCategoryVC.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/ItemCategoryVC.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/ItemCategoryVC.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/ItemCategoryVC.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/ItemCategoryVC.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/ItemCategoryVC.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/ItemCategoryVC.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/ItemCategoryVC~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Screens/Categories/PhrasesCategoriesVC.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/PhrasesCategoriesVC.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/PhrasesCategoriesVC.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/PhrasesCategoriesVC.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/PhrasesCategoriesVC.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/PhrasesCategoriesVC.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/PhrasesCategoriesVC.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/PhrasesCategoriesVC.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/PhrasesCategoriesVC~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Screens/Categories/WordsCategoriesVC.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/WordsCategoriesVC.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/WordsCategoriesVC.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/WordsCategoriesVC.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/WordsCategoriesVC.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/WordsCategoriesVC.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/WordsCategoriesVC.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/WordsCategoriesVC.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/WordsCategoriesVC~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Screens/HomeVC.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/HomeVC.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/HomeVC.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/HomeVC.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/HomeVC.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/HomeVC.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/HomeVC.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/HomeVC.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/HomeVC~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Screens/Lists/AlphabetListVC.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/AlphabetListVC.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/AlphabetListVC.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/AlphabetListVC.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/AlphabetListVC.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/AlphabetListVC.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/AlphabetListVC.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/AlphabetListVC.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/AlphabetListVC~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Screens/Lists/ItemListVC.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/ItemListVC.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/ItemListVC.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/ItemListVC.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/ItemListVC.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/ItemListVC.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/ItemListVC.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/ItemListVC.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/ItemListVC~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Screens/Lists/PhrasesListVC.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/PhrasesListVC.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/PhrasesListVC.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/PhrasesListVC.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/PhrasesListVC.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/PhrasesListVC.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/PhrasesListVC.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/PhrasesListVC.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/PhrasesListVC~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Screens/Lists/WordsListVC.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/WordsListVC.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/WordsListVC.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/WordsListVC.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/WordsListVC.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/WordsListVC.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/WordsListVC.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/WordsListVC.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/WordsListVC~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Screens/QFFavoritesVC.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFFavoritesVC.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFFavoritesVC.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFFavoritesVC.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFFavoritesVC.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFFavoritesVC.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFFavoritesVC.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFFavoritesVC.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QFFavoritesVC~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Screens/QuizVC.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QuizVC.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QuizVC.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QuizVC.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QuizVC.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QuizVC.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QuizVC.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QuizVC.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/QuizVC~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Utilities/Constants.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Constants-7c978a109c5a51f9a9270dd6dfce3f58.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Constants-7c978a109c5a51f9a9270dd6dfce3f58.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Constants-7c978a109c5a51f9a9270dd6dfce3f58.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Constants-7c978a109c5a51f9a9270dd6dfce3f58.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Constants-7c978a109c5a51f9a9270dd6dfce3f58.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Constants-7c978a109c5a51f9a9270dd6dfce3f58.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Constants-7c978a109c5a51f9a9270dd6dfce3f58.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Constants-7c978a109c5a51f9a9270dd6dfce3f58~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/Utilities/Constants.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Constants-a6a51419c5a835a1f969797fc7aba8b0.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Constants-a6a51419c5a835a1f969797fc7aba8b0.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Constants-a6a51419c5a835a1f969797fc7aba8b0.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Constants-a6a51419c5a835a1f969797fc7aba8b0.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Constants-a6a51419c5a835a1f969797fc7aba8b0.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Constants-a6a51419c5a835a1f969797fc7aba8b0.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Constants-a6a51419c5a835a1f969797fc7aba8b0.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/Constants-a6a51419c5a835a1f969797fc7aba8b0~partial.swiftmodule"
+  },
+  "/Users/marcos/Documents/QuizFrench/QuizFrench/Utilities/UIHelper.swift" : {
+    "const-values" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/UIHelper.swiftconstvalues",
+    "dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/UIHelper.d",
+    "diagnostics" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/UIHelper.dia",
+    "index-unit-output-path" : "/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/UIHelper.o",
+    "llvm-bc" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/UIHelper.bc",
+    "object" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/UIHelper.o",
+    "swift-dependencies" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/UIHelper.swiftdeps",
+    "swiftmodule" : "/Users/marcos/Documents/QuizFrench/QuizFrench/build/QuizFrench.build/Debug-iphonesimulator/QuizFrench.build/Objects-normal/x86_64/UIHelper~partial.swiftmodule"
+  }
+}

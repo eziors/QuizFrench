@@ -1,0 +1,49 @@
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Screens/Lists/WordsListVC.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Extensions/UIViewController+Ext.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Buttons/IconButtons/QFPlayButton.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Custom\ Views/Views/QFAnswerView.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Screens/HomeVC.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Managers/NetworkManager.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Screens/Lists/AlphabetListVC.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Custom\ Views/Views/QFFrenchFlagView.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Custom\ Views/ViewControllers/QFStreakProgressVC.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Custom\ Views/ViewControllers/ItemInfoVCs/QFWordsItemVC.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/Utilities/UIHelper.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/AppDelegate.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Custom\ Views/ViewControllers/ItemInfoVCs/QFPhrasesItemVC.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Custom\ Views/Labels/QFTitleLabel.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Custom\ Views/ViewControllers/QFHomeHeaderVC.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Model/Section.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Custom\ Views/ViewControllers/QFSelectionVC.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Screens/Lists/ItemListVC.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Custom\ Views/ViewControllers/ItemInfoVCs/QFTipsItemVC.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Screens/Categories/PhrasesCategoriesVC.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Custom\ Views/Labels/QFSecondaryTitleLabel.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Extensions/UIColor+Ext.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Extensions/UIView+Ext.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Buttons/IconButtons/QFCloseButton.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Screens/Lists/PhrasesListVC.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Cells/CategoryCell.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Custom\ Views/Labels/QFBodyLabel.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Extensions/Collection+Ext.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Buttons/IconButtons/QFFavoriteButton.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/SceneDelegate.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Buttons/QFButton.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Custom\ Views/Views/ProgressViews/QFProgressInfoView.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Custom\ Views/ViewControllers/ItemInfoVCs/QFAlphabetItemVC.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Model/Item.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Screens/Categories/ItemCategoryVC.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Custom\ Views/ViewControllers/ItemInfoVCs/QFItemInfoVC.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Screens/QFFavoritesVC.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Custom\ Views/Views/QFItemInfoView.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Model/Alphabet.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Custom\ Views/ViewControllers/QFProgressVC.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/ImageViews/QFCategoryImageView.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Cells/AlphabetCell.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Buttons/QFQuizButton.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Screens/QuizVC.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Cells/ItemCell.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Screens/Categories/WordsCategoriesVC.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Managers/ProgressManager.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Utilities/Constants.swift
+/Users/marcos/Documents/QuizFrench/QuizFrench/QuizFrench/Buttons/IconButtons/QFCopyButton.swift
