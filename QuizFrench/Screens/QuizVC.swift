@@ -16,10 +16,10 @@ class QuizVC: UIViewController {
     var questionsCount = 0
     var correctCount = 0
     
-    var allQuestions: [Item.Question] = []
-    var questionLevel1: [Item.Question] = []
-    var questionsLevel2: [Item.Question] = []
-    var currentQuestion: Item.Question?
+    var allQuestions: [Question] = []
+    var questionsLevel1: [Question] = []
+    var questionsLevel2: [Question] = []
+    var currentQuestion: Question?
     
     
     let questionLabel = QFTitleLabel(textAlignment: .center, fontSize: 22)
@@ -61,6 +61,23 @@ class QuizVC: UIViewController {
         
         navigationItem.scrollEdgeAppearance = appearance
         navigationController?.navigationBar.tintColor = .white
+    }
+    
+    func loadData() {
+        DataManager.shared.getQuestions(for: quizType, category: category, contentType: .quiz) { result in
+            switch result {
+            case .success(let questions):
+                self.allQuestions = questions
+                self.questionsLevel1 = Array(questions.prefix(10))
+                self.questionsLevel2 = Array(questions.suffix(10))
+                
+                self.questionsCount = self.allQuestions.count
+                self.updateQuestionCountLabel()
+                self.askQuestion()
+            case .failure(let error):
+                print("Something went wrong !")
+            }
+        }
     }
     
     
@@ -148,28 +165,7 @@ class QuizVC: UIViewController {
         ])
     }
     
-    func loadData() {
-        NetworkManager.shared.fetchAllItems(itemType: quizType) { items in
-            let selectedCategory = self.category
-            
-            for item in items {
-                if item.category == selectedCategory {
-                    self.allQuestions = item.questions
-                    self.questionLevel1 = Array(self.allQuestions.prefix(10))
-                    self.questionsLevel2 = Array(self.allQuestions.suffix(10))
-                }
-            }
-            
-            if !self.allQuestions.isEmpty {
-                self.questionsCount = self.allQuestions.count
-                self.updateQuestionCountLabel()
-                self.askQuestion()
-            } else {
-                print("Nenhuma pergunta disponível para a categoria \(self.category!)")
-            }
-        }
-    }
-    
+     
     func updateProgressBar() {
         let progress = Float(correctCount) / Float(questionsCount)
         progressBar.setProgress(progress, animated: true)
@@ -186,9 +182,9 @@ class QuizVC: UIViewController {
         
         answerStackView.isHidden = true
         self.currentQuestion = question
-        self.questionLabel.text = question.questionText
+        self.questionLabel.text = question.question
         
-        let options = [question.options.a, question.options.b, question.options.c, question.options.d]
+        let options = [question.a, question.b, question.c, question.d]
         
         for (index, button) in answerButtons.enumerated() {
             button.setTitle(options[index], for: .normal)
@@ -213,9 +209,9 @@ class QuizVC: UIViewController {
     
     
     func checkAnswer(_ selectedOption: String, buttonIndex: Int) {
-        answerView.correctAnswer.text = self.currentQuestion?.correctAnswer
+        answerView.correctAnswer.text = self.currentQuestion?.correct
         
-        if selectedOption == self.currentQuestion?.correctAnswer {
+        if selectedOption == self.currentQuestion?.correct {
             changeAnswerColor(color: UIColor.correctColor, buttonIndex: buttonIndex)
             correctCount += 1
             print("Correct")
@@ -247,3 +243,29 @@ class QuizVC: UIViewController {
         }
     }
 }
+
+
+/* ---------- Deprecated ----------
+func loadData() {
+    DataManager.shared.fetchAllItems(itemType: quizType) { items in
+        let selectedCategory = self.category
+        
+        for item in items {
+            if item.category == selectedCategory {
+                self.allQuestions = item.questions
+                self.questionLevel1 = Array(self.allQuestions.prefix(10))
+                self.questionsLevel2 = Array(self.allQuestions.suffix(10))
+            }
+        }
+        
+        if !self.allQuestions.isEmpty {
+            self.questionsCount = self.allQuestions.count
+            self.updateQuestionCountLabel()
+            self.askQuestion()
+        } else {
+            print("Nenhuma pergunta disponível para a categoria \(self.category!)")
+        }
+    }
+}
+*/
+

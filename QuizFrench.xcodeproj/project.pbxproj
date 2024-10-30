@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		8D1ACA9D2CAFBADE00CC22B8 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1ACA9C2CAFBADE00CC22B8 /* ItemCell.swift */; };
 		8D1ACA9F2CAFC25200CC22B8 /* ItemListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1ACA9E2CAFC25200CC22B8 /* ItemListVC.swift */; };
-		8D775BAA2CAE546B00A5F5A5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D775BA92CAE546B00A5F5A5 /* NetworkManager.swift */; };
-		8D775C112CAE7F2C00A5F5A5 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 8D775C102CAE7F2C00A5F5A5 /* FirebaseCrashlytics */; };
-		8D775C132CAE7F2C00A5F5A5 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 8D775C122CAE7F2C00A5F5A5 /* FirebaseDatabase */; };
+		8D775BAA2CAE546B00A5F5A5 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D775BA92CAE546B00A5F5A5 /* DataManager.swift */; };
 		8D775C172CAE802300A5F5A5 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D775C162CAE802300A5F5A5 /* Item.swift */; };
 		8D77AB0B2CBEEA95006E83D5 /* QFSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77AB0A2CBEEA95006E83D5 /* QFSelectionVC.swift */; };
 		8D77AB0D2CBEED10006E83D5 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77AB0C2CBEED10006E83D5 /* UIViewController+Ext.swift */; };
@@ -209,21 +207,21 @@
 		8D8EE3DB2CC8D7AD000CE542 /* alphabet_Cc_male.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8D8999AF2CB7675300E08FB8 /* alphabet_Cc_male.mp3 */; };
 		8D8EE3DC2CC8D7AD000CE542 /* alphabet_Dd_male.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8D8999B02CB7675300E08FB8 /* alphabet_Dd_male.mp3 */; };
 		8D8EE3DD2CC8D7AD000CE542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D848BE52C923306001C1910 /* Assets.xcassets */; };
+		8D9671022CD18B270032E056 /* QFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9671012CD18B270032E056 /* QFError.swift */; };
+		8D9671042CD18BC60032E056 /* phrases.json in Resources */ = {isa = PBXBuildFile; fileRef = 8D9671032CD18BC50032E056 /* phrases.json */; };
+		8D9671062CD18BCE0032E056 /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = 8D9671052CD18BCE0032E056 /* words.json */; };
 		8D9CAF4A2CB0B50700AF42E3 /* QFBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9CAF492CB0B50700AF42E3 /* QFBodyLabel.swift */; };
 		8D9CAF4D2CB0CFC600AF42E3 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9CAF4C2CB0CFC600AF42E3 /* UIColor+Ext.swift */; };
 		8D9CAF502CB0D65900AF42E3 /* QFPlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9CAF4F2CB0D65900AF42E3 /* QFPlayButton.swift */; };
 		8D9CAF522CB0D66A00AF42E3 /* QFCopyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9CAF512CB0D66A00AF42E3 /* QFCopyButton.swift */; };
 		8D9CAF542CB0D67700AF42E3 /* QFFavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9CAF532CB0D67700AF42E3 /* QFFavoriteButton.swift */; };
 		8DAAE4EF2CD0ADB7001EDD43 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAAE4EE2CD0ADB7001EDD43 /* UIHelper.swift */; };
-		FFE3851CF05B4BBE10C5E8DB /* Pods_QuizFrench.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 880EE85315225699B1499205 /* Pods_QuizFrench.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3CE6DC9825D52FE719529503 /* Pods-QuizFrench.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizFrench.release.xcconfig"; path = "Target Support Files/Pods-QuizFrench/Pods-QuizFrench.release.xcconfig"; sourceTree = "<group>"; };
-		880EE85315225699B1499205 /* Pods_QuizFrench.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuizFrench.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1ACA9C2CAFBADE00CC22B8 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		8D1ACA9E2CAFC25200CC22B8 /* ItemListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListVC.swift; sourceTree = "<group>"; };
-		8D775BA92CAE546B00A5F5A5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		8D775BA92CAE546B00A5F5A5 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		8D775BAB2CAE63CD00A5F5A5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8D775C162CAE802300A5F5A5 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		8D77AB0A2CBEEA95006E83D5 /* QFSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFSelectionVC.swift; sourceTree = "<group>"; };
@@ -432,13 +430,15 @@
 		8D8A5A452CBC63E100DEFE47 /* ItemCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCategoryVC.swift; sourceTree = "<group>"; };
 		8D8A5A472CBC673600DEFE47 /* PhrasesCategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhrasesCategoriesVC.swift; sourceTree = "<group>"; };
 		8D8C1EF02CC22907006A25EA /* QuizVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizVC.swift; sourceTree = "<group>"; };
+		8D9671012CD18B270032E056 /* QFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFError.swift; sourceTree = "<group>"; };
+		8D9671032CD18BC50032E056 /* phrases.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = phrases.json; sourceTree = "<group>"; };
+		8D9671052CD18BCE0032E056 /* words.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = words.json; sourceTree = "<group>"; };
 		8D9CAF492CB0B50700AF42E3 /* QFBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFBodyLabel.swift; sourceTree = "<group>"; };
 		8D9CAF4C2CB0CFC600AF42E3 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 		8D9CAF4F2CB0D65900AF42E3 /* QFPlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFPlayButton.swift; sourceTree = "<group>"; };
 		8D9CAF512CB0D66A00AF42E3 /* QFCopyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFCopyButton.swift; sourceTree = "<group>"; };
 		8D9CAF532CB0D67700AF42E3 /* QFFavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFFavoriteButton.swift; sourceTree = "<group>"; };
 		8DAAE4EE2CD0ADB7001EDD43 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
-		D841E27FE6DA2C3C10D60977 /* Pods-QuizFrench.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizFrench.debug.xcconfig"; path = "Target Support Files/Pods-QuizFrench/Pods-QuizFrench.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -446,9 +446,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D775C132CAE7F2C00A5F5A5 /* FirebaseDatabase in Frameworks */,
-				8D775C112CAE7F2C00A5F5A5 /* FirebaseCrashlytics in Frameworks */,
-				FFE3851CF05B4BBE10C5E8DB /* Pods_QuizFrench.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,8 +455,6 @@
 		17D5FB892B495DA882B27928 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D841E27FE6DA2C3C10D60977 /* Pods-QuizFrench.debug.xcconfig */,
-				3CE6DC9825D52FE719529503 /* Pods-QuizFrench.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -467,7 +462,7 @@
 		8D775BA82CAE545400A5F5A5 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				8D775BA92CAE546B00A5F5A5 /* NetworkManager.swift */,
+				8D775BA92CAE546B00A5F5A5 /* DataManager.swift */,
 				8D7BC03D2CC313B200F0E751 /* ProgressManager.swift */,
 			);
 			path = Managers;
@@ -487,6 +482,8 @@
 		8D77AB142CBF6EB0006E83D5 /* Files */ = {
 			isa = PBXGroup;
 			children = (
+				8D9671032CD18BC50032E056 /* phrases.json */,
+				8D9671052CD18BCE0032E056 /* words.json */,
 				8D77AB152CBF6EC2006E83D5 /* quotes.txt */,
 			);
 			path = Files;
@@ -527,6 +524,7 @@
 			children = (
 				8D806F1E2C9405B4004D698A /* Constants.swift */,
 				8DAAE4EE2CD0ADB7001EDD43 /* UIHelper.swift */,
+				8D9671012CD18B270032E056 /* QFError.swift */,
 			);
 			name = Utilities;
 			path = ../Utilities;
@@ -560,7 +558,6 @@
 				8D848BDB2C923303001C1910 /* QuizFrench */,
 				8D848BDA2C923303001C1910 /* Products */,
 				17D5FB892B495DA882B27928 /* Pods */,
-				CFEEEF05A3DFA531A82C2819 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -946,14 +943,6 @@
 			path = Buttons;
 			sourceTree = "<group>";
 		};
-		CFEEEF05A3DFA531A82C2819 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				880EE85315225699B1499205 /* Pods_QuizFrench.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -961,7 +950,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D848BED2C923306001C1910 /* Build configuration list for PBXNativeTarget "QuizFrench" */;
 			buildPhases = (
-				168A22609787A618CD91FE5E /* [CP] Check Pods Manifest.lock */,
 				8D848BD52C923303001C1910 /* Sources */,
 				8D848BD62C923303001C1910 /* Frameworks */,
 				8D848BD72C923303001C1910 /* Resources */,
@@ -971,10 +959,6 @@
 			dependencies = (
 			);
 			name = QuizFrench;
-			packageProductDependencies = (
-				8D775C102CAE7F2C00A5F5A5 /* FirebaseCrashlytics */,
-				8D775C122CAE7F2C00A5F5A5 /* FirebaseDatabase */,
-			);
 			productName = QuizFrench;
 			productReference = 8D848BD92C923303001C1910 /* QuizFrench.app */;
 			productType = "com.apple.product-type.application";
@@ -1003,9 +987,6 @@
 				Base,
 			);
 			mainGroup = 8D848BD02C923303001C1910;
-			packageReferences = (
-				8D775C0F2CAE7F2C00A5F5A5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-			);
 			productRefGroup = 8D848BDA2C923303001C1910 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1044,6 +1025,7 @@
 				8D8EE3582CC8D7AC000CE542 /* word_Lunettes_.mp3 in Resources */,
 				8D8EE3592CC8D7AC000CE542 /* word_Bonnet_f.mp3 in Resources */,
 				8D8EE35A2CC8D7AC000CE542 /* word_Ceinture_f.mp3 in Resources */,
+				8D9671062CD18BCE0032E056 /* words.json in Resources */,
 				8D8EE35B2CC8D7AC000CE542 /* word_Chapeau_f.mp3 in Resources */,
 				8D8EE35C2CC8D7AC000CE542 /* word_Chaussettes_f.mp3 in Resources */,
 				8D8EE35D2CC8D7AC000CE542 /* word_Chaussons_f.mp3 in Resources */,
@@ -1080,6 +1062,7 @@
 				8D8EE37C2CC8D7AD000CE542 /* word_Oncle_f.mp3 in Resources */,
 				8D8EE37D2CC8D7AD000CE542 /* word_Père_f.mp3 in Resources */,
 				8D8EE37E2CC8D7AD000CE542 /* word_Sœur_f.mp3 in Resources */,
+				8D9671042CD18BC60032E056 /* phrases.json in Resources */,
 				8D8EE37F2CC8D7AD000CE542 /* word_Tante_f.mp3 in Resources */,
 				8D8EE3802CC8D7AD000CE542 /* word_Carotte_f.mp3 in Resources */,
 				8D8EE3812CC8D7AD000CE542 /* word_Céréales_f.mp3 in Resources */,
@@ -1181,31 +1164,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		168A22609787A618CD91FE5E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-QuizFrench-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		8D848BD52C923303001C1910 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -1216,8 +1174,9 @@
 				8D9CAF502CB0D65900AF42E3 /* QFPlayButton.swift in Sources */,
 				8D8771E72CC5A05400E703F6 /* QFAnswerView.swift in Sources */,
 				8D848BF32C923410001C1910 /* HomeVC.swift in Sources */,
-				8D775BAA2CAE546B00A5F5A5 /* NetworkManager.swift in Sources */,
+				8D775BAA2CAE546B00A5F5A5 /* DataManager.swift in Sources */,
 				8D8488F42C9E34DC00715368 /* AlphabetListVC.swift in Sources */,
+				8D9671022CD18B270032E056 /* QFError.swift in Sources */,
 				8D848BF82C924DB2001C1910 /* QFFrenchFlagView.swift in Sources */,
 				8D848C002C926D0D001C1910 /* QFStreakProgressVC.swift in Sources */,
 				8D806F262C941BCF004D698A /* QFWordsItemVC.swift in Sources */,
@@ -1400,7 +1359,6 @@
 		};
 		8D848BEE2C923306001C1910 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D841E27FE6DA2C3C10D60977 /* Pods-QuizFrench.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1431,7 +1389,6 @@
 		};
 		8D848BEF2C923306001C1910 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3CE6DC9825D52FE719529503 /* Pods-QuizFrench.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1480,30 +1437,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		8D775C0F2CAE7F2C00A5F5A5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 11.3.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		8D775C102CAE7F2C00A5F5A5 /* FirebaseCrashlytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 8D775C0F2CAE7F2C00A5F5A5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseCrashlytics;
-		};
-		8D775C122CAE7F2C00A5F5A5 /* FirebaseDatabase */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 8D775C0F2CAE7F2C00A5F5A5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseDatabase;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8D848BD12C923303001C1910 /* Project object */;
 }

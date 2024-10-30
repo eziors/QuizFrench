@@ -33,10 +33,10 @@ class ItemCell: UITableViewCell {
     }
     
     
-    func set(wordString: Item.Question, for cellType: String) {
-        wordLabel.text = wordString.correctAnswer
+    func set(wordString: Question, for cellType: String) {
+        wordLabel.text = wordString.correct
         translatedWordLabel.text = wordString.translation.english
-        wordTrack = "\(cellType)_\(wordString.correctAnswer)_f"
+        wordTrack = "\(cellType)_\(wordString.correct)_f"
 
     }
     

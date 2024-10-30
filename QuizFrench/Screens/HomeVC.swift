@@ -7,7 +7,7 @@
 
 import UIKit
 import AVFoundation
-import Firebase
+
 
 protocol QFHomeVCDelegate: class {
     func didTapAlphabet()

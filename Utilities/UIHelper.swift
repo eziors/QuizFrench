@@ -15,6 +15,10 @@ enum CategoryType {
     case phrases, words
 }
 
+enum ContentType {
+    case quiz, list
+}
+
 struct UIHelper {
     static func createTwoColumnFlowLayout(in view: UIView, for collectionType: CollectionType) -> UICollectionViewFlowLayout {
         let width = view.bounds.width
