@@ -16,9 +16,7 @@ class QuizVC: UIViewController {
     var questionsCount = 0
     var correctCount = 0
     
-    var allQuestions: [Question] = []
-    var questionsLevel1: [Question] = []
-    var questionsLevel2: [Question] = []
+    var questions: [Question] = []
     var currentQuestion: Question?
     
     
@@ -38,7 +36,6 @@ class QuizVC: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemGray5
         configureNavigationBar()
-        loadData()
         configureQuestionCountLabel()
         configureAnswerStackView()
         configureQuestionLabel()
@@ -47,6 +44,7 @@ class QuizVC: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        loadData()
         askQuestion()
         progressBar.progress = 0
     }
@@ -64,14 +62,13 @@ class QuizVC: UIViewController {
     }
     
     func loadData() {
-        DataManager.shared.getQuestions(for: quizType, category: category, contentType: .quiz) { result in
+        DataManager.shared.getQuizQuestions(for: quizType, category: category, selectedLevel: 1) { result in
             switch result {
             case .success(let questions):
-                self.allQuestions = questions
-                self.questionsLevel1 = Array(questions.prefix(10))
-                self.questionsLevel2 = Array(questions.suffix(10))
+                self.questions = questions
                 
-                self.questionsCount = self.allQuestions.count
+                
+                self.questionsCount = self.questions.count
                 self.updateQuestionCountLabel()
                 self.askQuestion()
             case .failure(let error):
@@ -80,6 +77,7 @@ class QuizVC: UIViewController {
         }
     }
     
+    // MARK: --------- UI Funcs ---------
     
     func configureQuestionCountLabel() {
         view.addSubview(questionCountLabel)
@@ -165,6 +163,7 @@ class QuizVC: UIViewController {
         ])
     }
     
+    // MARK: --------- Quiz logic funcs ---------
      
     func updateProgressBar() {
         let progress = Float(correctCount) / Float(questionsCount)
@@ -173,7 +172,9 @@ class QuizVC: UIViewController {
     
     
     @objc func askQuestion() {
-        guard let question = allQuestions.randomElement() else {
+        guard let question = questions.randomElement() else {
+            presentCompletedQuizContainer(title: "Congratulations 🥳", message: "You have finished this quiz for now !!", buttonTitle: "Return", navController: self.navigationController!)
+            
             print("Nenhuma pergunta disponível.")
             return
         }
@@ -214,10 +215,10 @@ class QuizVC: UIViewController {
         if selectedOption == self.currentQuestion?.correct {
             changeAnswerColor(color: UIColor.correctColor, buttonIndex: buttonIndex)
             correctCount += 1
-            print("Correct")
+            self.questions.removeAll(where: { $0.id == currentQuestion?.id })
         } else {
             changeAnswerColor(color: UIColor.incorrectColor, buttonIndex: buttonIndex)
-            print("Wrong")
+            
         }
         answerStackView.isHidden = false
         updateQuestionCountLabel()

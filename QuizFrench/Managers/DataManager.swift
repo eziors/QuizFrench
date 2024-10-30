@@ -12,7 +12,7 @@ class DataManager {
     
     private init() { }
     
-    func getQuestions(for selectedFile: String, category: String, contentType: ContentType, completed: @escaping (Result<[Question], QFError>) -> Void) {
+    func getListQuestions(for selectedFile: String, category: String, completed: @escaping (Result<[Question], QFError>) -> Void) {
         var questionsArray: [Question] = []
         
         guard let url = Bundle.main.url(forResource: selectedFile, withExtension: "json") else {
@@ -32,19 +32,12 @@ class DataManager {
             
             for item in decodedItems.items {
                 if item.category == category {
-                    
-                    switch contentType {
-                    case .quiz:
-                        questionsArray = item.questions
-                        completed(.success(questionsArray))
-                    case .list:
-                        for question in item.questions {
-                            if !questionsArray.contains(where: { $0.correct == question.correct }) {
-                                questionsArray.append(question)
-                            }
+                    for question in item.questions {
+                        if !questionsArray.contains(where: { $0.correct == question.correct }) {
+                            questionsArray.append(question)
                         }
-                        completed(.success(questionsArray))
                     }
+                    completed(.success(questionsArray))
                 }
             }
             
@@ -53,6 +46,49 @@ class DataManager {
             completed(.failure(.dataError))
         }
     }
+    
+    func getQuizQuestions(for selectedFile: String, category: String, selectedLevel: Int, completed: @escaping (Result<[Question], QFError>) -> Void) {
+        var questionsArray: [Question] = []
+        
+        guard let url = Bundle.main.url(forResource: selectedFile, withExtension: "json") else {
+            completed(.failure(.urlError))
+            return
+        }
+        
+        guard let data = try? Data(contentsOf: url) else {
+            completed(.failure(.dataError))
+            return
+        }
+        
+        let decoder = JSONDecoder()
+        
+        do {
+            let decodedItems = try decoder.decode(Item.self, from: data)
+            
+            for item in decodedItems.items {
+                if item.category == category {
+                    switch selectedLevel {
+                    case 1:
+                        questionsArray = Array(item.questions.prefix(10))
+                    case 2:
+                        questionsArray = Array(item.questions.suffix(20))
+                    case 3:
+                        questionsArray = Array(item.questions)
+                    default:
+                        print("Invalid level !")
+                        break
+                    }
+                    
+                    completed(.success(questionsArray))
+                }
+            }
+            
+        } catch {
+            print("Error in do catch block \(error)")
+            completed(.failure(.dataError))
+        }
+    }
+
 
 }
 

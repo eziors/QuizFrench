@@ -43,7 +43,7 @@ class ItemListVC: UIViewController {
 
     
     func loadData() {
-        DataManager.shared.getQuestions(for: "words", category: category, contentType: .list) { result in
+        DataManager.shared.getListQuestions(for: "words", category: category) { result in
             switch result {
             case .success(let questions):
                 self.questions = questions
