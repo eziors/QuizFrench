@@ -28,18 +28,23 @@ class QFQuizWriteButton: UIButton {
     func configure() {
         backgroundColor = UIColor.systemGray6
         layer.cornerRadius = 5
+        layer.borderWidth = 2
+        layer.borderColor = UIColor.systemGray3.cgColor
         setTitleColor(.label, for: .normal)
         translatesAutoresizingMaskIntoConstraints = false
         titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .bold)
         
-        layer.shadowColor = UIColor.black.cgColor
-        layer.shadowOpacity = 0.4
-        layer.shadowOffset = CGSize(width: 2, height: 2)
-        layer.shadowRadius = 2
+        
         
         NSLayoutConstraint.activate([
-            self.heightAnchor.constraint(equalToConstant: 40),
-            self.widthAnchor.constraint(equalToConstant: 40),
+            self.heightAnchor.constraint(equalToConstant: 50),
+            self.widthAnchor.constraint(equalToConstant: 50),
         ])
+        
+        /*
+        titleLabel?.adjustsFontSizeToFitWidth = false
+        titleLabel?.lineBreakMode = .byClipping
+        contentEdgeInsets = .zero
+         */ 
     }
 }

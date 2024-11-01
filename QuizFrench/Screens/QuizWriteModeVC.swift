@@ -10,11 +10,16 @@ import UIKit
 class QuizWriteModeVC: QuizSuperclassVC {
     
     var letterButtons: [UIButton] = []
-    var buttonsStackView = UIStackView()
+    var buttonsStackViewOne = UIStackView()
+    var buttonsStackViewTwo = UIStackView()
+    
+    
+    var answerLabel = QFTitleLabel(textAlignment: .center, fontSize: 22)
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureAnswerLabel()
         configureButtonsStackView()
     }
     
@@ -23,16 +28,35 @@ class QuizWriteModeVC: QuizSuperclassVC {
         askQuestion()
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
-        removeSubViews()
+    func configureAnswerLabel() {
+        view.addSubview(answerLabel)
+        answerLabel.text = ""
+        
+        NSLayoutConstraint.activate([
+            answerLabel.topAnchor.constraint(equalTo: questionLabel.bottomAnchor),
+            answerLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
+            answerLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40),
+            answerLabel.heightAnchor.constraint(equalToConstant: 44),
+            
+        ])
     }
     
+    
     func configureButtonsStackView() {
-        view.addSubview(buttonsStackView)
+        view.addSubview(buttonsStackViewOne)
+        view.addSubview(buttonsStackViewTwo)
         
-        buttonsStackView.axis = .horizontal
-        buttonsStackView.distribution = .equalCentering
-        buttonsStackView.translatesAutoresizingMaskIntoConstraints = false
+        buttonsStackViewOne.axis = .horizontal
+        buttonsStackViewOne.distribution = .equalSpacing
+        buttonsStackViewOne.spacing = 10
+        buttonsStackViewOne.translatesAutoresizingMaskIntoConstraints = false
+        
+        
+        buttonsStackViewTwo.axis = .horizontal
+        buttonsStackViewTwo.distribution = .equalSpacing
+        buttonsStackViewTwo.spacing = 10
+        buttonsStackViewTwo.translatesAutoresizingMaskIntoConstraints = false
+        
         
         
         /*
@@ -45,15 +69,23 @@ class QuizWriteModeVC: QuizSuperclassVC {
         */
         
         NSLayoutConstraint.activate([
-            buttonsStackView.topAnchor.constraint(equalTo: questionLabel.bottomAnchor, constant: 40),
-            buttonsStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
-            buttonsStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40),
-            buttonsStackView.heightAnchor.constraint(equalToConstant: 40),
+            buttonsStackViewOne.topAnchor.constraint(equalTo: answerLabel.bottomAnchor, constant: 40),
+            buttonsStackViewOne.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
+            buttonsStackViewOne.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40),
+            buttonsStackViewOne.heightAnchor.constraint(equalToConstant: 40),
+            
+            buttonsStackViewTwo.topAnchor.constraint(equalTo: buttonsStackViewOne.bottomAnchor, constant: 10),
+            buttonsStackViewTwo.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
+            buttonsStackViewTwo.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40),
+            buttonsStackViewTwo.heightAnchor.constraint(equalToConstant: 40),
         ])
     }
     
     @objc func askQuestion() {
         var letters: [String] = []
+        var letterCount: Int = letters.count
+        
+        var addedCount: Int = 0
         guard let question = questions.randomElement() else {
             presentCompletedQuizContainer(title: "Congratulations 🥳", message: "You have finished this quiz for now !!", buttonTitle: "Return", navController: self.navigationController!)
             
@@ -67,15 +99,22 @@ class QuizWriteModeVC: QuizSuperclassVC {
         self.questionLabel.text = question.question
         
         for letter in currentQuestion.correct { letters.append("\(letter)") }
-        
         letters = letters.shuffled()
         
+        resetState()
+        
         for letter in letters {
-            let button = QFQuizWriteButton(title: "\(letter)")
-            button.setTitle("\(letter)", for: .normal)
-            buttonsStackView.addArrangedSubview(button)
-
-        }
+            let button = QFQuizWriteButton(title: String(letter))
+            button.setTitle(String(letter), for: .normal)
+            
+            addedCount += 1
+            answerLabel.text! += "_ "
+            if addedCount < 6 {
+                buttonsStackViewOne.addArrangedSubview(button)
+            } else {
+                buttonsStackViewTwo.addArrangedSubview(button)
+            }
+                    }
         
         
         /*
@@ -86,7 +125,11 @@ class QuizWriteModeVC: QuizSuperclassVC {
          */
     }
     
-    
+    func resetState() {
+        buttonsStackViewOne.arrangedSubviews.forEach { $0.removeFromSuperview() }
+        buttonsStackViewTwo.arrangedSubviews.forEach { $0.removeFromSuperview() }
+        answerLabel.text = ""
+    }
     
     func checkAnswer(_ selectedOption: String, buttonIndex: Int) {
         answerView.correctAnswer.text = self.currentQuestion?.correct
@@ -115,8 +158,8 @@ class QuizWriteModeVC: QuizSuperclassVC {
     }
     
     func removeSubViews() {
-        for i in self.buttonsStackView.arrangedSubviews {
-            self.buttonsStackView.removeArrangedSubview(i)
+        for i in self.buttonsStackViewOne.arrangedSubviews {
+            self.buttonsStackViewOne.removeArrangedSubview(i)
         }
     }
 }
