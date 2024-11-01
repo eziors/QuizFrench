@@ -10,7 +10,7 @@
           "correct": "Elle",
           "d": "Vous",
           "id": 1,
-          "question": "Which pronoun is used to refer to 'she'?",
+          "question": "she",
           "translation": {
             "english": "She",
             "portuguese": "Ela"
@@ -23,7 +23,7 @@
           "correct": "Il",
           "d": "Nous",
           "id": 2,
-          "question": "Which pronoun is used to refer to 'he'?",
+          "question": "he",
           "translation": {
             "english": "He",
             "portuguese": "Ele"
@@ -36,7 +36,7 @@
           "correct": "Nous",
           "d": "Ils",
           "id": 3,
-          "question": "Which pronoun is used to refer to 'we'?",
+          "question": "we",
           "translation": {
             "english": "We",
             "portuguese": "Nós"
@@ -49,7 +49,7 @@
           "correct": "Tu",
           "d": "Elle",
           "id": 4,
-          "question": "Which pronoun is used to refer to 'you' (singular, informal)?",
+          "question": "you (singular, informal)",
           "translation": {
             "english": "You",
             "portuguese": "Tu"
@@ -62,7 +62,7 @@
           "correct": "Vous",
           "d": "Tu",
           "id": 5,
-          "question": "Which pronoun is used to refer to 'you' (plural or formal)?",
+          "question": "you (plural or formal)",
           "translation": {
             "english": "You",
             "portuguese": "Vocês"
@@ -75,7 +75,7 @@
           "correct": "Ils",
           "d": "Tu",
           "id": 6,
-          "question": "Which pronoun is used to refer to 'they' (masculine)?",
+          "question": "they (masculine)",
           "translation": {
             "english": "They (masculine)",
             "portuguese": "Eles"
@@ -88,7 +88,7 @@
           "correct": "Elles",
           "d": "Tu",
           "id": 7,
-          "question": "Which pronoun is used to refer to 'they' (feminine)?",
+          "question": "they (feminine)",
           "translation": {
             "english": "They (feminine)",
             "portuguese": "Elas"
@@ -101,7 +101,7 @@
           "correct": "Je",
           "d": "Elle",
           "id": 8,
-          "question": "Which pronoun is used to refer to 'I'?",
+          "question": "I",
           "translation": {
             "english": "I",
             "portuguese": "Eu"
@@ -114,7 +114,7 @@
           "correct": "Il",
           "d": "Nous",
           "id": 9,
-          "question": "Which pronoun is used to refer to 'this man'?",
+          "question": "this man",
           "translation": {
             "english": "He",
             "portuguese": "Ele"
@@ -127,7 +127,7 @@
           "correct": "Elle",
           "d": "Nous",
           "id": 10,
-          "question": "Which pronoun is used to refer to 'this woman'?",
+          "question": "this woman",
           "translation": {
             "english": "She",
             "portuguese": "Ela"
@@ -140,7 +140,7 @@
           "correct": "Ils",
           "d": "Vous",
           "id": 11,
-          "question": "Which pronoun is used to refer to 'Paul and his friends'?",
+          "question": "Paul and his friends",
           "translation": {
             "english": "They (masculine)",
             "portuguese": "Eles"
@@ -153,7 +153,7 @@
           "correct": "Elle",
           "d": "Nous",
           "id": 12,
-          "question": "Which pronoun is used to refer to 'Marie'?",
+          "question": "Marie",
           "translation": {
             "english": "She",
             "portuguese": "Ela"
@@ -166,7 +166,7 @@
           "correct": "Il",
           "d": "Elle",
           "id": 13,
-          "question": "Which pronoun is used to refer to 'Jean'?",
+          "question": "Jean",
           "translation": {
             "english": "He",
             "portuguese": "Ele"
@@ -179,7 +179,7 @@
           "correct": "Vous",
           "d": "Ils",
           "id": 14,
-          "question": "Which pronoun is used to refer to 'you all' (plural)?",
+          "question": "you all (plural)",
           "translation": {
             "english": "You all (plural)",
             "portuguese": "Vocês"
@@ -192,7 +192,7 @@
           "correct": "Nous",
           "d": "Tu",
           "id": 15,
-          "question": "Which pronoun is used to refer to 'we' (formal)?",
+          "question": "we (formal)",
           "translation": {
             "english": "We",
             "portuguese": "Nós"
@@ -205,7 +205,7 @@
           "correct": "Ils",
           "d": "Vous",
           "id": 16,
-          "question": "Which pronoun is used to refer to 'Jean and Pierre'?",
+          "question": "Jean and Pierre",
           "translation": {
             "english": "They (masculine)",
             "portuguese": "Eles"
@@ -218,7 +218,7 @@
           "correct": "Tu",
           "d": "Elle",
           "id": 17,
-          "question": "Which pronoun is used to refer to 'you' (informal)?",
+          "question": "you (informal)",
           "translation": {
             "english": "You (informal)",
             "portuguese": "Tu"
@@ -231,7 +231,7 @@
           "correct": "Il",
           "d": "Elle",
           "id": 18,
-          "question": "Which pronoun is used to refer to 'Pierre'?",
+          "question": "Pierre",
           "translation": {
             "english": "He",
             "portuguese": "Ele"
@@ -244,7 +244,7 @@
           "correct": "Elle",
           "d": "Tu",
           "id": 19,
-          "question": "Which pronoun is used to refer to 'Julie'?",
+          "question": "Julie",
           "translation": {
             "english": "She",
             "portuguese": "Ela"
@@ -257,7 +257,7 @@
           "correct": "Il",
           "d": "Elle",
           "id": 20,
-          "question": "Which pronoun is used to refer to 'he'?",
+          "question": "he",
           "translation": {
             "english": "He",
             "portuguese": "Ele"
@@ -270,7 +270,7 @@
           "correct": "Ils",
           "d": "Nous",
           "id": 21,
-          "question": "Which pronoun is used to refer to 'a group of men'?",
+          "question": "a group of men",
           "translation": {
             "english": "They (masculine)",
             "portuguese": "Eles"
@@ -283,7 +283,7 @@
           "correct": "Elle",
           "d": "Ils",
           "id": 22,
-          "question": "Which pronoun is used to refer to 'she'?",
+          "question": "she",
           "translation": {
             "english": "She",
             "portuguese": "Ela"
@@ -296,7 +296,7 @@
           "correct": "Ils",
           "d": "Vous",
           "id": 23,
-          "question": "Which pronoun is used to refer to 'they' (mixed group)?",
+          "question": "they (mixed group)",
           "translation": {
             "english": "They (mixed group)",
             "portuguese": "Eles"
@@ -309,7 +309,7 @@
           "correct": "Elle",
           "d": "Il",
           "id": 24,
-          "question": "Which pronoun is used to refer to 'a group of women'?",
+          "question": "a group of women",
           "translation": {
             "english": "She",
             "portuguese": "Ela"
@@ -322,7 +322,7 @@
           "correct": "Elle",
           "d": "Nous",
           "id": 25,
-          "question": "Which pronoun is used to refer to 'Marie and her friends'?",
+          "question": "Marie and her friends",
           "translation": {
             "english": "She",
             "portuguese": "Ela"
@@ -335,7 +335,7 @@
           "correct": "Tu",
           "d": "Ils",
           "id": 26,
-          "question": "Which pronoun is used to refer to 'you' (singular, informal)?",
+          "question": "you (singular, informal)",
           "translation": {
             "english": "You (informal, singular)",
             "portuguese": "Tu"
@@ -348,7 +348,7 @@
           "correct": "Nous",
           "d": "Elle",
           "id": 27,
-          "question": "Which pronoun is used to refer to 'we'?",
+          "question": "we",
           "translation": {
             "english": "We",
             "portuguese": "Nós"
@@ -361,7 +361,7 @@
           "correct": "Il",
           "d": "Vous",
           "id": 28,
-          "question": "Which pronoun is used to refer to 'he' (in French)?",
+          "question": "he (in French)",
           "translation": {
             "english": "He",
             "portuguese": "Ele"
@@ -374,7 +374,7 @@
           "correct": "Ils",
           "d": "Vous",
           "id": 29,
-          "question": "Which pronoun is used to refer to 'Jean and his family'?",
+          "question": "Jean and his family",
           "translation": {
             "english": "They (masculine)",
             "portuguese": "Eles"
@@ -387,7 +387,7 @@
           "correct": "Elle",
           "d": "Tu",
           "id": 30,
-          "question": "Which pronoun is used to refer to 'Julie and her sister'?",
+          "question": "Julie and her sister",
           "translation": {
             "english": "She",
             "portuguese": "Ela"
@@ -405,7 +405,7 @@
           "correct": "Un",
           "d": "Quatre",
           "id": 1,
-          "question": "What is the number 1 in French?",
+          "question": "1",
           "translation": {
             "english": "One",
             "portuguese": "Um"
@@ -418,7 +418,7 @@
           "correct": "Deux",
           "d": "Quatre",
           "id": 2,
-          "question": "What is the number 2 in French?",
+          "question": "2",
           "translation": {
             "english": "Two",
             "portuguese": "Dois"
@@ -431,7 +431,7 @@
           "correct": "Trois",
           "d": "Huit",
           "id": 3,
-          "question": "What is the number 3 in French?",
+          "question": "3",
           "translation": {
             "english": "Three",
             "portuguese": "Três"
@@ -444,7 +444,7 @@
           "correct": "Quatre",
           "d": "Neuf",
           "id": 4,
-          "question": "What is the number 4 in French?",
+          "question": "4",
           "translation": {
             "english": "Four",
             "portuguese": "Quatro"
@@ -457,7 +457,7 @@
           "correct": "Cinq",
           "d": "Huit",
           "id": 5,
-          "question": "What is the number 5 in French?",
+          "question": "5",
           "translation": {
             "english": "Five",
             "portuguese": "Cinco"
@@ -470,7 +470,7 @@
           "correct": "Six",
           "d": "Deux",
           "id": 6,
-          "question": "What is the number 6 in French?",
+          "question": "6",
           "translation": {
             "english": "Six",
             "portuguese": "Seis"
@@ -483,7 +483,7 @@
           "correct": "Sept",
           "d": "Huit",
           "id": 7,
-          "question": "What is the number 7 in French?",
+          "question": "7",
           "translation": {
             "english": "Seven",
             "portuguese": "Sete"
@@ -496,7 +496,7 @@
           "correct": "Huit",
           "d": "Neuf",
           "id": 8,
-          "question": "What is the number 8 in French?",
+          "question": "8",
           "translation": {
             "english": "Eight",
             "portuguese": "Oito"
@@ -509,7 +509,7 @@
           "correct": "Neuf",
           "d": "Dix",
           "id": 9,
-          "question": "What is the number 9 in French?",
+          "question": "9",
           "translation": {
             "english": "Nine",
             "portuguese": "Nove"
@@ -522,7 +522,7 @@
           "correct": "Dix",
           "d": "Douze",
           "id": 10,
-          "question": "What is the number 10 in French?",
+          "question": "10",
           "translation": {
             "english": "Ten",
             "portuguese": "Dez"
@@ -535,7 +535,7 @@
           "correct": "Onze",
           "d": "Dix",
           "id": 11,
-          "question": "What is the number 11 in French?",
+          "question": "11",
           "translation": {
             "english": "Eleven",
             "portuguese": "Onze"
@@ -548,7 +548,7 @@
           "correct": "Douze",
           "d": "Seize",
           "id": 12,
-          "question": "What is the number 12 in French?",
+          "question": "12",
           "translation": {
             "english": "Twelve",
             "portuguese": "Doze"
@@ -561,7 +561,7 @@
           "correct": "Treize",
           "d": "Dix-sept",
           "id": 13,
-          "question": "What is the number 13 in French?",
+          "question": "13",
           "translation": {
             "english": "Thirteen",
             "portuguese": "Treze"
@@ -574,7 +574,7 @@
           "correct": "Quatorze",
           "d": "Onze",
           "id": 14,
-          "question": "What is the number 14 in French?",
+          "question": "14",
           "translation": {
             "english": "Fourteen",
             "portuguese": "Quatorze"
@@ -587,7 +587,7 @@
           "correct": "Quinze",
           "d": "Quinze",
           "id": 15,
-          "question": "What is the number 15 in French?",
+          "question": "15",
           "translation": {
             "english": "Fifteen",
             "portuguese": "Quinze"
@@ -600,7 +600,7 @@
           "correct": "Seize",
           "d": "Huit",
           "id": 16,
-          "question": "What is the number 16 in French?",
+          "question": "16",
           "translation": {
             "english": "Sixteen",
             "portuguese": "Dezesseis"
@@ -613,7 +613,7 @@
           "correct": "Dix-sept",
           "d": "Vingt",
           "id": 17,
-          "question": "What is the number 17 in French?",
+          "question": "17",
           "translation": {
             "english": "Seventeen",
             "portuguese": "Dezessete"
@@ -626,7 +626,7 @@
           "correct": "Dix-huit",
           "d": "Vingt",
           "id": 18,
-          "question": "What is the number 18 in French?",
+          "question": "18",
           "translation": {
             "english": "Eighteen",
             "portuguese": "Dezoito"
@@ -639,7 +639,7 @@
           "correct": "Dix-neuf",
           "d": "Vingt",
           "id": 19,
-          "question": "What is the number 19 in French?",
+          "question": "19",
           "translation": {
             "english": "Nineteen",
             "portuguese": "Dezenove"
@@ -652,7 +652,7 @@
           "correct": "Vingt",
           "d": "Onze",
           "id": 20,
-          "question": "What is the number 20 in French?",
+          "question": "20",
           "translation": {
             "english": "Twenty",
             "portuguese": "Vinte"
@@ -670,7 +670,7 @@
           "correct": "Lundi",
           "d": "Jeudi",
           "id": 1,
-          "question": "Which day is 'Monday' in French?",
+          "question": "Monday",
           "translation": {
             "english": "Monday",
             "portuguese": "Segunda-feira"
@@ -683,7 +683,7 @@
           "correct": "Mardi",
           "d": "Samedi",
           "id": 2,
-          "question": "Which day is 'Tuesday' in French?",
+          "question": "Tuesday",
           "translation": {
             "english": "Tuesday",
             "portuguese": "Terça-feira"
@@ -696,7 +696,7 @@
           "correct": "Mercredi",
           "d": "Jeudi",
           "id": 3,
-          "question": "Which day is 'Wednesday' in French?",
+          "question": "Wednesday",
           "translation": {
             "english": "Wednesday",
             "portuguese": "Quarta-feira"
@@ -709,7 +709,7 @@
           "correct": "Jeudi",
           "d": "Lundi",
           "id": 4,
-          "question": "Which day is 'Thursday' in French?",
+          "question": "Thursday",
           "translation": {
             "english": "Thursday",
             "portuguese": "Quinta-feira"
@@ -722,7 +722,7 @@
           "correct": "Vendredi",
           "d": "Jeudi",
           "id": 5,
-          "question": "Which day is 'Friday' in French?",
+          "question": "Friday",
           "translation": {
             "english": "Friday",
             "portuguese": "Sexta-feira"
@@ -735,7 +735,7 @@
           "correct": "Samedi",
           "d": "Mardi",
           "id": 6,
-          "question": "Which day is 'Saturday' in French?",
+          "question": "Saturday",
           "translation": {
             "english": "Saturday",
             "portuguese": "Sábado"
@@ -748,7 +748,7 @@
           "correct": "Dimanche",
           "d": "Jeudi",
           "id": 7,
-          "question": "Which day is 'Sunday' in French?",
+          "question": "Sunday",
           "translation": {
             "english": "Sunday",
             "portuguese": "Domingo"
@@ -761,7 +761,7 @@
           "correct": "Mardi",
           "d": "Dimanche",
           "id": 8,
-          "question": "What day comes after 'Monday' in French?",
+          "question": "Monday",
           "translation": {
             "english": "Tuesday",
             "portuguese": "Terça-feira"
@@ -774,7 +774,7 @@
           "correct": "Samedi",
           "d": "Jeudi",
           "id": 9,
-          "question": "What day comes before 'Sunday' in French?",
+          "question": "Sunday",
           "translation": {
             "english": "Saturday",
             "portuguese": "Sábado"
@@ -787,7 +787,7 @@
           "correct": "Vendredi",
           "d": "Dimanche",
           "id": 10,
-          "question": "What day comes after 'Thursday' in French?",
+          "question": "What day comes after Thursday",
           "translation": {
             "english": "Friday",
             "portuguese": "Sexta-feira"
@@ -800,7 +800,7 @@
           "correct": "Lundi",
           "d": "Dimanche",
           "id": 11,
-          "question": "What day is the start of the week in French?",
+          "question": "What day is the start of the week",
           "translation": {
             "english": "Monday",
             "portuguese": "Segunda-feira"
@@ -813,7 +813,7 @@
           "correct": "Mercredi",
           "d": "Dimanche",
           "id": 12,
-          "question": "What day is in the middle of the week in French?",
+          "question": "What day is in the middle of the week",
           "translation": {
             "english": "Wednesday",
             "portuguese": "Quarta-feira"
@@ -826,7 +826,7 @@
           "correct": "Vendredi",
           "d": "Jeudi",
           "id": 13,
-          "question": "Which day marks the start of the weekend in French?",
+          "question": "Which day marks the start of the weekend",
           "translation": {
             "english": "Friday",
             "portuguese": "Sexta-feira"
@@ -839,7 +839,7 @@
           "correct": "Samedi",
           "d": "Mercredi",
           "id": 14,
-          "question": "What is the second day of the weekend in French?",
+          "question": "What is the second day of the weekend",
           "translation": {
             "english": "Saturday",
             "portuguese": "Sábado"
@@ -852,7 +852,7 @@
           "correct": "Dimanche",
           "d": "Lundi",
           "id": 15,
-          "question": "Which day is often a day of rest in French culture?",
+          "question": "often a day of rest culture",
           "translation": {
             "english": "Sunday",
             "portuguese": "Domingo"
@@ -865,7 +865,7 @@
           "correct": "Jeudi",
           "d": "Dimanche",
           "id": 16,
-          "question": "Which day comes after 'Wednesday' in French?",
+          "question": "Which day comes after Wednesday",
           "translation": {
             "english": "Thursday",
             "portuguese": "Quinta-feira"
@@ -878,7 +878,7 @@
           "correct": "Vendredi",
           "d": "Lundi",
           "id": 17,
-          "question": "Which day is known as 'Friday' in French?",
+          "question": "known as Friday",
           "translation": {
             "english": "Friday",
             "portuguese": "Sexta-feira"
@@ -891,7 +891,7 @@
           "correct": "Samedi",
           "d": "Mercredi",
           "id": 18,
-          "question": "Which day is 'Saturday' in French?",
+          "question": "Saturday",
           "translation": {
             "english": "Saturday",
             "portuguese": "Sábado"
@@ -904,7 +904,7 @@
           "correct": "Dimanche",
           "d": "Vendredi",
           "id": 19,
-          "question": "Which day is the last day of the week in French?",
+          "question": "the last day of the week",
           "translation": {
             "english": "Sunday",
             "portuguese": "Domingo"
@@ -917,7 +917,7 @@
           "correct": "Mardi",
           "d": "Samedi",
           "id": 20,
-          "question": "Which day comes after 'Monday' in French?",
+          "question": "Which day comes after Monday",
           "translation": {
             "english": "Tuesday",
             "portuguese": "Terça-feira"
@@ -935,7 +935,7 @@
           "correct": "Père",
           "d": "Sœur",
           "id": 1,
-          "question": "Which word means 'father' in French?",
+          "question": "father",
           "translation": {
             "english": "Father",
             "portuguese": "Pai"
@@ -948,7 +948,7 @@
           "correct": "Mère",
           "d": "Cousine",
           "id": 2,
-          "question": "Which word means 'mother' in French?",
+          "question": "mother",
           "translation": {
             "english": "Mother",
             "portuguese": "Mãe"
@@ -961,7 +961,7 @@
           "correct": "Frère",
           "d": "Père",
           "id": 3,
-          "question": "Which word means 'brother' in French?",
+          "question": "brother",
           "translation": {
             "english": "Brother",
             "portuguese": "Irmão"
@@ -974,7 +974,7 @@
           "correct": "Sœur",
           "d": "Mère",
           "id": 4,
-          "question": "Which word means 'sister' in French?",
+          "question": "sister",
           "translation": {
             "english": "Sister",
             "portuguese": "Irmã"
@@ -987,7 +987,7 @@
           "correct": "Grand-père",
           "d": "Frère",
           "id": 5,
-          "question": "Which word means 'grandfather' in French?",
+          "question": "grandfather",
           "translation": {
             "english": "Grandfather",
             "portuguese": "Avô"
@@ -1000,7 +1000,7 @@
           "correct": "Grand-mère",
           "d": "Sœur",
           "id": 6,
-          "question": "Which word means 'grandmother' in French?",
+          "question": "grandmother",
           "translation": {
             "english": "Grandmother",
             "portuguese": "Avó"
@@ -1013,7 +1013,7 @@
           "correct": "Fille",
           "d": "Cousine",
           "id": 7,
-          "question": "Which word means 'daughter' in French?",
+          "question": "daughter",
           "translation": {
             "english": "Daughter",
             "portuguese": "Filha"
@@ -1026,7 +1026,7 @@
           "correct": "Fils",
           "d": "Cousin",
           "id": 8,
-          "question": "Which word means 'son' in French?",
+          "question": "son",
           "translation": {
             "english": "Son",
             "portuguese": "Filho"
@@ -1039,7 +1039,7 @@
           "correct": "Oncle",
           "d": "Grand-père",
           "id": 9,
-          "question": "Which word means 'uncle' in French?",
+          "question": "uncle",
           "translation": {
             "english": "Uncle",
             "portuguese": "Tio"
@@ -1052,7 +1052,7 @@
           "correct": "Tante",
           "d": "Sœur",
           "id": 10,
-          "question": "Which word means 'aunt' in French?",
+          "question": "aunt",
           "translation": {
             "english": "Aunt",
             "portuguese": "Tia"
@@ -1065,7 +1065,7 @@
           "correct": "Cousine",
           "d": "Fille",
           "id": 11,
-          "question": "Which word means 'female cousin' in French?",
+          "question": "female cousin",
           "translation": {
             "english": "Female cousin",
             "portuguese": "Prima"
@@ -1078,7 +1078,7 @@
           "correct": "Cousin",
           "d": "Père",
           "id": 12,
-          "question": "Which word means 'male cousin' in French?",
+          "question": "male cousin",
           "translation": {
             "english": "Male cousin",
             "portuguese": "Primo"
@@ -1091,7 +1091,7 @@
           "correct": "Nièce",
           "d": "Cousine",
           "id": 13,
-          "question": "Which word means 'niece' in French?",
+          "question": "niece",
           "translation": {
             "english": "Niece",
             "portuguese": "Sobrinha"
@@ -1104,7 +1104,7 @@
           "correct": "Neveu",
           "d": "Fils",
           "id": 14,
-          "question": "Which word means 'nephew' in French?",
+          "question": "nephew",
           "translation": {
             "english": "Nephew",
             "portuguese": "Sobrinho"
@@ -1117,7 +1117,7 @@
           "correct": "Mari",
           "d": "Fils",
           "id": 15,
-          "question": "Which word means 'husband' in French?",
+          "question": "husband",
           "translation": {
             "english": "Husband",
             "portuguese": "Marido"
@@ -1130,7 +1130,7 @@
           "correct": "Épouse",
           "d": "Sœur",
           "id": 16,
-          "question": "Which word means 'wife' in French?",
+          "question": "wife",
           "translation": {
             "english": "Wife",
             "portuguese": "Esposa"
@@ -1143,7 +1143,7 @@
           "correct": "Beau-père",
           "d": "Père",
           "id": 17,
-          "question": "Which word means 'father-in-law' in French?",
+          "question": "father-in-law",
           "translation": {
             "english": "Father-in-law",
             "portuguese": "Sogro"
@@ -1156,7 +1156,7 @@
           "correct": "Belle-mère",
           "d": "Tante",
           "id": 18,
-          "question": "Which word means 'mother-in-law' in French?",
+          "question": "mother-in-law",
           "translation": {
             "english": "Mother-in-law",
             "portuguese": "Sogra"
@@ -1169,7 +1169,7 @@
           "correct": "Beau-fils",
           "d": "Fils",
           "id": 19,
-          "question": "Which word means 'stepson' in French?",
+          "question": "stepson",
           "translation": {
             "english": "Stepson",
             "portuguese": "Enteado"
@@ -1182,7 +1182,7 @@
           "correct": "Belle-fille",
           "d": "Fille",
           "id": 20,
-          "question": "Which word means 'stepdaughter' in French?",
+          "question": "stepdaughter",
           "translation": {
             "english": "Stepdaughter",
             "portuguese": "Enteada"
@@ -1200,7 +1200,7 @@
           "correct": "Chapeau",
           "d": "Chaussure",
           "id": 1,
-          "question": "Which word means 'hat' in French?",
+          "question": "hat",
           "translation": {
             "english": "Hat",
             "portuguese": "Chapéu"
@@ -1213,7 +1213,7 @@
           "correct": "Robe",
           "d": "Chaussure",
           "id": 2,
-          "question": "Which word means 'dress' in French?",
+          "question": "dress",
           "translation": {
             "english": "Dress",
             "portuguese": "Vestido"
@@ -1226,7 +1226,7 @@
           "correct": "Pantalon",
           "d": "Manteau",
           "id": 3,
-          "question": "Which word means 'pants' in French?",
+          "question": "pants",
           "translation": {
             "english": "Pants",
             "portuguese": "Calça"
@@ -1239,7 +1239,7 @@
           "correct": "Veste",
           "d": "Pantalon",
           "id": 4,
-          "question": "Which word means 'jacket' in French?",
+          "question": "jacket",
           "translation": {
             "english": "Jacket",
             "portuguese": "Jaqueta"
@@ -1252,7 +1252,7 @@
           "correct": "Ceinture",
           "d": "Chaussettes",
           "id": 5,
-          "question": "Which word means 'belt' in French?",
+          "question": "belt",
           "translation": {
             "english": "Belt",
             "portuguese": "Cinto"
@@ -1265,7 +1265,7 @@
           "correct": "Chaussettes",
           "d": "Veste",
           "id": 6,
-          "question": "Which word means 'socks' in French?",
+          "question": "socks",
           "translation": {
             "english": "Socks",
             "portuguese": "Meias"
@@ -1278,7 +1278,7 @@
           "correct": "Chaussures",
           "d": "Chapeau",
           "id": 7,
-          "question": "Which word means 'shoes' in French?",
+          "question": "shoes",
           "translation": {
             "english": "Shoes",
             "portuguese": "Sapatos"
@@ -1291,7 +1291,7 @@
           "correct": "Gants",
           "d": "Chaussures",
           "id": 8,
-          "question": "Which word means 'gloves' in French?",
+          "question": "gloves",
           "translation": {
             "english": "Gloves",
             "portuguese": "Luvas"
@@ -1304,7 +1304,7 @@
           "correct": "Écharpe",
           "d": "Manteau",
           "id": 9,
-          "question": "Which word means 'scarf' in French?",
+          "question": "scarf",
           "translation": {
             "english": "Scarf",
             "portuguese": "Cachecol"
@@ -1317,7 +1317,7 @@
           "correct": "Lunettes",
           "d": "Jumelles",
           "id": 10,
-          "question": "Which word means 'glasses' in French?",
+          "question": "glasses",
           "translation": {
             "english": "Glasses",
             "portuguese": "Óculos"
@@ -1330,7 +1330,7 @@
           "correct": "Manteau",
           "d": "Jupe",
           "id": 11,
-          "question": "Which word means 'coat' in French?",
+          "question": "coat",
           "translation": {
             "english": "Coat",
             "portuguese": "Casaco"
@@ -1343,7 +1343,7 @@
           "correct": "Short",
           "d": "Short",
           "id": 12,
-          "question": "Which word means 'shorts' in French?",
+          "question": "shorts",
           "translation": {
             "english": "Shorts",
             "portuguese": "Short"
@@ -1356,7 +1356,7 @@
           "correct": "T-shirt",
           "d": "Bonnet",
           "id": 13,
-          "question": "Which word means 't-shirt' in French?",
+          "question": "t-shirt",
           "translation": {
             "english": "T-shirt",
             "portuguese": "Camiseta"
@@ -1369,7 +1369,7 @@
           "correct": "Cravate",
           "d": "Robe",
           "id": 14,
-          "question": "Which word means 'tie' in French?",
+          "question": "tie",
           "translation": {
             "english": "Tie",
             "portuguese": "Gravata"
@@ -1382,7 +1382,7 @@
           "correct": "Maillot de bain",
           "d": "T-shirt",
           "id": 15,
-          "question": "Which word means 'swimsuit' in French?",
+          "question": "swimsuit",
           "translation": {
             "english": "Swimsuit",
             "portuguese": "Maiô"
@@ -1395,7 +1395,7 @@
           "correct": "Chaussons",
           "d": "Veste",
           "id": 16,
-          "question": "Which word means 'slippers' in French?",
+          "question": "slippers",
           "translation": {
             "english": "Slippers",
             "portuguese": "Pantufas"
@@ -1408,7 +1408,7 @@
           "correct": "Pull",
           "d": "Chemise",
           "id": 17,
-          "question": "Which word means 'sweater' in French?",
+          "question": "sweater",
           "translation": {
             "english": "Sweater",
             "portuguese": "Suéter"
@@ -1421,7 +1421,7 @@
           "correct": "Bonnet",
           "d": "Chapeau",
           "id": 18,
-          "question": "Which word means 'beanie' in French?",
+          "question": "beanie",
           "translation": {
             "english": "Beanie",
             "portuguese": "Gorro"
@@ -1434,7 +1434,7 @@
           "correct": "Lunettes de soleil",
           "d": "Pantalon",
           "id": 19,
-          "question": "Which word means 'sunglasses' in French?",
+          "question": "sunglasses",
           "translation": {
             "english": "Sunglasses",
             "portuguese": "Óculos de sol"
@@ -1447,7 +1447,7 @@
           "correct": "Chemise",
           "d": "Veste",
           "id": 20,
-          "question": "Which word means 'shirt' in French?",
+          "question": "shirt",
           "translation": {
             "english": "Shirt",
             "portuguese": "Camisa"
@@ -1465,7 +1465,7 @@
           "correct": "Manger",
           "d": "Dormir",
           "id": 1,
-          "question": "Which verb means 'to eat' in French?",
+          "question": "Which verb means to eat",
           "translation": {
             "english": "To eat",
             "portuguese": "Comer"
@@ -1478,7 +1478,7 @@
           "correct": "Parler",
           "d": "Écrire",
           "id": 2,
-          "question": "Which verb means 'to speak' in French?",
+          "question": "Which verb means to speak",
           "translation": {
             "english": "To speak",
             "portuguese": "Falar"
@@ -1491,7 +1491,7 @@
           "correct": "Dormir",
           "d": "Courir",
           "id": 3,
-          "question": "Which verb means 'to sleep' in French?",
+          "question": "Which verb means to sleep",
           "translation": {
             "english": "To sleep",
             "portuguese": "Dormir"
@@ -1504,7 +1504,7 @@
           "correct": "Courir",
           "d": "Écrire",
           "id": 4,
-          "question": "Which verb means 'to run' in French?",
+          "question": "Which verb means to run",
           "translation": {
             "english": "To run",
             "portuguese": "Correr"
@@ -1517,7 +1517,7 @@
           "correct": "Lire",
           "d": "Manger",
           "id": 5,
-          "question": "Which verb means 'to read' in French?",
+          "question": "Which verb means to read",
           "translation": {
             "english": "To read",
             "portuguese": "Ler"
@@ -1530,7 +1530,7 @@
           "correct": "Écrire",
           "d": "Parler",
           "id": 6,
-          "question": "Which verb means 'to write' in French?",
+          "question": "Which verb means to write",
           "translation": {
             "english": "To write",
             "portuguese": "Escrever"
@@ -1543,7 +1543,7 @@
           "correct": "Boire",
           "d": "Courir",
           "id": 7,
-          "question": "Which verb means 'to drink' in French?",
+          "question": "Which verb means to drink",
           "translation": {
             "english": "To drink",
             "portuguese": "Beber"
@@ -1556,7 +1556,7 @@
           "correct": "Écouter",
           "d": "Manger",
           "id": 8,
-          "question": "Which verb means 'to listen' in French?",
+          "question": "Which verb means to listen",
           "translation": {
             "english": "To listen",
             "portuguese": "Ouvir"
@@ -1569,7 +1569,7 @@
           "correct": "Aimer",
           "d": "Courir",
           "id": 9,
-          "question": "Which verb means 'to love' in French?",
+          "question": "Which verb means to love",
           "translation": {
             "english": "To love",
             "portuguese": "Amar"
@@ -1582,7 +1582,7 @@
           "correct": "Détester",
           "d": "Boire",
           "id": 10,
-          "question": "Which verb means 'to hate' in French?",
+          "question": "Which verb means to hate",
           "translation": {
             "english": "To hate",
             "portuguese": "Odiar"
@@ -1595,7 +1595,7 @@
           "correct": "Aller",
           "d": "Dormir",
           "id": 11,
-          "question": "Which verb means 'to go' in French?",
+          "question": "Which verb means to go",
           "translation": {
             "english": "To go",
             "portuguese": "Ir"
@@ -1608,7 +1608,7 @@
           "correct": "Être",
           "d": "Boire",
           "id": 12,
-          "question": "Which verb means 'to be' in French?",
+          "question": "Which verb means to be",
           "translation": {
             "english": "To be",
             "portuguese": "Ser/estar"
@@ -1621,7 +1621,7 @@
           "correct": "Avoir",
           "d": "Dormir",
           "id": 13,
-          "question": "Which verb means 'to have' in French?",
+          "question": "Which verb means to have",
           "translation": {
             "english": "To have",
             "portuguese": "Ter"
@@ -1634,7 +1634,7 @@
           "correct": "Venir",
           "d": "Boire",
           "id": 14,
-          "question": "Which verb means 'to come' in French?",
+          "question": "Which verb means to come",
           "translation": {
             "english": "To come",
             "portuguese": "Vir"
@@ -1647,7 +1647,7 @@
           "correct": "Partir",
           "d": "Dormir",
           "id": 15,
-          "question": "Which verb means 'to leave' in French?",
+          "question": "Which verb means to leave",
           "translation": {
             "english": "To leave",
             "portuguese": "Partir"
@@ -1660,7 +1660,7 @@
           "correct": "Regarder",
           "d": "Écrire",
           "id": 16,
-          "question": "Which verb means 'to watch' in French?",
+          "question": "Which verb means to watch",
           "translation": {
             "english": "To watch",
             "portuguese": "Assistir"
@@ -1673,7 +1673,7 @@
           "correct": "Prendre",
           "d": "Lire",
           "id": 17,
-          "question": "Which verb means 'to take' in French?",
+          "question": "Which verb means to take",
           "translation": {
             "english": "To take",
             "portuguese": "Pegar"
@@ -1686,7 +1686,7 @@
           "correct": "Faire",
           "d": "Manger",
           "id": 18,
-          "question": "Which verb means 'to do/make' in French?",
+          "question": "Which verb means to do/make",
           "translation": {
             "english": "To do/make",
             "portuguese": "Fazer"
@@ -1699,7 +1699,7 @@
           "correct": "Travailler",
           "d": "Lire",
           "id": 19,
-          "question": "Which verb means 'to work' in French?",
+          "question": "Which verb means to work",
           "translation": {
             "english": "To work",
             "portuguese": "Trabalhar"
@@ -1712,7 +1712,7 @@
           "correct": "Jouer",
           "d": "Lire",
           "id": 20,
-          "question": "Which verb means 'to play' in French?",
+          "question": "Which verb means to play",
           "translation": {
             "english": "To play",
             "portuguese": "Jogar"
@@ -1730,7 +1730,7 @@
           "correct": "Tête",
           "d": "Œil",
           "id": 1,
-          "question": "Which word means 'head' in French?",
+          "question": "head",
           "translation": {
             "english": "Head",
             "portuguese": "Cabeça"
@@ -1743,7 +1743,7 @@
           "correct": "Main",
           "d": "Cœur",
           "id": 2,
-          "question": "Which word means 'hand' in French?",
+          "question": "hand",
           "translation": {
             "english": "Hand",
             "portuguese": "Mão"
@@ -1756,7 +1756,7 @@
           "correct": "Pied",
           "d": "Cœur",
           "id": 3,
-          "question": "Which word means 'foot' in French?",
+          "question": "foot",
           "translation": {
             "english": "Foot",
             "portuguese": "Pé"
@@ -1769,7 +1769,7 @@
           "correct": "Cheveux",
           "d": "Mains",
           "id": 4,
-          "question": "Which word means 'hair' in French?",
+          "question": "hair",
           "translation": {
             "english": "Hair",
             "portuguese": "Cabelo"
@@ -1782,7 +1782,7 @@
           "correct": "Bouche",
           "d": "Nez",
           "id": 5,
-          "question": "Which word means 'mouth' in French?",
+          "question": "mouth",
           "translation": {
             "english": "Mouth",
             "portuguese": "Boca"
@@ -1795,7 +1795,7 @@
           "correct": "Cœur",
           "d": "Foie",
           "id": 6,
-          "question": "Which word means 'heart' in French?",
+          "question": "heart",
           "translation": {
             "english": "Heart",
             "portuguese": "Coração"
@@ -1808,7 +1808,7 @@
           "correct": "Épaule",
           "d": "Poignet",
           "id": 7,
-          "question": "Which word means 'shoulder' in French?",
+          "question": "shoulder",
           "translation": {
             "english": "Shoulder",
             "portuguese": "Ombro"
@@ -1821,7 +1821,7 @@
           "correct": "Jambe",
           "d": "Cœur",
           "id": 8,
-          "question": "Which word means 'leg' in French?",
+          "question": "leg",
           "translation": {
             "english": "Leg",
             "portuguese": "Perna"
@@ -1834,7 +1834,7 @@
           "correct": "Doigt",
           "d": "Pied",
           "id": 9,
-          "question": "Which word means 'finger' in French?",
+          "question": "finger",
           "translation": {
             "english": "Finger",
             "portuguese": "Dedo"
@@ -1847,7 +1847,7 @@
           "correct": "Nez",
           "d": "Mains",
           "id": 10,
-          "question": "Which word means 'nose' in French?",
+          "question": "nose",
           "translation": {
             "english": "Nose",
             "portuguese": "Nariz"
@@ -1860,7 +1860,7 @@
           "correct": "Yeux",
           "d": "Joue",
           "id": 11,
-          "question": "Which word means 'eyes' in French?",
+          "question": "eyes",
           "translation": {
             "english": "Eyes",
             "portuguese": "Olhos"
@@ -1873,7 +1873,7 @@
           "correct": "Visage",
           "d": "Jambe",
           "id": 12,
-          "question": "Which word means 'face' in French?",
+          "question": "face",
           "translation": {
             "english": "Face",
             "portuguese": "Rosto"
@@ -1886,7 +1886,7 @@
           "correct": "Bras",
           "d": "Main",
           "id": 13,
-          "question": "Which word means 'arm' in French?",
+          "question": "arm",
           "translation": {
             "english": "Arm",
             "portuguese": "Braço"
@@ -1899,7 +1899,7 @@
           "correct": "Lèvre",
           "d": "Nez",
           "id": 14,
-          "question": "Which word means 'lip' in French?",
+          "question": "lip",
           "translation": {
             "english": "Lip",
             "portuguese": "Lábio"
@@ -1912,7 +1912,7 @@
           "correct": "Langue",
           "d": "Bouche",
           "id": 15,
-          "question": "Which word means 'tongue' in French?",
+          "question": "tongue",
           "translation": {
             "english": "Tongue",
             "portuguese": "Língua"
@@ -1925,7 +1925,7 @@
           "correct": "Poitrine",
           "d": "Cœur",
           "id": 16,
-          "question": "Which word means 'chest' in French?",
+          "question": "chest",
           "translation": {
             "english": "Chest",
             "portuguese": "Peito"
@@ -1938,7 +1938,7 @@
           "correct": "Genou",
           "d": "Poignet",
           "id": 17,
-          "question": "Which word means 'knee' in French?",
+          "question": "knee",
           "translation": {
             "english": "Knee",
             "portuguese": "Joelho"
@@ -1951,7 +1951,7 @@
           "correct": "Poignet",
           "d": "Coud",
           "id": 18,
-          "question": "Which word means 'wrist' in French?",
+          "question": "wrist",
           "translation": {
             "english": "Wrist",
             "portuguese": "Pulso"
@@ -1964,7 +1964,7 @@
           "correct": "Coud",
           "d": "Dos",
           "id": 19,
-          "question": "Which word means 'elbow' in French?",
+          "question": "elbow",
           "translation": {
             "english": "Elbow",
             "portuguese": "Cotovelo"
@@ -1977,7 +1977,7 @@
           "correct": "Talon",
           "d": "Poignet",
           "id": 20,
-          "question": "Which word means 'heel' in French?",
+          "question": "heel",
           "translation": {
             "english": "Heel",
             "portuguese": "Calcanhar"
@@ -1995,7 +1995,7 @@
           "correct": "Pomme",
           "d": "Fraise",
           "id": 1,
-          "question": "Which word means 'apple' in French?",
+          "question": "apple",
           "translation": {
             "english": "Apple",
             "portuguese": "Maçã"
@@ -2008,7 +2008,7 @@
           "correct": "Carotte",
           "d": "Concombre",
           "id": 2,
-          "question": "Which word means 'carrot' in French?",
+          "question": "carrot",
           "translation": {
             "english": "Carrot",
             "portuguese": "Cenoura"
@@ -2021,7 +2021,7 @@
           "correct": "Pain",
           "d": "Viande",
           "id": 3,
-          "question": "Which word means 'bread' in French?",
+          "question": "bread",
           "translation": {
             "english": "Bread",
             "portuguese": "Pão"
@@ -2034,7 +2034,7 @@
           "correct": "Saucisse",
           "d": "Porc",
           "id": 4,
-          "question": "Which word means 'sausage' in French?",
+          "question": "sausage",
           "translation": {
             "english": "Sausage",
             "portuguese": "Linguiça"
@@ -2047,7 +2047,7 @@
           "correct": "Frites",
           "d": "Salade",
           "id": 5,
-          "question": "Which word means 'fries' in French?",
+          "question": "fries",
           "translation": {
             "english": "Fries",
             "portuguese": "Batatas Fritas"
@@ -2060,7 +2060,7 @@
           "correct": "Chocolat",
           "d": "Citron",
           "id": 6,
-          "question": "Which word means 'chocolate' in French?",
+          "question": "chocolate",
           "translation": {
             "english": "Chocolate",
             "portuguese": "Chocolate"
@@ -2073,7 +2073,7 @@
           "correct": "Lait",
           "d": "Soda",
           "id": 7,
-          "question": "Which word means 'milk' in French?",
+          "question": "milk",
           "translation": {
             "english": "Milk",
             "portuguese": "Leite"
@@ -2086,7 +2086,7 @@
           "correct": "Gâteau",
           "d": "Biscuits",
           "id": 8,
-          "question": "Which word means 'cake' in French?",
+          "question": "cake",
           "translation": {
             "english": "Cake",
             "portuguese": "Bolo"
@@ -2099,7 +2099,7 @@
           "correct": "Poire",
           "d": "Figue",
           "id": 9,
-          "question": "Which word means 'pear' in French?",
+          "question": "pear",
           "translation": {
             "english": "Pear",
             "portuguese": "Pera"
@@ -2112,7 +2112,7 @@
           "correct": "Fruits",
           "d": "Boissons",
           "id": 10,
-          "question": "Which word means 'fruits' in French?",
+          "question": "fruits",
           "translation": {
             "english": "Fruits",
             "portuguese": "Frutas"
@@ -2125,7 +2125,7 @@
           "correct": "Salade",
           "d": "Poisson",
           "id": 11,
-          "question": "Which word means 'salad' in French?",
+          "question": "salad",
           "translation": {
             "english": "Salad",
             "portuguese": "Salada"
@@ -2138,7 +2138,7 @@
           "correct": "Oeuf",
           "d": "Fromage",
           "id": 12,
-          "question": "Which word means 'egg' in French?",
+          "question": "egg",
           "translation": {
             "english": "Egg",
             "portuguese": "Ovo"
@@ -2151,7 +2151,7 @@
           "correct": "Fromage",
           "d": "Beurre",
           "id": 13,
-          "question": "Which word means 'cheese' in French?",
+          "question": "cheese",
           "translation": {
             "english": "Cheese",
             "portuguese": "Queijo"
@@ -2164,7 +2164,7 @@
           "correct": "Jus",
           "d": "Eau",
           "id": 14,
-          "question": "Which word means 'juice' in French?",
+          "question": "juice",
           "translation": {
             "english": "Juice",
             "portuguese": "Suco"
@@ -2177,7 +2177,7 @@
           "correct": "Céréales",
           "d": "Pommes de terre",
           "id": 15,
-          "question": "Which word means 'cereal' in French?",
+          "question": "cereal",
           "translation": {
             "english": "Cereal",
             "portuguese": "Cereal"
@@ -2190,7 +2190,7 @@
           "correct": "Tarte",
           "d": "Crêpe",
           "id": 16,
-          "question": "Which word means 'pie' in French?",
+          "question": "pie",
           "translation": {
             "english": "Pie",
             "portuguese": "Torta"
@@ -2203,7 +2203,7 @@
           "correct": "Miel",
           "d": "Poivre",
           "id": 17,
-          "question": "Which word means 'honey' in French?",
+          "question": "honey",
           "translation": {
             "english": "Honey",
             "portuguese": "Mel"
@@ -2216,7 +2216,7 @@
           "correct": "Thon",
           "d": "Saumon",
           "id": 18,
-          "question": "Which word means 'tuna' in French?",
+          "question": "tuna",
           "translation": {
             "english": "Tuna",
             "portuguese": "Atum"
@@ -2229,7 +2229,7 @@
           "correct": "Poulet",
           "d": "Porc",
           "id": 19,
-          "question": "Which word means 'chicken' in French?",
+          "question": "chicken",
           "translation": {
             "english": "Chicken",
             "portuguese": "Frango"
@@ -2242,7 +2242,7 @@
           "correct": "Pizza",
           "d": "Salade",
           "id": 20,
-          "question": "Which word means 'pizza' in French?",
+          "question": "pizza",
           "translation": {
             "english": "Pizza",
             "portuguese": "Pizza"
