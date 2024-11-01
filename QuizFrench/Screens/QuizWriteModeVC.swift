@@ -1,5 +1,5 @@
 //
-//  QuizGuessVC.swift
+//  QuizWritingVC.swift
 //  QuizFrench
 //
 //  Created by Marcos Barbosa on 01/11/24.
@@ -7,10 +7,10 @@
 
 import UIKit
 
-class QuizGuessVC: QuizVC {
+class QuizWriteModeVC: QuizSuperclassVC {
     
-    var answerButtons: [UIButton] = []
-    let buttonsStackView = UIStackView()
+    var letterButtons: [UIButton] = []
+    var buttonsStackView = UIStackView()
     
     
     override func viewDidLoad() {
@@ -23,29 +23,37 @@ class QuizGuessVC: QuizVC {
         askQuestion()
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        removeSubViews()
+    }
+    
     func configureButtonsStackView() {
         view.addSubview(buttonsStackView)
         
-        buttonsStackView.axis = .vertical
+        buttonsStackView.axis = .horizontal
         buttonsStackView.distribution = .equalCentering
         buttonsStackView.translatesAutoresizingMaskIntoConstraints = false
         
-        for _ in 0..<4 {
+        
+        /*
+        for letter in currentQuestion.question {
             let button = QFQuizButton(backgroundColor: .systemGray6, title: "Loading")
             button.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
             answerButtons.append(button)
             buttonsStackView.addArrangedSubview(button)
         }
+        */
         
         NSLayoutConstraint.activate([
             buttonsStackView.topAnchor.constraint(equalTo: questionLabel.bottomAnchor, constant: 40),
             buttonsStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
             buttonsStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40),
-            buttonsStackView.heightAnchor.constraint(equalToConstant: 280),
+            buttonsStackView.heightAnchor.constraint(equalToConstant: 40),
         ])
     }
     
     @objc func askQuestion() {
+        var letters: [String] = []
         guard let question = questions.randomElement() else {
             presentCompletedQuizContainer(title: "Congratulations 🥳", message: "You have finished this quiz for now !!", buttonTitle: "Return", navController: self.navigationController!)
             
@@ -53,34 +61,32 @@ class QuizGuessVC: QuizVC {
             return
         }
         
-        enableAnswerButtons()
         
         answerStackView.isHidden = true
         self.currentQuestion = question
         self.questionLabel.text = question.question
         
-        let options = [question.a, question.b, question.c, question.d]
+        for letter in currentQuestion.correct { letters.append("\(letter)") }
         
+        letters = letters.shuffled()
+        
+        for letter in letters {
+            let button = QFQuizWriteButton(title: "\(letter)")
+            button.setTitle("\(letter)", for: .normal)
+            buttonsStackView.addArrangedSubview(button)
+
+        }
+        
+        
+        /*
         for (index, button) in answerButtons.enumerated() {
             button.setTitle(options[index], for: .normal)
             button.setTitleColor(.label, for: .normal)
         }
+         */
     }
     
-    @objc func buttonPressed(_ sender: UIButton) {
-        var buttonIndex = 0
-        
-        guard let selectedOption = sender.title(for: .normal) else { return }
-        
-        for (index, button) in answerButtons.enumerated() {
-            if button.currentTitle == selectedOption {
-                buttonIndex = index
-            }
-        }
-        
-        disableAnswerButtons()
-        checkAnswer(selectedOption, buttonIndex: buttonIndex)
-    }
+    
     
     func checkAnswer(_ selectedOption: String, buttonIndex: Int) {
         answerView.correctAnswer.text = self.currentQuestion?.correct
@@ -102,24 +108,15 @@ class QuizGuessVC: QuizVC {
         self.answerView.titleLabel.textColor = color
         self.answerView.correctAnswer.textColor = color
         self.continueButton.titleLabel?.textColor = color
-        self.answerButtons[buttonIndex].setTitleColor(color, for: .normal)
     }
-    
-    
-    func disableAnswerButtons() {
-        for button in answerButtons {
-            button.removeTarget(self, action: nil, for: .allEvents)
-        }
-    }
-    
-    
-    func enableAnswerButtons() {
-        for button in answerButtons {
-            button.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
-        }
-    }
-    
+
     override func continueButtonAction() {
         askQuestion()
+    }
+    
+    func removeSubViews() {
+        for i in self.buttonsStackView.arrangedSubviews {
+            self.buttonsStackView.removeArrangedSubview(i)
+        }
     }
 }

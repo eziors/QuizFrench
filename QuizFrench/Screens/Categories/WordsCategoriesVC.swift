@@ -16,7 +16,7 @@ class WordsCategoriesVC: ItemCategoryVC {
         wordListVC.category = selectedItem.name
         wordListVC.listType = "words"
         
-        let quizVC = QuizGuessVC()
+        let quizVC = QuizWriteModeVC()
         quizVC.title = selectedItem.name
         quizVC.category = selectedItem.name
         quizVC.quizType = "words"

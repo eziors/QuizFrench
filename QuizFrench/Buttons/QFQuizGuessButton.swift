@@ -7,7 +7,7 @@
 
 import UIKit
 
-class QFQuizButton: UIButton {
+class QFQuizGuessButton: UIButton {
     
     override init(frame: CGRect) {
         super.init(frame: frame)

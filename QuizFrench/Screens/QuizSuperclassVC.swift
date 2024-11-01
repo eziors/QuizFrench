@@ -8,7 +8,7 @@
 import UIKit
 
 
-class QuizVC: UIViewController {
+class QuizSuperclassVC: UIViewController {
     
     var quizType: String! // if is words or phrases
     var category: String!
@@ -18,7 +18,7 @@ class QuizVC: UIViewController {
     var correctCount = 0
     
     var questions: [Question] = []
-    var currentQuestion: Question?
+    var currentQuestion: Question!
     
     
     let questionLabel = QFTitleLabel(textAlignment: .center, fontSize: 22)
@@ -27,7 +27,7 @@ class QuizVC: UIViewController {
     
     
     let answerView = QFAnswerView()
-    let continueButton = QFQuizButton(backgroundColor: .systemGray6, title: "Continue")
+    let continueButton = QFQuizGuessButton(backgroundColor: .systemGray6, title: "Continue")
     let answerStackView = UIStackView()
     
     

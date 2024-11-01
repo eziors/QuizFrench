@@ -30,8 +30,9 @@
 		8D806F282C941BDD004D698A /* QFPhrasesItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D806F272C941BDD004D698A /* QFPhrasesItemVC.swift */; };
 		8D806F2B2C941EE5004D698A /* QFTipsItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D806F2A2C941EE5004D698A /* QFTipsItemVC.swift */; };
 		8D818E2E2CA7C5EB002BD77F /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D818E2D2CA7C5EB002BD77F /* UIView+Ext.swift */; };
-		8D82758B2CD494E3004A4635 /* QuizWritingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D82758A2CD494E3004A4635 /* QuizWritingVC.swift */; };
-		8D82758D2CD494F9004A4635 /* QuizGuessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D82758C2CD494F9004A4635 /* QuizGuessVC.swift */; };
+		8D82758B2CD494E3004A4635 /* QuizWriteModeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D82758A2CD494E3004A4635 /* QuizWriteModeVC.swift */; };
+		8D82758D2CD494F9004A4635 /* QuizGuessModeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D82758C2CD494F9004A4635 /* QuizGuessModeVC.swift */; };
+		8D82758F2CD4B15E004A4635 /* QFQuizWriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D82758E2CD4B15E004A4635 /* QFQuizWriteButton.swift */; };
 		8D8488ED2C9E1AC700715368 /* QFFavoritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8488EC2C9E1AC700715368 /* QFFavoritesVC.swift */; };
 		8D8488F42C9E34DC00715368 /* AlphabetListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8488F32C9E34DC00715368 /* AlphabetListVC.swift */; };
 		8D8488F72C9E394900715368 /* Alphabet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8488F62C9E394900715368 /* Alphabet.swift */; };
@@ -44,7 +45,7 @@
 		8D848BFE2C9268A1001C1910 /* QFProgressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D848BFD2C9268A1001C1910 /* QFProgressVC.swift */; };
 		8D848C002C926D0D001C1910 /* QFStreakProgressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D848BFF2C926D0D001C1910 /* QFStreakProgressVC.swift */; };
 		8D848C032C929131001C1910 /* QFItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D848C022C929131001C1910 /* QFItemInfoView.swift */; };
-		8D8771E52CC5962600E703F6 /* QFQuizButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8771E42CC5962600E703F6 /* QFQuizButton.swift */; };
+		8D8771E52CC5962600E703F6 /* QFQuizGuessButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8771E42CC5962600E703F6 /* QFQuizGuessButton.swift */; };
 		8D8771E72CC5A05400E703F6 /* QFAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8771E62CC5A05400E703F6 /* QFAnswerView.swift */; };
 		8D884FAB2CB4903C00E5E637 /* Collection+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D884FAA2CB4903C00E5E637 /* Collection+Ext.swift */; };
 		8D8873F62CBDE801007F4A53 /* WordsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8873F52CBDE801007F4A53 /* WordsListVC.swift */; };
@@ -52,7 +53,7 @@
 		8D89AE102CC9F10900AFE3E8 /* QFProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D89AE0F2CC9F10800AFE3E8 /* QFProgressBarView.swift */; };
 		8D8A5A462CBC63E100DEFE47 /* ItemCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8A5A452CBC63E100DEFE47 /* ItemCategoryVC.swift */; };
 		8D8A5A482CBC673600DEFE47 /* PhrasesCategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8A5A472CBC673600DEFE47 /* PhrasesCategoriesVC.swift */; };
-		8D8C1EF12CC22907006A25EA /* QuizVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8C1EF02CC22907006A25EA /* QuizVC.swift */; };
+		8D8C1EF12CC22907006A25EA /* QuizSuperclassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8C1EF02CC22907006A25EA /* QuizSuperclassVC.swift */; };
 		8D8EE3422CC8D72F000CE542 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D775BAB2CAE63CD00A5F5A5 /* GoogleService-Info.plist */; };
 		8D8EE3432CC8D7AC000CE542 /* quotes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D77AB152CBF6EC2006E83D5 /* quotes.txt */; };
 		8D8EE3442CC8D7AC000CE542 /* word_Bouche_f.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8D899BD22CB78B3000E08FB8 /* word_Bouche_f.mp3 */; };
@@ -247,8 +248,9 @@
 		8D806F272C941BDD004D698A /* QFPhrasesItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFPhrasesItemVC.swift; sourceTree = "<group>"; };
 		8D806F2A2C941EE5004D698A /* QFTipsItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFTipsItemVC.swift; sourceTree = "<group>"; };
 		8D818E2D2CA7C5EB002BD77F /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
-		8D82758A2CD494E3004A4635 /* QuizWritingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizWritingVC.swift; sourceTree = "<group>"; };
-		8D82758C2CD494F9004A4635 /* QuizGuessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizGuessVC.swift; sourceTree = "<group>"; };
+		8D82758A2CD494E3004A4635 /* QuizWriteModeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizWriteModeVC.swift; sourceTree = "<group>"; };
+		8D82758C2CD494F9004A4635 /* QuizGuessModeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizGuessModeVC.swift; sourceTree = "<group>"; };
+		8D82758E2CD4B15E004A4635 /* QFQuizWriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFQuizWriteButton.swift; sourceTree = "<group>"; };
 		8D8488EC2C9E1AC700715368 /* QFFavoritesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFFavoritesVC.swift; sourceTree = "<group>"; };
 		8D8488F32C9E34DC00715368 /* AlphabetListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabetListVC.swift; sourceTree = "<group>"; };
 		8D8488F62C9E394900715368 /* Alphabet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alphabet.swift; sourceTree = "<group>"; };
@@ -265,7 +267,7 @@
 		8D848BFD2C9268A1001C1910 /* QFProgressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFProgressVC.swift; sourceTree = "<group>"; };
 		8D848BFF2C926D0D001C1910 /* QFStreakProgressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFStreakProgressVC.swift; sourceTree = "<group>"; };
 		8D848C022C929131001C1910 /* QFItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFItemInfoView.swift; sourceTree = "<group>"; };
-		8D8771E42CC5962600E703F6 /* QFQuizButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFQuizButton.swift; sourceTree = "<group>"; };
+		8D8771E42CC5962600E703F6 /* QFQuizGuessButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFQuizGuessButton.swift; sourceTree = "<group>"; };
 		8D8771E62CC5A05400E703F6 /* QFAnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFAnswerView.swift; sourceTree = "<group>"; };
 		8D884FAA2CB4903C00E5E637 /* Collection+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Ext.swift"; sourceTree = "<group>"; };
 		8D8873F52CBDE801007F4A53 /* WordsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsListVC.swift; sourceTree = "<group>"; };
@@ -434,7 +436,7 @@
 		8D89AE0F2CC9F10800AFE3E8 /* QFProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFProgressBarView.swift; sourceTree = "<group>"; };
 		8D8A5A452CBC63E100DEFE47 /* ItemCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCategoryVC.swift; sourceTree = "<group>"; };
 		8D8A5A472CBC673600DEFE47 /* PhrasesCategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhrasesCategoriesVC.swift; sourceTree = "<group>"; };
-		8D8C1EF02CC22907006A25EA /* QuizVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizVC.swift; sourceTree = "<group>"; };
+		8D8C1EF02CC22907006A25EA /* QuizSuperclassVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizSuperclassVC.swift; sourceTree = "<group>"; };
 		8D9671012CD18B270032E056 /* QFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFError.swift; sourceTree = "<group>"; };
 		8D9671032CD18BC50032E056 /* phrases.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = phrases.json; sourceTree = "<group>"; };
 		8D9671052CD18BCE0032E056 /* words.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = words.json; sourceTree = "<group>"; };
@@ -647,9 +649,9 @@
 				8D8873F92CBE14E8007F4A53 /* Categories */,
 				8D8488EC2C9E1AC700715368 /* QFFavoritesVC.swift */,
 				8D848BF22C923410001C1910 /* HomeVC.swift */,
-				8D8C1EF02CC22907006A25EA /* QuizVC.swift */,
-				8D82758C2CD494F9004A4635 /* QuizGuessVC.swift */,
-				8D82758A2CD494E3004A4635 /* QuizWritingVC.swift */,
+				8D8C1EF02CC22907006A25EA /* QuizSuperclassVC.swift */,
+				8D82758C2CD494F9004A4635 /* QuizGuessModeVC.swift */,
+				8D82758A2CD494E3004A4635 /* QuizWriteModeVC.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -947,7 +949,8 @@
 			children = (
 				8D77AB122CBF68FE006E83D5 /* IconButtons */,
 				8D77AB0E2CBF1B60006E83D5 /* QFButton.swift */,
-				8D8771E42CC5962600E703F6 /* QFQuizButton.swift */,
+				8D8771E42CC5962600E703F6 /* QFQuizGuessButton.swift */,
+				8D82758E2CD4B15E004A4635 /* QFQuizWriteButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -1181,7 +1184,7 @@
 				8D8873F62CBDE801007F4A53 /* WordsListVC.swift in Sources */,
 				8D77AB0D2CBEED10006E83D5 /* UIViewController+Ext.swift in Sources */,
 				8D96710A2CD1F55D0032E056 /* QFAlertVC.swift in Sources */,
-				8D82758D2CD494F9004A4635 /* QuizGuessVC.swift in Sources */,
+				8D82758D2CD494F9004A4635 /* QuizGuessModeVC.swift in Sources */,
 				8D9CAF502CB0D65900AF42E3 /* QFPlayButton.swift in Sources */,
 				8D8771E72CC5A05400E703F6 /* QFAnswerView.swift in Sources */,
 				8D848BF32C923410001C1910 /* HomeVC.swift in Sources */,
@@ -1207,7 +1210,7 @@
 				8DAAE4EF2CD0ADB7001EDD43 /* UIHelper.swift in Sources */,
 				8D8873F82CBDE814007F4A53 /* PhrasesListVC.swift in Sources */,
 				8D7D56492CA87EF20096DEFC /* CategoryCell.swift in Sources */,
-				8D82758B2CD494E3004A4635 /* QuizWritingVC.swift in Sources */,
+				8D82758B2CD494E3004A4635 /* QuizWriteModeVC.swift in Sources */,
 				8D9CAF4A2CB0B50700AF42E3 /* QFBodyLabel.swift in Sources */,
 				8D884FAB2CB4903C00E5E637 /* Collection+Ext.swift in Sources */,
 				8D9CAF542CB0D67700AF42E3 /* QFFavoriteButton.swift in Sources */,
@@ -1225,9 +1228,10 @@
 				8D848BFE2C9268A1001C1910 /* QFProgressVC.swift in Sources */,
 				8D7D564C2CA880940096DEFC /* QFCategoryImageView.swift in Sources */,
 				8D7D56472CA87D560096DEFC /* AlphabetCell.swift in Sources */,
-				8D8771E52CC5962600E703F6 /* QFQuizButton.swift in Sources */,
-				8D8C1EF12CC22907006A25EA /* QuizVC.swift in Sources */,
+				8D8771E52CC5962600E703F6 /* QFQuizGuessButton.swift in Sources */,
+				8D8C1EF12CC22907006A25EA /* QuizSuperclassVC.swift in Sources */,
 				8D1ACA9D2CAFBADE00CC22B8 /* ItemCell.swift in Sources */,
+				8D82758F2CD4B15E004A4635 /* QFQuizWriteButton.swift in Sources */,
 				8D7D56442CA879E90096DEFC /* WordsCategoriesVC.swift in Sources */,
 				8D7BC03E2CC313B200F0E751 /* ProgressManager.swift in Sources */,
 				8D806F1F2C9405B4004D698A /* Constants.swift in Sources */,

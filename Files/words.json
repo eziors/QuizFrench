@@ -405,7 +405,7 @@
           "correct": "Un",
           "d": "Quatre",
           "id": 1,
-          "question": "1",
+          "question": "One",
           "translation": {
             "english": "One",
             "portuguese": "Um"
@@ -418,7 +418,7 @@
           "correct": "Deux",
           "d": "Quatre",
           "id": 2,
-          "question": "2",
+          "question": "Two",
           "translation": {
             "english": "Two",
             "portuguese": "Dois"
@@ -431,7 +431,7 @@
           "correct": "Trois",
           "d": "Huit",
           "id": 3,
-          "question": "3",
+          "question": "Three",
           "translation": {
             "english": "Three",
             "portuguese": "Três"
@@ -444,7 +444,7 @@
           "correct": "Quatre",
           "d": "Neuf",
           "id": 4,
-          "question": "4",
+          "question": "Four",
           "translation": {
             "english": "Four",
             "portuguese": "Quatro"
@@ -457,7 +457,7 @@
           "correct": "Cinq",
           "d": "Huit",
           "id": 5,
-          "question": "5",
+          "question": "Five",
           "translation": {
             "english": "Five",
             "portuguese": "Cinco"
@@ -470,7 +470,7 @@
           "correct": "Six",
           "d": "Deux",
           "id": 6,
-          "question": "6",
+          "question": "Six",
           "translation": {
             "english": "Six",
             "portuguese": "Seis"
@@ -483,7 +483,7 @@
           "correct": "Sept",
           "d": "Huit",
           "id": 7,
-          "question": "7",
+          "question": "Seven",
           "translation": {
             "english": "Seven",
             "portuguese": "Sete"
@@ -496,7 +496,7 @@
           "correct": "Huit",
           "d": "Neuf",
           "id": 8,
-          "question": "8",
+          "question": "Eight",
           "translation": {
             "english": "Eight",
             "portuguese": "Oito"
@@ -509,7 +509,7 @@
           "correct": "Neuf",
           "d": "Dix",
           "id": 9,
-          "question": "9",
+          "question": "Nine",
           "translation": {
             "english": "Nine",
             "portuguese": "Nove"
@@ -522,7 +522,7 @@
           "correct": "Dix",
           "d": "Douze",
           "id": 10,
-          "question": "10",
+          "question": "Ten",
           "translation": {
             "english": "Ten",
             "portuguese": "Dez"
@@ -535,7 +535,7 @@
           "correct": "Onze",
           "d": "Dix",
           "id": 11,
-          "question": "11",
+          "question": "Eleven",
           "translation": {
             "english": "Eleven",
             "portuguese": "Onze"
@@ -548,7 +548,7 @@
           "correct": "Douze",
           "d": "Seize",
           "id": 12,
-          "question": "12",
+          "question": "Twelve",
           "translation": {
             "english": "Twelve",
             "portuguese": "Doze"
@@ -561,7 +561,7 @@
           "correct": "Treize",
           "d": "Dix-sept",
           "id": 13,
-          "question": "13",
+          "question": "Thirteen",
           "translation": {
             "english": "Thirteen",
             "portuguese": "Treze"
@@ -574,7 +574,7 @@
           "correct": "Quatorze",
           "d": "Onze",
           "id": 14,
-          "question": "14",
+          "question": "Fourteen",
           "translation": {
             "english": "Fourteen",
             "portuguese": "Quatorze"
@@ -587,7 +587,7 @@
           "correct": "Quinze",
           "d": "Quinze",
           "id": 15,
-          "question": "15",
+          "question": "Fifteen",
           "translation": {
             "english": "Fifteen",
             "portuguese": "Quinze"
@@ -600,7 +600,7 @@
           "correct": "Seize",
           "d": "Huit",
           "id": 16,
-          "question": "16",
+          "question": "Sixteen",
           "translation": {
             "english": "Sixteen",
             "portuguese": "Dezesseis"
@@ -613,7 +613,7 @@
           "correct": "Dix-sept",
           "d": "Vingt",
           "id": 17,
-          "question": "17",
+          "question": "Seventeen",
           "translation": {
             "english": "Seventeen",
             "portuguese": "Dezessete"
@@ -626,7 +626,7 @@
           "correct": "Dix-huit",
           "d": "Vingt",
           "id": 18,
-          "question": "18",
+          "question": "Eighteen",
           "translation": {
             "english": "Eighteen",
             "portuguese": "Dezoito"
@@ -639,7 +639,7 @@
           "correct": "Dix-neuf",
           "d": "Vingt",
           "id": 19,
-          "question": "19",
+          "question": "Nineteen",
           "translation": {
             "english": "Nineteen",
             "portuguese": "Dezenove"
@@ -652,7 +652,7 @@
           "correct": "Vingt",
           "d": "Onze",
           "id": 20,
-          "question": "20",
+          "question": "Twenty",
           "translation": {
             "english": "Twenty",
             "portuguese": "Vinte"
