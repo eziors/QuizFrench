@@ -15,6 +15,7 @@
 		8D77AB0D2CBEED10006E83D5 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77AB0C2CBEED10006E83D5 /* UIViewController+Ext.swift */; };
 		8D77AB0F2CBF1B60006E83D5 /* QFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77AB0E2CBF1B60006E83D5 /* QFButton.swift */; };
 		8D77AB112CBF2653006E83D5 /* QFCloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77AB102CBF2653006E83D5 /* QFCloseButton.swift */; };
+		8D7B7B0F2CD5852000F7525E /* QuizCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B7B0E2CD5852000F7525E /* QuizCell.swift */; };
 		8D7BC03E2CC313B200F0E751 /* ProgressManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7BC03D2CC313B200F0E751 /* ProgressManager.swift */; };
 		8D7D56442CA879E90096DEFC /* WordsCategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D56432CA879E90096DEFC /* WordsCategoriesVC.swift */; };
 		8D7D56472CA87D560096DEFC /* AlphabetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D56462CA87D560096DEFC /* AlphabetCell.swift */; };
@@ -233,6 +234,7 @@
 		8D77AB0E2CBF1B60006E83D5 /* QFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFButton.swift; sourceTree = "<group>"; };
 		8D77AB102CBF2653006E83D5 /* QFCloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFCloseButton.swift; sourceTree = "<group>"; };
 		8D77AB152CBF6EC2006E83D5 /* quotes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quotes.txt; sourceTree = "<group>"; };
+		8D7B7B0E2CD5852000F7525E /* QuizCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCell.swift; sourceTree = "<group>"; };
 		8D7BC03D2CC313B200F0E751 /* ProgressManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressManager.swift; sourceTree = "<group>"; };
 		8D7D56432CA879E90096DEFC /* WordsCategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsCategoriesVC.swift; sourceTree = "<group>"; };
 		8D7D56462CA87D560096DEFC /* AlphabetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphabetCell.swift; sourceTree = "<group>"; };
@@ -544,6 +546,7 @@
 				8D7D56462CA87D560096DEFC /* AlphabetCell.swift */,
 				8D7D56482CA87EF20096DEFC /* CategoryCell.swift */,
 				8D1ACA9C2CAFBADE00CC22B8 /* ItemCell.swift */,
+				8D7B7B0E2CD5852000F7525E /* QuizCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -1199,6 +1202,7 @@
 				8D848BF12C9233FB001C1910 /* QFTitleLabel.swift in Sources */,
 				8D806F1A2C93EB7F004D698A /* QFHomeHeaderVC.swift in Sources */,
 				8D7D564E2CA88E4F0096DEFC /* Section.swift in Sources */,
+				8D7B7B0F2CD5852000F7525E /* QuizCell.swift in Sources */,
 				8D77AB0B2CBEEA95006E83D5 /* QFSelectionVC.swift in Sources */,
 				8D1ACA9F2CAFC25200CC22B8 /* ItemListVC.swift in Sources */,
 				8D806F2B2C941EE5004D698A /* QFTipsItemVC.swift in Sources */,

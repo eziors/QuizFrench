@@ -1,4 +1,3 @@
-//
 //  QuizWritingVC.swift
 //  QuizFrench
 //
@@ -7,20 +6,31 @@
 
 import UIKit
 
+enum QuizSection {
+    case main
+}
+
+struct Letter: Identifiable, Hashable {
+    var id = UUID()
+    var letter: String
+}
+
 class QuizWriteModeVC: QuizSuperclassVC {
     
-    var letterButtons: [UIButton] = []
-    var buttonsStackViewOne = UIStackView()
-    var buttonsStackViewTwo = UIStackView()
-    
-    
+    var letters: [Letter] = []
     var answerLabel = QFTitleLabel(textAlignment: .center, fontSize: 22)
+    
+    var collectionViewContainer = UIView()
+    var collectionView: UICollectionView!
+    var dataSource: UICollectionViewDiffableDataSource<QuizSection, Letter>!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureAnswerLabel()
-        configureButtonsStackView()
+        
+        configureCollectionViewContainer()
+        configureCollectionView()
+        configureDataSource()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -28,106 +38,113 @@ class QuizWriteModeVC: QuizSuperclassVC {
         askQuestion()
     }
     
+    
     func configureAnswerLabel() {
         view.addSubview(answerLabel)
         answerLabel.text = ""
+        answerLabel.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
             answerLabel.topAnchor.constraint(equalTo: questionLabel.bottomAnchor),
             answerLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
             answerLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40),
             answerLabel.heightAnchor.constraint(equalToConstant: 44),
+        ])
+    }
+    
+    func configureCollectionViewContainer() {
+        view.addSubview(collectionViewContainer)
+        collectionViewContainer.backgroundColor = UIColor.white.withAlphaComponent(0)
+        collectionViewContainer.translatesAutoresizingMaskIntoConstraints = false
+        collectionViewContainer.frame = view.bounds
+        
+        
+        NSLayoutConstraint.activate([
+            collectionViewContainer.topAnchor.constraint(equalTo: questionLabel.bottomAnchor, constant: 20),
+            collectionViewContainer.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
+            collectionViewContainer.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40),
+            collectionViewContainer.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -180),
             
         ])
     }
     
-    
-    func configureButtonsStackView() {
-        view.addSubview(buttonsStackViewOne)
-        view.addSubview(buttonsStackViewTwo)
         
-        buttonsStackViewOne.axis = .horizontal
-        buttonsStackViewOne.distribution = .equalSpacing
-        buttonsStackViewOne.spacing = 10
-        buttonsStackViewOne.translatesAutoresizingMaskIntoConstraints = false
+    func configureCollectionView() {
+        collectionView = UICollectionView(frame: .zero, collectionViewLayout: createFiveColumnFlowLayout())
+        collectionViewContainer.addSubview(collectionView)
+        collectionView.backgroundColor = UIColor.white.withAlphaComponent(0)
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        collectionView.frame = view.bounds
         
-        
-        buttonsStackViewTwo.axis = .horizontal
-        buttonsStackViewTwo.distribution = .equalSpacing
-        buttonsStackViewTwo.spacing = 10
-        buttonsStackViewTwo.translatesAutoresizingMaskIntoConstraints = false
-        
-        
-        
-        /*
-        for letter in currentQuestion.question {
-            let button = QFQuizButton(backgroundColor: .systemGray6, title: "Loading")
-            button.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
-            answerButtons.append(button)
-            buttonsStackView.addArrangedSubview(button)
-        }
-        */
+        collectionView.delegate = self
+        collectionView.register(QuizCell.self, forCellWithReuseIdentifier: QuizCell.reuseID)
         
         NSLayoutConstraint.activate([
-            buttonsStackViewOne.topAnchor.constraint(equalTo: answerLabel.bottomAnchor, constant: 40),
-            buttonsStackViewOne.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
-            buttonsStackViewOne.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40),
-            buttonsStackViewOne.heightAnchor.constraint(equalToConstant: 40),
-            
-            buttonsStackViewTwo.topAnchor.constraint(equalTo: buttonsStackViewOne.bottomAnchor, constant: 10),
-            buttonsStackViewTwo.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
-            buttonsStackViewTwo.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40),
-            buttonsStackViewTwo.heightAnchor.constraint(equalToConstant: 40),
+            collectionView.topAnchor.constraint(equalTo: collectionViewContainer.topAnchor),
+            collectionView.leadingAnchor.constraint(equalTo: collectionViewContainer.leadingAnchor),
+            collectionView.trailingAnchor.constraint(equalTo: collectionViewContainer.trailingAnchor),
+            collectionView.bottomAnchor.constraint(equalTo: collectionViewContainer.bottomAnchor)
         ])
+    }
+    
+    func createFiveColumnFlowLayout() -> UICollectionViewFlowLayout {
+        let width = collectionViewContainer.bounds.width
+        let padding: CGFloat = 10
+        let itemSpacing: CGFloat = 20
+        let availableWidth = width - (padding * 4) - (itemSpacing * 4)
+        let itemWidth = availableWidth / 5
+        
+        let flowLayout = UICollectionViewFlowLayout()
+        flowLayout.sectionInset = UIEdgeInsets(top: padding, left: padding, bottom: padding, right: padding)
+        flowLayout.itemSize = CGSize(width: itemWidth , height: itemWidth )
+        return flowLayout
+    }
+
+    
+    
+    func configureDataSource() {
+        dataSource = UICollectionViewDiffableDataSource(collectionView: collectionView, cellProvider: { collectionView, indexPath, letter in
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: QuizCell.reuseID, for: indexPath) as! QuizCell
+            cell.set(for: letter)
+            return cell
+        })
+    }
+    
+    func updateLetters() {
+        var snapshot = NSDiffableDataSourceSnapshot<QuizSection, Letter>()
+        snapshot.appendSections([.main])
+        snapshot.appendItems(letters)
+        
+        DispatchQueue.main.async {
+            self.dataSource.apply(snapshot, animatingDifferences: true)
+        }
     }
     
     @objc func askQuestion() {
-        var letters: [String] = []
-        var letterCount: Int = letters.count
-        
-        var addedCount: Int = 0
         guard let question = questions.randomElement() else {
             presentCompletedQuizContainer(title: "Congratulations 🥳", message: "You have finished this quiz for now !!", buttonTitle: "Return", navController: self.navigationController!)
-            
             print("Nenhuma pergunta disponível.")
             return
         }
-        
         
         answerStackView.isHidden = true
         self.currentQuestion = question
         self.questionLabel.text = question.question
         
-        for letter in currentQuestion.correct { letters.append("\(letter)") }
+        letters.removeAll() // Limpa a lista de letras antes de adicionar novas
+        for character in currentQuestion.correct {
+            //answerLabel.text! += "_ "
+            let letter = Letter(letter: String(character))
+            letters.append(letter)
+        }
         letters = letters.shuffled()
         
+        updateLetters()
+        print(currentQuestion)
         resetState()
-        
-        for letter in letters {
-            let button = QFQuizWriteButton(title: String(letter))
-            button.setTitle(String(letter), for: .normal)
-            
-            addedCount += 1
-            answerLabel.text! += "_ "
-            if addedCount < 6 {
-                buttonsStackViewOne.addArrangedSubview(button)
-            } else {
-                buttonsStackViewTwo.addArrangedSubview(button)
-            }
-                    }
-        
-        
-        /*
-        for (index, button) in answerButtons.enumerated() {
-            button.setTitle(options[index], for: .normal)
-            button.setTitleColor(.label, for: .normal)
-        }
-         */
     }
     
     func resetState() {
-        buttonsStackViewOne.arrangedSubviews.forEach { $0.removeFromSuperview() }
-        buttonsStackViewTwo.arrangedSubviews.forEach { $0.removeFromSuperview() }
         answerLabel.text = ""
     }
     
@@ -140,7 +157,6 @@ class QuizWriteModeVC: QuizSuperclassVC {
             self.questions.removeAll(where: { $0.id == currentQuestion?.id })
         } else {
             changeAnswerColor(color: UIColor.incorrectColor, buttonIndex: buttonIndex)
-            
         }
         answerStackView.isHidden = false
         updateQuestionCountLabel()
@@ -152,14 +168,33 @@ class QuizWriteModeVC: QuizSuperclassVC {
         self.answerView.correctAnswer.textColor = color
         self.continueButton.titleLabel?.textColor = color
     }
-
+    
     override func continueButtonAction() {
         askQuestion()
     }
-    
-    func removeSubViews() {
-        for i in self.buttonsStackViewOne.arrangedSubviews {
-            self.buttonsStackViewOne.removeArrangedSubview(i)
-        }
+}
+
+extension QuizWriteModeVC: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let item = letters[indexPath.item]
+        print(item)
     }
 }
+
+//MARK: ------- BACKUP --------
+
+/*
+ func createFiveColumnFlowLayout() -> UICollectionViewFlowLayout {
+     let width = collectionViewContainer.bounds.width
+     let padding: CGFloat = 10
+     let itemSpacing: CGFloat = 30
+     let availableWidth = width - (padding * 4) - (itemSpacing * 4)
+     let itemWidth = availableWidth / 5
+     
+     let flowLayout = UICollectionViewFlowLayout()
+     flowLayout.sectionInset = UIEdgeInsets(top: padding, left: padding, bottom: padding, right: padding)
+     flowLayout.itemSize = CGSize(width: itemWidth, height: itemWidth)
+     return flowLayout
+ }
+
+ */

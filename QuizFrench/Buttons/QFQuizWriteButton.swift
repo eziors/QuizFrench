@@ -41,10 +41,8 @@ class QFQuizWriteButton: UIButton {
             self.widthAnchor.constraint(equalToConstant: 50),
         ])
         
-        /*
-        titleLabel?.adjustsFontSizeToFitWidth = false
-        titleLabel?.lineBreakMode = .byClipping
-        contentEdgeInsets = .zero
-         */ 
+        
+        
+        
     }
 }
