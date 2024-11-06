@@ -21,7 +21,8 @@ class QuizSuperclassVC: UIViewController {
     var currentQuestion: Question!
     
     
-    let questionLabel = QFTitleLabel(textAlignment: .center, fontSize: 28)
+    let questionLabel = QFTitleLabel(textAlignment: .center, fontSize: 30)
+    var questionInfoLabel = QFTitleLabel(textAlignment: .left, fontSize: 24)
     let questionCountLabel = QFTitleLabel(textAlignment: .left, fontSize: 20)
     let progressBar = QFProgressBarView()
     
@@ -36,6 +37,7 @@ class QuizSuperclassVC: UIViewController {
         view.backgroundColor = .systemGray5
         configureNavigationBar()
         configureQuestionCountLabel()
+        configureQuestionInfo()
         configureAnswerStackView()
         configureQuestionLabel()
         configureProgressBar()
@@ -99,12 +101,24 @@ class QuizSuperclassVC: UIViewController {
         self.questionCountLabel.text = "\(self.correctCount) / \(self.questionsCount)"
     }
     
+    func configureQuestionInfo() {
+        view.addSubview(questionInfoLabel)
+        questionInfoLabel.text = ""
+        questionInfoLabel.textColor = .secondaryLabel
+        
+        NSLayoutConstraint.activate([
+            questionInfoLabel.topAnchor.constraint(equalTo: questionCountLabel.bottomAnchor, constant: 20),
+            questionInfoLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
+            questionInfoLabel.heightAnchor.constraint(equalToConstant: 20),
+        ])
+    }
+    
     func configureQuestionLabel() {
         view.addSubview(questionLabel)
         questionLabel.numberOfLines = 2
         
         NSLayoutConstraint.activate([
-            questionLabel.topAnchor.constraint(equalTo: questionCountLabel.bottomAnchor, constant: 30),
+            questionLabel.topAnchor.constraint(equalTo: questionInfoLabel.bottomAnchor, constant: 30),
             questionLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
             questionLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40),
             questionLabel.heightAnchor.constraint(equalToConstant: 80),
@@ -112,7 +126,7 @@ class QuizSuperclassVC: UIViewController {
     }
     
     
-    func configureAnswerStackView() { //MARK:  -------- STAY HERE  --------
+    func configureAnswerStackView() {
         view.addSubview(answerStackView)
         answerStackView.isHidden = true
         answerStackView.axis = .horizontal
@@ -133,9 +147,11 @@ class QuizSuperclassVC: UIViewController {
         ])
     }
     
+    
+    
     // MARK: --------- Quiz logic funcs ---------
      
-    func updateProgressBar() { //MARK:  -------- STAY HERE  --------
+    func updateProgressBar() {
         let progress = Float(correctCount) / Float(questionsCount)
         progressBar.setProgress(progress, animated: true)
     }

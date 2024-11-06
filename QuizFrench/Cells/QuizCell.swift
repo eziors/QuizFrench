@@ -35,11 +35,12 @@ class QuizCell: UICollectionViewCell {
         character.backgroundColor = UIColor.systemGray6
         character.layer.cornerRadius = 5
         character.layer.borderWidth = 2
+        character.clipsToBounds = true
         character.layer.borderColor = UIColor.systemGray3.cgColor
         character.textAlignment = .center
         
         
-        let padding: CGFloat = 10
+        
         
         NSLayoutConstraint.activate([
             character.topAnchor.constraint(equalTo: topAnchor),
