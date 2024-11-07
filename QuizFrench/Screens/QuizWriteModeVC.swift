@@ -33,7 +33,6 @@ class QuizWriteModeVC: QuizSuperclassVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureAnswerLabel()
-        
         configureCollectionViewContainer()
         configureCollectionView()
         configureDataSource()
@@ -74,6 +73,8 @@ class QuizWriteModeVC: QuizSuperclassVC {
             collectionViewContainer.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -180),
         ])
     }
+    
+    
     
         
     func configureCollectionView() {
@@ -153,18 +154,24 @@ class QuizWriteModeVC: QuizSuperclassVC {
     
     func resetState() {
         answerLabel.text = ""
+        answerLabel.textColor = .label
     }
     
     
-    func checkAnswer(_ selectedOption: String, buttonIndex: Int) {
-        answerView.correctAnswer.text = self.currentQuestion?.correct
+    func checkAnswer() {
+        guard availableLetters.isEmpty else {
+            print("You still have job to do")
+            return
+        }
+        answerView.correctAnswer.text = "\(self.currentQuestion.correct) -"
+        answerView.translatedAnswer.text = self.currentQuestion.translation.english
         
-        if selectedOption == self.currentQuestion?.correct {
-            changeAnswerColor(color: UIColor.correctColor, buttonIndex: buttonIndex)
+        if answerLabel.text == self.currentQuestion?.correct {
+            changeAnswerColor(color: UIColor.correctColor)
             correctCount += 1
             self.questions.removeAll(where: { $0.id == currentQuestion?.id })
         } else {
-            changeAnswerColor(color: UIColor.incorrectColor, buttonIndex: buttonIndex)
+            changeAnswerColor(color: UIColor.incorrectColor)
         }
         answerStackView.isHidden = false
         updateQuestionCountLabel()
@@ -172,8 +179,10 @@ class QuizWriteModeVC: QuizSuperclassVC {
     }
     
     
-    func changeAnswerColor(color: UIColor, buttonIndex: Int) {
+    func changeAnswerColor(color: UIColor) {
         self.answerView.titleLabel.textColor = color
+        self.answerView.translatedAnswer.textColor = color
+        self.answerLabel.textColor = color
         self.answerView.correctAnswer.textColor = color
         self.continueButton.titleLabel?.textColor = color
     }
@@ -211,5 +220,7 @@ extension QuizWriteModeVC: UICollectionViewDelegate {
             availableLetters.removeAll(where: { $0.id == selectedIndex })
         }
         updateLetters()
+        
+        checkAnswer()
     }
 }
