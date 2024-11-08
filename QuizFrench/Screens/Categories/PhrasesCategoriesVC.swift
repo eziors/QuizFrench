@@ -16,6 +16,11 @@ class PhrasesCategoriesVC: ItemCategoryVC {
         phrasesListVC.category = selectedItem.name
         phrasesListVC.listType = "phrases"
         
+        let quizVC = QuizWriteModeVC()
+        quizVC.title = selectedItem.name
+        quizVC.category = selectedItem.name
+        quizVC.quizType = "phrases"
         
+        self.presentSelectionVC(title: selectedItem.name, listVC: phrasesListVC, quizVC: quizVC)
     }
 }

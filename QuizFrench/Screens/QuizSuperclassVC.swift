@@ -21,7 +21,7 @@ class QuizSuperclassVC: UIViewController {
     var currentQuestion: Question!
     
     
-    let questionLabel = QFTitleLabel(textAlignment: .center, fontSize: 30)
+    let questionLabel = QFTitleLabel(textAlignment: .center, fontSize: 26)
     var questionInfoLabel = QFTitleLabel(textAlignment: .left, fontSize: 24)
     let questionCountLabel = QFTitleLabel(textAlignment: .left, fontSize: 20)
     let progressBar = QFProgressBarView()

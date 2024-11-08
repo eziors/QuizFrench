@@ -41,18 +41,33 @@ struct UIHelper {
         return flowLayout
     }
     
-    static func createFiveColumnFlowLayout(in view: UIView) -> UICollectionViewFlowLayout {
-        let width = view.bounds.width
+    static func createDynamicFlowLayout(in view: UIView) -> UICollectionViewFlowLayout {
         let padding: CGFloat = 10
         let itemSpacing: CGFloat = 20
-        let availableWidth = width - (padding * 4) - (itemSpacing * 4)
-        let itemWidth = availableWidth / 5
-        
+
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.sectionInset = UIEdgeInsets(top: padding, left: padding, bottom: padding, right: padding)
-        flowLayout.itemSize = CGSize(width: itemWidth , height: itemWidth )
+        flowLayout.minimumInteritemSpacing = itemSpacing
+        flowLayout.minimumLineSpacing = itemSpacing
+        flowLayout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize // Automatic size for responsive width
+
         return flowLayout
     }
 
+
 }
 
+/*
+ static func createFiveColumnFlowLayout(in view: UIView) -> UICollectionViewFlowLayout {
+     let width = view.bounds.width
+     let padding: CGFloat = 10
+     let itemSpacing: CGFloat = 20
+     let availableWidth = width - (padding * 4) - (itemSpacing * 4)
+     let itemWidth = availableWidth / 5
+     
+     let flowLayout = UICollectionViewFlowLayout()
+     flowLayout.sectionInset = UIEdgeInsets(top: padding, left: padding, bottom: padding, right: padding)
+     flowLayout.itemSize = CGSize(width: itemWidth , height: itemWidth )
+     return flowLayout
+ }
+ */

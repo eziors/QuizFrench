@@ -10,15 +10,16 @@ enum QuizSection {
     case main
 }
 
-struct Letter: Identifiable, Hashable {
+struct TextItem: Identifiable, Hashable {
     var id = UUID()
-    var letter: String
+    var item: String
 }
+
 
 class QuizWriteModeVC: QuizSuperclassVC {
     
-    var availableLetters: [Letter] = []
-    var usedLetters: [Letter] = []
+    var availableItems: [TextItem] = []
+    var usedItems: [TextItem] = []
     
     var answerLabel = QFTitleLabel(textAlignment: .center, fontSize: 24)
     
@@ -27,7 +28,7 @@ class QuizWriteModeVC: QuizSuperclassVC {
     
     var collectionViewContainer = UIView()
     var collectionView: UICollectionView!
-    var dataSource: UICollectionViewDiffableDataSource<QuizSection, Letter>!
+    var dataSource: UICollectionViewDiffableDataSource<QuizSection, TextItem>!
     
     
     override func viewDidLoad() {
@@ -49,14 +50,15 @@ class QuizWriteModeVC: QuizSuperclassVC {
     
     func configureAnswerLabel() {
         view.addSubview(answerLabel)
-        answerLabel.text = ""
+        // answerLabel.text = "_ _ _ _ _ _"
+        answerLabel.numberOfLines = 3
         answerLabel.translatesAutoresizingMaskIntoConstraints = false
                 
         NSLayoutConstraint.activate([
             answerLabel.topAnchor.constraint(equalTo: questionLabel.bottomAnchor),
             answerLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
             answerLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40),
-            answerLabel.heightAnchor.constraint(equalToConstant: 44),
+            // answerLabel.heightAnchor.constraint(equalToConstant: 44),
         ])
     }
     
@@ -74,11 +76,9 @@ class QuizWriteModeVC: QuizSuperclassVC {
         ])
     }
     
-    
-    
         
     func configureCollectionView() {
-        collectionView = UICollectionView(frame: .zero, collectionViewLayout: UIHelper.createFiveColumnFlowLayout(in: collectionViewContainer))
+        collectionView = UICollectionView(frame: .zero, collectionViewLayout: UIHelper.createDynamicFlowLayout(in: collectionViewContainer))
         collectionViewContainer.addSubview(collectionView)
         collectionView.backgroundColor = UIColor.white.withAlphaComponent(0)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
@@ -117,9 +117,9 @@ class QuizWriteModeVC: QuizSuperclassVC {
     
     
     func updateLetters() {
-        var snapshot = NSDiffableDataSourceSnapshot<QuizSection, Letter>()
+        var snapshot = NSDiffableDataSourceSnapshot<QuizSection, TextItem>()
         snapshot.appendSections([.main])
-        snapshot.appendItems(availableLetters)
+        snapshot.appendItems(availableItems)
         
         DispatchQueue.main.async {
             self.dataSource.apply(snapshot, animatingDifferences: false)
@@ -138,16 +138,32 @@ class QuizWriteModeVC: QuizSuperclassVC {
         self.currentQuestion = question
         self.questionLabel.text = question.question
         
-        availableLetters.removeAll()
+        availableItems.removeAll()
         resetState()
         
-        for character in currentQuestion.correct {
-            answerLabel.text! += "_ "
-            let letter = Letter(letter: String(character))
-            availableLetters.append(letter)
+        switch quizType {
+        case "words":
+            for character in currentQuestion.correct {
+                answerLabel.text! += "_ "
+                let letter = TextItem(item: String(character))
+                availableItems.append(letter)
+                print("Executing words case")
+            }
+        case "phrases":
+            let separatedPhrases = currentQuestion.correct.components(separatedBy: .whitespaces)
+            
+            for phrase in separatedPhrases {
+                answerLabel.text = "_ _ _ _ _ _"
+                let phrase = TextItem(item: phrase)
+                availableItems.append(phrase)
+                print("Executing phrases case")
+
+            }
+        default:
+            print("Invalid quiz type")
+            return
         }
-        availableLetters = availableLetters.shuffled()
-        
+        availableItems = availableItems.shuffled()
         updateLetters() // Snapshot
     }
     
@@ -159,14 +175,26 @@ class QuizWriteModeVC: QuizSuperclassVC {
     
     
     func checkAnswer() {
-        guard availableLetters.isEmpty else {
+        guard availableItems.isEmpty else {
             print("You still have job to do")
             return
         }
-        answerView.correctAnswer.text = "\(self.currentQuestion.correct) -"
-        answerView.translatedAnswer.text = self.currentQuestion.translation.english
         
-        if answerLabel.text == self.currentQuestion?.correct {
+        switch quizType {
+        case "words":
+            answerView.correctAnswer.text = "\(self.currentQuestion.correct) -"
+            answerView.translatedAnswer.text = self.currentQuestion.translation.english
+        case "phrases":
+            answerView.titleLabel.text = nil
+            answerView.correctAnswer.text = "Correct !"
+        default:
+            break
+        }
+        
+        let formattedAnswer = answerLabel.text?.trimmingCharacters(in: .whitespaces)
+        let formattedCorrectAnswer = self.currentQuestion?.correct.trimmingCharacters(in: .whitespaces)
+        
+        if formattedAnswer == formattedCorrectAnswer {
             changeAnswerColor(color: UIColor.correctColor)
             correctCount += 1
             self.questions.removeAll(where: { $0.id == currentQuestion?.id })
@@ -194,11 +222,22 @@ class QuizWriteModeVC: QuizSuperclassVC {
     
     
     @objc func undoAnswer() {
-        if let lastChar = usedLetters.last {
-            if let range = answerLabel.text?.range(of: lastChar.letter, options: .backwards) {
-                usedLetters.removeLast()
-                availableLetters.append(lastChar)
-                answerLabel.text?.replaceSubrange(range, with: "_ ")
+        if let lastItem = usedItems.last {
+            
+            if let range = answerLabel.text?.range(of: lastItem.item, options: .backwards) {
+                usedItems.removeLast()
+                availableItems.append(lastItem)
+                switch quizType {
+                case "words":
+                    answerLabel.text?.replaceSubrange(range, with: "_ ")
+                case "phrases":
+                    // Removing the " " space
+                    answerLabel.text?.removeLast()
+                    // Removing the last selected phrase
+                    answerLabel.text?.replaceSubrange(range, with: "")
+                default:
+                    break
+                }
                 updateLetters()
                 return
             }
@@ -209,16 +248,28 @@ class QuizWriteModeVC: QuizSuperclassVC {
 
 extension QuizWriteModeVC: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let item = availableLetters[indexPath.item]
-        let selectedChar = item.letter
+        let item = availableItems[indexPath.item]
+        let selectedChar = item.item
         let selectedIndex = item.id
         
-        usedLetters.append(item) // Adding letter to used array
+        usedItems.append(item) // Adding letter to used array
         
-        if let range = answerLabel.text?.range(of: "_ ") {
-            answerLabel.text?.replaceSubrange(range, with: selectedChar)
-            availableLetters.removeAll(where: { $0.id == selectedIndex })
+        switch quizType {
+        case "words":
+            if let range = answerLabel.text?.range(of: "_ ") {
+                answerLabel.text?.replaceSubrange(range, with: selectedChar)
+                availableItems.removeAll(where: { $0.id == selectedIndex })
+            }
+        case "phrases":
+            if let range = answerLabel.text?.range(of: "_ ") {
+                answerLabel.text?.removeAll()
+            }
+            answerLabel.text? += "\(selectedChar) "
+            availableItems.removeAll(where: { $0.id == selectedIndex })
+        default:
+            break
         }
+        
         updateLetters()
         
         checkAnswer()
