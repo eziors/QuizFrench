@@ -23,6 +23,7 @@
 		8D7D56492CA87EF20096DEFC /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D56482CA87EF20096DEFC /* CategoryCell.swift */; };
 		8D7D564C2CA880940096DEFC /* QFCategoryImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D564B2CA880940096DEFC /* QFCategoryImageView.swift */; };
 		8D7D564E2CA88E4F0096DEFC /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D564D2CA88E4F0096DEFC /* Section.swift */; };
+		8D7EF5AD2CE009FA00299F9C /* Notification+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EF5AC2CE009FA00299F9C /* Notification+Ext.swift */; };
 		8D806F1A2C93EB7F004D698A /* QFHomeHeaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D806F192C93EB7F004D698A /* QFHomeHeaderVC.swift */; };
 		8D806F1C2C9403C7004D698A /* QFSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D806F1B2C9403C7004D698A /* QFSecondaryTitleLabel.swift */; };
 		8D806F1F2C9405B4004D698A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D806F1E2C9405B4004D698A /* Constants.swift */; };
@@ -243,6 +244,7 @@
 		8D7D56482CA87EF20096DEFC /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		8D7D564B2CA880940096DEFC /* QFCategoryImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFCategoryImageView.swift; sourceTree = "<group>"; };
 		8D7D564D2CA88E4F0096DEFC /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		8D7EF5AC2CE009FA00299F9C /* Notification+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Ext.swift"; sourceTree = "<group>"; };
 		8D806F192C93EB7F004D698A /* QFHomeHeaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFHomeHeaderVC.swift; sourceTree = "<group>"; };
 		8D806F1B2C9403C7004D698A /* QFSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFSecondaryTitleLabel.swift; sourceTree = "<group>"; };
 		8D806F1E2C9405B4004D698A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -946,6 +948,7 @@
 				8D9CAF4C2CB0CFC600AF42E3 /* UIColor+Ext.swift */,
 				8D884FAA2CB4903C00E5E637 /* Collection+Ext.swift */,
 				8D77AB0C2CBEED10006E83D5 /* UIViewController+Ext.swift */,
+				8D7EF5AC2CE009FA00299F9C /* Notification+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1235,6 +1238,7 @@
 				8D8488F72C9E394900715368 /* Alphabet.swift in Sources */,
 				8D848BFE2C9268A1001C1910 /* QFProgressVC.swift in Sources */,
 				8D7D564C2CA880940096DEFC /* QFCategoryImageView.swift in Sources */,
+				8D7EF5AD2CE009FA00299F9C /* Notification+Ext.swift in Sources */,
 				8D7D56472CA87D560096DEFC /* AlphabetCell.swift in Sources */,
 				8D8771E52CC5962600E703F6 /* QFQuizGuessButton.swift in Sources */,
 				8D8C1EF12CC22907006A25EA /* QuizSuperclassVC.swift in Sources */,

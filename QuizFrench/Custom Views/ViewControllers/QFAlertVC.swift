@@ -32,7 +32,6 @@ class QFAlertVC: UIViewController {
         self.alertTitle = title
         self.message = message
         self.buttonTitle = buttonTitle
-        
     }
     
     required init?(coder: NSCoder) {
@@ -117,13 +116,16 @@ class QFAlertVC: UIViewController {
     }
     
     func returnTwoVCs() {
+        NotificationCenter.default.post(name: .didDismissAlertVC, object: nil)
         dismiss(animated: true)
-        let viewControllers = navController.viewControllers
-        let targetIndex = viewControllers.count - 2
+        navController.popToRootViewController(animated: true)
         
-        if targetIndex >= 0 {
-                let targetViewController = viewControllers[targetIndex]
-                navController.popToViewController(targetViewController, animated: true)
-            }
+    }
+    
+    @objc func dismissAlertVC() {
+        NotificationCenter.default.post(name: .didDismissAlertVC, object: nil)
+        dismiss(animated: true)
     }
 }
+
+

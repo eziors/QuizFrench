@@ -15,6 +15,17 @@ class ProgressManager {
         static let wordsQuiz = "wordsQuiz"
         static let phrasesQuiz = "phrasesQuiz"
     }
+    
+    var wordsQuizDictionary: [String: Int] = [
+        "Numbers": 0, // Starting with default values 
+        "Weekends": 0,
+        "Pronouns": 0,
+        "Family": 0,
+        "Food": 0,
+        "Clothing": 0,
+        "Verbs": 0,
+        "Body": 0,
+    ]
 
     private init() { }
 

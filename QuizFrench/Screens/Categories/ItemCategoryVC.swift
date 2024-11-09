@@ -20,20 +20,20 @@ class ItemCategoryVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
         configureCategories()
         configureCollectionView()
         configureDataSource()
         updateData()
+        configureObserver()
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        categories.removeAll(keepingCapacity: true)
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
     }
     
     private func configureCategories() {
@@ -85,6 +85,16 @@ class ItemCategoryVC: UIViewController {
         DispatchQueue.main.async {
             self.dataSource.apply(snapshot, animatingDifferences: false)
         }
+    }
+    
+    @objc func reloadData() {
+        categories.removeAll()
+        configureCategories()
+        updateData()
+    }
+    
+    func configureObserver() {
+        NotificationCenter.default.addObserver(self, selector: #selector(reloadData), name: .didDismissAlertVC, object: nil)
     }
 }
 
