@@ -21,11 +21,21 @@ class ItemListVC: UIViewController {
         configureViewController()
         configureTableView()
         loadData()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        configureNavigationBar()
     }
     
     
     func configureViewController() {
         view.backgroundColor = .systemBackground
+    }
+    
+    func configureNavigationBar() {
+        navigationController?.navigationBar.tintColor = UIColor.systemBlue
     }
     
     

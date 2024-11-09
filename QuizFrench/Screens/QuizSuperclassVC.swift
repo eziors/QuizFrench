@@ -45,6 +45,7 @@ class QuizSuperclassVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         loadData()
+        configureNavigationBar()
         progressBar.progress = 0
     }
     
@@ -147,8 +148,7 @@ class QuizSuperclassVC: UIViewController {
         ])
     }
     
-    
-    
+
     // MARK: --------- Quiz logic funcs ---------
      
     func updateProgressBar() {

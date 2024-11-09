@@ -50,10 +50,10 @@ class QuizCell: UICollectionViewCell {
             minimumWidth = 40
         case _ where charCount <= 3:
             minimumWidth = 60
-        case _ where charCount <= 7:
+        case _ where charCount <= 9:
             minimumWidth = 100
         default:
-            minimumWidth = 150
+            minimumWidth = 160
             break
         }
         

@@ -68,11 +68,11 @@ class DataManager {
             for item in decodedItems.items {
                 if item.category == category {
                     switch selectedLevel {
+                    case 0:
+                        questionsArray = Array(item.questions.prefix(2))
                     case 1:
-                        questionsArray = Array(item.questions.prefix(10))
+                        questionsArray = Array(item.questions.suffix(2))
                     case 2:
-                        questionsArray = Array(item.questions.suffix(20))
-                    case 3:
                         questionsArray = Array(item.questions)
                     default:
                         print("Invalid level !")

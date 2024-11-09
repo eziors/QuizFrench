@@ -42,13 +42,13 @@ struct UIHelper {
     }
     
     static func createDynamicFlowLayout(in view: UIView) -> UICollectionViewFlowLayout {
-        let padding: CGFloat = 10
-        let itemSpacing: CGFloat = 20
+        let padding: CGFloat = 5
+        let itemSpacing: CGFloat = 8
 
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.sectionInset = UIEdgeInsets(top: padding, left: padding, bottom: padding, right: padding)
-        flowLayout.minimumInteritemSpacing = itemSpacing
-        flowLayout.minimumLineSpacing = itemSpacing
+        // flowLayout.minimumInteritemSpacing = itemSpacing
+        // flowLayout.minimumLineSpacing = itemSpacing
         flowLayout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize // Automatic size for responsive width
 
         return flowLayout

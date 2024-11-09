@@ -39,7 +39,7 @@ class CategoryCell: UICollectionViewCell {
     func set(category: Category) {
         categoryLabel.text = category.name
         categoryImage.setImage(imageURL: category.image)
-        completedCount = category.completedLevels
+        completedCount = category.level
         
         changeStarColor(count: completedCount)
     }

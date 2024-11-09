@@ -8,25 +8,32 @@
 import Foundation
 
 class ProgressManager {
+    
     static let shared = ProgressManager()
-
-    private init() {
-        self.phrasesCategoryProgress = defaultProgress
-        self.wordsCategoryProgress = defaultProgress
+    
+    enum Keys {
+        static let wordsQuiz = "wordsQuiz"
+        static let phrasesQuiz = "phrasesQuiz"
     }
 
-    private let defaultProgress: [String: Int] = [
-        "Numbers": 1,
-        "Weekends": 3,
-        "Pronouns": 3,
-        "Family": 2,
-        "Food": 1,
-        "Clothing": 3,
-        "Verbs": 0,
-        "Body": 2,
-    ]
+    private init() { }
+
     
-    var phrasesCategoryProgress: [String: Int]
-    var wordsCategoryProgress: [String: Int]
+    func retrieveQuizProgress(quizType: String, category: String) -> Int {
+        let key = "\(quizType)_\(category)"
+        
+       
+        let quizProgress = UserDefaults.standard.integer(forKey: key)
+        print("Loaded successfully !")
+        return quizProgress
+    }
+
+    
+    func save(quizType: String, category: String, currentLevel: Int)  {
+        let key = "\(quizType)_\(category)"
+        let newLevel = currentLevel + 1
+        
+        UserDefaults.standard.set(newLevel, forKey: key)
+    }
 }
 

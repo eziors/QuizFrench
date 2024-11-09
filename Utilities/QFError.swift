@@ -11,4 +11,5 @@ enum QFError: String, Error {
     case urlError = "Failed to locate JSON File. Try again later."
     case dataError = "Failed to convert JSON into Data."
     case categoryError = "Failed to localize category in JSON file."
+    case unableToSaveProgress = "Failed to save quiz progress."
 }

@@ -20,6 +20,7 @@ class PhrasesCategoriesVC: ItemCategoryVC {
         quizVC.title = selectedItem.name
         quizVC.category = selectedItem.name
         quizVC.quizType = "phrases"
+        quizVC.currentLevel = selectedItem.level
         
         self.presentSelectionVC(title: selectedItem.name, listVC: phrasesListVC, quizVC: quizVC)
     }

@@ -131,6 +131,12 @@ class QuizWriteModeVC: QuizSuperclassVC {
         guard let question = questions.randomElement() else {
             presentCompletedQuizContainer(title: "Congratulations 🥳", message: "You have finished this quiz for now !!", buttonTitle: "Return", navController: self.navigationController!)
             print("No question available")
+            
+            guard currentLevel < 3 else {
+                print("You have completed all levels !")
+                return
+            }
+            ProgressManager.shared.save(quizType: quizType, category: category, currentLevel: currentLevel)
             return
         }
         

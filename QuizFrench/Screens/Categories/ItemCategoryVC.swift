@@ -20,27 +20,36 @@ class ItemCategoryVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         configureCategories()
         configureCollectionView()
         configureDataSource()
-        
         updateData()
     }
     
     private func configureCategories() {
         for name in categoriesNames {
-            let category = Category(name: name, image: "category_\(name.lowercased())", completedLevels: getCategoryLevel(for: categoryType, category: name)) // testing
+            let category = Category(name: name, image: "category_\(name.lowercased())", level: getCategoryLevel(for: categoryType, category: name)) // testing
             categories.append(category)
         }
     }
     
     func getCategoryLevel(for categoryType: CategoryType, category: String) -> Int {
+        var quizType: String
+        
         switch categoryType {
         case .words:
-            return ProgressManager.shared.wordsCategoryProgress[category] ?? 0
+            quizType = "words"
         case .phrases:
-            return ProgressManager.shared.phrasesCategoryProgress[category] ?? 0
+            quizType = "phrases"
         }
+        
+        print("Get category level executed !")
+        return ProgressManager.shared.retrieveQuizProgress(quizType: quizType, category: category)
     }
 
     

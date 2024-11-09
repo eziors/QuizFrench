@@ -49,6 +49,7 @@ class QuizGuessModeVC: QuizSuperclassVC {
         guard let question = questions.randomElement() else {
             presentCompletedQuizContainer(title: "Congratulations 🥳", message: "You have finished this quiz for now !!", buttonTitle: "Return", navController: self.navigationController!)
             
+            
             print("Nenhuma pergunta disponível.")
             return
         }
