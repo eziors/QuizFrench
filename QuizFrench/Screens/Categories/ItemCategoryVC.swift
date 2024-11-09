@@ -31,6 +31,11 @@ class ItemCategoryVC: UIViewController {
         updateData()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        categories.removeAll(keepingCapacity: true)
+    }
+    
     private func configureCategories() {
         for name in categoriesNames {
             let category = Category(name: name, image: "category_\(name.lowercased())", level: getCategoryLevel(for: categoryType, category: name)) // testing
