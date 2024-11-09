@@ -121,11 +121,6 @@ class QFAlertVC: UIViewController {
         navController.popToRootViewController(animated: true)
         
     }
-    
-    @objc func dismissAlertVC() {
-        NotificationCenter.default.post(name: .didDismissAlertVC, object: nil)
-        dismiss(animated: true)
-    }
 }
 
 

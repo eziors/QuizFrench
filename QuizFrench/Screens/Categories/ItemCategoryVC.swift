@@ -53,7 +53,6 @@ class ItemCategoryVC: UIViewController {
             quizType = "phrases"
         }
         
-        print("Get category level executed !")
         return ProgressManager.shared.retrieveQuizProgress(quizType: quizType, category: category)
     }
 

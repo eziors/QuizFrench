@@ -12,7 +12,7 @@ class QuizSuperclassVC: UIViewController {
     
     var quizType: String! // if is words or phrases
     var category: String!
-    var currentLevel: Int = 1
+    var currentLevel: Int = 0
     
     var questionsCount = 0
     var correctCount = 0
