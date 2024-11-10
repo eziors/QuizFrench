@@ -104,7 +104,7 @@ class QuizSuperclassVC: UIViewController {
     
     func configureQuestionInfo() {
         view.addSubview(questionInfoLabel)
-        questionInfoLabel.text = ""
+        questionInfoLabel.text = currentLevel < 2 ? "Translate this word" : "Tap on the correct answer"
         questionInfoLabel.textColor = .secondaryLabel
         
         NSLayoutConstraint.activate([

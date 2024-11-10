@@ -48,9 +48,16 @@ class QuizGuessModeVC: QuizSuperclassVC {
     @objc func askQuestion() {
         guard let question = questions.randomElement() else {
             presentCompletedQuizContainer(title: "Congratulations 🥳", message: "You have finished this quiz for now !!", buttonTitle: "Return", navController: self.navigationController!)
+            print("No question available")
             
+            guard currentLevel < 3 else {
+                print("You have completed all levels !")
+                return
+            }
             
-            print("Nenhuma pergunta disponível.")
+            correctCount = 0
+            ProgressManager.shared.save(quizType: quizType, category: category, currentLevel: currentLevel)
+            currentLevel += 1
             return
         }
         

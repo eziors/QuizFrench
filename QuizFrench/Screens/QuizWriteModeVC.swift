@@ -38,8 +38,6 @@ class QuizWriteModeVC: QuizSuperclassVC {
         configureCollectionView()
         configureDataSource()
         configureUndoButton()
-        
-        questionInfoLabel.text = "Translate this word:"
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -16,7 +16,7 @@ class PhrasesCategoriesVC: ItemCategoryVC {
         phrasesListVC.category = selectedItem.name
         phrasesListVC.listType = "phrases"
         
-        let quizVC = QuizWriteModeVC()
+        let quizVC = selectedItem.level < 2 ? QuizGuessModeVC() : QuizWriteModeVC()
         quizVC.title = selectedItem.name
         quizVC.category = selectedItem.name
         quizVC.quizType = "phrases"
