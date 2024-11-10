@@ -147,6 +147,7 @@ class QuizWriteModeVC: QuizSuperclassVC {
         self.currentQuestion = question
         self.questionLabel.text = question.question
         
+        activateUndoButton()
         availableItems.removeAll()
         resetState()
         
@@ -188,6 +189,7 @@ class QuizWriteModeVC: QuizSuperclassVC {
             print("You still have job to do")
             return
         }
+        disableUndoButton()
         
         switch quizType {
         case "words":
@@ -227,6 +229,14 @@ class QuizWriteModeVC: QuizSuperclassVC {
     
     override func continueButtonAction() {
         askQuestion()
+    }
+    
+    func disableUndoButton() {
+        undoButton.removeTarget(self, action: nil, for: .touchUpInside)
+    }
+    
+    func activateUndoButton() {
+        undoButton.addTarget(self, action: #selector(undoAnswer), for: .touchUpInside)
     }
     
     
