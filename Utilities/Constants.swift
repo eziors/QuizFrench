@@ -12,4 +12,5 @@ enum SFSymbols {
     static let words = "pencil"
     static let phrases = "text.book.closed.fill"
     static let tips = "person.fill.questionmark"
+    static let star = "star.circle.fill"
 }

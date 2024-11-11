@@ -8,7 +8,7 @@
 import UIKit
 
 enum ItemInfoType {
-    case alphabets, phrases, words, tips
+    case alphabets, phrases, words, tips, favorites
 }
 
 class QFItemInfoView: UIView {
@@ -37,7 +37,7 @@ class QFItemInfoView: UIView {
         
         titleLabel.textColor = .white
         bodyLabel.textColor = .white
-        bodyLabel.numberOfLines = 3
+        bodyLabel.numberOfLines = 2
         
         NSLayoutConstraint.activate([
             symbolImageView.topAnchor.constraint(equalTo: self.topAnchor),
@@ -76,6 +76,10 @@ class QFItemInfoView: UIView {
             symbolImageView.image = UIImage(systemName: SFSymbols.tips)
             titleLabel.text = "Tips"
             bodyLabel.text = "Quick tips to boost you."
+        case .favorites:
+            symbolImageView.image = UIImage(systemName: SFSymbols.star)
+            titleLabel.text = "Favorites"
+            bodyLabel.text = "Review your favorite expressions"
         }
     }
 }

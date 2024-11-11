@@ -11,16 +11,11 @@ class PhrasesCategoriesVC: ItemCategoryVC {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let selectedItem = categories[indexPath.item]
         
-        let phrasesListVC = ItemListVC()
-        phrasesListVC.title = selectedItem.name
-        phrasesListVC.category = selectedItem.name
-        phrasesListVC.listType = "phrases"
+        let phrasesListVC = ItemListVC(category: selectedItem.name, listType: "phrases")
         
-        let quizVC = selectedItem.level < 2 ? QuizGuessModeVC() : QuizWriteModeVC()
-        quizVC.title = selectedItem.name
-        quizVC.category = selectedItem.name
-        quizVC.quizType = "phrases"
-        quizVC.currentLevel = selectedItem.level
+        
+        let quizVC = selectedItem.level < 2 ? QuizGuessModeVC(category: selectedItem.name, quizType: "phrases", currentLevel: selectedItem.level) : QuizWriteModeVC(category: selectedItem.name, quizType: "phrases", currentLevel: selectedItem.level)
+        
         
         self.presentSelectionVC(title: selectedItem.name, listVC: phrasesListVC, quizVC: quizVC)
     }

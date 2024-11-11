@@ -31,7 +31,7 @@
 		8D806F242C940BD6004D698A /* QFAlphabetItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D806F232C940BD6004D698A /* QFAlphabetItemVC.swift */; };
 		8D806F262C941BCF004D698A /* QFWordsItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D806F252C941BCF004D698A /* QFWordsItemVC.swift */; };
 		8D806F282C941BDD004D698A /* QFPhrasesItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D806F272C941BDD004D698A /* QFPhrasesItemVC.swift */; };
-		8D806F2B2C941EE5004D698A /* QFTipsItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D806F2A2C941EE5004D698A /* QFTipsItemVC.swift */; };
+		8D806F2B2C941EE5004D698A /* QFFavoritesItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D806F2A2C941EE5004D698A /* QFFavoritesItemVC.swift */; };
 		8D818E2E2CA7C5EB002BD77F /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D818E2D2CA7C5EB002BD77F /* UIView+Ext.swift */; };
 		8D82758B2CD494E3004A4635 /* QuizWriteModeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D82758A2CD494E3004A4635 /* QuizWriteModeVC.swift */; };
 		8D82758D2CD494F9004A4635 /* QuizGuessModeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D82758C2CD494F9004A4635 /* QuizGuessModeVC.swift */; };
@@ -252,7 +252,7 @@
 		8D806F232C940BD6004D698A /* QFAlphabetItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFAlphabetItemVC.swift; sourceTree = "<group>"; };
 		8D806F252C941BCF004D698A /* QFWordsItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFWordsItemVC.swift; sourceTree = "<group>"; };
 		8D806F272C941BDD004D698A /* QFPhrasesItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFPhrasesItemVC.swift; sourceTree = "<group>"; };
-		8D806F2A2C941EE5004D698A /* QFTipsItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFTipsItemVC.swift; sourceTree = "<group>"; };
+		8D806F2A2C941EE5004D698A /* QFFavoritesItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFFavoritesItemVC.swift; sourceTree = "<group>"; };
 		8D818E2D2CA7C5EB002BD77F /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		8D82758A2CD494E3004A4635 /* QuizWriteModeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizWriteModeVC.swift; sourceTree = "<group>"; };
 		8D82758C2CD494F9004A4635 /* QuizGuessModeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizGuessModeVC.swift; sourceTree = "<group>"; };
@@ -526,7 +526,7 @@
 			isa = PBXGroup;
 			children = (
 				8D806F212C9409EA004D698A /* QFItemInfoVC.swift */,
-				8D806F2A2C941EE5004D698A /* QFTipsItemVC.swift */,
+				8D806F2A2C941EE5004D698A /* QFFavoritesItemVC.swift */,
 				8D806F232C940BD6004D698A /* QFAlphabetItemVC.swift */,
 				8D806F252C941BCF004D698A /* QFWordsItemVC.swift */,
 				8D806F272C941BDD004D698A /* QFPhrasesItemVC.swift */,
@@ -1211,7 +1211,7 @@
 				8D7B7B0F2CD5852000F7525E /* QuizCell.swift in Sources */,
 				8D77AB0B2CBEEA95006E83D5 /* QFSelectionVC.swift in Sources */,
 				8D1ACA9F2CAFC25200CC22B8 /* ItemListVC.swift in Sources */,
-				8D806F2B2C941EE5004D698A /* QFTipsItemVC.swift in Sources */,
+				8D806F2B2C941EE5004D698A /* QFFavoritesItemVC.swift in Sources */,
 				8D8A5A482CBC673600DEFE47 /* PhrasesCategoriesVC.swift in Sources */,
 				8D806F1C2C9403C7004D698A /* QFSecondaryTitleLabel.swift in Sources */,
 				8D9CAF4D2CB0CFC600AF42E3 /* UIColor+Ext.swift in Sources */,

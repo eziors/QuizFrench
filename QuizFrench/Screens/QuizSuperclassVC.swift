@@ -31,6 +31,17 @@ class QuizSuperclassVC: UIViewController {
     let continueButton = QFQuizGuessButton(backgroundColor: .systemGray6, title: "Continue")
     let answerStackView = UIStackView()
     
+    init(category: String, quizType: String, currentLevel: Int) {
+        super.init(nibName: nil, bundle: nil)
+        self.category = category
+        self.quizType = quizType
+        self.currentLevel = currentLevel
+        title = category
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

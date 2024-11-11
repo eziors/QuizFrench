@@ -15,7 +15,17 @@ class ItemListVC: UIViewController {
     var listType: String!
     var questions: [Question] = []
     
-
+    init(category: String, listType: String) {
+        super.init(nibName: nil, bundle: nil)
+        self.category = category
+        self.listType = listType
+        title = category
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViewController()

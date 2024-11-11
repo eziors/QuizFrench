@@ -13,7 +13,7 @@ protocol QFHomeVCDelegate: class {
     func didTapAlphabet()
     func didTapWords()
     func didTapPhrases()
-    func didTapTips()
+    func didTapFavorites()
 }
 
 class HomeVC: UIViewController {
@@ -98,7 +98,7 @@ class HomeVC: UIViewController {
         let phrasesItemVC = QFPhrasesItemVC()
         phrasesItemVC.delegate = self
         
-        let tipsItemVC = QFTipsItemVC()
+        let tipsItemVC = QFFavoritesItemVC()
         tipsItemVC.delegate = self
         
         self.addChildVC(childVC: QFHomeHeaderVC(), in: headerView)
@@ -176,7 +176,7 @@ extension HomeVC: QFHomeVCDelegate {
         navigationController?.pushViewController(phrasesCategoriesVC, animated: true)
     }
     
-    func didTapTips() {
-        print("Tips working !")
+    func didTapFavorites() {
+        print("Favorites working")
     }
 }

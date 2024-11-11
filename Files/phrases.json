@@ -4,263 +4,263 @@
       "category": "Pronouns",
       "questions": [
         {
-          "a": "Je vais au marché.",
-          "b": "Tu vas au marché.",
-          "c": "Il va au marché.",
-          "correct": "Je vais au marché.",
-          "d": "Elle va au marché.",
+          "a": "Je vais au marché",
+          "b": "Tu vas au marché",
+          "c": "Il va au marché",
+          "correct": "Je vais au marché",
+          "d": "Elle va au marché",
           "id": 1,
-          "question": "I am going to the market.",
+          "question": "I am going to the market",
           "translation": {
-            "english": "I am going to the market.",
-            "portuguese": "Eu vou ao mercado."
+            "english": "I am going to the market",
+            "portuguese": "Eu vou ao mercado"
           }
         },
         {
-          "a": "Ils aiment jouer au football.",
-          "b": "Nous aimons jouer au football.",
-          "c": "Tu aimes jouer au football.",
-          "correct": "Ils aiment jouer au football.",
-          "d": "Il aime jouer au football.",
+          "a": "Ils aiment jouer au football",
+          "b": "Nous aimons jouer au football",
+          "c": "Tu aimes jouer au football",
+          "correct": "Ils aiment jouer au football",
+          "d": "Il aime jouer au football",
           "id": 2,
-          "question": "They love playing football.",
+          "question": "They love playing football",
           "translation": {
-            "english": "They love playing football.",
-            "portuguese": "Eles amam jogar futebol."
+            "english": "They love playing football",
+            "portuguese": "Eles amam jogar futebol"
           }
         },
         {
-          "a": "Nous sommes amis.",
-          "b": "Ils sont amis.",
-          "c": "Vous êtes amis.",
-          "correct": "Nous sommes amis.",
-          "d": "Elle est amie.",
+          "a": "Nous sommes amis",
+          "b": "Ils sont amis",
+          "c": "Vous êtes amis",
+          "correct": "Nous sommes amis",
+          "d": "Elle est amie",
           "id": 3,
-          "question": "We are friends.",
+          "question": "We are friends",
           "translation": {
-            "english": "We are friends.",
-            "portuguese": "Nós somos amigos."
+            "english": "We are friends",
+            "portuguese": "Nós somos amigos"
           }
         },
         {
-          "a": "Il est mon frère.",
-          "b": "Elle est ma sœur.",
-          "c": "Ils sont mes frères et sœurs.",
-          "correct": "Il est mon frère.",
-          "d": "Tu es mon frère.",
+          "a": "Il est mon frère",
+          "b": "Elle est ma sœur",
+          "c": "Ils sont mes frères et sœurs",
+          "correct": "Il est mon frère",
+          "d": "Tu es mon frère",
           "id": 4,
-          "question": "He is my brother.",
+          "question": "He is my brother",
           "translation": {
-            "english": "He is my brother.",
-            "portuguese": "Ele é meu irmão."
+            "english": "He is my brother",
+            "portuguese": "Ele é meu irmão"
           }
         },
         {
-          "a": "Tu es très gentil.",
-          "b": "Ils sont très gentils.",
-          "c": "Il est très gentil.",
-          "correct": "Tu es très gentil.",
-          "d": "Je suis très gentil.",
+          "a": "Tu es très gentil",
+          "b": "Ils sont très gentils",
+          "c": "Il est très gentil",
+          "correct": "Tu es très gentil",
+          "d": "Je suis très gentil",
           "id": 5,
-          "question": "You are very kind.",
+          "question": "You are very kind",
           "translation": {
-            "english": "You are very kind.",
-            "portuguese": "Você é muito gentil."
+            "english": "You are very kind",
+            "portuguese": "Você é muito gentil"
           }
         },
         {
-          "a": "Elle aime lire des livres.",
-          "b": "Il aime lire des livres.",
-          "c": "Ils aiment lire des livres.",
-          "correct": "Elle aime lire des livres.",
-          "d": "J'aime lire des livres.",
+          "a": "Elle aime lire des livres",
+          "b": "Il aime lire des livres",
+          "c": "Ils aiment lire des livres",
+          "correct": "Elle aime lire des livres",
+          "d": "J'aime lire des livres",
           "id": 6,
-          "question": "She likes to read books.",
+          "question": "She likes to read books",
           "translation": {
-            "english": "She likes to read books.",
-            "portuguese": "Ela gosta de ler livros."
+            "english": "She likes to read books",
+            "portuguese": "Ela gosta de ler livros"
           }
         },
         {
-          "a": "Tu as une belle voiture.",
-          "b": "Nous avons une belle voiture.",
-          "c": "Ils ont une belle voiture.",
-          "correct": "Tu as une belle voiture.",
-          "d": "Il a une belle voiture.",
+          "a": "Tu as une belle voiture",
+          "b": "Nous avons une belle voiture",
+          "c": "Ils ont une belle voiture",
+          "correct": "Tu as une belle voiture",
+          "d": "Il a une belle voiture",
           "id": 7,
-          "question": "You have a nice car.",
+          "question": "You have a nice car",
           "translation": {
-            "english": "You have a nice car.",
-            "portuguese": "Você tem um carro bonito."
+            "english": "You have a nice car",
+            "portuguese": "Você tem um carro bonito"
           }
         },
         {
-          "a": "Je suis heureux aujourd'hui.",
-          "b": "Elle est heureuse aujourd'hui.",
-          "c": "Ils sont heureux aujourd'hui.",
-          "correct": "Je suis heureux aujourd'hui.",
-          "d": "Il est heureux aujourd'hui.",
+          "a": "Je suis heureux aujourd'hui",
+          "b": "Elle est heureuse aujourd'hui",
+          "c": "Ils sont heureux aujourd'hui",
+          "correct": "Je suis heureux aujourd'hui",
+          "d": "Il est heureux aujourd'hui",
           "id": 8,
-          "question": "I am happy today.",
+          "question": "I am happy today",
           "translation": {
-            "english": "I am happy today.",
-            "portuguese": "Estou feliz hoje."
+            "english": "I am happy today",
+            "portuguese": "Estou feliz hoje"
           }
         },
         {
-          "a": "Nous rentrons à la maison.",
-          "b": "Ils rentrent à la maison.",
-          "c": "Vous rentrez à la maison.",
-          "correct": "Nous rentrons à la maison.",
-          "d": "Il rentre à la maison.",
+          "a": "Nous rentrons à la maison",
+          "b": "Ils rentrent à la maison",
+          "c": "Vous rentrez à la maison",
+          "correct": "Nous rentrons à la maison",
+          "d": "Il rentre à la maison",
           "id": 9,
-          "question": "We are going home.",
+          "question": "We are going home",
           "translation": {
-            "english": "We are going home.",
-            "portuguese": "Nós estamos indo para casa."
+            "english": "We are going home",
+            "portuguese": "Nós estamos indo para casa"
           }
         },
         {
-          "a": "Je te vois à la fête.",
-          "b": "Il te voit à la fête.",
-          "c": "Elle te voit à la fête.",
-          "correct": "Je te vois à la fête.",
-          "d": "Ils te voient à la fête.",
+          "a": "Je te vois à la fête",
+          "b": "Il te voit à la fête",
+          "c": "Elle te voit à la fête",
+          "correct": "Je te vois à la fête",
+          "d": "Ils te voient à la fête",
           "id": 10,
-          "question": "I see you at the party.",
+          "question": "I see you at the party",
           "translation": {
-            "english": "I see you at the party.",
-            "portuguese": "Eu vejo você na festa."
+            "english": "I see you at the party",
+            "portuguese": "Eu vejo você na festa"
           }
         },
         {
-          "a": "Ils viendront au dîner.",
-          "b": "Nous viendrons au dîner.",
-          "c": "Tu viendras au dîner.",
-          "correct": "Ils viendront au dîner.",
-          "d": "Il viendra au dîner.",
+          "a": "Ils viendront au dîner",
+          "b": "Nous viendrons au dîner",
+          "c": "Tu viendras au dîner",
+          "correct": "Ils viendront au dîner",
+          "d": "Il viendra au dîner",
           "id": 11,
-          "question": "They will come to dinner.",
+          "question": "They will come to dinner",
           "translation": {
-            "english": "They will come to dinner.",
-            "portuguese": "Eles virão para o jantar."
+            "english": "They will come to dinner",
+            "portuguese": "Eles virão para o jantar"
           }
         },
         {
-          "a": "Tu es mon meilleur ami.",
-          "b": "Elle est ma meilleure amie.",
-          "c": "Il est mon meilleur ami.",
-          "correct": "Tu es mon meilleur ami.",
-          "d": "Ils sont mes meilleurs amis.",
+          "a": "Tu es mon meilleur ami",
+          "b": "Elle est ma meilleure amie",
+          "c": "Il est mon meilleur ami",
+          "correct": "Tu es mon meilleur ami",
+          "d": "Ils sont mes meilleurs amis",
           "id": 12,
-          "question": "You are my best friend.",
+          "question": "You are my best friend",
           "translation": {
-            "english": "You are my best friend.",
-            "portuguese": "Você é meu melhor amigo."
+            "english": "You are my best friend",
+            "portuguese": "Você é meu melhor amigo"
           }
         },
         {
-          "a": "J'aime ta robe.",
-          "b": "Il aime ta robe.",
-          "c": "Ils aiment ta robe.",
-          "correct": "J'aime ta robe.",
-          "d": "Elle aime ta robe.",
+          "a": "J'aime ta robe",
+          "b": "Il aime ta robe",
+          "c": "Ils aiment ta robe",
+          "correct": "J'aime ta robe",
+          "d": "Elle aime ta robe",
           "id": 13,
-          "question": "I like your dress.",
+          "question": "I like your dress",
           "translation": {
-            "english": "I like your dress.",
-            "portuguese": "Eu gosto do seu vestido."
+            "english": "I like your dress",
+            "portuguese": "Eu gosto do seu vestido"
           }
         },
         {
-          "a": "Elle me donne un cadeau.",
-          "b": "Il me donne un cadeau.",
-          "c": "Tu me donnes un cadeau.",
-          "correct": "Elle me donne un cadeau.",
-          "d": "Ils me donnent un cadeau.",
+          "a": "Elle me donne un cadeau",
+          "b": "Il me donne un cadeau",
+          "c": "Tu me donnes un cadeau",
+          "correct": "Elle me donne un cadeau",
+          "d": "Ils me donnent un cadeau",
           "id": 14,
-          "question": "She gives me a gift.",
+          "question": "She gives me a gift",
           "translation": {
-            "english": "She gives me a gift.",
-            "portuguese": "Ela me dá um presente."
+            "english": "She gives me a gift",
+            "portuguese": "Ela me dá um presente"
           }
         },
         {
-          "a": "Ils nous invitent à la fête.",
-          "b": "Tu nous invites à la fête.",
-          "c": "Il nous invite à la fête.",
-          "correct": "Ils nous invitent à la fête.",
-          "d": "Elle nous invite à la fête.",
+          "a": "Ils nous invitent à la fête",
+          "b": "Tu nous invites à la fête",
+          "c": "Il nous invite à la fête",
+          "correct": "Ils nous invitent à la fête",
+          "d": "Elle nous invite à la fête",
           "id": 15,
-          "question": "They invite us to the party.",
+          "question": "They invite us to the party",
           "translation": {
-            "english": "They invite us to the party.",
-            "portuguese": "Eles nos convidam para a festa."
+            "english": "They invite us to the party",
+            "portuguese": "Eles nos convidam para a festa"
           }
         },
         {
-          "a": "Je te dis la vérité.",
-          "b": "Il te dit la vérité.",
-          "c": "Ils te disent la vérité.",
-          "correct": "Je te dis la vérité.",
-          "d": "Elle te dit la vérité.",
+          "a": "Je te dis la vérité",
+          "b": "Il te dit la vérité",
+          "c": "Ils te disent la vérité",
+          "correct": "Je te dis la vérité",
+          "d": "Elle te dit la vérité",
           "id": 16,
-          "question": "I tell you the truth.",
+          "question": "I tell you the truth",
           "translation": {
-            "english": "I tell you the truth.",
-            "portuguese": "Eu te digo a verdade."
+            "english": "I tell you the truth",
+            "portuguese": "Eu te digo a verdade"
           }
         },
         {
-          "a": "Nous pouvons l'aider.",
-          "b": "Ils peuvent l'aider.",
-          "c": "Tu peux l'aider.",
-          "correct": "Nous pouvons l'aider.",
-          "d": "Elle peut l'aider.",
+          "a": "Nous pouvons l'aider",
+          "b": "Ils peuvent l'aider",
+          "c": "Tu peux l'aider",
+          "correct": "Nous pouvons l'aider",
+          "d": "Elle peut l'aider",
           "id": 17,
-          "question": "We can help him.",
+          "question": "We can help him",
           "translation": {
-            "english": "We can help him.",
-            "portuguese": "Nós podemos ajudá-lo."
+            "english": "We can help him",
+            "portuguese": "Nós podemos ajudá-lo"
           }
         },
         {
-          "a": "Tu la vois à l'école.",
-          "b": "Il la voit à l'école.",
-          "c": "Je la vois à l'école.",
-          "correct": "Tu la vois à l'école.",
-          "d": "Ils la voient à l'école.",
+          "a": "Tu la vois à l'école",
+          "b": "Il la voit à l'école",
+          "c": "Je la vois à l'école",
+          "correct": "Tu la vois à l'école",
+          "d": "Ils la voient à l'école",
           "id": 18,
-          "question": "You see her at the school.",
+          "question": "You see her at the school",
           "translation": {
-            "english": "You see her at the school.",
-            "portuguese": "Você a vê na escola."
+            "english": "You see her at the school",
+            "portuguese": "Você a vê na escola"
           }
         },
         {
-          "a": "Je le trouve intéressant.",
-          "b": "Tu le trouves intéressant.",
-          "c": "Il le trouve intéressant.",
-          "correct": "Je le trouve intéressant.",
-          "d": "Ils le trouvent intéressant.",
+          "a": "Je le trouve intéressant",
+          "b": "Tu le trouves intéressant",
+          "c": "Il le trouve intéressant",
+          "correct": "Je le trouve intéressant",
+          "d": "Ils le trouvent intéressant",
           "id": 19,
-          "question": "I find it interesting.",
+          "question": "I find it interesting",
           "translation": {
-            "english": "I find it interesting.",
-            "portuguese": "Eu acho isso interessante."
+            "english": "I find it interesting",
+            "portuguese": "Eu acho isso interessante"
           }
         },
         {
-          "a": "Ils sont en vacances.",
-          "b": "Nous sommes en vacances.",
-          "c": "Vous êtes en vacances.",
-          "correct": "Ils sont en vacances.",
-          "d": "Elle est en vacances.",
+          "a": "Ils sont en vacances",
+          "b": "Nous sommes en vacances",
+          "c": "Vous êtes en vacances",
+          "correct": "Ils sont en vacances",
+          "d": "Elle est en vacances",
           "id": 20,
-          "question": "They are on vacation.",
+          "question": "They are on vacation",
           "translation": {
-            "english": "They are on vacation.",
-            "portuguese": "Eles estão de férias."
+            "english": "They are on vacation",
+            "portuguese": "Eles estão de férias"
           }
         }
       ]
@@ -269,263 +269,263 @@
       "category": "Numbers",
       "questions": [
         {
-          "a": "Il y a cinq pommes sur la table.",
-          "b": "Il y a dix pommes sur la table.",
-          "c": "Il y a douze pommes sur la table.",
-          "correct": "Il y a dix pommes sur la table.",
-          "d": "Il y a huit pommes sur la table.",
+          "a": "Il y a cinq pommes sur la table",
+          "b": "Il y a dix pommes sur la table",
+          "c": "Il y a douze pommes sur la table",
+          "correct": "Il y a dix pommes sur la table",
+          "d": "Il y a huit pommes sur la table",
           "id": 1,
-          "question": "There are ten apples on the table.",
+          "question": "There are ten apples on the table",
           "translation": {
-            "english": "There are ten apples on the table.",
-            "portuguese": "Há dez maçãs na mesa."
+            "english": "There are ten apples on the table",
+            "portuguese": "Há dez maçãs na mesa"
           }
         },
         {
-          "a": "Elle a trois frères et deux sœurs.",
-          "b": "Elle a deux frères et trois sœurs.",
-          "c": "Elle a quatre frères et une sœur.",
-          "correct": "Elle a trois frères et deux sœurs.",
-          "d": "Elle a cinq frères et deux sœurs.",
+          "a": "Elle a trois frères et deux sœurs",
+          "b": "Elle a deux frères et trois sœurs",
+          "c": "Elle a quatre frères et une sœur",
+          "correct": "Elle a trois frères et deux sœurs",
+          "d": "Elle a cinq frères et deux sœurs",
           "id": 2,
-          "question": "She has three brothers and two sisters.",
+          "question": "She has three brothers and two sisters",
           "translation": {
-            "english": "She has three brothers and two sisters.",
-            "portuguese": "Ela tem três irmãos e duas irmãs."
+            "english": "She has three brothers and two sisters",
+            "portuguese": "Ela tem três irmãos e duas irmãs"
           }
         },
         {
-          "a": "Ils vivent dans un appartement au huitième étage.",
-          "b": "Ils vivent dans un appartement au septième étage.",
-          "c": "Ils vivent dans un appartement au sixième étage.",
-          "correct": "Ils vivent dans un appartement au septième étage.",
-          "d": "Ils vivent dans un appartement au neuvième étage.",
+          "a": "Ils vivent dans un appartement au huitième étage",
+          "b": "Ils vivent dans un appartement au septième étage",
+          "c": "Ils vivent dans un appartement au sixième étage",
+          "correct": "Ils vivent dans un appartement au septième étage",
+          "d": "Ils vivent dans un appartement au neuvième étage",
           "id": 3,
-          "question": "They live in an apartment on the seventh floor.",
+          "question": "They live in an apartment on the seventh floor",
           "translation": {
-            "english": "They live in an apartment on the seventh floor.",
-            "portuguese": "Eles vivem em um apartamento no sétimo andar."
+            "english": "They live in an apartment on the seventh floor",
+            "portuguese": "Eles vivem em um apartamento no sétimo andar"
           }
         },
         {
-          "a": "J'ai quatre livres dans mon sac.",
-          "b": "J'ai cinq livres dans mon sac.",
-          "c": "J'ai trois livres dans mon sac.",
-          "correct": "J'ai quatre livres dans mon sac.",
-          "d": "J'ai six livres dans mon sac.",
+          "a": "J'ai quatre livres dans mon sac",
+          "b": "J'ai cinq livres dans mon sac",
+          "c": "J'ai trois livres dans mon sac",
+          "correct": "J'ai quatre livres dans mon sac",
+          "d": "J'ai six livres dans mon sac",
           "id": 4,
-          "question": "I have four books in my bag.",
+          "question": "I have four books in my bag",
           "translation": {
-            "english": "I have four books in my bag.",
-            "portuguese": "Eu tenho quatro livros na minha mochila."
+            "english": "I have four books in my bag",
+            "portuguese": "Eu tenho quatro livros na minha mochila"
           }
         },
         {
-          "a": "Nous partons en vacances pendant une semaine.",
-          "b": "Nous partons en vacances pendant deux semaines.",
-          "c": "Nous partons en vacances pendant trois semaines.",
-          "correct": "Nous partons en vacances pendant deux semaines.",
-          "d": "Nous partons en vacances pendant quatre semaines.",
+          "a": "Nous partons en vacances pendant une semaine",
+          "b": "Nous partons en vacances pendant deux semaines",
+          "c": "Nous partons en vacances pendant trois semaines",
+          "correct": "Nous partons en vacances pendant deux semaines",
+          "d": "Nous partons en vacances pendant quatre semaines",
           "id": 5,
-          "question": "We are going on vacation for two weeks.",
+          "question": "We are going on vacation for two weeks",
           "translation": {
-            "english": "We are going on vacation for two weeks.",
-            "portuguese": "Nós estamos indo de férias por duas semanas."
+            "english": "We are going on vacation for two weeks",
+            "portuguese": "Nós estamos indo de férias por duas semanas"
           }
         },
         {
-          "a": "Il y a quinze étudiants dans la classe.",
-          "b": "Il y a vingt étudiants dans la classe.",
-          "c": "Il y a dix-huit étudiants dans la classe.",
-          "correct": "Il y a vingt étudiants dans la classe.",
-          "d": "Il y a vingt-deux étudiants dans la classe.",
+          "a": "Il y a quinze étudiants dans la classe",
+          "b": "Il y a vingt étudiants dans la classe",
+          "c": "Il y a dix-huit étudiants dans la classe",
+          "correct": "Il y a vingt étudiants dans la classe",
+          "d": "Il y a vingt-deux étudiants dans la classe",
           "id": 6,
-          "question": "There are twenty students in the class.",
+          "question": "There are twenty students in the class",
           "translation": {
-            "english": "There are twenty students in the class.",
-            "portuguese": "Há vinte alunos na classe."
+            "english": "There are twenty students in the class",
+            "portuguese": "Há vinte alunos na classe"
           }
         },
         {
-          "a": "L’école commence à sept heures du matin.",
-          "b": "L’école commence à neuf heures du matin.",
-          "c": "L’école commence à huit heures du matin.",
-          "correct": "L’école commence à huit heures du matin.",
-          "d": "L’école commence à dix heures du matin.",
+          "a": "L’école commence à sept heures du matin",
+          "b": "L’école commence à neuf heures du matin",
+          "c": "L’école commence à huit heures du matin",
+          "correct": "L’école commence à huit heures du matin",
+          "d": "L’école commence à dix heures du matin",
           "id": 7,
-          "question": "School starts at eight in the morning.",
+          "question": "School starts at eight in the morning",
           "translation": {
-            "english": "School starts at eight in the morning.",
-            "portuguese": "A escola começa às oito da manhã."
+            "english": "School starts at eight in the morning",
+            "portuguese": "A escola começa às oito da manhã"
           }
         },
         {
-          "a": "Le film dure deux heures.",
-          "b": "Le film dure trois heures.",
-          "c": "Le film dure une heure.",
-          "correct": "Le film dure deux heures.",
-          "d": "Le film dure quatre heures.",
+          "a": "Le film dure deux heures",
+          "b": "Le film dure trois heures",
+          "c": "Le film dure une heure",
+          "correct": "Le film dure deux heures",
+          "d": "Le film dure quatre heures",
           "id": 8,
-          "question": "The movie lasts two hours.",
+          "question": "The movie lasts two hours",
           "translation": {
-            "english": "The movie lasts two hours.",
-            "portuguese": "O filme dura duas horas."
+            "english": "The movie lasts two hours",
+            "portuguese": "O filme dura duas horas"
           }
         },
         {
-          "a": "Il a vingt-cinq ans aujourd'hui.",
-          "b": "Il a trente ans aujourd'hui.",
-          "c": "Il a vingt-huit ans aujourd'hui.",
-          "correct": "Il a trente ans aujourd'hui.",
-          "d": "Il a trente-cinq ans aujourd'hui.",
+          "a": "Il a vingt-cinq ans aujourd'hui",
+          "b": "Il a trente ans aujourd'hui",
+          "c": "Il a vingt-huit ans aujourd'hui",
+          "correct": "Il a trente ans aujourd'hui",
+          "d": "Il a trente-cinq ans aujourd'hui",
           "id": 9,
-          "question": "He is thirty years old today.",
+          "question": "He is thirty years old today",
           "translation": {
-            "english": "He is thirty years old today.",
-            "portuguese": "Ele faz trinta anos hoje."
+            "english": "He is thirty years old today",
+            "portuguese": "Ele faz trinta anos hoje"
           }
         },
         {
-          "a": "Nous avons acheté quatre billets pour le concert.",
-          "b": "Nous avons acheté six billets pour le concert.",
-          "c": "Nous avons acheté cinq billets pour le concert.",
-          "correct": "Nous avons acheté cinq billets pour le concert.",
-          "d": "Nous avons acheté trois billets pour le concert.",
+          "a": "Nous avons acheté quatre billets pour le concert",
+          "b": "Nous avons acheté six billets pour le concert",
+          "c": "Nous avons acheté cinq billets pour le concert",
+          "correct": "Nous avons acheté cinq billets pour le concert",
+          "d": "Nous avons acheté trois billets pour le concert",
           "id": 10,
-          "question": "We bought five tickets for the concert.",
+          "question": "We bought five tickets for the concert",
           "translation": {
-            "english": "We bought five tickets for the concert.",
-            "portuguese": "Nós compramos cinco ingressos para o show."
+            "english": "We bought five tickets for the concert",
+            "portuguese": "Nós compramos cinco ingressos para o show"
           }
         },
         {
-          "a": "Il y a deux voitures dans le garage.",
-          "b": "Il y a cinq voitures dans le garage.",
-          "c": "Il y a quatre voitures dans le garage.",
-          "correct": "Il y a deux voitures dans le garage.",
-          "d": "Il y a trois voitures dans le garage.",
+          "a": "Il y a deux voitures dans le garage",
+          "b": "Il y a cinq voitures dans le garage",
+          "c": "Il y a quatre voitures dans le garage",
+          "correct": "Il y a deux voitures dans le garage",
+          "d": "Il y a trois voitures dans le garage",
           "id": 11,
-          "question": "There are two cars in the garage.",
+          "question": "There are two cars in the garage",
           "translation": {
-            "english": "There are two cars in the garage.",
-            "portuguese": "Há dois carros na garagem."
+            "english": "There are two cars in the garage",
+            "portuguese": "Há dois carros na garagem"
           }
         },
         {
-          "a": "Nous avons trois chiens.",
-          "b": "Nous avons deux chiens.",
-          "c": "Nous avons quatre chiens.",
-          "correct": "Nous avons deux chiens.",
-          "d": "Nous avons cinq chiens.",
+          "a": "Nous avons trois chiens",
+          "b": "Nous avons deux chiens",
+          "c": "Nous avons quatre chiens",
+          "correct": "Nous avons deux chiens",
+          "d": "Nous avons cinq chiens",
           "id": 12,
-          "question": "We have two dogs.",
+          "question": "We have two dogs",
           "translation": {
-            "english": "We have two dogs.",
-            "portuguese": "Nós temos dois cães."
+            "english": "We have two dogs",
+            "portuguese": "Nós temos dois cães"
           }
         },
         {
-          "a": "Il a cinq euros dans sa poche.",
-          "b": "Il a trois euros dans sa poche.",
-          "c": "Il a dix euros dans sa poche.",
-          "correct": "Il a cinq euros dans sa poche.",
-          "d": "Il a sept euros dans sa poche.",
+          "a": "Il a cinq euros dans sa poche",
+          "b": "Il a trois euros dans sa poche",
+          "c": "Il a dix euros dans sa poche",
+          "correct": "Il a cinq euros dans sa poche",
+          "d": "Il a sept euros dans sa poche",
           "id": 13,
-          "question": "He has five euros in his pocket.",
+          "question": "He has five euros in his pocket",
           "translation": {
-            "english": "He has five euros in his pocket.",
-            "portuguese": "Ele tem cinco euros no bolso."
+            "english": "He has five euros in his pocket",
+            "portuguese": "Ele tem cinco euros no bolso"
           }
         },
         {
-          "a": "Ils arrivent à cinq heures.",
-          "b": "Ils arrivent à quatre heures.",
-          "c": "Ils arrivent à sept heures.",
-          "correct": "Ils arrivent à six heures.",
-          "d": "Ils arrivent à huit heures.",
+          "a": "Ils arrivent à cinq heures",
+          "b": "Ils arrivent à quatre heures",
+          "c": "Ils arrivent à sept heures",
+          "correct": "Ils arrivent à six heures",
+          "d": "Ils arrivent à huit heures",
           "id": 14,
-          "question": "They arrive at six o'clock.",
+          "question": "They arrive at six o'clock",
           "translation": {
-            "english": "They arrive at six o'clock.",
-            "portuguese": "Eles chegam às seis horas."
+            "english": "They arrive at six o'clock",
+            "portuguese": "Eles chegam às seis horas"
           }
         },
         {
-          "a": "Elle lit un livre chaque semaine.",
-          "b": "Elle lit trois livres chaque semaine.",
-          "c": "Elle lit deux livres chaque semaine.",
-          "correct": "Elle lit deux livres chaque semaine.",
-          "d": "Elle lit quatre livres chaque semaine.",
+          "a": "Elle lit un livre chaque semaine",
+          "b": "Elle lit trois livres chaque semaine",
+          "c": "Elle lit deux livres chaque semaine",
+          "correct": "Elle lit deux livres chaque semaine",
+          "d": "Elle lit quatre livres chaque semaine",
           "id": 15,
-          "question": "She reads two books every week.",
+          "question": "She reads two books every week",
           "translation": {
-            "english": "She reads two books every week.",
-            "portuguese": "Ela lê dois livros por semana."
+            "english": "She reads two books every week",
+            "portuguese": "Ela lê dois livros por semana"
           }
         },
         {
-          "a": "Je bois deux tasses de café chaque matin.",
-          "b": "Je bois trois tasses de café chaque matin.",
-          "c": "Je bois quatre tasses de café chaque matin.",
-          "correct": "Je bois deux tasses de café chaque matin.",
-          "d": "Je bois une tasse de café chaque matin.",
+          "a": "Je bois deux tasses de café chaque matin",
+          "b": "Je bois trois tasses de café chaque matin",
+          "c": "Je bois quatre tasses de café chaque matin",
+          "correct": "Je bois deux tasses de café chaque matin",
+          "d": "Je bois une tasse de café chaque matin",
           "id": 16,
-          "question": "I drink two cups of coffee every morning.",
+          "question": "I drink two cups of coffee every morning",
           "translation": {
-            "english": "I drink two cups of coffee every morning.",
-            "portuguese": "Eu bebo duas xícaras de café toda manhã."
+            "english": "I drink two cups of coffee every morning",
+            "portuguese": "Eu bebo duas xícaras de café toda manhã"
           }
         },
         {
-          "a": "Nous vivons dans l'appartement numéro sept.",
-          "b": "Nous vivons dans l'appartement numéro cinq.",
-          "c": "Nous vivons dans l'appartement numéro trois.",
-          "correct": "Nous vivons dans l'appartement numéro cinq.",
-          "d": "Nous vivons dans l'appartement numéro neuf.",
+          "a": "Nous vivons dans l'appartement numéro sept",
+          "b": "Nous vivons dans l'appartement numéro cinq",
+          "c": "Nous vivons dans l'appartement numéro trois",
+          "correct": "Nous vivons dans l'appartement numéro cinq",
+          "d": "Nous vivons dans l'appartement numéro neuf",
           "id": 17,
-          "question": "We live in apartment number five.",
+          "question": "We live in apartment number five",
           "translation": {
-            "english": "We live in apartment number five.",
-            "portuguese": "Nós moramos no apartamento número cinco."
+            "english": "We live in apartment number five",
+            "portuguese": "Nós moramos no apartamento número cinco"
           }
         },
         {
-          "a": "Ils ont deux chats.",
-          "b": "Ils ont un chat.",
-          "c": "Ils ont trois chats.",
-          "correct": "Ils ont deux chats.",
-          "d": "Ils ont quatre chats.",
+          "a": "Ils ont deux chats",
+          "b": "Ils ont un chat",
+          "c": "Ils ont trois chats",
+          "correct": "Ils ont deux chats",
+          "d": "Ils ont quatre chats",
           "id": 18,
-          "question": "They have two cats.",
+          "question": "They have two cats",
           "translation": {
-            "english": "They have two cats.",
-            "portuguese": "Eles têm dois gatos."
+            "english": "They have two cats",
+            "portuguese": "Eles têm dois gatos"
           }
         },
         {
-          "a": "Elle va à l'école tous les jours.",
-          "b": "Elle va à l'école tous les samedis.",
-          "c": "Elle va à l'école tous les dimanches.",
-          "correct": "Elle va à l'école tous les jours.",
-          "d": "Elle va à l'école tous les mercredis.",
+          "a": "Elle va à l'école tous les jours",
+          "b": "Elle va à l'école tous les samedis",
+          "c": "Elle va à l'école tous les dimanches",
+          "correct": "Elle va à l'école tous les jours",
+          "d": "Elle va à l'école tous les mercredis",
           "id": 19,
-          "question": "She goes to school every day.",
+          "question": "She goes to school every day",
           "translation": {
-            "english": "She goes to school every day.",
-            "portuguese": "Ela vai à escola todos os dias."
+            "english": "She goes to school every day",
+            "portuguese": "Ela vai à escola todos os dias"
           }
         },
         {
-          "a": "Il travaille à la bibliothèque.",
-          "b": "Il travaille à l'école.",
-          "c": "Il travaille au supermarché.",
-          "correct": "Il travaille au supermarché.",
-          "d": "Il travaille au cinéma.",
+          "a": "Il travaille à la bibliothèque",
+          "b": "Il travaille à l'école",
+          "c": "Il travaille au supermarché",
+          "correct": "Il travaille au supermarché",
+          "d": "Il travaille au cinéma",
           "id": 20,
-          "question": "He works at the supermarket.",
+          "question": "He works at the supermarket",
           "translation": {
-            "english": "He works at the supermarket.",
-            "portuguese": "Ele trabalha no supermercado."
+            "english": "He works at the supermarket",
+            "portuguese": "Ele trabalha no supermercado"
           }
         }
       ]
@@ -534,263 +534,263 @@
       "category": "Weekends",
       "questions": [
         {
-          "a": "J'ai une réunion lundi.",
-          "b": "J'ai une réunion mardi.",
-          "c": "J'ai une réunion mercredi.",
-          "correct": "J'ai une réunion lundi.",
-          "d": "J'ai une réunion jeudi.",
+          "a": "J'ai une réunion lundi",
+          "b": "J'ai une réunion mardi",
+          "c": "J'ai une réunion mercredi",
+          "correct": "J'ai une réunion lundi",
+          "d": "J'ai une réunion jeudi",
           "id": 1,
-          "question": "What day do I have a meeting?",
+          "question": "I have a meeting on Monday",
           "translation": {
-            "english": "I have a meeting on Monday.",
-            "portuguese": "Eu tenho uma reunião na segunda-feira."
+            "english": "I have a meeting on Monday",
+            "portuguese": "Eu tenho uma reunião na segunda-feira"
           }
         },
         {
-          "a": "Elle travaille mardi.",
-          "b": "Elle travaille mercredi.",
-          "c": "Elle travaille jeudi.",
-          "correct": "Elle travaille mardi.",
-          "d": "Elle travaille vendredi.",
+          "a": "Je travaille mardi",
+          "b": "Je travaille lundi",
+          "c": "Je travaille mercredi",
+          "correct": "Je travaille mardi",
+          "d": "Je travaille jeudi",
           "id": 2,
-          "question": "What day does she work?",
+          "question": "I work on Tuesday",
           "translation": {
-            "english": "She works on Tuesday.",
-            "portuguese": "Ela trabalha na terça-feira."
+            "english": "I work on Tuesday",
+            "portuguese": "Eu trabalho na terça-feira"
           }
         },
         {
-          "a": "Nous allons au gymnase mercredi.",
-          "b": "Nous allons au gymnase jeudi.",
-          "c": "Nous allons au gymnase vendredi.",
-          "correct": "Nous allons au gymnase mercredi.",
-          "d": "Nous allons au gymnase samedi.",
+          "a": "Je vais à la gym mercredi",
+          "b": "Je vais à la gym lundi",
+          "c": "Je vais à la gym mardi",
+          "correct": "Je vais à la gym mercredi",
+          "d": "Je vais à la gym jeudi",
           "id": 3,
-          "question": "What day do we go to the gym?",
+          "question": "I go to the gym on Wednesday",
           "translation": {
-            "english": "We go to the gym on Wednesday.",
-            "portuguese": "Nós vamos à academia na quarta-feira."
+            "english": "I go to the gym on Wednesday",
+            "portuguese": "Eu vou à academia na quarta-feira"
           }
         },
         {
-          "a": "Ils ont une fête samedi.",
-          "b": "Ils ont une fête dimanche.",
-          "c": "Ils ont une fête lundi.",
-          "correct": "Ils ont une fête samedi.",
-          "d": "Ils ont une fête vendredi.",
+          "a": "Nous sortons jeudi",
+          "b": "Nous sortons vendredi",
+          "c": "Nous sortons mercredi",
+          "correct": "Nous sortons jeudi",
+          "d": "Nous sortons samedi",
           "id": 4,
-          "question": "What day do they have a party?",
+          "question": "We go out on Thursday",
           "translation": {
-            "english": "They have a party on Saturday.",
-            "portuguese": "Eles têm uma festa no sábado."
+            "english": "We go out on Thursday",
+            "portuguese": "Nós saímos na quinta-feira"
           }
         },
         {
-          "a": "J'étudie jeudi.",
-          "b": "J'étudie vendredi.",
-          "c": "J'étudie samedi.",
-          "correct": "J'étudie jeudi.",
-          "d": "J'étudie dimanche.",
+          "a": "Je vais au marché vendredi",
+          "b": "Je vais au marché samedi",
+          "c": "Je vais au marché dimanche",
+          "correct": "Je vais au marché vendredi",
+          "d": "Je vais au marché lundi",
           "id": 5,
-          "question": "What day do I study?",
+          "question": "I go to the market on Friday",
           "translation": {
-            "english": "I study on Thursday.",
-            "portuguese": "Eu estudo na quinta-feira."
+            "english": "I go to the market on Friday",
+            "portuguese": "Eu vou ao mercado na sexta-feira"
           }
         },
         {
-          "a": "Elle rend visite à ses grands-parents dimanche.",
-          "b": "Elle rend visite à ses grands-parents samedi.",
-          "c": "Elle rend visite à ses grands-parents vendredi.",
-          "correct": "Elle rend visite à ses grands-parents dimanche.",
-          "d": "Elle rend visite à ses grands-parents jeudi.",
+          "a": "Nous avons un dîner samedi",
+          "b": "Nous avons un dîner vendredi",
+          "c": "Nous avons un dîner dimanche",
+          "correct": "Nous avons un dîner samedi",
+          "d": "Nous avons un dîner jeudi",
           "id": 6,
-          "question": "What day does she visit her grandparents?",
+          "question": "We have a dinner on Saturday",
           "translation": {
-            "english": "She visits her grandparents on Sunday.",
-            "portuguese": "Ela visita seus avós no domingo."
+            "english": "We have a dinner on Saturday",
+            "portuguese": "Nós temos um jantar no sábado"
           }
         },
         {
-          "a": "Nous dînons lundi.",
-          "b": "Nous dînons mardi.",
-          "c": "Nous dînons mercredi.",
-          "correct": "Nous dînons lundi.",
-          "d": "Nous dînons jeudi.",
+          "a": "Je vais à l'église dimanche",
+          "b": "Je vais à l'église samedi",
+          "c": "Je vais à l'église vendredi",
+          "correct": "Je vais à l'église dimanche",
+          "d": "Je vais à l'église lundi",
           "id": 7,
-          "question": "What day do we have dinner?",
+          "question": "I go to church on Sunday",
           "translation": {
-            "english": "We have dinner on Monday.",
-            "portuguese": "Nós jantamos na segunda-feira."
+            "english": "I go to church on Sunday",
+            "portuguese": "Eu vou à igreja no domingo"
           }
         },
         {
-          "a": "Ils jouent au football vendredi.",
-          "b": "Ils jouent au football samedi.",
-          "c": "Ils jouent au football dimanche.",
-          "correct": "Ils jouent au football samedi.",
-          "d": "Ils jouent au football jeudi.",
+          "a": "Je fais les courses lundi",
+          "b": "Je fais les courses mardi",
+          "c": "Je fais les courses mercredi",
+          "correct": "Je fais les courses lundi",
+          "d": "Je fais les courses vendredi",
           "id": 8,
-          "question": "What day do they play football?",
+          "question": "I do the shopping on Monday",
           "translation": {
-            "english": "They play football on Saturday.",
-            "portuguese": "Eles jogam futebol no sábado."
+            "english": "I do the shopping on Monday",
+            "portuguese": "Eu faço as compras na segunda-feira"
           }
         },
         {
-          "a": "Je fais le ménage jeudi.",
-          "b": "Je fais le ménage vendredi.",
-          "c": "Je fais le ménage samedi.",
-          "correct": "Je fais le ménage jeudi.",
-          "d": "Je fais le ménage mercredi.",
+          "a": "Je vais courir mardi",
+          "b": "Je vais courir jeudi",
+          "c": "Je vais courir vendredi",
+          "correct": "Je vais courir mardi",
+          "d": "Je vais courir dimanche",
           "id": 9,
-          "question": "What day do I clean the house?",
+          "question": "I go running on Tuesday",
           "translation": {
-            "english": "I clean the house on Thursday.",
-            "portuguese": "Eu limpo a casa na quinta-feira."
+            "english": "I go running on Tuesday",
+            "portuguese": "Eu vou correr na terça-feira"
           }
         },
         {
-          "a": "Elle prend un cours de yoga mardi.",
-          "b": "Elle prend un cours de yoga mercredi.",
-          "c": "Elle prend un cours de yoga jeudi.",
-          "correct": "Elle prend un cours de yoga mardi.",
-          "d": "Elle prend un cours de yoga lundi.",
+          "a": "Je me repose mercredi",
+          "b": "Je me repose vendredi",
+          "c": "Je me repose dimanche",
+          "correct": "Je me repose mercredi",
+          "d": "Je me repose samedi",
           "id": 10,
-          "question": "What day does she take a yoga class?",
+          "question": "I rest on Wednesday",
           "translation": {
-            "english": "She takes a yoga class on Tuesday.",
-            "portuguese": "Ela faz uma aula de yoga na terça-feira."
+            "english": "I rest on Wednesday",
+            "portuguese": "Eu descanso na quarta-feira"
           }
         },
         {
-          "a": "Nous faisons du shopping samedi.",
-          "b": "Nous faisons du shopping dimanche.",
-          "c": "Nous faisons du shopping vendredi.",
-          "correct": "Nous faisons du shopping samedi.",
-          "d": "Nous faisons du shopping lundi.",
+          "a": "Nous étudions jeudi",
+          "b": "Nous étudions mardi",
+          "c": "Nous étudions mercredi",
+          "correct": "Nous étudions jeudi",
+          "d": "Nous étudions lundi",
           "id": 11,
-          "question": "What day do we go shopping?",
+          "question": "We study on Thursday",
           "translation": {
-            "english": "We go shopping on Saturday.",
-            "portuguese": "Nós vamos às compras no sábado."
+            "english": "We study on Thursday",
+            "portuguese": "Nós estudamos na quinta-feira"
           }
         },
         {
-          "a": "Ils regardent un film vendredi.",
-          "b": "Ils regardent un film samedi.",
-          "c": "Ils regardent un film dimanche.",
-          "correct": "Ils regardent un film vendredi.",
-          "d": "Ils regardent un film jeudi.",
+          "a": "Je travaille de chez moi vendredi",
+          "b": "Je travaille de chez moi jeudi",
+          "c": "Je travaille de chez moi mardi",
+          "correct": "Je travaille de chez moi vendredi",
+          "d": "Je travaille de chez moi lundi",
           "id": 12,
-          "question": "What day do they watch a movie?",
+          "question": "I work from home on Friday",
           "translation": {
-            "english": "They watch a movie on Friday.",
-            "portuguese": "Eles assistem a um filme na sexta-feira."
+            "english": "I work from home on Friday",
+            "portuguese": "Eu trabalho de casa na sexta-feira"
           }
         },
         {
-          "a": "Je vais à la bibliothèque lundi.",
-          "b": "Je vais à la bibliothèque mardi.",
-          "c": "Je vais à la bibliothèque mercredi.",
-          "correct": "Je vais à la bibliothèque lundi.",
-          "d": "Je vais à la bibliothèque jeudi.",
+          "a": "Je joue au tennis samedi",
+          "b": "Je joue au tennis dimanche",
+          "c": "Je joue au tennis vendredi",
+          "correct": "Je joue au tennis samedi",
+          "d": "Je joue au tennis lundi",
           "id": 13,
-          "question": "What day do I go to the library?",
+          "question": "I play tennis on Saturday",
           "translation": {
-            "english": "I go to the library on Monday.",
-            "portuguese": "Eu vou à biblioteca na segunda-feira."
+            "english": "I play tennis on Saturday",
+            "portuguese": "Eu jogo tênis no sábado"
           }
         },
         {
-          "a": "Elle a un rendez-vous chez le dentiste mercredi.",
-          "b": "Elle a un rendez-vous chez le dentiste jeudi.",
-          "c": "Elle a un rendez-vous chez le dentiste mardi.",
-          "correct": "Elle a un rendez-vous chez le dentiste mercredi.",
-          "d": "Elle a un rendez-vous chez le dentiste lundi.",
+          "a": "Nous rendons visite à nos amis dimanche",
+          "b": "Nous rendons visite à nos amis samedi",
+          "c": "Nous rendons visite à nos amis vendredi",
+          "correct": "Nous rendons visite à nos amis dimanche",
+          "d": "Nous rendons visite à nos amis lundi",
           "id": 14,
-          "question": "What day does she have a dentist appointment?",
+          "question": "We visit our friends on Sunday",
           "translation": {
-            "english": "She has a dentist appointment on Wednesday.",
-            "portuguese": "Ela tem uma consulta no dentista na quarta-feira."
+            "english": "We visit our friends on Sunday",
+            "portuguese": "Nós visitamos nossos amigos no domingo"
           }
         },
         {
-          "a": "Ils se détendent dimanche.",
-          "b": "Ils se détendent samedi.",
-          "c": "Ils se détendent vendredi.",
-          "correct": "Ils se détendent dimanche.",
-          "d": "Ils se détendent jeudi.",
+          "a": "Je fais du yoga lundi",
+          "b": "Je fais du yoga mardi",
+          "c": "Je fais du yoga jeudi",
+          "correct": "Je fais du yoga lundi",
+          "d": "Je fais du yoga samedi",
           "id": 15,
-          "question": "What day do they relax?",
+          "question": "I do yoga on Monday",
           "translation": {
-            "english": "They relax on Sunday.",
-            "portuguese": "Eles relaxam no domingo."
+            "english": "I do yoga on Monday",
+            "portuguese": "Eu faço yoga na segunda-feira"
           }
         },
         {
-          "a": "J'ai un cours lundi.",
-          "b": "J'ai un cours mercredi.",
-          "c": "J'ai un cours mardi.",
-          "correct": "J'ai un cours lundi.",
-          "d": "J'ai un cours jeudi.",
+          "a": "Je fais du bénévolat mardi",
+          "b": "Je fais du bénévolat jeudi",
+          "c": "Je fais du bénévolat mercredi",
+          "correct": "Je fais du bénévolat mardi",
+          "d": "Je fais du bénévolat vendredi",
           "id": 16,
-          "question": "What day do I have a class?",
+          "question": "I volunteer on Tuesday",
           "translation": {
-            "english": "I have a class on Monday.",
-            "portuguese": "Eu tenho aula na segunda-feira."
+            "english": "I volunteer on Tuesday",
+            "portuguese": "Eu faço trabalho voluntário na terça-feira"
           }
         },
         {
-          "a": "Nous jouons à des jeux vendredi.",
-          "b": "Nous jouons à des jeux samedi.",
-          "c": "Nous jouons à des jeux jeudi.",
-          "correct": "Nous jouons à des jeux vendredi.",
-          "d": "Nous jouons à des jeux dimanche.",
+          "a": "Je vais au cinéma mercredi",
+          "b": "Je vais au cinéma lundi",
+          "c": "Je vais au cinéma vendredi",
+          "correct": "Je vais au cinéma mercredi",
+          "d": "Je vais au cinéma dimanche",
           "id": 17,
-          "question": "What day do we play games?",
+          "question": "I go to the cinema on Wednesday",
           "translation": {
-            "english": "We play games on Friday.",
-            "portuguese": "Nós jogamos jogos na sexta-feira."
+            "english": "I go to the cinema on Wednesday",
+            "portuguese": "Eu vou ao cinema na quarta-feira"
           }
         },
         {
-          "a": "Il voyage lundi.",
-          "b": "Il voyage mercredi.",
-          "c": "Il voyage jeudi.",
-          "correct": "Il voyage lundi.",
-          "d": "Il voyage vendredi.",
+          "a": "Nous jouons au football jeudi",
+          "b": "Nous jouons au football mardi",
+          "c": "Nous jouons au football lundi",
+          "correct": "Nous jouons au football jeudi",
+          "d": "Nous jouons au football samedi",
           "id": 18,
-          "question": "What day does he travel?",
+          "question": "We play football on Thursday",
           "translation": {
-            "english": "He travels on Monday.",
-            "portuguese": "Ele viaja na segunda-feira."
+            "english": "We play football on Thursday",
+            "portuguese": "Nós jogamos futebol na quinta-feira"
           }
         },
         {
-          "a": "Elle va à la plage samedi.",
-          "b": "Elle va à la plage dimanche.",
-          "c": "Elle va à la plage vendredi.",
-          "correct": "Elle va à la plage samedi.",
-          "d": "Elle va à la plage jeudi.",
+          "a": "Je nettoie ma maison vendredi",
+          "b": "Je nettoie ma maison jeudi",
+          "c": "Je nettoie ma maison lundi",
+          "correct": "Je nettoie ma maison vendredi",
+          "d": "Je nettoie ma maison dimanche",
           "id": 19,
-          "question": "What day does she go to the beach?",
+          "question": "I clean my house on Friday",
           "translation": {
-            "english": "She goes to the beach on Saturday.",
-            "portuguese": "Ela vai à praia no sábado."
+            "english": "I clean my house on Friday",
+            "portuguese": "Eu limpo minha casa na sexta-feira"
           }
         },
         {
-          "a": "Nous assistons à un concert vendredi.",
-          "b": "Nous assistons à un concert samedi.",
-          "c": "Nous assistons à un concert dimanche.",
-          "correct": "Nous assistons à un concert vendredi.",
-          "d": "Nous assistons à un concert jeudi.",
+          "a": "Je vais à la plage samedi",
+          "b": "Je vais à la plage dimanche",
+          "c": "Je vais à la plage jeudi",
+          "correct": "Je vais à la plage samedi",
+          "d": "Je vais à la plage mardi",
           "id": 20,
-          "question": "What day do we attend a concert?",
+          "question": "I go to the beach on Saturday",
           "translation": {
-            "english": "We attend a concert on Friday.",
-            "portuguese": "Nós assistimos a um show na sexta-feira."
+            "english": "I go to the beach on Saturday",
+            "portuguese": "Eu vou à praia no sábado"
           }
         }
       ]
@@ -799,263 +799,263 @@
       "category": "Family",
       "questions": [
         {
-          "a": "Mon père est médecin.",
-          "b": "Mon père est enseignant.",
-          "c": "Mon père est ingénieur.",
-          "correct": "Mon père est médecin.",
-          "d": "Mon père est avocat.",
+          "a": "C'est mon père",
+          "b": "C'est mon frère",
+          "c": "C'est mon oncle",
+          "correct": "C'est mon père",
+          "d": "C'est mon cousin",
           "id": 1,
-          "question": "What does your father do?",
+          "question": "This is my father",
           "translation": {
-            "english": "My father is a doctor.",
-            "portuguese": "Meu pai é médico."
+            "english": "This is my father",
+            "portuguese": "Este é meu pai"
           }
         },
         {
-          "a": "Elle a deux sœurs.",
-          "b": "Elle a une sœur.",
-          "c": "Elle a trois frères.",
-          "correct": "Elle a deux sœurs.",
-          "d": "Elle a un frère.",
+          "a": "C'est ma mère",
+          "b": "C'est ma sœur",
+          "c": "C'est ma tante",
+          "correct": "C'est ma mère",
+          "d": "C'est ma grand-mère",
           "id": 2,
-          "question": "How many sisters does she have?",
+          "question": "This is my mother",
           "translation": {
-            "english": "She has two sisters.",
-            "portuguese": "Ela tem duas irmãs."
+            "english": "This is my mother",
+            "portuguese": "Esta é minha mãe"
           }
         },
         {
-          "a": "Nous rendons visite à nos grands-parents le week-end.",
-          "b": "Nous rendons visite à nos grands-parents le vendredi.",
-          "c": "Nous rendons visite à nos grands-parents le lundi.",
-          "correct": "Nous rendons visite à nos grands-parents le week-end.",
-          "d": "Nous rendons visite à nos grands-parents le jeudi.",
+          "a": "Il est mon frère",
+          "b": "Il est mon cousin",
+          "c": "Il est mon père",
+          "correct": "Il est mon frère",
+          "d": "Il est mon oncle",
           "id": 3,
-          "question": "When do we visit our grandparents?",
+          "question": "He is my brother",
           "translation": {
-            "english": "We visit our grandparents on weekends.",
-            "portuguese": "Nós visitamos nossos avós nos fins de semana."
+            "english": "He is my brother",
+            "portuguese": "Ele é meu irmão"
           }
         },
         {
-          "a": "Ma mère prépare le dîner chaque soir.",
-          "b": "Ma mère prépare le petit déjeuner chaque matin.",
-          "c": "Ma mère prépare le déjeuner chaque jour.",
-          "correct": "Ma mère prépare le dîner chaque soir.",
-          "d": "Ma mère prépare le dessert chaque semaine.",
+          "a": "Elle est ma sœur",
+          "b": "Elle est ma tante",
+          "c": "Elle est ma cousine",
+          "correct": "Elle est ma sœur",
+          "d": "Elle est ma mère",
           "id": 4,
-          "question": "What does your mother cook every night?",
+          "question": "She is my sister",
           "translation": {
-            "english": "My mother cooks dinner every night.",
-            "portuguese": "Minha mãe cozinha o jantar todas as noites."
+            "english": "She is my sister",
+            "portuguese": "Ela é minha irmã"
           }
         },
         {
-          "a": "C'est mon frère aîné.",
-          "b": "C'est mon frère cadet.",
-          "c": "C'est mon cousin.",
-          "correct": "C'est mon frère aîné.",
-          "d": "C'est mon oncle.",
+          "a": "C'est mon grand-père",
+          "b": "C'est mon père",
+          "c": "C'est mon oncle",
+          "correct": "C'est mon grand-père",
+          "d": "C'est mon frère",
           "id": 5,
-          "question": "Who is he in your family?",
+          "question": "This is my grandfather",
           "translation": {
-            "english": "He is my older brother.",
-            "portuguese": "Ele é meu irmão mais velho."
+            "english": "This is my grandfather",
+            "portuguese": "Este é meu avô"
           }
         },
         {
-          "a": "Ils ont une grande famille.",
-          "b": "Ils ont une petite famille.",
-          "c": "Ils n'ont pas de famille.",
-          "correct": "Ils ont une grande famille.",
-          "d": "Ils ont une famille de taille moyenne.",
+          "a": "C'est ma grand-mère",
+          "b": "C'est ma tante",
+          "c": "C'est ma mère",
+          "correct": "C'est ma grand-mère",
+          "d": "C'est ma cousine",
           "id": 6,
-          "question": "What kind of family do they have?",
+          "question": "This is my grandmother",
           "translation": {
-            "english": "They have a big family.",
-            "portuguese": "Eles têm uma família grande."
+            "english": "This is my grandmother",
+            "portuguese": "Esta é minha avó"
           }
         },
         {
-          "a": "Ma sœur aime danser.",
-          "b": "Ma sœur aime chanter.",
-          "c": "Ma sœur aime faire du sport.",
-          "correct": "Ma sœur aime danser.",
-          "d": "Ma sœur aime lire.",
+          "a": "Il est mon cousin",
+          "b": "Il est mon père",
+          "c": "Il est mon frère",
+          "correct": "Il est mon cousin",
+          "d": "Il est mon oncle",
           "id": 7,
-          "question": "What does your sister love to do?",
+          "question": "He is my cousin",
           "translation": {
-            "english": "My sister loves to dance.",
-            "portuguese": "Minha irmã adora dançar."
+            "english": "He is my cousin",
+            "portuguese": "Ele é meu primo"
           }
         },
         {
-          "a": "Nous célébrons Noël ensemble.",
-          "b": "Nous célébrons le Nouvel An séparément.",
-          "c": "Nous célébrons les anniversaires ensemble.",
-          "correct": "Nous célébrons Noël ensemble.",
-          "d": "Nous célébrons Halloween ensemble.",
+          "a": "Elle est ma cousine",
+          "b": "Elle est ma sœur",
+          "c": "Elle est ma mère",
+          "correct": "Elle est ma cousine",
+          "d": "Elle est ma tante",
           "id": 8,
-          "question": "What do we celebrate together?",
+          "question": "She is my cousin",
           "translation": {
-            "english": "We celebrate Christmas together.",
-            "portuguese": "Nós celebramos o Natal juntos."
+            "english": "She is my cousin",
+            "portuguese": "Ela é minha prima"
           }
         },
         {
-          "a": "Mon oncle vit dans une autre ville.",
-          "b": "Mon oncle vit avec nous.",
-          "c": "Mon oncle est enseignant.",
-          "correct": "Mon oncle vit dans une autre ville.",
-          "d": "Mon oncle est médecin.",
+          "a": "C'est mon oncle",
+          "b": "C'est mon cousin",
+          "c": "C'est mon frère",
+          "correct": "C'est mon oncle",
+          "d": "C'est mon père",
           "id": 9,
-          "question": "Where does your uncle live?",
+          "question": "This is my uncle",
           "translation": {
-            "english": "My uncle lives in another city.",
-            "portuguese": "Meu tio vive em outra cidade."
+            "english": "This is my uncle",
+            "portuguese": "Este é meu tio"
           }
         },
         {
-          "a": "Ce sont mes cousins.",
-          "b": "Ce sont mes amis.",
-          "c": "Ce sont mes voisins.",
-          "correct": "Ce sont mes cousins.",
-          "d": "Ce sont mes frères et sœurs.",
+          "a": "C'est ma tante",
+          "b": "C'est ma mère",
+          "c": "C'est ma cousine",
+          "correct": "C'est ma tante",
+          "d": "C'est ma grand-mère",
           "id": 10,
-          "question": "Who are they?",
+          "question": "This is my aunt",
           "translation": {
-            "english": "They are my cousins.",
-            "portuguese": "Eles são meus primos."
+            "english": "This is my aunt",
+            "portuguese": "Esta é minha tia"
           }
         },
         {
-          "a": "Mon frère est très grand.",
-          "b": "Mon frère est très petit.",
-          "c": "Mon frère est très drôle.",
-          "correct": "Mon frère est très grand.",
-          "d": "Mon frère est très sérieux.",
+          "a": "Il est mon neveu",
+          "b": "Il est mon cousin",
+          "c": "Il est mon frère",
+          "correct": "Il est mon neveu",
+          "d": "Il est mon père",
           "id": 11,
-          "question": "How tall is your brother?",
+          "question": "He is my nephew",
           "translation": {
-            "english": "My brother is very tall.",
-            "portuguese": "Meu irmão é muito alto."
+            "english": "He is my nephew",
+            "portuguese": "Ele é meu sobrinho"
           }
         },
         {
-          "a": "Nous faisons souvent des voyages en famille.",
-          "b": "Nous ne faisons jamais de voyages en famille.",
-          "c": "Nous faisons occasionnellement des voyages en famille.",
-          "correct": "Nous faisons souvent des voyages en famille.",
-          "d": "Nous faisons des voyages en famille chaque mois.",
+          "a": "Elle est ma nièce",
+          "b": "Elle est ma sœur",
+          "c": "Elle est ma cousine",
+          "correct": "Elle est ma nièce",
+          "d": "Elle est ma tante",
           "id": 12,
-          "question": "How often do we go on family trips?",
+          "question": "She is my niece",
           "translation": {
-            "english": "We often go on family trips.",
-            "portuguese": "Nós frequentemente fazemos viagens em família."
+            "english": "She is my niece",
+            "portuguese": "Ela é minha sobrinha"
           }
         },
         {
-          "a": "Ma grand-mère raconte des histoires.",
-          "b": "Ma grand-mère joue à des jeux.",
-          "c": "Ma grand-mère cuisine.",
-          "correct": "Ma grand-mère raconte des histoires.",
-          "d": "Ma grand-mère chante.",
+          "a": "Il est mon fils",
+          "b": "Il est mon cousin",
+          "c": "Il est mon frère",
+          "correct": "Il est mon fils",
+          "d": "Il est mon oncle",
           "id": 13,
-          "question": "What does your grandmother do?",
+          "question": "He is my son",
           "translation": {
-            "english": "My grandmother tells stories.",
-            "portuguese": "Minha avó conta histórias."
+            "english": "He is my son",
+            "portuguese": "Ele é meu filho"
           }
         },
         {
-          "a": "C'est ma tante.",
-          "b": "C'est ma mère.",
-          "c": "C'est ma sœur.",
-          "correct": "C'est ma tante.",
-          "d": "C'est ma grand-mère.",
+          "a": "Elle est ma fille",
+          "b": "Elle est ma sœur",
+          "c": "Elle est ma cousine",
+          "correct": "Elle est ma fille",
+          "d": "Elle est ma nièce",
           "id": 14,
-          "question": "Who is she?",
+          "question": "She is my daughter",
           "translation": {
-            "english": "She is my aunt.",
-            "portuguese": "Ela é minha tia."
+            "english": "She is my daughter",
+            "portuguese": "Ela é minha filha"
           }
         },
         {
-          "a": "Mes parents voyagent.",
-          "b": "Mes parents cuisinent.",
-          "c": "Mes parents font des courses.",
-          "correct": "Mes parents voyagent.",
-          "d": "Mes parents se reposent.",
+          "a": "C'est mon beau-père",
+          "b": "C'est mon père",
+          "c": "C'est mon oncle",
+          "correct": "C'est mon beau-père",
+          "d": "C'est mon frère",
           "id": 15,
-          "question": "What are your parents doing?",
+          "question": "This is my father-in-law",
           "translation": {
-            "english": "My parents are traveling.",
-            "portuguese": "Meus pais estão viajando."
+            "english": "This is my father-in-law",
+            "portuguese": "Este é meu sogro"
           }
         },
         {
-          "a": "Nous jouons à des jeux de société ensemble.",
-          "b": "Nous jouons au football ensemble.",
-          "c": "Nous jouons à des jeux vidéo ensemble.",
-          "correct": "Nous jouons à des jeux de société ensemble.",
-          "d": "Nous jouons au basket ensemble.",
+          "a": "C'est ma belle-mère",
+          "b": "C'est ma tante",
+          "c": "C'est ma mère",
+          "correct": "C'est ma belle-mère",
+          "d": "C'est ma cousine",
           "id": 16,
-          "question": "What do we play together?",
+          "question": "This is my mother-in-law",
           "translation": {
-            "english": "We play board games together.",
-            "portuguese": "Nós jogamos jogos de tabuleiro juntos."
+            "english": "This is my mother-in-law",
+            "portuguese": "Esta é minha sogra"
           }
         },
         {
-          "a": "Ma nièce est très intelligente.",
-          "b": "Ma nièce est très jeune.",
-          "c": "Ma nièce est très vieille.",
-          "correct": "Ma nièce est très intelligente.",
-          "d": "Ma nièce est très drôle.",
+          "a": "Ils sont mes parents",
+          "b": "Ils sont mes oncles",
+          "c": "Ils sont mes cousins",
+          "correct": "Ils sont mes parents",
+          "d": "Ils sont mes grands-parents",
           "id": 17,
-          "question": "How smart is your niece?",
+          "question": "They are my parents",
           "translation": {
-            "english": "My niece is very smart.",
-            "portuguese": "Minha sobrinha é muito inteligente."
+            "english": "They are my parents",
+            "portuguese": "Eles são meus pais"
           }
         },
         {
-          "a": "Nous avons des dîners en famille le dimanche.",
-          "b": "Nous avons des dîners en famille le samedi.",
-          "c": "Nous avons des dîners en famille le vendredi.",
-          "correct": "Nous avons des dîners en famille le dimanche.",
-          "d": "Nous avons des dîners en famille le lundi.",
+          "a": "Elle est ma belle-sœur",
+          "b": "Elle est ma sœur",
+          "c": "Elle est ma cousine",
+          "correct": "Elle est ma belle-sœur",
+          "d": "Elle est ma tante",
           "id": 18,
-          "question": "When do we have family dinners?",
+          "question": "She is my sister-in-law",
           "translation": {
-            "english": "We have family dinners on Sundays.",
-            "portuguese": "Nós temos jantares em família aos domingos."
+            "english": "She is my sister-in-law",
+            "portuguese": "Ela é minha cunhada"
           }
         },
         {
-          "a": "Mon père joue au tennis.",
-          "b": "Mon père joue au football.",
-          "c": "Mon père joue au basket.",
-          "correct": "Mon père joue au tennis.",
-          "d": "Mon père joue au golf.",
+          "a": "Il est mon beau-frère",
+          "b": "Il est mon frère",
+          "c": "Il est mon cousin",
+          "correct": "Il est mon beau-frère",
+          "d": "Il est mon père",
           "id": 19,
-          "question": "What sport does your father play?",
+          "question": "He is my brother-in-law",
           "translation": {
-            "english": "My father plays tennis.",
-            "portuguese": "Meu pai joga tênis."
+            "english": "He is my brother-in-law",
+            "portuguese": "Ele é meu cunhado"
           }
         },
         {
-          "a": "Ma sœur aime dessiner.",
-          "b": "Ma sœur aime chanter.",
-          "c": "Ma sœur aime danser.",
-          "correct": "Ma sœur aime dessiner.",
-          "d": "Ma sœur aime lire.",
+          "a": "Ils sont mes grands-parents",
+          "b": "Ils sont mes parents",
+          "c": "Ils sont mes oncles",
+          "correct": "Ils sont mes grands-parents",
+          "d": "Ils sont mes cousins",
           "id": 20,
-          "question": "What does your sister love to do?",
+          "question": "They are my grandparents",
           "translation": {
-            "english": "My sister loves to draw.",
-            "portuguese": "Minha irmã adora desenhar."
+            "english": "They are my grandparents",
+            "portuguese": "Eles são meus avós"
           }
         }
       ]
@@ -1064,263 +1064,263 @@
       "category": "Clothing",
       "questions": [
         {
-          "a": "Je porte une chemise.",
-          "b": "Tu portes un pantalon.",
-          "c": "Il porte une veste.",
-          "correct": "Je porte une chemise.",
-          "d": "Elle porte une écharpe.",
+          "a": "Je porte une chemise",
+          "b": "Tu portes un pantalon",
+          "c": "Il porte une veste",
+          "correct": "Je porte une chemise",
+          "d": "Elle porte une écharpe",
           "id": 1,
-          "question": "I wear a shirt.",
+          "question": "I wear a shirt",
           "translation": {
-            "english": "I wear a shirt.",
-            "portuguese": "Eu uso uma camisa."
+            "english": "I wear a shirt",
+            "portuguese": "Eu uso uma camisa"
           }
         },
         {
-          "a": "Nous avons des robes.",
-          "b": "Ils ont des chaussures.",
-          "c": "Tu as une jupe.",
-          "correct": "Nous avons des robes.",
-          "d": "Il a un chapeau.",
+          "a": "Nous avons des robes",
+          "b": "Ils ont des chaussures",
+          "c": "Tu as une jupe",
+          "correct": "Nous avons des robes",
+          "d": "Il a un chapeau",
           "id": 2,
-          "question": "We have dresses.",
+          "question": "We have dresses",
           "translation": {
-            "english": "We have dresses.",
-            "portuguese": "Nós temos vestidos."
+            "english": "We have dresses",
+            "portuguese": "Nós temos vestidos"
           }
         },
         {
-          "a": "Elle porte des lunettes de soleil.",
-          "b": "Il porte une cravate.",
-          "c": "Tu portes des gants.",
-          "correct": "Elle porte des lunettes de soleil.",
-          "d": "Nous avons des sacs.",
+          "a": "Elle porte des lunettes de soleil",
+          "b": "Il porte une cravate",
+          "c": "Tu portes des gants",
+          "correct": "Elle porte des lunettes de soleil",
+          "d": "Nous avons des sacs",
           "id": 3,
-          "question": "She wears sunglasses.",
+          "question": "She wears sunglasses",
           "translation": {
-            "english": "She wears sunglasses.",
-            "portuguese": "Ela usa óculos de sol."
+            "english": "She wears sunglasses",
+            "portuguese": "Ela usa óculos de sol"
           }
         },
         {
-          "a": "Ils ont des manteaux chauds.",
-          "b": "Nous avons des t-shirts.",
-          "c": "Tu as une écharpe.",
-          "correct": "Ils ont des manteaux chauds.",
-          "d": "Il a un short.",
+          "a": "Ils ont des manteaux chauds",
+          "b": "Nous avons des t-shirts",
+          "c": "Tu as une écharpe",
+          "correct": "Ils ont des manteaux chauds",
+          "d": "Il a un short",
           "id": 4,
-          "question": "They have warm coats.",
+          "question": "They have warm coats",
           "translation": {
-            "english": "They have warm coats.",
-            "portuguese": "Eles têm casacos quentes."
+            "english": "They have warm coats",
+            "portuguese": "Eles têm casacos quentes"
           }
         },
         {
-          "a": "Tu portes des chaussures blanches.",
-          "b": "Il porte une veste en cuir.",
-          "c": "Nous avons des chaussettes noires.",
-          "correct": "Tu portes des chaussures blanches.",
-          "d": "Elle a un bonnet rouge.",
+          "a": "Tu portes des chaussures blanches",
+          "b": "Il porte une veste en cuir",
+          "c": "Nous avons des chaussettes noires",
+          "correct": "Tu portes des chaussures blanches",
+          "d": "Elle a un bonnet rouge",
           "id": 5,
-          "question": "You wear white shoes.",
+          "question": "You wear white shoes",
           "translation": {
-            "english": "You wear white shoes.",
-            "portuguese": "Você usa sapatos brancos."
+            "english": "You wear white shoes",
+            "portuguese": "Você usa sapatos brancos"
           }
         },
         {
-          "a": "Je mets un pull.",
-          "b": "Tu mets une robe.",
-          "c": "Il met un costume.",
-          "correct": "Je mets un pull.",
-          "d": "Elle met un short.",
+          "a": "Je mets un pull",
+          "b": "Tu mets une robe",
+          "c": "Il met un costume",
+          "correct": "Je mets un pull",
+          "d": "Elle met un short",
           "id": 6,
-          "question": "I put on a sweater.",
+          "question": "I put on a sweater",
           "translation": {
-            "english": "I put on a sweater.",
-            "portuguese": "Eu coloco um suéter."
+            "english": "I put on a sweater",
+            "portuguese": "Eu coloco um suéter"
           }
         },
         {
-          "a": "Nous avons des maillots de bain.",
-          "b": "Ils ont des pantalons.",
-          "c": "Tu as un blouson.",
-          "correct": "Nous avons des maillots de bain.",
-          "d": "Il a des baskets.",
+          "a": "Nous avons des maillots de bain",
+          "b": "Ils ont des pantalons",
+          "c": "Tu as un blouson",
+          "correct": "Nous avons des maillots de bain",
+          "d": "Il a des baskets",
           "id": 7,
-          "question": "We have swimsuits.",
+          "question": "We have swimsuits",
           "translation": {
-            "english": "We have swimsuits.",
-            "portuguese": "Nós temos trajes de banho."
+            "english": "We have swimsuits",
+            "portuguese": "Nós temos trajes de banho"
           }
         },
         {
-          "a": "Tu es en pyjama.",
-          "b": "Il est en costume.",
-          "c": "Elle est en robe.",
-          "correct": "Tu es en pyjama.",
-          "d": "Nous sommes en jean.",
+          "a": "Tu es en pyjama",
+          "b": "Il est en costume",
+          "c": "Elle est en robe",
+          "correct": "Tu es en pyjama",
+          "d": "Nous sommes en jean",
           "id": 8,
-          "question": "You are in pajamas.",
+          "question": "You are in pajamas",
           "translation": {
-            "english": "You are in pajamas.",
-            "portuguese": "Você está de pijama."
+            "english": "You are in pajamas",
+            "portuguese": "Você está de pijama"
           }
         },
         {
-          "a": "Ils portent des chapeaux.",
-          "b": "Nous avons des cravates.",
-          "c": "Tu as des sandales.",
-          "correct": "Ils portent des chapeaux.",
-          "d": "Il a un parapluie.",
+          "a": "Ils portent des chapeaux",
+          "b": "Nous avons des cravates",
+          "c": "Tu as des sandales",
+          "correct": "Ils portent des chapeaux",
+          "d": "Il a un parapluie",
           "id": 9,
-          "question": "They wear hats.",
+          "question": "They wear hats",
           "translation": {
-            "english": "They wear hats.",
-            "portuguese": "Eles usam chapéus."
+            "english": "They wear hats",
+            "portuguese": "Eles usam chapéus"
           }
         },
         {
-          "a": "Je veux une nouvelle veste.",
-          "b": "Tu veux un pull chaud.",
-          "c": "Il veut des chaussures confortables.",
-          "correct": "Je veux une nouvelle veste.",
-          "d": "Elle veut un nouveau sac.",
+          "a": "Je veux une nouvelle veste",
+          "b": "Tu veux un pull chaud",
+          "c": "Il veut des chaussures confortables",
+          "correct": "Je veux une nouvelle veste",
+          "d": "Elle veut un nouveau sac",
           "id": 10,
-          "question": "I want a new jacket.",
+          "question": "I want a new jacket",
           "translation": {
-            "english": "I want a new jacket.",
-            "portuguese": "Eu quero uma nova jaqueta."
+            "english": "I want a new jacket",
+            "portuguese": "Eu quero uma nova jaqueta"
           }
         },
         {
-          "a": "Il y a des t-shirts sur la table.",
-          "b": "Tu as des robes dans le placard.",
-          "c": "Nous avons des jupes dans le tiroir.",
-          "correct": "Il y a des t-shirts sur la table.",
-          "d": "Ils ont des pantalons dans la valise.",
+          "a": "Il y a des t-shirts sur la table",
+          "b": "Tu as des robes dans le placard",
+          "c": "Nous avons des jupes dans le tiroir",
+          "correct": "Il y a des t-shirts sur la table",
+          "d": "Ils ont des pantalons dans la valise",
           "id": 11,
-          "question": "There are t-shirts on the table.",
+          "question": "There are t-shirts on the table",
           "translation": {
-            "english": "There are t-shirts on the table.",
-            "portuguese": "Há camisetas na mesa."
+            "english": "There are t-shirts on the table",
+            "portuguese": "Há camisetas na mesa"
           }
         },
         {
-          "a": "Je n'ai pas de chapeau.",
-          "b": "Tu n'as pas de robe.",
-          "c": "Il n'a pas de pantalon.",
-          "correct": "Je n'ai pas de chapeau.",
-          "d": "Elle n'a pas de chaussures.",
+          "a": "Je n'ai pas de chapeau",
+          "b": "Tu n'as pas de robe",
+          "c": "Il n'a pas de pantalon",
+          "correct": "Je n'ai pas de chapeau",
+          "d": "Elle n'a pas de chaussures",
           "id": 12,
-          "question": "I do not have a hat.",
+          "question": "I do not have a hat",
           "translation": {
-            "english": "I do not have a hat.",
-            "portuguese": "Eu não tenho um chapéu."
+            "english": "I do not have a hat",
+            "portuguese": "Eu não tenho um chapéu"
           }
         },
         {
-          "a": "Ils mesurent les vêtements.",
-          "b": "Nous mesurons nos bras.",
-          "c": "Tu mesures ta taille.",
-          "correct": "Ils mesurent les vêtements.",
-          "d": "Il mesure son chapeau.",
+          "a": "Ils mesurent les vêtements",
+          "b": "Nous mesurons nos bras",
+          "c": "Tu mesures ta taille",
+          "correct": "Ils mesurent les vêtements",
+          "d": "Il mesure son chapeau",
           "id": 13,
-          "question": "They measure the clothes.",
+          "question": "They measure the clothes",
           "translation": {
-            "english": "They measure the clothes.",
-            "portuguese": "Eles medem as roupas."
+            "english": "They measure the clothes",
+            "portuguese": "Eles medem as roupas"
           }
         },
         {
-          "a": "Je préfère une robe rouge.",
-          "b": "Tu préfères un pantalon bleu.",
-          "c": "Il préfère un t-shirt vert.",
-          "correct": "Je préfère une robe rouge.",
-          "d": "Elle préfère une jupe noire.",
+          "a": "Je préfère une robe rouge",
+          "b": "Tu préfères un pantalon bleu",
+          "c": "Il préfère un t-shirt vert",
+          "correct": "Je préfère une robe rouge",
+          "d": "Elle préfère une jupe noire",
           "id": 14,
-          "question": "I prefer a red dress.",
+          "question": "I prefer a red dress",
           "translation": {
-            "english": "I prefer a red dress.",
-            "portuguese": "Eu prefiro um vestido vermelho."
+            "english": "I prefer a red dress",
+            "portuguese": "Eu prefiro um vestido vermelho"
           }
         },
         {
-          "a": "Ils ont des vêtements élégants.",
-          "b": "Nous avons des robes démodées.",
-          "c": "Tu as un t-shirt sale.",
-          "correct": "Ils ont des vêtements élégants.",
-          "d": "Il a des chaussettes trouées.",
+          "a": "Ils ont des vêtements élégants",
+          "b": "Nous avons des robes démodées",
+          "c": "Tu as un t-shirt sale",
+          "correct": "Ils ont des vêtements élégants",
+          "d": "Il a des chaussettes trouées",
           "id": 15,
-          "question": "They have elegant clothes.",
+          "question": "They have elegant clothes",
           "translation": {
-            "english": "They have elegant clothes.",
-            "portuguese": "Eles têm roupas elegantes."
+            "english": "They have elegant clothes",
+            "portuguese": "Eles têm roupas elegantes"
           }
         },
         {
-          "a": "Je touche ma veste.",
-          "b": "Tu touches ta robe.",
-          "c": "Il touche son pantalon.",
-          "correct": "Je touche ma veste.",
-          "d": "Elle touche sa jupe.",
+          "a": "Je touche ma veste",
+          "b": "Tu touches ta robe",
+          "c": "Il touche son pantalon",
+          "correct": "Je touche ma veste",
+          "d": "Elle touche sa jupe",
           "id": 16,
-          "question": "I touch my jacket.",
+          "question": "I touch my jacket",
           "translation": {
-            "english": "I touch my jacket.",
-            "portuguese": "Eu toco na minha jaqueta."
+            "english": "I touch my jacket",
+            "portuguese": "Eu toco na minha jaqueta"
           }
         },
         {
-          "a": "Je mets des bijoux.",
-          "b": "Tu mets un chapeau.",
-          "c": "Il met une ceinture.",
-          "correct": "Je mets des bijoux.",
-          "d": "Nous mettons des gants.",
+          "a": "Je mets des bijoux",
+          "b": "Tu mets un chapeau",
+          "c": "Il met une ceinture",
+          "correct": "Je mets des bijoux",
+          "d": "Nous mettons des gants",
           "id": 17,
-          "question": "I put on jewelry.",
+          "question": "I put on jewelry",
           "translation": {
-            "english": "I put on jewelry.",
-            "portuguese": "Eu coloco joias."
+            "english": "I put on jewelry",
+            "portuguese": "Eu coloco joias"
           }
         },
         {
-          "a": "Tu as des vêtements neufs.",
-          "b": "Il a des vêtements sales.",
-          "c": "Nous avons des vêtements usés.",
-          "correct": "Tu as des vêtements neufs.",
-          "d": "Ils ont des vêtements troués.",
+          "a": "Tu as des vêtements neufs",
+          "b": "Il a des vêtements sales",
+          "c": "Nous avons des vêtements usés",
+          "correct": "Tu as des vêtements neufs",
+          "d": "Ils ont des vêtements troués",
           "id": 18,
-          "question": "You have new clothes.",
+          "question": "You have new clothes",
           "translation": {
-            "english": "You have new clothes.",
-            "portuguese": "Você tem roupas novas."
+            "english": "You have new clothes",
+            "portuguese": "Você tem roupas novas"
           }
         },
         {
-          "a": "Nous avons un bon style.",
-          "b": "Ils ont une mauvaise tenue.",
-          "c": "Tu as un joli look.",
-          "correct": "Nous avons un bon style.",
-          "d": "Elle a une tenue bizarre.",
+          "a": "Nous avons un bon style",
+          "b": "Ils ont une mauvaise tenue",
+          "c": "Tu as un joli look",
+          "correct": "Nous avons un bon style",
+          "d": "Elle a une tenue bizarre",
           "id": 19,
-          "question": "We have a good style.",
+          "question": "We have a good style",
           "translation": {
-            "english": "We have a good style.",
-            "portuguese": "Nós temos um bom estilo."
+            "english": "We have a good style",
+            "portuguese": "Nós temos um bom estilo"
           }
         },
         {
-          "a": "Elle a une robe rouge.",
-          "b": "Il a un pull bleu.",
-          "c": "Tu as un short noir.",
-          "correct": "Elle a une robe rouge.",
-          "d": "Nous avons un pantalon gris.",
+          "a": "Elle a une robe rouge",
+          "b": "Il a un pull bleu",
+          "c": "Tu as un short noir",
+          "correct": "Elle a une robe rouge",
+          "d": "Nous avons un pantalon gris",
           "id": 20,
-          "question": "She has a red dress.",
+          "question": "She has a red dress",
           "translation": {
-            "english": "She has a red dress.",
-            "portuguese": "Ela tem um vestido vermelho."
+            "english": "She has a red dress",
+            "portuguese": "Ela tem um vestido vermelho"
           }
         }
       ]
@@ -1329,263 +1329,263 @@
       "category": "Verbs",
       "questions": [
         {
-          "a": "Je mange.",
-          "b": "Je mangeais.",
-          "c": "Je mangerai.",
-          "correct": "Je mange.",
-          "d": "Je mangerais.",
+          "a": "Je mange",
+          "b": "Je mangeais",
+          "c": "Je mangerai",
+          "correct": "Je mange",
+          "d": "Je mangerais",
           "id": 1,
-          "question": "I eat.",
+          "question": "I eat",
           "translation": {
-            "english": "I eat.",
-            "portuguese": "Eu como."
+            "english": "I eat",
+            "portuguese": "Eu como"
           }
         },
         {
-          "a": "Nous buvons de l'eau.",
-          "b": "Nous buvions de l'eau.",
-          "c": "Nous boirons de l'eau.",
-          "correct": "Nous buvons de l'eau.",
-          "d": "Nous boirions de l'eau.",
+          "a": "Nous buvons de l'eau",
+          "b": "Nous buvions de l'eau",
+          "c": "Nous boirons de l'eau",
+          "correct": "Nous buvons de l'eau",
+          "d": "Nous boirions de l'eau",
           "id": 2,
-          "question": "We drink water.",
+          "question": "We drink water",
           "translation": {
-            "english": "We drink water.",
-            "portuguese": "Nós bebemos água."
+            "english": "We drink water",
+            "portuguese": "Nós bebemos água"
           }
         },
         {
-          "a": "Je vais au marché.",
-          "b": "J'allais au marché.",
-          "c": "J'irai au marché.",
-          "correct": "Je vais au marché.",
-          "d": "J'irais au marché.",
+          "a": "Je vais au marché",
+          "b": "J'allais au marché",
+          "c": "J'irai au marché",
+          "correct": "Je vais au marché",
+          "d": "J'irais au marché",
           "id": 3,
-          "question": "I go to the market.",
+          "question": "I go to the market",
           "translation": {
-            "english": "I go to the market.",
-            "portuguese": "Eu vou ao mercado."
+            "english": "I go to the market",
+            "portuguese": "Eu vou ao mercado"
           }
         },
         {
-          "a": "Ils jouent au football.",
-          "b": "Ils jouaient au football.",
-          "c": "Ils joueront au football.",
-          "correct": "Ils jouent au football.",
-          "d": "Ils joueraient au football.",
+          "a": "Ils jouent au football",
+          "b": "Ils jouaient au football",
+          "c": "Ils joueront au football",
+          "correct": "Ils jouent au football",
+          "d": "Ils joueraient au football",
           "id": 4,
-          "question": "They play football.",
+          "question": "They play football",
           "translation": {
-            "english": "They play football.",
-            "portuguese": "Eles jogam futebol."
+            "english": "They play football",
+            "portuguese": "Eles jogam futebol"
           }
         },
         {
-          "a": "Je fais mes devoirs.",
-          "b": "Je faisais mes devoirs.",
-          "c": "Je ferai mes devoirs.",
-          "correct": "Je fais mes devoirs.",
-          "d": "Je ferais mes devoirs.",
+          "a": "Je fais mes devoirs",
+          "b": "Je faisais mes devoirs",
+          "c": "Je ferai mes devoirs",
+          "correct": "Je fais mes devoirs",
+          "d": "Je ferais mes devoirs",
           "id": 5,
-          "question": "I do my homework.",
+          "question": "I do my homework",
           "translation": {
-            "english": "I do my homework.",
-            "portuguese": "Eu faço minha lição de casa."
+            "english": "I do my homework",
+            "portuguese": "Eu faço minha lição de casa"
           }
         },
         {
-          "a": "Elle lit un livre.",
-          "b": "Elle lisait un livre.",
-          "c": "Elle lira un livre.",
-          "correct": "Elle lit un livre.",
-          "d": "Elle lirait un livre.",
+          "a": "Elle lit un livre",
+          "b": "Elle lisait un livre",
+          "c": "Elle lira un livre",
+          "correct": "Elle lit un livre",
+          "d": "Elle lirait un livre",
           "id": 6,
-          "question": "She reads a book.",
+          "question": "She reads a book",
           "translation": {
-            "english": "She reads a book.",
-            "portuguese": "Ela lê um livro."
+            "english": "She reads a book",
+            "portuguese": "Ela lê um livro"
           }
         },
         {
-          "a": "Nous écrivons une lettre.",
-          "b": "Nous écrivions une lettre.",
-          "c": "Nous écrirons une lettre.",
-          "correct": "Nous écrivons une lettre.",
-          "d": "Nous écririons une lettre.",
+          "a": "Nous écrivons une lettre",
+          "b": "Nous écrivions une lettre",
+          "c": "Nous écrirons une lettre",
+          "correct": "Nous écrivons une lettre",
+          "d": "Nous écririons une lettre",
           "id": 7,
-          "question": "We write a letter.",
+          "question": "We write a letter",
           "translation": {
-            "english": "We write a letter.",
-            "portuguese": "Nós escrevemos uma carta."
+            "english": "We write a letter",
+            "portuguese": "Nós escrevemos uma carta"
           }
         },
         {
-          "a": "Tu as un chat.",
-          "b": "Tu avais un chat.",
-          "c": "Tu auras un chat.",
-          "correct": "Tu as un chat.",
-          "d": "Tu aurais un chat.",
+          "a": "Tu as un chat",
+          "b": "Tu avais un chat",
+          "c": "Tu auras un chat",
+          "correct": "Tu as un chat",
+          "d": "Tu aurais un chat",
           "id": 8,
-          "question": "You have a cat.",
+          "question": "You have a cat",
           "translation": {
-            "english": "You have a cat.",
-            "portuguese": "Você tem um gato."
+            "english": "You have a cat",
+            "portuguese": "Você tem um gato"
           }
         },
         {
-          "a": "Je veux un gâteau.",
-          "b": "Je voulais un gâteau.",
-          "c": "Je voudrai un gâteau.",
-          "correct": "Je veux un gâteau.",
-          "d": "Je voudrais un gâteau.",
+          "a": "Je veux un gâteau",
+          "b": "Je voulais un gâteau",
+          "c": "Je voudrai un gâteau",
+          "correct": "Je veux un gâteau",
+          "d": "Je voudrais un gâteau",
           "id": 9,
-          "question": "I want a cake.",
+          "question": "I want a cake",
           "translation": {
-            "english": "I want a cake.",
-            "portuguese": "Eu quero um bolo."
+            "english": "I want a cake",
+            "portuguese": "Eu quero um bolo"
           }
         },
         {
-          "a": "Ils sont heureux.",
-          "b": "Ils étaient heureux.",
-          "c": "Ils seront heureux.",
-          "correct": "Ils sont heureux.",
-          "d": "Ils seraient heureux.",
+          "a": "Ils sont heureux",
+          "b": "Ils étaient heureux",
+          "c": "Ils seront heureux",
+          "correct": "Ils sont heureux",
+          "d": "Ils seraient heureux",
           "id": 10,
-          "question": "They are happy.",
+          "question": "They are happy",
           "translation": {
-            "english": "They are happy.",
-            "portuguese": "Eles estão felizes."
+            "english": "They are happy",
+            "portuguese": "Eles estão felizes"
           }
         },
         {
-          "a": "Je comprends la leçon.",
-          "b": "Je comprenais la leçon.",
-          "c": "Je comprendrai la leçon.",
-          "correct": "Je comprends la leçon.",
-          "d": "Je comprendrais la leçon.",
+          "a": "Je comprends la leçon",
+          "b": "Je comprenais la leçon",
+          "c": "Je comprendrai la leçon",
+          "correct": "Je comprends la leçon",
+          "d": "Je comprendrais la leçon",
           "id": 11,
-          "question": "I understand the lesson.",
+          "question": "I understand the lesson",
           "translation": {
-            "english": "I understand the lesson.",
-            "portuguese": "Eu entendo a lição."
+            "english": "I understand the lesson",
+            "portuguese": "Eu entendo a lição"
           }
         },
         {
-          "a": "Elle peut chanter.",
-          "b": "Elle pouvait chanter.",
-          "c": "Elle pourra chanter.",
-          "correct": "Elle peut chanter.",
-          "d": "Elle pourrait chanter.",
+          "a": "Elle peut chanter",
+          "b": "Elle pouvait chanter",
+          "c": "Elle pourra chanter",
+          "correct": "Elle peut chanter",
+          "d": "Elle pourrait chanter",
           "id": 12,
-          "question": "She can sing.",
+          "question": "She can sing",
           "translation": {
-            "english": "She can sing.",
-            "portuguese": "Ela pode cantar."
+            "english": "She can sing",
+            "portuguese": "Ela pode cantar"
           }
         },
         {
-          "a": "Tu dois étudier.",
-          "b": "Tu devais étudier.",
-          "c": "Tu devras étudier.",
-          "correct": "Tu dois étudier.",
-          "d": "Tu devrais étudier.",
+          "a": "Tu dois étudier",
+          "b": "Tu devais étudier",
+          "c": "Tu devras étudier",
+          "correct": "Tu dois étudier",
+          "d": "Tu devrais étudier",
           "id": 13,
-          "question": "You must study.",
+          "question": "You must study",
           "translation": {
-            "english": "You must study.",
-            "portuguese": "Você deve estudar."
+            "english": "You must study",
+            "portuguese": "Você deve estudar"
           }
         },
         {
-          "a": "Ils prennent le train.",
-          "b": "Ils prenaient le train.",
-          "c": "Ils prendront le train.",
-          "correct": "Ils prennent le train.",
-          "d": "Ils prendraient le train.",
+          "a": "Ils prennent le train",
+          "b": "Ils prenaient le train",
+          "c": "Ils prendront le train",
+          "correct": "Ils prennent le train",
+          "d": "Ils prendraient le train",
           "id": 14,
-          "question": "They take the train.",
+          "question": "They take the train",
           "translation": {
-            "english": "They take the train.",
-            "portuguese": "Eles pegam o trem."
+            "english": "They take the train",
+            "portuguese": "Eles pegam o trem"
           }
         },
         {
-          "a": "Je cherche mes clés.",
-          "b": "Je cherchais mes clés.",
-          "c": "Je chercherai mes clés.",
-          "correct": "Je cherche mes clés.",
-          "d": "Je chercherais mes clés.",
+          "a": "Je cherche mes clés",
+          "b": "Je cherchais mes clés",
+          "c": "Je chercherai mes clés",
+          "correct": "Je cherche mes clés",
+          "d": "Je chercherais mes clés",
           "id": 15,
-          "question": "I look for my keys.",
+          "question": "I look for my keys",
           "translation": {
-            "english": "I look for my keys.",
-            "portuguese": "Eu procuro minhas chaves."
+            "english": "I look for my keys",
+            "portuguese": "Eu procuro minhas chaves"
           }
         },
         {
-          "a": "Elle commence à travailler.",
-          "b": "Elle commençait à travailler.",
-          "c": "Elle commencera à travailler.",
-          "correct": "Elle commence à travailler.",
-          "d": "Elle commencerait à travailler.",
+          "a": "Elle commence à travailler",
+          "b": "Elle commençait à travailler",
+          "c": "Elle commencera à travailler",
+          "correct": "Elle commence à travailler",
+          "d": "Elle commencerait à travailler",
           "id": 16,
-          "question": "She starts to work.",
+          "question": "She starts to work",
           "translation": {
-            "english": "She starts to work.",
-            "portuguese": "Ela começa a trabalhar."
+            "english": "She starts to work",
+            "portuguese": "Ela começa a trabalhar"
           }
         },
         {
-          "a": "Je finis mes tâches.",
-          "b": "Je finissais mes tâches.",
-          "c": "Je finirai mes tâches.",
-          "correct": "Je finis mes tâches.",
-          "d": "Je finirais mes tâches.",
+          "a": "Je finis mes tâches",
+          "b": "Je finissais mes tâches",
+          "c": "Je finirai mes tâches",
+          "correct": "Je finis mes tâches",
+          "d": "Je finirais mes tâches",
           "id": 17,
-          "question": "I finish my tasks.",
+          "question": "I finish my tasks",
           "translation": {
-            "english": "I finish my tasks.",
-            "portuguese": "Eu termino minhas tarefas."
+            "english": "I finish my tasks",
+            "portuguese": "Eu termino minhas tarefas"
           }
         },
         {
-          "a": "Nous choisissons un film.",
-          "b": "Nous choisissions un film.",
-          "c": "Nous choisirons un film.",
-          "correct": "Nous choisissons un film.",
-          "d": "Nous choisirions un film.",
+          "a": "Nous choisissons un film",
+          "b": "Nous choisissions un film",
+          "c": "Nous choisirons un film",
+          "correct": "Nous choisissons un film",
+          "d": "Nous choisirions un film",
           "id": 18,
-          "question": "We choose a movie.",
+          "question": "We choose a movie",
           "translation": {
-            "english": "We choose a movie.",
-            "portuguese": "Nós escolhemos um filme."
+            "english": "We choose a movie",
+            "portuguese": "Nós escolhemos um filme"
           }
         },
         {
-          "a": "Je sais parler français.",
-          "b": "Je savais parler français.",
-          "c": "Je saurai parler français.",
-          "correct": "Je sais parler français.",
-          "d": "Je saurais parler français.",
+          "a": "Je sais parler français",
+          "b": "Je savais parler français",
+          "c": "Je saurai parler français",
+          "correct": "Je sais parler français",
+          "d": "Je saurais parler français",
           "id": 19,
-          "question": "I know how to speak French.",
+          "question": "I know how to speak French",
           "translation": {
-            "english": "I know how to speak French.",
-            "portuguese": "Eu sei falar francês."
+            "english": "I know how to speak French",
+            "portuguese": "Eu sei falar francês"
           }
         },
         {
-          "a": "Ils dorment bien.",
-          "b": "Ils dormaient bien.",
-          "c": "Ils dormiront bien.",
-          "correct": "Ils dorment bien.",
-          "d": "Ils dormiraient bien.",
+          "a": "Ils dorment bien",
+          "b": "Ils dormaient bien",
+          "c": "Ils dormiront bien",
+          "correct": "Ils dorment bien",
+          "d": "Ils dormiraient bien",
           "id": 20,
-          "question": "They sleep well.",
+          "question": "They sleep well",
           "translation": {
-            "english": "They sleep well.",
-            "portuguese": "Eles dormem bem."
+            "english": "They sleep well",
+            "portuguese": "Eles dormem bem"
           }
         }
       ]
@@ -1594,263 +1594,263 @@
       "category": "Body",
       "questions": [
         {
-          "a": "J'ai une tête.",
-          "b": "Tu as un bras.",
-          "c": "Il a une jambe.",
-          "correct": "J'ai une tête.",
-          "d": "Elle a un pied.",
+          "a": "J'ai une tête",
+          "b": "Tu as un bras",
+          "c": "Il a une jambe",
+          "correct": "J'ai une tête",
+          "d": "Elle a un pied",
           "id": 1,
-          "question": "I have a head.",
+          "question": "I have a head",
           "translation": {
-            "english": "I have a head.",
-            "portuguese": "Eu tenho uma cabeça."
+            "english": "I have a head",
+            "portuguese": "Eu tenho uma cabeça"
           }
         },
         {
-          "a": "Nous avons deux bras.",
-          "b": "Ils ont trois jambes.",
-          "c": "Tu as un cou.",
-          "correct": "Nous avons deux bras.",
-          "d": "Elle a une main.",
+          "a": "Nous avons deux bras",
+          "b": "Ils ont trois jambes",
+          "c": "Tu as un cou",
+          "correct": "Nous avons deux bras",
+          "d": "Elle a une main",
           "id": 2,
-          "question": "We have two arms.",
+          "question": "We have two arms",
           "translation": {
-            "english": "We have two arms.",
-            "portuguese": "Nós temos dois braços."
+            "english": "We have two arms",
+            "portuguese": "Nós temos dois braços"
           }
         },
         {
-          "a": "Elle a des yeux bleus.",
-          "b": "Il a des cheveux courts.",
-          "c": "Tu as des oreilles grandes.",
-          "correct": "Elle a des yeux bleus.",
-          "d": "Nous avons des nez petits.",
+          "a": "Elle a des yeux bleus",
+          "b": "Il a des cheveux courts",
+          "c": "Tu as des oreilles grandes",
+          "correct": "Elle a des yeux bleus",
+          "d": "Nous avons des nez petits",
           "id": 3,
-          "question": "She has blue eyes.",
+          "question": "She has blue eyes",
           "translation": {
-            "english": "She has blue eyes.",
-            "portuguese": "Ela tem olhos azuis."
+            "english": "She has blue eyes",
+            "portuguese": "Ela tem olhos azuis"
           }
         },
         {
-          "a": "Ils ont des dents blanches.",
-          "b": "Nous avons des langues rouges.",
-          "c": "Tu as un ventre plat.",
-          "correct": "Ils ont des dents blanches.",
-          "d": "Il a un dos large.",
+          "a": "Ils ont des dents blanches",
+          "b": "Nous avons des langues rouges",
+          "c": "Tu as un ventre plat",
+          "correct": "Ils ont des dents blanches",
+          "d": "Il a un dos large",
           "id": 4,
-          "question": "They have white teeth.",
+          "question": "They have white teeth",
           "translation": {
-            "english": "They have white teeth.",
-            "portuguese": "Eles têm dentes brancos."
+            "english": "They have white teeth",
+            "portuguese": "Eles têm dentes brancos"
           }
         },
         {
-          "a": "Tu as des bras longs.",
-          "b": "Elle a des jambes courtes.",
-          "c": "Il a un grand nez.",
-          "correct": "Tu as des bras longs.",
-          "d": "Nous avons des pieds petits.",
+          "a": "Tu as des bras longs",
+          "b": "Elle a des jambes courtes",
+          "c": "Il a un grand nez",
+          "correct": "Tu as des bras longs",
+          "d": "Nous avons des pieds petits",
           "id": 5,
-          "question": "You have long arms.",
+          "question": "You have long arms",
           "translation": {
-            "english": "You have long arms.",
-            "portuguese": "Você tem braços longos."
+            "english": "You have long arms",
+            "portuguese": "Você tem braços longos"
           }
         },
         {
-          "a": "Je sens mes jambes.",
-          "b": "Tu sens tes pieds.",
-          "c": "Il sent son ventre.",
-          "correct": "Je sens mes jambes.",
-          "d": "Elle sent son bras.",
+          "a": "Je sens mes jambes",
+          "b": "Tu sens tes pieds",
+          "c": "Il sent son ventre",
+          "correct": "Je sens mes jambes",
+          "d": "Elle sent son bras",
           "id": 6,
-          "question": "I feel my legs.",
+          "question": "I feel my legs",
           "translation": {
-            "english": "I feel my legs.",
-            "portuguese": "Eu sinto minhas pernas."
+            "english": "I feel my legs",
+            "portuguese": "Eu sinto minhas pernas"
           }
         },
         {
-          "a": "Nous avons un cœur.",
-          "b": "Ils ont des poumons.",
-          "c": "Tu as une tête.",
-          "correct": "Nous avons un cœur.",
-          "d": "Il a un estomac.",
+          "a": "Nous avons un cœur",
+          "b": "Ils ont des poumons",
+          "c": "Tu as une tête",
+          "correct": "Nous avons un cœur",
+          "d": "Il a un estomac",
           "id": 7,
-          "question": "We have a heart.",
+          "question": "We have a heart",
           "translation": {
-            "english": "We have a heart.",
-            "portuguese": "Nós temos um coração."
+            "english": "We have a heart",
+            "portuguese": "Nós temos um coração"
           }
         },
         {
-          "a": "Tu es grand.",
-          "b": "Il est mince.",
-          "c": "Elle est forte.",
-          "correct": "Tu es grand.",
-          "d": "Nous sommes petits.",
+          "a": "Tu es grand",
+          "b": "Il est mince",
+          "c": "Elle est forte",
+          "correct": "Tu es grand",
+          "d": "Nous sommes petits",
           "id": 8,
-          "question": "You are tall.",
+          "question": "You are tall",
           "translation": {
-            "english": "You are tall.",
-            "portuguese": "Você é alto."
+            "english": "You are tall",
+            "portuguese": "Você é alto"
           }
         },
         {
-          "a": "Ils ont des bras musclés.",
-          "b": "Tu as un ventre gros.",
-          "c": "Nous avons des jambes faibles.",
-          "correct": "Ils ont des bras musclés.",
-          "d": "Elle a une tête ronde.",
+          "a": "Ils ont des bras musclés",
+          "b": "Tu as un ventre gros",
+          "c": "Nous avons des jambes faibles",
+          "correct": "Ils ont des bras musclés",
+          "d": "Elle a une tête ronde",
           "id": 9,
-          "question": "They have muscular arms.",
+          "question": "They have muscular arms",
           "translation": {
-            "english": "They have muscular arms.",
-            "portuguese": "Eles têm braços musculosos."
+            "english": "They have muscular arms",
+            "portuguese": "Eles têm braços musculosos"
           }
         },
         {
-          "a": "Je veux des pieds petits.",
-          "b": "Tu veux des bras forts.",
-          "c": "Il veut un ventre plat.",
-          "correct": "Je veux des pieds petits.",
-          "d": "Elle veut des dents blanches.",
+          "a": "Je veux des pieds petits",
+          "b": "Tu veux des bras forts",
+          "c": "Il veut un ventre plat",
+          "correct": "Je veux des pieds petits",
+          "d": "Elle veut des dents blanches",
           "id": 10,
-          "question": "I want small feet.",
+          "question": "I want small feet",
           "translation": {
-            "english": "I want small feet.",
-            "portuguese": "Eu quero pés pequenos."
+            "english": "I want small feet",
+            "portuguese": "Eu quero pés pequenos"
           }
         },
         {
-          "a": "Il y a des mains sur la table.",
-          "b": "Tu as des bras sur la chaise.",
-          "c": "Nous avons des pieds sur le sol.",
-          "correct": "Il y a des mains sur la table.",
-          "d": "Ils ont des têtes sur les coussins.",
+          "a": "Il y a des mains sur la table",
+          "b": "Tu as des bras sur la chaise",
+          "c": "Nous avons des pieds sur le sol",
+          "correct": "Il y a des mains sur la table",
+          "d": "Ils ont des têtes sur les coussins",
           "id": 11,
-          "question": "There are hands on the table.",
+          "question": "There are hands on the table",
           "translation": {
-            "english": "There are hands on the table.",
-            "portuguese": "Há mãos na mesa."
+            "english": "There are hands on the table",
+            "portuguese": "Há mãos na mesa"
           }
         },
         {
-          "a": "Je n'ai pas de jambes.",
-          "b": "Tu n'as pas de bras.",
-          "c": "Il n'a pas de yeux.",
-          "correct": "Je n'ai pas de jambes.",
-          "d": "Elle n'a pas de nez.",
+          "a": "Je n'ai pas de jambes",
+          "b": "Tu n'as pas de bras",
+          "c": "Il n'a pas de yeux",
+          "correct": "Je n'ai pas de jambes",
+          "d": "Elle n'a pas de nez",
           "id": 12,
-          "question": "I do not have legs.",
+          "question": "I do not have legs",
           "translation": {
-            "english": "I do not have legs.",
-            "portuguese": "Eu não tenho pernas."
+            "english": "I do not have legs",
+            "portuguese": "Eu não tenho pernas"
           }
         },
         {
-          "a": "Ils mesurent deux mètres.",
-          "b": "Nous mesurons un mètre.",
-          "c": "Tu mesures un mètre soixante.",
-          "correct": "Ils mesurent deux mètres.",
-          "d": "Il mesure un mètre cinquante.",
+          "a": "Ils mesurent deux mètres",
+          "b": "Nous mesurons un mètre",
+          "c": "Tu mesures un mètre soixante",
+          "correct": "Ils mesurent deux mètres",
+          "d": "Il mesure un mètre cinquante",
           "id": 13,
-          "question": "They measure two meters.",
+          "question": "They measure two meters",
           "translation": {
-            "english": "They measure two meters.",
-            "portuguese": "Eles medem dois metros."
+            "english": "They measure two meters",
+            "portuguese": "Eles medem dois metros"
           }
         },
         {
-          "a": "Je préfère un visage rond.",
-          "b": "Tu préfères un nez petit.",
-          "c": "Il préfère des cheveux longs.",
-          "correct": "Je préfère un visage rond.",
-          "d": "Elle préfère des oreilles grandes.",
+          "a": "Je préfère un visage rond",
+          "b": "Tu préfères un nez petit",
+          "c": "Il préfère des cheveux longs",
+          "correct": "Je préfère un visage rond",
+          "d": "Elle préfère des oreilles grandes",
           "id": 14,
-          "question": "I prefer a round face.",
+          "question": "I prefer a round face",
           "translation": {
-            "english": "I prefer a round face.",
-            "portuguese": "Eu prefiro um rosto redondo."
+            "english": "I prefer a round face",
+            "portuguese": "Eu prefiro um rosto redondo"
           }
         },
         {
-          "a": "Ils ont un grand corps.",
-          "b": "Nous avons une petite tête.",
-          "c": "Tu as un gros cœur.",
-          "correct": "Ils ont un grand corps.",
-          "d": "Il a un petit estomac.",
+          "a": "Ils ont un grand corps",
+          "b": "Nous avons une petite tête",
+          "c": "Tu as un gros cœur",
+          "correct": "Ils ont un grand corps",
+          "d": "Il a un petit estomac",
           "id": 15,
-          "question": "They have a big body.",
+          "question": "They have a big body",
           "translation": {
-            "english": "They have a big body.",
-            "portuguese": "Eles têm um corpo grande."
+            "english": "They have a big body",
+            "portuguese": "Eles têm um corpo grande"
           }
         },
         {
-          "a": "Je touche mon nez.",
-          "b": "Tu touches ton pied.",
-          "c": "Il touche son bras.",
-          "correct": "Je touche mon nez.",
-          "d": "Elle touche sa jambe.",
+          "a": "Je touche mon nez",
+          "b": "Tu touches ton pied",
+          "c": "Il touche son bras",
+          "correct": "Je touche mon nez",
+          "d": "Elle touche sa jambe",
           "id": 16,
-          "question": "I touch my nose.",
+          "question": "I touch my nose",
           "translation": {
-            "english": "I touch my nose.",
-            "portuguese": "Eu toco meu nariz."
+            "english": "I touch my nose",
+            "portuguese": "Eu toco meu nariz"
           }
         },
         {
-          "a": "Je mets du parfum sur mon cou.",
-          "b": "Tu mets de l'eau sur tes bras.",
-          "c": "Il met de la crème sur son ventre.",
-          "correct": "Je mets du parfum sur mon cou.",
-          "d": "Nous mettons du lait sur nos pieds.",
+          "a": "Je mets du parfum sur mon cou",
+          "b": "Tu mets de l'eau sur tes bras",
+          "c": "Il met de la crème sur son ventre",
+          "correct": "Je mets du parfum sur mon cou",
+          "d": "Nous mettons du lait sur nos pieds",
           "id": 17,
-          "question": "I put perfume on my neck.",
+          "question": "I put perfume on my neck",
           "translation": {
-            "english": "I put perfume on my neck.",
-            "portuguese": "Eu coloco perfume no meu pescoço."
+            "english": "I put perfume on my neck",
+            "portuguese": "Eu coloco perfume no meu pescoço"
           }
         },
         {
-          "a": "Tu as une belle peau.",
-          "b": "Il a une jolie voix.",
-          "c": "Nous avons de jolis yeux.",
-          "correct": "Tu as une belle peau.",
-          "d": "Ils ont un beau sourire.",
+          "a": "Tu as une belle peau",
+          "b": "Il a une jolie voix",
+          "c": "Nous avons de jolis yeux",
+          "correct": "Tu as une belle peau",
+          "d": "Ils ont un beau sourire",
           "id": 18,
-          "question": "You have beautiful skin.",
+          "question": "You have beautiful skin",
           "translation": {
-            "english": "You have beautiful skin.",
-            "portuguese": "Você tem uma pele bonita."
+            "english": "You have beautiful skin",
+            "portuguese": "Você tem uma pele bonita"
           }
         },
         {
-          "a": "Nous avons un bon équilibre.",
-          "b": "Ils ont un grand cœur.",
-          "c": "Tu as une bonne vue.",
-          "correct": "Nous avons un bon équilibre.",
-          "d": "Il a une bonne mémoire.",
+          "a": "Nous avons un bon équilibre",
+          "b": "Ils ont un grand cœur",
+          "c": "Tu as une bonne vue",
+          "correct": "Nous avons un bon équilibre",
+          "d": "Il a une bonne mémoire",
           "id": 19,
-          "question": "We have good balance.",
+          "question": "We have good balance",
           "translation": {
-            "english": "We have good balance.",
-            "portuguese": "Nós temos um bom equilíbrio."
+            "english": "We have good balance",
+            "portuguese": "Nós temos um bom equilíbrio"
           }
         },
         {
-          "a": "Elle a des doigts fins.",
-          "b": "Il a des bras larges.",
-          "c": "Tu as des jambes musclées.",
-          "correct": "Elle a des doigts fins.",
-          "d": "Nous avons des mains grandes.",
+          "a": "Elle a des doigts fins",
+          "b": "Il a des bras larges",
+          "c": "Tu as des jambes musclées",
+          "correct": "Elle a des doigts fins",
+          "d": "Nous avons des mains grandes",
           "id": 20,
-          "question": "She has thin fingers.",
+          "question": "She has thin fingers",
           "translation": {
-            "english": "She has thin fingers.",
-            "portuguese": "Ela tem dedos finos."
+            "english": "She has thin fingers",
+            "portuguese": "Ela tem dedos finos"
           }
         }
       ]
@@ -1859,263 +1859,263 @@
       "category": "Food",
       "questions": [
         {
-          "a": "J'adore les pommes.",
-          "b": "Tu adores les oranges.",
-          "c": "Il adore les bananes.",
-          "correct": "J'adore les pommes.",
-          "d": "Elle adore les cerises.",
+          "a": "J'adore les pommes",
+          "b": "Tu adores les oranges",
+          "c": "Il adore les bananes",
+          "correct": "J'adore les pommes",
+          "d": "Elle adore les cerises",
           "id": 1,
-          "question": "I love apples.",
+          "question": "I love apples",
           "translation": {
-            "english": "I love apples.",
-            "portuguese": "Eu adoro maçãs."
+            "english": "I love apples",
+            "portuguese": "Eu adoro maçãs"
           }
         },
         {
-          "a": "Nous mangeons des pâtes.",
-          "b": "Ils mangent des pommes.",
-          "c": "Tu manges du riz.",
-          "correct": "Nous mangeons des pâtes.",
-          "d": "Il mange des légumes.",
+          "a": "Nous mangeons des pâtes",
+          "b": "Ils mangent des pommes",
+          "c": "Tu manges du riz",
+          "correct": "Nous mangeons des pâtes",
+          "d": "Il mange des légumes",
           "id": 2,
-          "question": "We are eating pasta.",
+          "question": "We are eating pasta",
           "translation": {
-            "english": "We are eating pasta.",
-            "portuguese": "Nós estamos comendo macarrão."
+            "english": "We are eating pasta",
+            "portuguese": "Nós estamos comendo macarrão"
           }
         },
         {
-          "a": "Elle aime le chocolat.",
-          "b": "Ils aiment les bonbons.",
-          "c": "Tu aimes la vanille.",
-          "correct": "Elle aime le chocolat.",
-          "d": "Je suis chocolat.",
+          "a": "Elle aime le chocolat",
+          "b": "Ils aiment les bonbons",
+          "c": "Tu aimes la vanille",
+          "correct": "Elle aime le chocolat",
+          "d": "Je suis chocolat",
           "id": 3,
-          "question": "She likes chocolate.",
+          "question": "She likes chocolate",
           "translation": {
-            "english": "She likes chocolate.",
-            "portuguese": "Ela gosta de chocolate."
+            "english": "She likes chocolate",
+            "portuguese": "Ela gosta de chocolate"
           }
         },
         {
-          "a": "Ils préparent un gâteau.",
-          "b": "Nous préparons une tarte.",
-          "c": "Tu prépares des crêpes.",
-          "correct": "Ils préparent un gâteau.",
-          "d": "Il prépare des cookies.",
+          "a": "Ils préparent un gâteau",
+          "b": "Nous préparons une tarte",
+          "c": "Tu prépares des crêpes",
+          "correct": "Ils préparent un gâteau",
+          "d": "Il prépare des cookies",
           "id": 4,
-          "question": "They are making a cake.",
+          "question": "They are making a cake",
           "translation": {
-            "english": "They are making a cake.",
-            "portuguese": "Eles estão fazendo um bolo."
+            "english": "They are making a cake",
+            "portuguese": "Eles estão fazendo um bolo"
           }
         },
         {
-          "a": "Tu bois du lait.",
-          "b": "Elle boit du jus.",
-          "c": "Il boit de l'eau.",
-          "correct": "Tu bois du lait.",
-          "d": "Nous buvons du thé.",
+          "a": "Tu bois du lait",
+          "b": "Elle boit du jus",
+          "c": "Il boit de l'eau",
+          "correct": "Tu bois du lait",
+          "d": "Nous buvons du thé",
           "id": 5,
-          "question": "You drink milk.",
+          "question": "You drink milk",
           "translation": {
-            "english": "You drink milk.",
-            "portuguese": "Você bebe leite."
+            "english": "You drink milk",
+            "portuguese": "Você bebe leite"
           }
         },
         {
-          "a": "Je veux une pizza.",
-          "b": "Tu veux un sandwich.",
-          "c": "Il veut une salade.",
-          "correct": "Je veux une pizza.",
-          "d": "Elle veut un burger.",
+          "a": "Je veux une pizza",
+          "b": "Tu veux un sandwich",
+          "c": "Il veut une salade",
+          "correct": "Je veux une pizza",
+          "d": "Elle veut un burger",
           "id": 6,
-          "question": "I want a pizza.",
+          "question": "I want a pizza",
           "translation": {
-            "english": "I want a pizza.",
-            "portuguese": "Eu quero uma pizza."
+            "english": "I want a pizza",
+            "portuguese": "Eu quero uma pizza"
           }
         },
         {
-          "a": "Ils achètent des fruits.",
-          "b": "Tu achètes des légumes.",
-          "c": "Nous achetons des gâteaux.",
-          "correct": "Ils achètent des fruits.",
-          "d": "Elle achète du pain.",
+          "a": "Ils achètent des fruits",
+          "b": "Tu achètes des légumes",
+          "c": "Nous achetons des gâteaux",
+          "correct": "Ils achètent des fruits",
+          "d": "Elle achète du pain",
           "id": 7,
-          "question": "They are buying fruits.",
+          "question": "They are buying fruits",
           "translation": {
-            "english": "They are buying fruits.",
-            "portuguese": "Eles estão comprando frutas."
+            "english": "They are buying fruits",
+            "portuguese": "Eles estão comprando frutas"
           }
         },
         {
-          "a": "Je fais une salade.",
-          "b": "Tu fais une soupe.",
-          "c": "Il fait un dessert.",
-          "correct": "Je fais une salade.",
-          "d": "Nous faisons un plat principal.",
+          "a": "Je fais une salade",
+          "b": "Tu fais une soupe",
+          "c": "Il fait un dessert",
+          "correct": "Je fais une salade",
+          "d": "Nous faisons un plat principal",
           "id": 8,
-          "question": "I am making a salad.",
+          "question": "I am making a salad",
           "translation": {
-            "english": "I am making a salad.",
-            "portuguese": "Estou fazendo uma salada."
+            "english": "I am making a salad",
+            "portuguese": "Estou fazendo uma salada"
           }
         },
         {
-          "a": "Tu as une table.",
-          "b": "Il a un plat.",
-          "c": "Nous avons une chaise.",
-          "correct": "Tu as une table.",
-          "d": "Ils ont un verre.",
+          "a": "Tu as une table",
+          "b": "Il a un plat",
+          "c": "Nous avons une chaise",
+          "correct": "Tu as une table",
+          "d": "Ils ont un verre",
           "id": 9,
-          "question": "You have a table.",
+          "question": "You have a table",
           "translation": {
-            "english": "You have a table.",
-            "portuguese": "Você tem uma mesa."
+            "english": "You have a table",
+            "portuguese": "Você tem uma mesa"
           }
         },
         {
-          "a": "Nous aimons le pain.",
-          "b": "Ils aiment le fromage.",
-          "c": "Tu aimes les pâtisseries.",
-          "correct": "Nous aimons le pain.",
-          "d": "Elle aime le chocolat.",
+          "a": "Nous aimons le pain",
+          "b": "Ils aiment le fromage",
+          "c": "Tu aimes les pâtisseries",
+          "correct": "Nous aimons le pain",
+          "d": "Elle aime le chocolat",
           "id": 10,
-          "question": "We love bread.",
+          "question": "We love bread",
           "translation": {
-            "english": "We love bread.",
-            "portuguese": "Nós amamos pão."
+            "english": "We love bread",
+            "portuguese": "Nós amamos pão"
           }
         },
         {
-          "a": "Il y a du fromage sur la table.",
-          "b": "Tu as de la viande sur la table.",
-          "c": "Nous avons des légumes sur la table.",
-          "correct": "Il y a du fromage sur la table.",
-          "d": "Ils ont des fruits sur la table.",
+          "a": "Il y a du fromage sur la table",
+          "b": "Tu as de la viande sur la table",
+          "c": "Nous avons des légumes sur la table",
+          "correct": "Il y a du fromage sur la table",
+          "d": "Ils ont des fruits sur la table",
           "id": 11,
-          "question": "There is cheese on the table.",
+          "question": "There is cheese on the table",
           "translation": {
-            "english": "There is cheese on the table.",
-            "portuguese": "Há queijo na mesa."
+            "english": "There is cheese on the table",
+            "portuguese": "Há queijo na mesa"
           }
         },
         {
-          "a": "Je n'aime pas les carottes.",
-          "b": "Tu n'aimes pas les tomates.",
-          "c": "Il n'aime pas les concombres.",
-          "correct": "Je n'aime pas les carottes.",
-          "d": "Elle n'aime pas les poivrons.",
+          "a": "Je n'aime pas les carottes",
+          "b": "Tu n'aimes pas les tomates",
+          "c": "Il n'aime pas les concombres",
+          "correct": "Je n'aime pas les carottes",
+          "d": "Elle n'aime pas les poivrons",
           "id": 12,
-          "question": "I do not like carrots.",
+          "question": "I do not like carrots",
           "translation": {
-            "english": "I do not like carrots.",
-            "portuguese": "Eu não gosto de cenouras."
+            "english": "I do not like carrots",
+            "portuguese": "Eu não gosto de cenouras"
           }
         },
         {
-          "a": "Ils mangent des frites.",
-          "b": "Nous mangeons des chips.",
-          "c": "Tu manges des pâtes.",
-          "correct": "Ils mangent des frites.",
-          "d": "Il mange du riz.",
+          "a": "Ils mangent des frites",
+          "b": "Nous mangeons des chips",
+          "c": "Tu manges des pâtes",
+          "correct": "Ils mangent des frites",
+          "d": "Il mange du riz",
           "id": 13,
-          "question": "They are eating fries.",
+          "question": "They are eating fries",
           "translation": {
-            "english": "They are eating fries.",
-            "portuguese": "Eles estão comendo batatas fritas."
+            "english": "They are eating fries",
+            "portuguese": "Eles estão comendo batatas fritas"
           }
         },
         {
-          "a": "Tu préfères le thé.",
-          "b": "Il préfère le café.",
-          "c": "Nous préférons le jus.",
-          "correct": "Tu préfères le thé.",
-          "d": "Ils préfèrent l'eau.",
+          "a": "Tu préfères le thé",
+          "b": "Il préfère le café",
+          "c": "Nous préférons le jus",
+          "correct": "Tu préfères le thé",
+          "d": "Ils préfèrent l'eau",
           "id": 14,
-          "question": "You prefer tea.",
+          "question": "You prefer tea",
           "translation": {
-            "english": "You prefer tea.",
-            "portuguese": "Você prefere chá."
+            "english": "You prefer tea",
+            "portuguese": "Você prefere chá"
           }
         },
         {
-          "a": "Je commande un café.",
-          "b": "Tu commandes un thé.",
-          "c": "Il commande un chocolat chaud.",
-          "correct": "Je commande un café.",
-          "d": "Elle commande une limonade.",
+          "a": "Je commande un café",
+          "b": "Tu commandes un thé",
+          "c": "Il commande un chocolat chaud",
+          "correct": "Je commande un café",
+          "d": "Elle commande une limonade",
           "id": 15,
-          "question": "I order a coffee.",
+          "question": "I order a coffee",
           "translation": {
-            "english": "I order a coffee.",
-            "portuguese": "Eu peço um café."
+            "english": "I order a coffee",
+            "portuguese": "Eu peço um café"
           }
         },
         {
-          "a": "Ils aiment la soupe.",
-          "b": "Nous aimons la salade.",
-          "c": "Tu aimes le riz.",
-          "correct": "Ils aiment la soupe.",
-          "d": "Il aime les pâtes.",
+          "a": "Ils aiment la soupe",
+          "b": "Nous aimons la salade",
+          "c": "Tu aimes le riz",
+          "correct": "Ils aiment la soupe",
+          "d": "Il aime les pâtes",
           "id": 16,
-          "question": "They like soup.",
+          "question": "They like soup",
           "translation": {
-            "english": "They like soup.",
-            "portuguese": "Eles gostam de sopa."
+            "english": "They like soup",
+            "portuguese": "Eles gostam de sopa"
           }
         },
         {
-          "a": "Je mets de la confiture sur mon pain.",
-          "b": "Tu mets du beurre sur ton pain.",
-          "c": "Il met du miel sur son pain.",
-          "correct": "Je mets de la confiture sur mon pain.",
-          "d": "Nous mettons de la moutarde sur notre pain.",
+          "a": "Je mets de la confiture sur mon pain",
+          "b": "Tu mets du beurre sur ton pain",
+          "c": "Il met du miel sur son pain",
+          "correct": "Je mets de la confiture sur mon pain",
+          "d": "Nous mettons de la moutarde sur notre pain",
           "id": 17,
-          "question": "I put jam on my bread.",
+          "question": "I put jam on my bread",
           "translation": {
-            "english": "I put jam on my bread.",
-            "portuguese": "Eu coloco geleia no meu pão."
+            "english": "I put jam on my bread",
+            "portuguese": "Eu coloco geleia no meu pão"
           }
         },
         {
-          "a": "Tu as un bon appétit.",
-          "b": "Il a une bonne santé.",
-          "c": "Nous avons un bon repas.",
-          "correct": "Tu as un bon appétit.",
-          "d": "Ils ont une bonne nuit.",
+          "a": "Tu as un bon appétit",
+          "b": "Il a une bonne santé",
+          "c": "Nous avons un bon repas",
+          "correct": "Tu as un bon appétit",
+          "d": "Ils ont une bonne nuit",
           "id": 18,
-          "question": "You have a good appetite.",
+          "question": "You have a good appetite",
           "translation": {
-            "english": "You have a good appetite.",
-            "portuguese": "Você tem um bom apetite."
+            "english": "You have a good appetite",
+            "portuguese": "Você tem um bom apetite"
           }
         },
         {
-          "a": "Nous préparons le dîner.",
-          "b": "Ils préparent le déjeuner.",
-          "c": "Tu prépares le petit déjeuner.",
-          "correct": "Nous préparons le dîner.",
-          "d": "Il prépare un goûter.",
+          "a": "Nous préparons le dîner",
+          "b": "Ils préparent le déjeuner",
+          "c": "Tu prépares le petit déjeuner",
+          "correct": "Nous préparons le dîner",
+          "d": "Il prépare un goûter",
           "id": 19,
-          "question": "We are preparing dinner.",
+          "question": "We are preparing dinner",
           "translation": {
-            "english": "We are preparing dinner.",
-            "portuguese": "Nós estamos preparando o jantar."
+            "english": "We are preparing dinner",
+            "portuguese": "Nós estamos preparando o jantar"
           }
         },
         {
-          "a": "Il y a des légumes dans le frigo.",
-          "b": "Tu as des fruits dans le frigo.",
-          "c": "Nous avons de la viande dans le frigo.",
-          "correct": "Il y a des légumes dans le frigo.",
-          "d": "Ils ont du fromage dans le frigo.",
+          "a": "Il y a des légumes dans le frigo",
+          "b": "Tu as des fruits dans le frigo",
+          "c": "Nous avons de la viande dans le frigo",
+          "correct": "Il y a des légumes dans le frigo",
+          "d": "Ils ont du fromage dans le frigo",
           "id": 20,
-          "question": "There are vegetables in the fridge.",
+          "question": "There are vegetables in the fridge",
           "translation": {
-            "english": "There are vegetables in the fridge.",
-            "portuguese": "Há vegetais na geladeira."
+            "english": "There are vegetables in the fridge",
+            "portuguese": "Há vegetais na geladeira"
           }
         }
       ]
