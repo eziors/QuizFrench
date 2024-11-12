@@ -9,9 +9,9 @@ import UIKit
 
 extension UIViewController {
     
-    func presentSelectionVC(title: String, listVC: UIViewController, quizVC: UIViewController) {
+    func presentSelectionVC(description: String, firstVC: UIViewController, firstVCTitle: String,  secondVC: UIViewController, secondVCTitle: String) {
         DispatchQueue.main.async {
-            let selectionVC = QFSelectionVC(title: title, listVC: listVC, quizVC: quizVC)
+            let selectionVC = QFSelectionVC(description: description, firstVC: firstVC, firstVCTitle: firstVCTitle, secondVC: secondVC, secondVCTitle: secondVCTitle)
             let navController = UINavigationController(rootViewController: selectionVC)
             navController.modalTransitionStyle = .crossDissolve
             navController.modalPresentationStyle = .overFullScreen

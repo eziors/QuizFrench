@@ -21,6 +21,6 @@ class QFFavoritesItemVC: QFItemInfoVC {
     }
     
     override func actionButtonTapped() {
-        print("Favorites working")
+        delegate.didTapFavorites()
     }
 }

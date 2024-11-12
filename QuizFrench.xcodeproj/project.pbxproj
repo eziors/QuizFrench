@@ -36,7 +36,6 @@
 		8D82758B2CD494E3004A4635 /* QuizWriteModeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D82758A2CD494E3004A4635 /* QuizWriteModeVC.swift */; };
 		8D82758D2CD494F9004A4635 /* QuizGuessModeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D82758C2CD494F9004A4635 /* QuizGuessModeVC.swift */; };
 		8D82758F2CD4B15E004A4635 /* QFQuizWriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D82758E2CD4B15E004A4635 /* QFQuizWriteButton.swift */; };
-		8D8488ED2C9E1AC700715368 /* QFFavoritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8488EC2C9E1AC700715368 /* QFFavoritesVC.swift */; };
 		8D8488F42C9E34DC00715368 /* AlphabetListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8488F32C9E34DC00715368 /* AlphabetListVC.swift */; };
 		8D8488F72C9E394900715368 /* Alphabet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8488F62C9E394900715368 /* Alphabet.swift */; };
 		8D848BDD2C923303001C1910 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D848BDC2C923303001C1910 /* AppDelegate.swift */; };
@@ -223,6 +222,7 @@
 		8D9CAF522CB0D66A00AF42E3 /* QFCopyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9CAF512CB0D66A00AF42E3 /* QFCopyButton.swift */; };
 		8D9CAF542CB0D67700AF42E3 /* QFFavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9CAF532CB0D67700AF42E3 /* QFFavoriteButton.swift */; };
 		8DAAE4EF2CD0ADB7001EDD43 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAAE4EE2CD0ADB7001EDD43 /* UIHelper.swift */; };
+		8DF42FD62CE1AE5A001861D3 /* FavoritesWordsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF42FD52CE1AE5A001861D3 /* FavoritesWordsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -257,7 +257,6 @@
 		8D82758A2CD494E3004A4635 /* QuizWriteModeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizWriteModeVC.swift; sourceTree = "<group>"; };
 		8D82758C2CD494F9004A4635 /* QuizGuessModeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizGuessModeVC.swift; sourceTree = "<group>"; };
 		8D82758E2CD4B15E004A4635 /* QFQuizWriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFQuizWriteButton.swift; sourceTree = "<group>"; };
-		8D8488EC2C9E1AC700715368 /* QFFavoritesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFFavoritesVC.swift; sourceTree = "<group>"; };
 		8D8488F32C9E34DC00715368 /* AlphabetListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabetListVC.swift; sourceTree = "<group>"; };
 		8D8488F62C9E394900715368 /* Alphabet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alphabet.swift; sourceTree = "<group>"; };
 		8D848BD92C923303001C1910 /* QuizFrench.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizFrench.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -453,6 +452,7 @@
 		8D9CAF512CB0D66A00AF42E3 /* QFCopyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFCopyButton.swift; sourceTree = "<group>"; };
 		8D9CAF532CB0D67700AF42E3 /* QFFavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFFavoriteButton.swift; sourceTree = "<group>"; };
 		8DAAE4EE2CD0ADB7001EDD43 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		8DF42FD52CE1AE5A001861D3 /* FavoritesWordsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesWordsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -655,11 +655,11 @@
 			children = (
 				8D8873FA2CBE14F9007F4A53 /* Lists */,
 				8D8873F92CBE14E8007F4A53 /* Categories */,
-				8D8488EC2C9E1AC700715368 /* QFFavoritesVC.swift */,
 				8D848BF22C923410001C1910 /* HomeVC.swift */,
 				8D8C1EF02CC22907006A25EA /* QuizSuperclassVC.swift */,
 				8D82758C2CD494F9004A4635 /* QuizGuessModeVC.swift */,
 				8D82758A2CD494E3004A4635 /* QuizWriteModeVC.swift */,
+				8DF42FD52CE1AE5A001861D3 /* FavoritesWordsVC.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -1233,7 +1233,6 @@
 				8D775C172CAE802300A5F5A5 /* Item.swift in Sources */,
 				8D8A5A462CBC63E100DEFE47 /* ItemCategoryVC.swift in Sources */,
 				8D806F222C9409EA004D698A /* QFItemInfoVC.swift in Sources */,
-				8D8488ED2C9E1AC700715368 /* QFFavoritesVC.swift in Sources */,
 				8D848C032C929131001C1910 /* QFItemInfoView.swift in Sources */,
 				8D8488F72C9E394900715368 /* Alphabet.swift in Sources */,
 				8D848BFE2C9268A1001C1910 /* QFProgressVC.swift in Sources */,
@@ -1248,6 +1247,7 @@
 				8D7BC03E2CC313B200F0E751 /* ProgressManager.swift in Sources */,
 				8D806F1F2C9405B4004D698A /* Constants.swift in Sources */,
 				8D9CAF522CB0D66A00AF42E3 /* QFCopyButton.swift in Sources */,
+				8DF42FD62CE1AE5A001861D3 /* FavoritesWordsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

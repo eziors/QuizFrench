@@ -15,6 +15,6 @@ class WordsCategoriesVC: ItemCategoryVC {
         
         let quizVC = selectedItem.level < 2 ? QuizGuessModeVC(category: selectedItem.name, quizType: "words", currentLevel: selectedItem.level) : QuizWriteModeVC(category: selectedItem.name, quizType: "words", currentLevel: selectedItem.level)
         
-        self.presentSelectionVC(title: selectedItem.name, listVC: wordListVC, quizVC: quizVC)
+        self.presentSelectionVC(description: "Practice", firstVC: wordListVC, firstVCTitle: "Practice", secondVC: quizVC, secondVCTitle: "Quiz")
     }
 }

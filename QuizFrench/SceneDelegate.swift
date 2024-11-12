@@ -30,24 +30,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         return UINavigationController(rootViewController: homeVC)
     }
     
-    func createFavoritesNC() -> UINavigationController {
-        let favoritesVC = QFFavoritesVC()
-        favoritesVC.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
-        
-        return UINavigationController(rootViewController: favoritesVC)
-    }
-    
-    
-    func createTabBar() -> UITabBarController {
-        let tabBar = UITabBarController()
-        tabBar.viewControllers = [createHomeNC(), createFavoritesNC()]
-        
-        UITabBar.appearance().backgroundColor = .systemGray5
-        
-        return tabBar
-    }
-    
-
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.

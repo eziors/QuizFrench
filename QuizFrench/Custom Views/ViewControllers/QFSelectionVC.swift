@@ -11,13 +11,13 @@ class QFSelectionVC: UIViewController {
 
     let containerView = UIView()
     let titleLabel = QFTitleLabel(textAlignment: .center, fontSize: 22)
-    let practiceButton = QFButton(backgroundColor: .systemGreen, title: "Practice")
-    let quizButton = QFButton(backgroundColor: .systemPurple, title: "Start Quiz")
+    let firstVCButton = QFButton(backgroundColor: .systemGreen, title: "N/A")
+    let secondVCButton = QFButton(backgroundColor: .systemPurple, title: "N/A")
     let closeButton = QFCloseButton()
     
     
-    var listVC: UIViewController!
-    var quizVC: UIViewController!
+    var firstVC: UIViewController!
+    var secondVC: UIViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,11 +27,13 @@ class QFSelectionVC: UIViewController {
         configureButtonActions()
     }
     
-    init(title: String, listVC: UIViewController, quizVC: UIViewController) {
+    init(description: String, firstVC: UIViewController, firstVCTitle: String, secondVC: UIViewController, secondVCTitle: String) {
         super.init(nibName: nil, bundle: nil)
-        titleLabel.text = title
-        self.listVC = listVC
-        self.quizVC = quizVC
+        titleLabel.text = description
+        self.firstVC = firstVC
+        self.secondVC = secondVC
+        firstVCButton.setTitle(firstVCTitle, for: .normal)
+        secondVCButton.setTitle(secondVCTitle, for: .normal)
     }
     
     required init?(coder: NSCoder) {
@@ -48,24 +50,24 @@ class QFSelectionVC: UIViewController {
     
     func configureButtonActions() {
         closeButton.addTarget(self, action: #selector(dismissSelectionVC), for: .touchUpInside)
-        practiceButton.addTarget(self, action: #selector(pushListVC), for: .touchUpInside)
-        quizButton.addTarget(self, action: #selector(pushQuizVC), for: .touchUpInside)
+        firstVCButton.addTarget(self, action: #selector(pushListVC), for: .touchUpInside)
+        secondVCButton.addTarget(self, action: #selector(pushQuizVC), for: .touchUpInside)
     }
     
     @objc func pushListVC() {
-        navigationController?.pushViewController(listVC, animated: true)
+        navigationController?.pushViewController(firstVC, animated: true)
     }
     
     @objc func pushQuizVC() {
-        navigationController?.pushViewController(quizVC, animated: true)
+        navigationController?.pushViewController(secondVC, animated: true)
     }
 
     
     func configureUIElements() {
         view.addSubview(containerView)
         view.addSubview(closeButton)
-        containerView.addSubview(practiceButton)
-        containerView.addSubview(quizButton)
+        containerView.addSubview(firstVCButton)
+        containerView.addSubview(secondVCButton)
         containerView.addSubview(titleLabel)
         
         
@@ -91,22 +93,22 @@ class QFSelectionVC: UIViewController {
             closeButton.heightAnchor.constraint(equalToConstant: 50),
             
             
-            quizButton.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -padding),
-            quizButton.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: padding),
-            quizButton.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -padding),
-            quizButton.heightAnchor.constraint(equalToConstant: 50),
+            secondVCButton.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -padding),
+            secondVCButton.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: padding),
+            secondVCButton.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -padding),
+            secondVCButton.heightAnchor.constraint(equalToConstant: 50),
             
             
-            practiceButton.bottomAnchor.constraint(equalTo: quizButton.topAnchor, constant: -padding),
-            practiceButton.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: padding),
-            practiceButton.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -padding),
-            practiceButton.heightAnchor.constraint(equalToConstant: 50),
+            firstVCButton.bottomAnchor.constraint(equalTo: secondVCButton.topAnchor, constant: -padding),
+            firstVCButton.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: padding),
+            firstVCButton.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -padding),
+            firstVCButton.heightAnchor.constraint(equalToConstant: 50),
             
             
             titleLabel.topAnchor.constraint(equalTo: closeButton.bottomAnchor, constant: padding),
             titleLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: padding),
             titleLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -padding),
-            titleLabel.bottomAnchor.constraint(equalTo: practiceButton.topAnchor, constant: -padding)
+            titleLabel.bottomAnchor.constraint(equalTo: firstVCButton.topAnchor, constant: -padding)
         ])
     }
     

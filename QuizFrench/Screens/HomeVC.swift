@@ -169,7 +169,6 @@ extension HomeVC: QFHomeVCDelegate {
     }
     
     func didTapPhrases() {
-        print("Button working")
         let phrasesCategoriesVC = PhrasesCategoriesVC()
         phrasesCategoriesVC.title = "Phrases"
         phrasesCategoriesVC.categoryType = .phrases
@@ -177,6 +176,17 @@ extension HomeVC: QFHomeVCDelegate {
     }
     
     func didTapFavorites() {
-        print("Favorites working")
+        print("From here is working")
+        let favoritesWordsVC = FavoritesWordsVC()
+        favoritesWordsVC.title = "Favorites words"
+        let favoritesPhrasesVC = FavoritesWordsVC()
+        favoritesPhrasesVC.title = "Favorites phrases"
+        
+        self.presentSelectionVC(
+            description: "Favorites",
+            firstVC: favoritesWordsVC,
+            firstVCTitle: "Words",
+            secondVC: favoritesPhrasesVC,
+            secondVCTitle: "Phrases")
     }
 }
