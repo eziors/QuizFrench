@@ -51,7 +51,6 @@ class ItemListVC: UIViewController {
     
     func configureTableView() {
         view.addSubview(tableView)
-        
         tableView.frame = view.bounds
         tableView.estimatedRowHeight = 100
         tableView.rowHeight = UITableView.automaticDimension
@@ -73,6 +72,23 @@ class ItemListVC: UIViewController {
         }
     }
 }
+
+
+extension ItemListVC: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return questions.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: ItemCell.reuseID, for: indexPath) as! ItemCell
+        let word = questions[indexPath.row]
+        
+        cell.set(wordString: word, for: "word")
+        
+        return cell
+    }
+}
+
 
 /*
  func loadData() {
@@ -98,21 +114,5 @@ class ItemListVC: UIViewController {
          }
      }
  }
-
  */
-
-extension ItemListVC: UITableViewDataSource, UITableViewDelegate {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return questions.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: ItemCell.reuseID, for: indexPath) as! ItemCell
-        let word = questions[indexPath.row]
-        
-        cell.set(wordString: word, for: "word")
-        
-        return cell
-    }
-}
 

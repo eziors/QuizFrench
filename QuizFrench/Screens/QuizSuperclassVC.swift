@@ -57,7 +57,12 @@ class QuizSuperclassVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         loadData()
         configureNavigationBar()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
         progressBar.progress = 0
+        correctCount = 0
     }
     
     func configureNavigationBar() {
