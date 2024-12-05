@@ -14,6 +14,7 @@ class ItemListVC: UIViewController {
     var category: String!
     var listType: String!
     var questions: [Question] = []
+    var favorites: [Question] = []
     
     init(category: String, listType: String) {
         super.init(nibName: nil, bundle: nil)
@@ -30,6 +31,7 @@ class ItemListVC: UIViewController {
         super.viewDidLoad()
         configureViewController()
         configureTableView()
+        getFavorites()
         loadData()
         
     }
@@ -43,6 +45,7 @@ class ItemListVC: UIViewController {
     func configureViewController() {
         view.backgroundColor = .systemBackground
     }
+    
     
     func configureNavigationBar() {
         navigationController?.navigationBar.tintColor = UIColor.systemBlue
@@ -62,12 +65,28 @@ class ItemListVC: UIViewController {
 
     
     func loadData() {
-        DataManager.shared.getListQuestions(for: listType, category: category) { result in
+        DataManager.shared.getListQuestions(for: listType, category: category) { [weak self] result in
+            guard let self = self else { return }
+            
             switch result {
             case .success(let questions):
                 self.questions = questions
             case .failure(let failure):
                 print(failure.rawValue)
+            }
+        }
+    }
+    
+    
+    func getFavorites() {
+        PersistenceManager.shared.retriveFavorites(quizType: listType) { [weak self] result in
+            guard let self = self else { return }
+            
+            switch result {
+            case .success(let favorites):
+                self.favorites = favorites
+            case .failure(let error):
+                print(error.rawValue)
             }
         }
     }
@@ -81,10 +100,9 @@ extension ItemListVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ItemCell.reuseID, for: indexPath) as! ItemCell
-        let word = questions[indexPath.row]
+        let question = questions[indexPath.row]
         
-        cell.set(wordString: word, for: "word")
-        
+        cell.set(question: question, favorites: favorites, for: listType, viewController: self)
         return cell
     }
 }

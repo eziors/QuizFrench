@@ -56,7 +56,7 @@ class QuizGuessModeVC: QuizSuperclassVC {
             }
             
             correctCount = 0
-            ProgressManager.shared.save(quizType: quizType, category: category, currentLevel: currentLevel)
+            PersistenceManager.shared.save(quizType: quizType, category: category, currentLevel: currentLevel)
             currentLevel += 1
             
             return

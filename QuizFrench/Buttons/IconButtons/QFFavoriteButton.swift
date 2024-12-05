@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class QFFavoriteButton: UIButton {
     
     override init(frame: CGRect) {
@@ -19,13 +20,20 @@ class QFFavoriteButton: UIButton {
     }
     
     private func configure() {
-        
-        let buttonSizeConfig = UIImage.SymbolConfiguration(pointSize: 25, weight: .light, scale: .default)
-        let playButtonIcon = UIImage(systemName: "star", withConfiguration: buttonSizeConfig)
-        playButtonIcon?.withTintColor(.yellow)
-        
+        offState()
         self.contentMode = .scaleToFill
         self.tintColor = .systemYellow
+    }
+    
+    func offState() {
+        let playButtonIcon = UIImage(systemName: "star", withConfiguration: UIImage.SymbolConfiguration.defaultButtonSize)
+        playButtonIcon?.withTintColor(.yellow)
+        self.setImage(playButtonIcon, for: .normal)
+    }
+    
+    func onState() {
+        let playButtonIcon = UIImage(systemName: "star.fill", withConfiguration: UIImage.SymbolConfiguration.defaultButtonSize)
+        playButtonIcon?.withTintColor(.yellow)
         self.setImage(playButtonIcon, for: .normal)
     }
 }

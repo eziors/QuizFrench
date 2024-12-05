@@ -53,7 +53,7 @@ class ItemCategoryVC: UIViewController {
             quizType = "phrases"
         }
         
-        return ProgressManager.shared.retrieveQuizProgress(quizType: quizType, category: category)
+        return PersistenceManager.shared.retrieveQuizProgress(quizType: quizType, category: category)
     }
 
     

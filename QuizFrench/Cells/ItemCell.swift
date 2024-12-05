@@ -16,8 +16,10 @@ class ItemCell: UITableViewCell {
     let copyButton = QFCopyButton()
     let favoriteButton = QFFavoriteButton()
     
-    var wordTrack: String?
-    
+    var wordTrack: String!
+    var quizType: String!
+    var currentQuestion: Question!
+    var view: UIViewController!
     
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -33,25 +35,35 @@ class ItemCell: UITableViewCell {
     }
     
     
+    func set(question: Question, favorites: [Question], for cellType: String, viewController: UIViewController) {
+        wordLabel.text = question.correct
+        quizType = cellType.lowercased()
+        currentQuestion = question
+        translatedWordLabel.text = question.translation.english
+        wordTrack = "\(cellType)_\(question.correct)_f"
+        view = viewController
+        favoriteButtonState(favorites: favorites)
+    }
+    
     func set(wordString: Question, for cellType: String) {
         wordLabel.text = wordString.correct
         translatedWordLabel.text = wordString.translation.english
-        wordTrack = "\(cellType)_\(wordString.correct)_f"
-
+        wordTrack = "\(cellType)_\(wordString.correct)_f.mp3"
     }
+
     
     private func configureButtons() {
         playButton.addTarget(self, action: #selector(playButtonAction), for: .touchUpInside)
         copyButton.addTarget(self, action: #selector(copyButtonAction), for: .touchUpInside)
+        favoriteButton.addTarget(self, action: #selector(favoriteButtonAction), for: .touchUpInside)
     }
     
     @objc func playButtonAction() {
-        
-        
+                
         guard let audioTrack = wordTrack else { return }
         
         guard let url = Bundle.main.url(forResource: audioTrack, withExtension: "mp3") else { return }
-        
+        print("Button working")
         do {
             player = try AVAudioPlayer(contentsOf: url)
 
@@ -65,6 +77,32 @@ class ItemCell: UITableViewCell {
     
     @objc func copyButtonAction() {
         UIPasteboard.general.string = wordLabel.text
+    }
+    
+    @objc func favoriteButtonAction() {
+        PersistenceManager.shared.updateWith(quizType: quizType, favorite: currentQuestion, actionType: .add) { [weak self] error in
+            guard let self = self else { return }
+            
+            guard let error = error else {
+                DispatchQueue.main.async {
+                    self.view.presentAlertContainer(title: "Success!", message: "You have successfully favorited", buttonTitle: "Nice !")
+                    self.favoriteButton.onState()
+                }
+                return
+            }
+            DispatchQueue.main.async {
+                self.view.presentAlertContainer(title: "Something went wrong", message: error.rawValue, buttonTitle: "Ok")
+            }
+        }
+    }
+    
+    func favoriteButtonState(favorites: [Question]) {
+        if favorites.contains(where: { $0.translation == currentQuestion.translation }) {
+            favoriteButton.onState()
+            print("Already favorited !")
+        } else {
+            favoriteButton.offState()
+        }
     }
     
     

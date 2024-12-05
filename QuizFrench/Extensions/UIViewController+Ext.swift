@@ -28,6 +28,15 @@ extension UIViewController {
         }
     }
     
+    func presentDefaultError() {
+            let alertVC = QFAlertVC(title: "Something went wrong",
+                                    message: "We were unable to complete your task at this time. Please try again later.",
+                                    buttonTitle: "Ok")
+            alertVC.modalPresentationStyle = .overFullScreen
+            alertVC.modalTransitionStyle = .crossDissolve
+            self.present(alertVC, animated: true)
+    }
+    
     func presentCompletedQuizContainer(title: String, message: String, buttonTitle: String, navController: UINavigationController) {
         DispatchQueue.main.async {
             let alertVC = QFAlertVC(title: title, message: message, buttonTitle: buttonTitle)

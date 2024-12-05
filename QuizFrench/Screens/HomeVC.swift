@@ -177,9 +177,12 @@ extension HomeVC: QFHomeVCDelegate {
     
     func didTapFavorites() {
         print("From here is working")
-        let favoritesWordsVC = FavoritesWordsVC()
+        let favoritesWordsVC = FavoritesWordVC()
         favoritesWordsVC.title = "Favorites words"
-        let favoritesPhrasesVC = FavoritesWordsVC()
+        favoritesWordsVC.quizType = "words"
+        
+        let favoritesPhrasesVC = FavoritesWordVC()
+        favoritesPhrasesVC.quizType = "phrases"
         favoritesPhrasesVC.title = "Favorites phrases"
         
         self.presentSelectionVC(

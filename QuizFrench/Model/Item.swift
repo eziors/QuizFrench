@@ -8,21 +8,21 @@
 import Foundation
 
 
-struct Item: Decodable {
+struct Item: Codable {
     let items: [CategoryItem]
 }
 
-struct CategoryItem: Decodable {
+struct CategoryItem: Codable {
     let category: String
     let questions: [Question]
 }
 
-struct Translation: Decodable {
+struct Translation: Codable, Equatable {
     let english: String
     let portuguese: String
 }
 
-struct Question: Decodable {
+struct Question: Codable, Equatable {
     let a: String
     let b: String
     let c: String
@@ -31,14 +31,11 @@ struct Question: Decodable {
     let id: Int
     let question: String
     let translation: Translation
+    
+    static func ==(lhs: Question, rhs: Question) -> Bool {
+        lhs.translation == rhs.translation
+    }
 }
-
-
-
-
-
-
-
 
 
 /* --------- Deprecated ---------
